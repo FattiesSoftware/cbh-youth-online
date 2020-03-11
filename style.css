@@ -38,6 +38,7 @@ color:E9A92A;
 }
 @media screen and (max-width: 768px){
 .container {
+	text-align: left;
     margin-right: 3px;
     margin-left: 3px;
 }
@@ -68,7 +69,7 @@ color:E9A92A;
         content: "\00a0";
         font-family: 'FontAwesome', sans-serif;
         font-size: 1.2em;
-        text-align: center;
+        text-align: left;
         
         transition: .2s;
         transform-origin: 50% 60%;

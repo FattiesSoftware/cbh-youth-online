@@ -11,7 +11,7 @@ msgstr ""
 "Language: vi_VN\n"
 "Project-Id-Version: WordPress - 5.3.x - Development\n"
 
-#: wp-includes/script-loader.php:2111
+#: wp-includes/script-loader.php:2114
 msgctxt "Google Font Name and Variants"
 msgid "Noto Serif:400,400i,700,700i"
 msgstr "Noto Serif:400,400i,700,700i&amp;subset=vietnamese"
@@ -30,7 +30,7 @@ msgctxt "decline months names: on or off"
 msgid "off"
 msgstr "tắt"
 
-#: wp-includes/script-loader.php:2018
+#: wp-includes/script-loader.php:2021
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "bật"
@@ -60,7 +60,7 @@ msgid "&#8221;"
 msgstr "&#8221;"
 
 #. translators: Opening curly double quote.
-#: wp-includes/formatting.php:98 wp-includes/formatting.php:5332
+#: wp-includes/formatting.php:98 wp-includes/formatting.php:5368
 msgctxt "opening curly double quote"
 msgid "&#8220;"
 msgstr "&#8220;"
@@ -121,7 +121,7 @@ msgstr "Địa chỉ email không xác định. Kiểm tra lại hoặc thử t�
 msgid "Unknown username. Check again or try your email address."
 msgstr "Tên người dùng không xác định. Kiểm tra lại hoặc thử địa chỉ email của bạn."
 
-#: wp-includes/script-loader.php:1804
+#: wp-includes/script-loader.php:1807
 msgid "The personal data export link for this user was sent."
 msgstr "Liên kết xuất dữ liệu cá nhân cho người dùng này đã được gửi."
 
@@ -148,321 +148,321 @@ msgstr "Block điều hướng"
 msgid "Inline Code"
 msgstr "Mã nội tuyến"
 
-#: wp-includes/js/dist/block-library.js:13971
-#: wp-includes/js/dist/block-library.js:16281
+#: wp-includes/js/dist/block-library.js:13975
+#: wp-includes/js/dist/block-library.js:16285
 msgid "Grid view"
 msgstr "Xem dạng lưới"
 
-#: wp-includes/js/dist/block-library.js:13962
-#: wp-includes/js/dist/block-library.js:16272
+#: wp-includes/js/dist/block-library.js:13966
+#: wp-includes/js/dist/block-library.js:16276
 msgid "List view"
 msgstr "Xem dạng danh sách"
 
-#: wp-includes/js/dist/block-library.js:13909
+#: wp-includes/js/dist/block-library.js:13913
 msgid "Sorting and Filtering"
 msgstr "Sắp xếp và lọc"
 
-#: wp-includes/js/dist/block-library.js:13899
+#: wp-includes/js/dist/block-library.js:13903
 msgid "Post Meta Settings"
 msgstr "Cài đặt meta bài viết"
 
-#: wp-includes/js/dist/block-library.js:13866
+#: wp-includes/js/dist/block-library.js:13870
 msgid "Post Content"
 msgstr "Nội dung bài viết"
 
-#: wp-includes/js/dist/block-library.js:13864
+#: wp-includes/js/dist/block-library.js:13868
 msgid "Post Content Settings"
 msgstr "Cài đặt nội dung bài viết"
 
-#: wp-includes/js/dist/block-library.js:9936
+#: wp-includes/js/dist/block-library.js:9940
 msgid "Percentage width"
 msgstr "Tỷ lệ phần trăm chiều rộng"
 
-#: wp-includes/js/dist/block-library.js:9934
+#: wp-includes/js/dist/block-library.js:9938
 msgid "Column Settings"
 msgstr "Tùy chỉnh cột"
 
-#: wp-includes/js/dist/block-library.js:19555
+#: wp-includes/js/dist/block-library.js:19559
 msgid "There is no poster image currently selected"
 msgstr "Không có ảnh nào đang được chọn"
 
-#: wp-includes/js/dist/block-library.js:19555
+#: wp-includes/js/dist/block-library.js:19559
 msgid "The current poster image url is %s"
 msgstr "Đường dẫn cho ảnh hiện tại là %s"
 
-#: wp-includes/js/dist/block-library.js:19516
+#: wp-includes/js/dist/block-library.js:19520
 msgid "Play inline"
 msgstr "Chạy cùng dòng"
 
-#: wp-includes/js/dist/block-library.js:19418
+#: wp-includes/js/dist/block-library.js:19422
 msgid "Note: Autoplaying videos may cause usability issues for some visitors."
 msgstr "Lưu ý: Video tự động phát có thể gây ra sự cố về khả năng sử dụng cho một số khách truy cập."
 
-#: wp-includes/js/dist/block-library.js:7607
+#: wp-includes/js/dist/block-library.js:7611
 msgid "Note: Autoplaying audio may cause usability issues for some visitors."
 msgstr "Lưu ý: Tự động phát âm thanh có thể gây ra vấn đề về khả năng sử dụng cho một số khách truy cập."
 
-#: wp-includes/js/dist/block-library.js:15150
+#: wp-includes/js/dist/block-library.js:15154
 msgid "All around this is an almost totally black screen. Now, as the camera moves slowly towards the window which is almost a postage stamp in the frame, other forms appear;"
 msgstr "Xung quanh đây là một màn hình gần như đen hoàn toàn. Bây giờ, khi máy ảnh di chuyển chậm về phía cửa sổ gần như là một con tem bưu chính trong khung hình, các hình thức khác xuất hiện;"
 
-#: wp-includes/js/dist/block-library.js:15150
+#: wp-includes/js/dist/block-library.js:15154
 msgid "Window, very small in the distance, illuminated."
 msgstr "Cửa sổ, rất nhỏ ở phía xa, được chiếu sáng."
 
-#: wp-includes/js/dist/block-library.js:15150
+#: wp-includes/js/dist/block-library.js:15154
 msgid "EXT. XANADU - FAINT DAWN - 1940 (MINIATURE)"
 msgstr "EXT. XANADU - FAINT DAWN - 1940 (MINIATURE)"
 
-#: wp-includes/js/dist/block-library.js:9883
+#: wp-includes/js/dist/block-library.js:9887
 msgid "Nam risus massa, ullamcorper consectetur eros fermentum, porta aliquet ligula. Sed vel mauris nec enim."
 msgstr "Đây là một đoạn chữ ngẫu nhiên, được viết để dùng làm nội dung mẫu. Đừng quên sửa nó nhé!"
 
-#: wp-includes/js/dist/block-library.js:9878
+#: wp-includes/js/dist/block-library.js:9882
 msgid "Etiam et egestas lorem. Vivamus sagittis sit amet dolor quis lobortis. Integer sed fermentum arcu, id vulputate lacus. Etiam fermentum sem eu quam hendrerit."
 msgstr "Đây chỉ là một đoạn văn bản có sẵn để bạn nhìn thấy bố cục tốt hơn. Hãy sửa nó nhé."
 
-#: wp-includes/js/dist/block-library.js:9604
+#: wp-includes/js/dist/block-library.js:9608
 msgid "Three columns; wide center column"
 msgstr "Ba cột; cột giữa rộng"
 
-#: wp-includes/js/dist/block-library.js:9592
+#: wp-includes/js/dist/block-library.js:9596
 msgid "Three columns; equal split"
 msgstr "Ba cột; bằng nhau"
 
-#: wp-includes/js/dist/block-library.js:9575
+#: wp-includes/js/dist/block-library.js:9579
 msgid "Two columns; two-thirds, one-third split"
 msgstr "Hai cột; hai phần ba, một phần ba"
 
-#: wp-includes/js/dist/block-library.js:9558
+#: wp-includes/js/dist/block-library.js:9562
 msgid "Two columns; one-third, two-thirds split"
 msgstr "Hai cột; chia một phần ba, hai phần ba"
 
-#: wp-includes/js/dist/block-library.js:9545
+#: wp-includes/js/dist/block-library.js:9549
 msgid "Two columns; equal split"
 msgstr "Hai cột; chia đều"
 
-#: wp-includes/js/dist/block-library.js:8523
+#: wp-includes/js/dist/block-library.js:8527
 msgid "Fill"
 msgstr "Điền"
 
-#: wp-includes/js/dist/block-library.js:8514
+#: wp-includes/js/dist/block-library.js:8518
 msgid "Call to Action"
 msgstr "Nút bấm"
 
-#: wp-includes/js/dist/block-library.js:8357
+#: wp-includes/js/dist/block-library.js:8361
 msgid "Link rel"
 msgstr "Link rel"
 
-#: wp-includes/js/dist/block-library.js:8199
+#: wp-includes/js/dist/block-library.js:8203
 msgid "Border Radius"
 msgstr "Border Radius"
 
-#: wp-includes/js/dist/block-library.js:12717
+#: wp-includes/js/dist/block-library.js:12721
 msgid "Welcome to the wonderful world of blocks…"
 msgstr "Chào mừng đến với thế giới tuyệt vời của block..."
 
-#: wp-includes/js/dist/block-library.js:5975
+#: wp-includes/js/dist/block-library.js:5979
 msgid "In quoting others, we cite ourselves."
 msgstr "Khi trích dẫn người khác, chúng ta thực ra đang trích dẫn chính mình."
 
-#: wp-includes/js/dist/block-library.js:5972
+#: wp-includes/js/dist/block-library.js:5976
 msgid "cite"
 msgstr "cite"
 
-#: wp-includes/js/dist/block-library.js:14151
+#: wp-includes/js/dist/block-library.js:14155
 msgid "Reverse List Numbering"
 msgstr "Đảo ngược danh sách số"
 
-#: wp-includes/js/dist/block-library.js:14138
+#: wp-includes/js/dist/block-library.js:14142
 msgid "Start Value"
 msgstr "Giá trị bắt đầu"
 
-#: wp-includes/js/dist/block-library.js:14136
+#: wp-includes/js/dist/block-library.js:14140
 msgid "Ordered List Settings"
 msgstr "Thiết lập thứ tự danh sách"
 
-#: wp-includes/js/dist/block-library.js:9190
+#: wp-includes/js/dist/block-library.js:9194
 msgid "registerBlockType( name, settings );"
 msgstr "registerBlockType( name, settings );"
 
-#: wp-includes/js/dist/block-library.js:9190
+#: wp-includes/js/dist/block-library.js:9194
 msgid "// content or layout of a page."
 msgstr "// nội dung hoặc bố cục của một trang."
 
-#: wp-includes/js/dist/block-library.js:9190
+#: wp-includes/js/dist/block-library.js:9194
 msgid "// when composed together, form the"
 msgstr "// khi được kết hợp với nhau, tạo thành"
 
-#: wp-includes/js/dist/block-library.js:9190
+#: wp-includes/js/dist/block-library.js:9194
 msgid "// to describe units of markup that,"
 msgstr "// để mô tả các đơn vị của bố cục mà,"
 
-#: wp-includes/js/dist/block-library.js:9190
+#: wp-includes/js/dist/block-library.js:9194
 msgid "// A \"block\" is the abstract term used"
 msgstr "// \"Block\" là thuật ngữ trừu tượng được sử dụng"
 
-#: wp-includes/js/dist/block-library.js:15741
+#: wp-includes/js/dist/block-library.js:15745
 msgid "One of the hardest things to do in technology is disrupt yourself."
 msgstr "Một trong những điều khó nhất trong công nghệ là làm khó chính mình."
 
-#: wp-includes/js/dist/block-library.js:19214
+#: wp-includes/js/dist/block-library.js:19218
 msgid "    With the dragon-fly on the river."
 msgstr "    Này đây hoa của đồng nội xanh rì."
 
-#: wp-includes/js/dist/block-library.js:19214
+#: wp-includes/js/dist/block-library.js:19218
 msgid "And breaking the golden lilies afloat"
 msgstr "Của ong bướm này đây tuần trăng mật"
 
-#: wp-includes/js/dist/block-library.js:19214
+#: wp-includes/js/dist/block-library.js:19218
 msgid "Splashing and paddling with hoofs of a goat,"
 msgstr "Cho hương đừng bay đi,"
 
-#: wp-includes/js/dist/block-library.js:19214
+#: wp-includes/js/dist/block-library.js:19218
 msgid "Spreading ruin and scattering ban,"
 msgstr "Tôi muốn buộc gió lại,"
 
-#: wp-includes/js/dist/block-library.js:19214
+#: wp-includes/js/dist/block-library.js:19218
 msgid "    Down in the reeds by the river?"
 msgstr "    Cho màu đừng nhạt mất"
 
-#: wp-includes/js/dist/block-library.js:19214
+#: wp-includes/js/dist/block-library.js:19218
 msgid "WHAT was he doing, the great god Pan,"
 msgstr "Tôi muốn tắt nắng đi"
 
-#: wp-includes/js/dist/block-library.js:12179
+#: wp-includes/js/dist/block-library.js:12183
 msgid "Upload a file or pick one from your media library."
 msgstr "Tải lên file hoặc chọn từ thư viện của bạn."
 
-#: wp-includes/js/dist/block-library.js:8353
-#: wp-includes/js/dist/block-library.js:11970
+#: wp-includes/js/dist/block-library.js:8357
+#: wp-includes/js/dist/block-library.js:11974
 msgid "Open in new tab"
 msgstr "Mở trong Tab Mới"
 
-#: wp-includes/js/dist/block-library.js:11958
+#: wp-includes/js/dist/block-library.js:11962
 msgid "Attachment page"
 msgstr "Trang đính kèm"
 
-#: wp-includes/js/dist/block-library.js:18827
+#: wp-includes/js/dist/block-library.js:18831
 msgid "December 6, 2018"
 msgstr "6 Tháng mười hai, 2018"
 
-#: wp-includes/js/dist/block-library.js:18816
+#: wp-includes/js/dist/block-library.js:18820
 msgid "February 21, 2019"
 msgstr "21 Tháng Hai, 2019"
 
-#: wp-includes/js/dist/block-library.js:18805
+#: wp-includes/js/dist/block-library.js:18809
 msgid "May 7, 2019"
 msgstr "7 Tháng Năm, 2019"
 
-#: wp-includes/js/dist/block-library.js:18793
+#: wp-includes/js/dist/block-library.js:18797
 msgid "Release Date"
 msgstr "Ngày phát hành"
 
-#: wp-includes/js/dist/block-library.js:18790
+#: wp-includes/js/dist/block-library.js:18794
 msgid "Jazz Musician"
 msgstr "Nhạc sĩ Jazz"
 
-#: wp-includes/js/dist/block-library.js:18486
+#: wp-includes/js/dist/block-library.js:18490
 msgid "Footer section"
 msgstr "Phần chân trang"
 
-#: wp-includes/js/dist/block-library.js:18482
+#: wp-includes/js/dist/block-library.js:18486
 msgid "Header section"
 msgstr "Phần đầu trang"
 
-#: wp-includes/js/dist/block-library.js:18467
+#: wp-includes/js/dist/block-library.js:18471
 msgid "Change column alignment"
 msgstr "Thay đổi căn chỉnh cột"
 
-#: wp-includes/js/dist/block-library.js:18454
+#: wp-includes/js/dist/block-library.js:18458
 msgid "Create Table"
 msgstr "Tạo bảng"
 
-#: wp-includes/js/dist/block-library.js:18431
+#: wp-includes/js/dist/block-library.js:18435
 msgid "Insert a table for sharing data."
 msgstr "Chèn một bảng để chia sẻ dữ liệu."
 
-#: wp-includes/js/dist/block-library.js:17919
+#: wp-includes/js/dist/block-library.js:17923
 msgid "Align Column Right"
 msgstr "Căn lề cột phải"
 
-#: wp-includes/js/dist/block-library.js:17915
+#: wp-includes/js/dist/block-library.js:17919
 msgid "Align Column Center"
 msgstr "Căn lề cột giữa"
 
-#: wp-includes/js/dist/block-library.js:17911
+#: wp-includes/js/dist/block-library.js:17915
 msgid "Align Column Left"
 msgstr "Căn lề cột trái"
 
-#: wp-includes/js/dist/block-library.js:11089
+#: wp-includes/js/dist/block-library.js:11093
 msgid "<strong>Snow Patrol</strong>"
 msgstr "<strong>Snow Patrol</strong>"
 
-#: wp-includes/js/dist/block-library.js:10726
+#: wp-includes/js/dist/block-library.js:10730
 msgid "Upload an image or video file, or pick one from your media library."
 msgstr "Tải lên một ảnh, video hoặc chọn từ thư viện media của bạn."
 
-#: wp-includes/js/dist/block-library.js:10687
+#: wp-includes/js/dist/block-library.js:10691
 msgid "Clear Media"
 msgstr "Xóa Media"
 
-#: wp-includes/js/dist/block-library.js:10459
+#: wp-includes/js/dist/block-library.js:10463
 msgid "Minimum height in pixels"
 msgstr "Chiều cao tối thiểu tính bằng pixel"
 
-#: wp-includes/js/dist/block-library.js:4959
+#: wp-includes/js/dist/block-library.js:4963
 msgctxt "block style"
 msgid "Circle Mask"
 msgstr "Mặt nạ tròn"
 
-#: wp-includes/js/dist/block-library.js:4950
+#: wp-includes/js/dist/block-library.js:4954
 msgid "Mont Blanc appears—still, snowy, and serene."
 msgstr "Ngọn núi Mont Blanc xuất hiện —tĩnh lặng, với tuyết, và bình yên."
 
-#: wp-includes/js/dist/block-library.js:4254
+#: wp-includes/js/dist/block-library.js:4258
 msgid "You are now editing the image in the image block."
 msgstr "Bây giờ bạn đang chỉnh sửa ảnh trong block hình ảnh."
 
-#: wp-includes/js/dist/block-library.js:4252
+#: wp-includes/js/dist/block-library.js:4256
 msgid "You are now viewing the image in the image block."
 msgstr "Bây giờ bạn đang xem hình trong block hình ảnh."
 
-#: wp-includes/js/dist/block-library.js:13593
+#: wp-includes/js/dist/block-library.js:13597
 msgid "— Kobayashi Issa (一茶)"
 msgstr "— Kobayashi Issa (一茶)"
 
-#: wp-includes/js/dist/block-library.js:13588
+#: wp-includes/js/dist/block-library.js:13592
 msgid "The wren<br>Earns his living<br>Noiselessly."
 msgstr "Hạt gạo làng ta<br>Có vị phù sa<br>Của sông Kinh Thầy..."
 
-#: wp-includes/js/dist/block-library.js:4410
-#: wp-includes/js/dist/block-library.js:13310
+#: wp-includes/js/dist/block-library.js:4414
+#: wp-includes/js/dist/block-library.js:13314
 msgid "Leave empty if the image is purely decorative."
 msgstr "Để trống nếu ảnh chỉ là để trang trí."
 
-#: wp-includes/js/dist/block-library.js:4410
-#: wp-includes/js/dist/block-library.js:13310
+#: wp-includes/js/dist/block-library.js:4414
+#: wp-includes/js/dist/block-library.js:13314
 msgid "Describe the purpose of the image"
 msgstr "Mô tả nội dung của ảnh"
 
-#: wp-includes/js/dist/block-library.js:13288
+#: wp-includes/js/dist/block-library.js:13292
 msgid "Crop image to fill entire column"
 msgstr "Cắt ảnh để chèn vào cột"
 
-#: wp-includes/js/dist/block-library.js:7010
+#: wp-includes/js/dist/block-library.js:7014
 msgid "Write gallery caption…"
 msgstr "Viết chú thích album ảnh..."
 
-#: wp-includes/js/dist/block-library.js:6561
+#: wp-includes/js/dist/block-library.js:6565
 msgid "Move image forward"
 msgstr "Di chuyển ảnh về phía trước"
 
-#: wp-includes/js/dist/block-library.js:6554
+#: wp-includes/js/dist/block-library.js:6558
 msgid "Move image backward"
 msgstr "Di chuyển ảnh về phía sau"
 
-#: wp-includes/js/dist/block-library.js:5478
+#: wp-includes/js/dist/block-library.js:5482
 msgid "Code is Poetry"
 msgstr "Viết mã như làm thơ"
 
@@ -470,63 +470,63 @@ msgstr "Viết mã như làm thơ"
 msgid "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing."
 msgstr "Dòng suối đổ vào sông, sông đổ vào dải trường giang Vônga, con sông Vônga đi ra bể. Lòng yêu nhà, yêu làng xóm, yêu miền quê trở nên lòng yêu Tổ quốc. Có thể nào quan niệm được sức mãnh liệt của tình yêu mà không đem nó vào lửa đạn gay go thử thách."
 
-#: wp-includes/js/dist/block-library.js:16691
+#: wp-includes/js/dist/block-library.js:16695
 msgid "Six."
 msgstr "Sáu."
 
-#: wp-includes/js/dist/block-library.js:16684
+#: wp-includes/js/dist/block-library.js:16688
 msgid "Five."
 msgstr "Năm."
 
-#: wp-includes/js/dist/block-library.js:16677
+#: wp-includes/js/dist/block-library.js:16681
 msgid "Four."
 msgstr "Bốn."
 
-#: wp-includes/js/dist/block-library.js:16670
+#: wp-includes/js/dist/block-library.js:16674
 msgid "Three."
 msgstr "Ba."
 
-#: wp-includes/js/dist/block-library.js:16663
+#: wp-includes/js/dist/block-library.js:16667
 msgid "Two."
 msgstr "Hai."
 
-#: wp-includes/js/dist/block-library.js:16656
+#: wp-includes/js/dist/block-library.js:16660
 msgid "One."
 msgstr "Một."
 
-#: wp-includes/js/dist/block-library.js:16646
+#: wp-includes/js/dist/block-library.js:16650
 msgid "section"
 msgstr "section"
 
-#: wp-includes/js/dist/block-library.js:16646
+#: wp-includes/js/dist/block-library.js:16650
 msgid "row"
 msgstr "hàng"
 
-#: wp-includes/js/dist/block-library.js:16646
+#: wp-includes/js/dist/block-library.js:16650
 msgid "wrapper"
 msgstr "wrapper"
 
-#: wp-includes/js/dist/block-library.js:16646
+#: wp-includes/js/dist/block-library.js:16650
 msgid "container"
 msgstr "container"
 
-#: wp-includes/js/dist/block-library.js:16645
+#: wp-includes/js/dist/block-library.js:16649
 msgid "A block that groups other blocks."
 msgstr "Một block nhóm các block khác."
 
-#: wp-includes/js/dist/block-library.js:16643
+#: wp-includes/js/dist/block-library.js:16647
 msgid "Group"
 msgstr "Nhóm"
 
-#: wp-includes/js/dist/block-library.js:11204
+#: wp-includes/js/dist/block-library.js:11208
 msgid "Learn more about embeds"
 msgstr "Tìm hiểu thêm về nhúng"
 
-#: wp-includes/js/dist/block-library.js:11203
+#: wp-includes/js/dist/block-library.js:11207
 msgid "https://wordpress.org/support/article/embeds/"
 msgstr "https://wordpress.org/support/article/embeds/"
 
-#: wp-includes/js/dist/block-library.js:11179
+#: wp-includes/js/dist/block-library.js:11183
 msgid "Paste a link to the content you want to display on your site."
 msgstr "Dán một liên kết đến nội dung bạn muốn hiển thị trên trang web của bạn."
 
@@ -592,7 +592,7 @@ msgid "Upload a video file, pick one from your media library, or add one with a 
 msgstr "Tải lên video, chọn một file từ thư viện media của bạn hoặc thêm file từ địa chỉ URL."
 
 #: wp-includes/js/dist/block-editor.js:16416
-#: wp-includes/js/dist/block-library.js:4359
+#: wp-includes/js/dist/block-library.js:4363
 msgid "Upload an image file, pick one from your media library, or add one with a URL."
 msgstr "Tải lên một file ảnh, chọn từ thư viện media của bạn hoặc thêm URL."
 
@@ -794,12 +794,12 @@ msgstr "Phiên bản WordPress %s"
 msgid "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 msgstr "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 
-#: wp-includes/formatting.php:4770
+#: wp-includes/formatting.php:4781
 msgid "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 msgstr "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 
-#: wp-includes/link-template.php:2577 wp-includes/link-template.php:2656
-#: wp-includes/link-template.php:2721
+#: wp-includes/link-template.php:2580 wp-includes/link-template.php:2659
+#: wp-includes/link-template.php:2724
 msgid "Posts"
 msgstr "Bài viết"
 
@@ -837,7 +837,7 @@ msgstr "Tìm hiểu thêm về gỡ lỗi trong WordPress."
 
 #. translators: Documentation explaining debugging in WordPress.
 #: wp-includes/class-wp-fatal-error-handler.php:190
-#: wp-includes/functions.php:4900
+#: wp-includes/functions.php:4967
 msgid "https://wordpress.org/support/article/debugging-in-wordpress/"
 msgstr "https://wordpress.org/support/article/debugging-in-wordpress/"
 
@@ -988,46 +988,46 @@ msgstr "Có phản hồi không mong muốn từ máy chủ. Các file có thể
 msgid "https://wordpress.org/support/article/editing-wp-config-php/"
 msgstr "https://wordpress.org/support/article/editing-wp-config-php/"
 
-#: wp-login.php:697
+#: wp-login.php:712
 msgid "Remind me later"
 msgstr "Nhắc tôi sau"
 
-#: wp-login.php:682
+#: wp-login.php:696
 msgid "The email is correct"
 msgstr "Email là chính xác"
 
-#: wp-login.php:670
+#: wp-login.php:684
 msgid "This email may be different from your personal email address."
 msgstr "Email này có thể khác với địa chỉ email cá nhân của bạn."
 
 #. translators: %s: Admin email address.
-#: wp-login.php:663
+#: wp-login.php:677
 msgid "Current administration email: %s"
 msgstr "Email quản trị hiện tại: %s"
 
-#: wp-login.php:652
+#: wp-login.php:666
 msgid "Why is this important?"
 msgstr "Tại sao nó lại quan trọng?"
 
 #. translators: URL to the WordPress help section about admin email.
-#: wp-login.php:644
+#: wp-login.php:658
 msgid "https://wordpress.org/support/article/settings-general-screen/#email-address"
 msgstr "https://wordpress.org/support/article/settings-general-screen/#email-address"
 
-#: wp-login.php:640
+#: wp-login.php:654
 msgid "Please verify that the <strong>administration email</strong> for this website is still correct."
 msgstr "Vui lòng xác minh rằng <strong>email quản trị</strong> cho trang web này vẫn hoạt động."
 
-#: wp-login.php:637
+#: wp-login.php:651
 msgid "Administration email verification"
 msgstr "Xác minh email quản trị"
 
-#: wp-login.php:609
+#: wp-login.php:622
 msgid "Confirm your administration email"
 msgstr "Xác nhận email quản trị của bạn"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: wp-includes/formatting.php:3795
+#: wp-includes/formatting.php:3806
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
@@ -1096,7 +1096,7 @@ msgstr "Xem trước file đính kèm"
 msgid "Your browser cannot upload files"
 msgstr "Trình duyệt của bạn không thể tải file lên"
 
-#: wp-includes/class-wp-xmlrpc-server.php:615 wp-includes/option.php:2081
+#: wp-includes/class-wp-xmlrpc-server.php:615 wp-includes/option.php:2084
 msgid "Allow people to submit comments on new posts."
 msgstr "Cho phép mọi người gửi bình luận về bài viết mới."
 
@@ -1202,7 +1202,7 @@ msgstr "Bỏ vào thùng rác"
 msgid "Restore from Trash"
 msgstr "Khôi phục từ Thùng rác"
 
-#: wp-login.php:1181 wp-includes/wp-db.php:1124 wp-includes/wp-db.php:1699
+#: wp-login.php:1197 wp-includes/wp-db.php:1124 wp-includes/wp-db.php:1699
 #: wp-includes/wp-db.php:1857 wp-includes/update.php:160
 #: wp-includes/update.php:386 wp-includes/update.php:575
 #: wp-includes/customize/class-wp-customize-themes-section.php:90
@@ -1226,7 +1226,7 @@ msgstr "[%s] Yêu cầu đổi email quản trị hệ thống"
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title.
-#: wp-includes/functions.php:6744
+#: wp-includes/functions.php:6811
 msgid "[%s] Admin Email Changed"
 msgstr "[%s] Địa chỉ email Quản trị viên đã thay đổi"
 
@@ -1240,153 +1240,153 @@ msgstr "[%s] Yêu cầu thay đổi địa chỉ email"
 msgid "[%s] Email Changed"
 msgstr "[%s] Địa chỉ email đã đổi"
 
-#: wp-includes/js/dist/block-library.js:19880
+#: wp-includes/js/dist/block-library.js:19884
 msgid "Tag Cloud Settings"
 msgstr "Cài đặt mây thẻ"
 
-#: wp-includes/js/dist/block-library.js:19841
+#: wp-includes/js/dist/block-library.js:19845
 msgid "- Select -"
 msgstr "- Chọn -"
 
-#: wp-includes/js/dist/block-library.js:16366
+#: wp-includes/js/dist/block-library.js:16370
 msgid "feed"
 msgstr "feed"
 
-#: wp-includes/js/dist/block-library.js:16366
+#: wp-includes/js/dist/block-library.js:16370
 msgid "atom"
 msgstr "atom"
 
-#: wp-includes/js/dist/block-library.js:16363
+#: wp-includes/js/dist/block-library.js:16367
 msgid "Display entries from any RSS or Atom feed."
 msgstr "Hiển thị nội dung từ bất kỳ RSS Feed nào."
 
-#: wp-includes/js/dist/block-library.js:13889
-#: wp-includes/js/dist/block-library.js:16317
+#: wp-includes/js/dist/block-library.js:13893
+#: wp-includes/js/dist/block-library.js:16321
 msgid "Max number of words in excerpt"
 msgstr "Số từ tối đa trong phần giới thiệu"
 
-#: wp-includes/js/dist/block-library.js:16313
+#: wp-includes/js/dist/block-library.js:16317
 msgid "Display excerpt"
 msgstr "Hiển thị mô tả ngắn"
 
-#: wp-includes/js/dist/block-library.js:16309
+#: wp-includes/js/dist/block-library.js:16313
 msgid "Display date"
 msgstr "Hiển thị ngày"
 
-#: wp-includes/js/dist/block-library.js:16305
+#: wp-includes/js/dist/block-library.js:16309
 msgid "Display author"
 msgstr "Hiển thị tác giả"
 
-#: wp-includes/js/dist/block-library.js:16292
+#: wp-includes/js/dist/block-library.js:16296
 msgid "RSS Settings"
 msgstr "Cấu hình RSS"
 
-#: wp-includes/js/dist/block-library.js:16264
+#: wp-includes/js/dist/block-library.js:16268
 msgid "Edit RSS URL"
 msgstr "Chỉnh sửa URL RSS"
 
-#: wp-includes/js/dist/block-library.js:16259
+#: wp-includes/js/dist/block-library.js:16263
 msgid "Use URL"
 msgstr "Sử dụng URL"
 
-#: wp-includes/js/dist/block-library.js:16248
+#: wp-includes/js/dist/block-library.js:16252
 msgid "Enter URL here…"
 msgstr "Nhập địa chỉ URL tại đây..."
 
-#: wp-includes/js/dist/block-library.js:16451
+#: wp-includes/js/dist/block-library.js:16455
 msgid "find"
 msgstr "tìm"
 
-#: wp-includes/js/dist/block-library.js:16448
+#: wp-includes/js/dist/block-library.js:16452
 msgid "Help visitors find your content."
 msgstr "Giúp khách truy cập tìm thấy nội dung của bạn."
 
-#: wp-includes/js/dist/block-library.js:16424
+#: wp-includes/js/dist/block-library.js:16428
 msgid "Add button text…"
 msgstr "Thêm chữ cho nút..."
 
-#: wp-includes/js/dist/block-library.js:16423
+#: wp-includes/js/dist/block-library.js:16427
 msgid "Button text"
 msgstr "Chữ cho nút"
 
-#: wp-includes/js/dist/block-library.js:16413
+#: wp-includes/js/dist/block-library.js:16417
 msgid "Optional placeholder…"
 msgstr "Placeholder không bắt buộc..."
 
-#: wp-includes/js/dist/block-library.js:16409
+#: wp-includes/js/dist/block-library.js:16413
 msgid "Optional placeholder text"
 msgstr "Chữ placeholder không bắt buộc"
 
-#: wp-includes/js/dist/block-library.js:16399
+#: wp-includes/js/dist/block-library.js:16403
 msgid "Add label…"
 msgstr "Thêm nhãn..."
 
-#: wp-includes/js/dist/block-library.js:16398
+#: wp-includes/js/dist/block-library.js:16402
 msgid "Label text"
 msgstr "Nội dung nhãn"
 
-#: wp-includes/js/dist/block-library.js:14881
+#: wp-includes/js/dist/block-library.js:14885
 msgid "Content before this block will be shown in the excerpt on your archives page."
 msgstr "Nội dung trước khối này sẽ được hiển thị trong đoạn trích trên trang lưu trữ."
 
-#: wp-includes/js/dist/block-library.js:14755
+#: wp-includes/js/dist/block-library.js:14759
 msgid "Hide the excerpt on the full content page"
 msgstr "Ẩn đoạn trích trên trang nội dung."
 
-#: wp-includes/js/dist/block-library.js:14735
+#: wp-includes/js/dist/block-library.js:14739
 msgid "The excerpt is visible."
 msgstr "Phần giới thiệu đang hiển thị."
 
-#: wp-includes/js/dist/block-library.js:14735
+#: wp-includes/js/dist/block-library.js:14739
 msgid "The excerpt is hidden."
 msgstr "Phần giới thiệu bị ẩn."
 
-#: wp-includes/js/dist/block-library.js:8664
+#: wp-includes/js/dist/block-library.js:8668
 msgid "archive"
 msgstr "lưu trữ"
 
-#: wp-includes/js/dist/block-library.js:8664
+#: wp-includes/js/dist/block-library.js:8668
 msgid "posts"
 msgstr "bài viết"
 
 #: wp-includes/widgets/class-wp-widget-calendar.php:34
-#: wp-includes/js/dist/block-library.js:8661
+#: wp-includes/js/dist/block-library.js:8665
 msgid "A calendar of your site’s posts."
 msgstr "Lịch bài viết của bạn."
 
-#: wp-includes/js/dist/block-library.js:8509
+#: wp-includes/js/dist/block-library.js:8513
 msgid "link"
 msgstr "liên kết"
 
-#: wp-includes/js/dist/block-library.js:8507
+#: wp-includes/js/dist/block-library.js:8511
 msgid "Prompt visitors to take action with a button-style link."
 msgstr "Nhắc khách thực hiện hành động với một nút ấn liên kết."
 
-#: wp-includes/js/dist/block-library.js:10665
-#: wp-includes/js/dist/block-library.js:13296
+#: wp-includes/js/dist/block-library.js:10669
+#: wp-includes/js/dist/block-library.js:13300
 msgid "Focal Point Picker"
 msgstr "Focal Point Picker"
 
 #. translators: %1$d is the order number of the image, %2$d is the total number
 #. of images.
-#: wp-includes/js/dist/block-library.js:6986
+#: wp-includes/js/dist/block-library.js:6990
 msgid "image %1$d of %2$d in gallery"
 msgstr "ảnh %1$d của %2$d trong thư viện"
 
 #. translators: %s: host providing embed content e.g: www.youtube.com
-#: wp-includes/js/dist/block-library.js:11416
+#: wp-includes/js/dist/block-library.js:11420
 msgid "Embedded content from %s can't be previewed in the editor."
 msgstr "Nội dung nhúng từ %s không thể xem trước trong trình soạn thảo."
 
-#: wp-includes/js/dist/block-library.js:11194
+#: wp-includes/js/dist/block-library.js:11198
 msgid "Sorry, this content could not be embedded."
 msgstr "Rất tiếc, nội dung này không thể nhúng được."
 
-#: wp-includes/js/dist/block-library.js:3240
+#: wp-includes/js/dist/block-library.js:3244
 msgid "Embed Amazon Kindle content."
 msgstr "Nhúng nội dung từ Amazon Kindle."
 
-#: wp-includes/js/dist/block-library.js:3238
+#: wp-includes/js/dist/block-library.js:3242
 msgid "ebook"
 msgstr "ebook"
 
@@ -1447,20 +1447,20 @@ msgid "Change block type or style"
 msgstr "Đổi kiểu block hoặc style"
 
 #: wp-includes/js/dist/block-editor.js:18223
-#: wp-includes/js/dist/block-library.js:4955
-#: wp-includes/js/dist/block-library.js:5982
-#: wp-includes/js/dist/block-library.js:15747
-#: wp-includes/js/dist/block-library.js:18835
+#: wp-includes/js/dist/block-library.js:4959
+#: wp-includes/js/dist/block-library.js:5986
+#: wp-includes/js/dist/block-library.js:15751
+#: wp-includes/js/dist/block-library.js:18839
 msgctxt "block style"
 msgid "Default"
 msgstr "Mặc định"
 
-#: wp-includes/js/dist/block-library.js:14266
+#: wp-includes/js/dist/block-library.js:14270
 msgctxt "keyboard key"
 msgid "Space"
 msgstr "Nút Space"
 
-#: wp-includes/js/dist/block-library.js:14259
+#: wp-includes/js/dist/block-library.js:14263
 msgctxt "keyboard key"
 msgid "Backspace"
 msgstr "Nút Backspace"
@@ -1649,23 +1649,23 @@ msgstr[0] "%s bình luận cần kiểm duyệt"
 msgid "Quote from Hello Dolly song, by Jerry Herman:"
 msgstr "Trích dẫn từ bài hát Hello Dolly của Jerry Herman:"
 
-#: wp-login.php:1296
+#: wp-login.php:1318
 msgid "Recovery Mode Initialized. Please log in to continue."
 msgstr "Chế độ phục hồi được khởi tạo. Đăng nhập để tiếp tục."
 
-#: wp-login.php:1191
+#: wp-login.php:1207
 msgid "https://wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
 msgstr "https://wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
 
-#: wp-login.php:1180
+#: wp-login.php:1196
 msgid "https://wordpress.org/support/article/cookies/"
 msgstr "https://wordpress.org/support/article/cookies/"
 
-#: wp-login.php:1101 wp-includes/user.php:3652
+#: wp-login.php:1117 wp-includes/user.php:3652
 msgid "Missing confirm key."
 msgstr "Thiếu mã xác nhận."
 
-#: wp-login.php:1097
+#: wp-login.php:1113
 msgid "Missing request ID."
 msgstr "Thiếu ID request."
 
@@ -1673,7 +1673,7 @@ msgstr "Thiếu ID request."
 msgid "Usage of the title attribute on the login logo is not recommended for accessibility reasons. Use the link text instead."
 msgstr "Việc sử dụng thuộc tính tiêu đề trên logo đăng nhập không được khuyến nghị vì giảm khả năng tiếp cận của người khuyết tật. Sử dụng văn bản liên kết thay thế."
 
-#: wp-includes/functions.php:7164
+#: wp-includes/functions.php:7231
 msgid "Update PHP"
 msgstr "Cập nhật PHP"
 
@@ -1681,7 +1681,7 @@ msgstr "Cập nhật PHP"
 msgid "Could not retrieve site data."
 msgstr "Không thể lấy dữ liệu site."
 
-#: wp-includes/js/dist/block-library.js:3052
+#: wp-includes/js/dist/block-library.js:3056
 msgid "Embed Crowdsignal (formerly Polldaddy) content."
 msgstr "Nhúng nội dung Crowdsignal (trước đây là Polldaddy)."
 
@@ -1691,7 +1691,7 @@ msgid "REST API routes must be registered on the %s action."
 msgstr "Route REST API cần phải đăng ký trong action %s."
 
 #. translators: Used to join last two items in a list with more than 2 times.
-#: wp-includes/formatting.php:5011
+#: wp-includes/formatting.php:5047
 msgid "%1$s, and %2$s"
 msgstr "%1$s, và %2$s"
 
@@ -1779,16 +1779,16 @@ msgid "Formats"
 msgstr "Format"
 
 #. translators: Used to join items in a list with more than 2 items.
-#: wp-includes/formatting.php:5009
+#: wp-includes/formatting.php:5045
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
 #. translators: %s: Default Update PHP page URL.
-#: wp-includes/functions.php:7107
+#: wp-includes/functions.php:7174
 msgid "This resource is provided by your web host, and is specific to your site. For more information, <a href=\"%s\" target=\"_blank\">see the official WordPress documentation</a>."
 msgstr "Tài nguyên này được cung cấp bởi nhà cung cấp hosting, và dành riêng cho website của bạn. Để biết thêm chi tiết, <a href=\"%s\" target=\"_blank\">xem tài liệu chính thức của WordPress</a>."
 
-#: wp-includes/functions.php:7064
+#: wp-includes/functions.php:7131
 msgctxt "localized PHP upgrade information page"
 msgid "https://wordpress.org/support/update-php/"
 msgstr "https://vi.wordpress.org/support/update-php/"
@@ -1796,13 +1796,13 @@ msgstr "https://vi.wordpress.org/support/update-php/"
 #. translators: %s: Time duration in second or seconds.
 #. translators: Time difference between two dates, in seconds. %s: Number of
 #. seconds.
-#: wp-includes/functions.php:516 wp-includes/formatting.php:3708
+#: wp-includes/functions.php:521 wp-includes/formatting.php:3719
 msgid "%s second"
 msgid_plural "%s seconds"
 msgstr[0] "%s giây"
 
 #. translators: %s: Time duration in minute or minutes.
-#: wp-includes/functions.php:510
+#: wp-includes/functions.php:515
 msgid "%s minute"
 msgid_plural "%s minutes"
 msgstr[0] "%s phút"
@@ -1848,17 +1848,17 @@ msgstr "<strong>LỖI</strong>: Không có tài khoản nào với tên người
 msgid "Editor tips"
 msgstr "Gợi ý soạn thảo"
 
-#: wp-includes/js/dist/block-library.js:13097
+#: wp-includes/js/dist/block-library.js:13101
 msgctxt "content placeholder"
 msgid "Content…"
 msgstr "Nội dung..."
 
-#: wp-includes/js/dist/block-library.js:11200
+#: wp-includes/js/dist/block-library.js:11204
 msgctxt "button label"
 msgid "Convert to link"
 msgstr "Chuyển sang liên kết"
 
-#: wp-includes/js/dist/block-library.js:11197
+#: wp-includes/js/dist/block-library.js:11201
 msgctxt "button label"
 msgid "Try again"
 msgstr "Thử lại"
@@ -1882,7 +1882,7 @@ msgstr "Block (đã chọn)"
 msgid "Document (selected)"
 msgstr "Tài liệu (đã chọn)"
 
-#: wp-includes/js/dist/block-library.js:16153
+#: wp-includes/js/dist/block-library.js:16157
 msgid "Create content, and save it for you and other contributors to reuse across your site. Update the block, and the changes apply everywhere it’s used."
 msgstr "Tạo nội dung và lưu nội dung đó cho bạn và những người khác để sử dụng lại trên trang web của bạn. Cập nhật khối, và thay đổi mọi nơi nó đã được sử dụng."
 
@@ -1900,11 +1900,11 @@ msgstr[0] "%d từ"
 msgid "Classic Block Keyboard Shortcuts"
 msgstr "Phím tắt Block cơ bản"
 
-#: wp-includes/js/dist/block-library.js:4480
+#: wp-includes/js/dist/block-library.js:4484
 msgid "This image has an empty alt attribute"
 msgstr "Hình ảnh này chưa có thuộc tính alt"
 
-#: wp-includes/js/dist/block-library.js:4478
+#: wp-includes/js/dist/block-library.js:4482
 msgid "This image has an empty alt attribute; its file name is %s"
 msgstr "Hình ảnh này chưa có thuộc tính alt; tên tệp của nó là %s"
 
@@ -1978,11 +1978,11 @@ msgstr "Canh giữa"
 msgid "Align Text Left"
 msgstr "Canh lề trái"
 
-#: wp-includes/js/dist/block-library.js:14981
+#: wp-includes/js/dist/block-library.js:14985
 msgid "Page Break"
 msgstr "Ngắt trang"
 
-#: wp-includes/js/dist/block-library.js:13280
+#: wp-includes/js/dist/block-library.js:13284
 msgid "Stack on mobile"
 msgstr "Xếp chồng trên màn hình di động"
 
@@ -2044,225 +2044,225 @@ msgstr "Ảnh cùng dòng"
 msgid "media"
 msgstr "media"
 
-#: wp-includes/js/dist/block-library.js:19783
+#: wp-includes/js/dist/block-library.js:19787
 msgid "movie"
 msgstr "phim"
 
-#: wp-includes/js/dist/block-library.js:19781
+#: wp-includes/js/dist/block-library.js:19785
 msgid "Embed a video from your media library or upload a new one."
 msgstr "Nhúng một video từ thư viện của bạn hoặc tải lên một video mới."
 
-#: wp-includes/js/dist/block-library.js:19559
+#: wp-includes/js/dist/block-library.js:19563
 msgid "Remove Poster Image"
 msgstr "Xóa hình ảnh"
 
-#: wp-includes/js/dist/block-library.js:19512
+#: wp-includes/js/dist/block-library.js:19516
 msgid "Playback Controls"
 msgstr "Điều khiển phát lại"
 
-#: wp-includes/js/dist/block-library.js:19508
+#: wp-includes/js/dist/block-library.js:19512
 msgid "Muted"
 msgstr "Đã tắt tiếng"
 
-#: wp-includes/js/dist/block-library.js:19497
+#: wp-includes/js/dist/block-library.js:19501
 msgid "Video Settings"
 msgstr "Cài đặt video"
 
-#: wp-includes/js/dist/block-library.js:19493
+#: wp-includes/js/dist/block-library.js:19497
 msgid "Edit video"
 msgstr "Sửa video"
 
-#: wp-includes/js/dist/block-library.js:19108
+#: wp-includes/js/dist/block-library.js:19112
 msgid "Write…"
 msgstr "Viết…"
 
-#: wp-includes/js/dist/block-library.js:19217
+#: wp-includes/js/dist/block-library.js:19221
 msgid "poetry"
 msgstr "thơ"
 
-#: wp-includes/js/dist/block-library.js:19210
+#: wp-includes/js/dist/block-library.js:19214
 msgid "Insert poetry. Use special spacing formats. Or quote song lyrics."
 msgstr "Chèn thơ. Sử dụng định dạng khoảng cách đặc biệt. Hoặc trích dẫn lời bài hát."
 
-#: wp-includes/js/dist/block-library.js:19209
+#: wp-includes/js/dist/block-library.js:19213
 msgid "Verse"
 msgstr "Verse"
 
-#: wp-includes/js/dist/block-library.js:18912
+#: wp-includes/js/dist/block-library.js:18916
 msgid "New Column"
 msgstr "Cột mới"
 
-#: wp-includes/js/dist/block-library.js:19022
+#: wp-includes/js/dist/block-library.js:19026
 msgid "This block is deprecated. Please use the Columns block instead."
 msgstr "Khối này đã ngừng được phát triển. Thay vào đó, hãy sử dụng khối Cột."
 
-#: wp-includes/js/dist/block-library.js:19021
+#: wp-includes/js/dist/block-library.js:19025
 msgid "Text Columns (deprecated)"
 msgstr "Cột văn bản (ngừng phát triển)"
 
-#: wp-includes/js/dist/block-library.js:18839
+#: wp-includes/js/dist/block-library.js:18843
 msgid "Stripes"
 msgstr "Stripes"
 
-#: wp-includes/js/dist/block-library.js:18781
+#: wp-includes/js/dist/block-library.js:18785
 msgid "Insert a table — perfect for sharing charts and data."
 msgstr "Thêm bảng — hoàn hảo để chia sẻ biểu đồ và dữ liệu."
 
-#: wp-includes/js/dist/block-library.js:18478
+#: wp-includes/js/dist/block-library.js:18482
 msgid "Fixed width table cells"
 msgstr "Cố định chiều dài ô."
 
-#: wp-includes/js/dist/block-library.js:18475
+#: wp-includes/js/dist/block-library.js:18479
 msgid "Table Settings"
 msgstr "Cài đặt bảng"
 
-#: wp-includes/js/dist/block-library.js:18464
+#: wp-includes/js/dist/block-library.js:18468
 msgid "Edit table"
 msgstr "Sửa bảng"
 
-#: wp-includes/js/dist/block-library.js:18445
+#: wp-includes/js/dist/block-library.js:18449
 msgid "Row Count"
 msgstr "Số hàng"
 
-#: wp-includes/js/dist/block-library.js:18438
+#: wp-includes/js/dist/block-library.js:18442
 msgid "Column Count"
 msgstr "Số cột"
 
-#: wp-includes/js/dist/block-library.js:18322
+#: wp-includes/js/dist/block-library.js:18326
 msgid "Delete Column"
 msgstr "Xoá cột"
 
-#: wp-includes/js/dist/block-library.js:18317
+#: wp-includes/js/dist/block-library.js:18321
 msgid "Add Column After"
 msgstr "Thêm cột bên phải"
 
-#: wp-includes/js/dist/block-library.js:18312
+#: wp-includes/js/dist/block-library.js:18316
 msgid "Add Column Before"
 msgstr "Thêm cột bên trái"
 
-#: wp-includes/js/dist/block-library.js:18307
+#: wp-includes/js/dist/block-library.js:18311
 msgid "Delete Row"
 msgstr "Xóa dòng"
 
-#: wp-includes/js/dist/block-library.js:18302
+#: wp-includes/js/dist/block-library.js:18306
 msgid "Add Row After"
 msgstr "Thêm dòng phía dưới"
 
-#: wp-includes/js/dist/block-library.js:18297
+#: wp-includes/js/dist/block-library.js:18301
 msgid "Add Row Before"
 msgstr "Thêm dòng phía trên"
 
-#: wp-includes/js/dist/block-library.js:17243
+#: wp-includes/js/dist/block-library.js:17247
 msgid "Write subheading…"
 msgstr "Viết tiêu đề phụ..."
 
-#: wp-includes/js/dist/block-library.js:17328
+#: wp-includes/js/dist/block-library.js:17332
 msgid "This block is deprecated. Please use the Paragraph block instead."
 msgstr "Block này đã ngừng phát triển. Hãy sử dụng block thay thế là \"Văn bản\"."
 
-#: wp-includes/js/dist/block-library.js:17327
+#: wp-includes/js/dist/block-library.js:17331
 msgid "Subheading (deprecated)"
 msgstr "Tiêu đề phụ (cũ)"
 
-#: wp-includes/js/dist/block-library.js:17100
+#: wp-includes/js/dist/block-library.js:17104
 msgid "Height in pixels"
 msgstr "Chiều cao bằng pixel"
 
-#: wp-includes/js/dist/block-library.js:17098
+#: wp-includes/js/dist/block-library.js:17102
 msgid "Spacer Settings"
 msgstr "Cài đặt khoảng cách"
 
-#: wp-includes/js/dist/block-library.js:17194
+#: wp-includes/js/dist/block-library.js:17198
 msgid "Add white space between blocks and customize its height."
 msgstr "Thêm khoảng trắng giữa các block  và tùy chỉnh chiều cao của chúng."
 
-#: wp-includes/js/dist/block-library.js:17193
+#: wp-includes/js/dist/block-library.js:17197
 msgid "Spacer"
 msgstr "Khoảng cách"
 
-#: wp-includes/js/dist/block-library.js:16936
+#: wp-includes/js/dist/block-library.js:16940
 msgid "Write shortcode here…"
 msgstr "Nhập shortcode ở đây..."
 
-#: wp-includes/js/dist/block-library.js:17022
+#: wp-includes/js/dist/block-library.js:17026
 msgid "Insert additional custom elements with a WordPress shortcode."
 msgstr "Chèn thêm những phần tử tùy biến với WordPress shortcode."
 
-#: wp-includes/js/dist/block-library.js:16932
-#: wp-includes/js/dist/block-library.js:17021
+#: wp-includes/js/dist/block-library.js:16936
+#: wp-includes/js/dist/block-library.js:17025
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: wp-includes/js/dist/block-library.js:16902
+#: wp-includes/js/dist/block-library.js:16906
 msgid "Dots"
 msgstr "Dấu chấm"
 
-#: wp-includes/js/dist/block-library.js:16899
+#: wp-includes/js/dist/block-library.js:16903
 msgid "Wide Line"
 msgstr "Đường kẻ dài"
 
-#: wp-includes/js/dist/block-library.js:16886
+#: wp-includes/js/dist/block-library.js:16890
 msgid "divider"
 msgstr "divider"
 
-#: wp-includes/js/dist/block-library.js:16886
+#: wp-includes/js/dist/block-library.js:16890
 msgid "horizontal-line"
 msgstr "horizontal-line"
 
-#: wp-includes/js/dist/block-library.js:16884
+#: wp-includes/js/dist/block-library.js:16888
 msgid "Create a break between ideas or sections with a horizontal separator."
 msgstr "Tạo điểm ngắt giữa các ý hoặc các đoạn với một gạch kẻ ngang."
 
-#: wp-includes/js/dist/block-library.js:16883
+#: wp-includes/js/dist/block-library.js:16887
 msgid "Separator"
 msgstr "Ngăn cách"
 
-#: wp-includes/js/dist/block-library.js:5986
+#: wp-includes/js/dist/block-library.js:5990
 msgctxt "block style"
 msgid "Large"
 msgstr "Lớn"
 
-#: wp-includes/js/dist/block-library.js:5972
+#: wp-includes/js/dist/block-library.js:5976
 msgid "blockquote"
 msgstr "trích dẫn"
 
-#: wp-includes/js/dist/block-library.js:5970
+#: wp-includes/js/dist/block-library.js:5974
 msgid "Give quoted text visual emphasis. \"In quoting others, we cite ourselves.\" — Julio Cortázar"
 msgstr "Đưa đoạn trích dẫn bằng hình ảnh. \"Trong trích dẫn những người khác, chúng tôi trích dẫn chính mình.\" - Julio Cortázar"
 
-#: wp-includes/js/dist/block-library.js:15751
+#: wp-includes/js/dist/block-library.js:15755
 msgid "Solid Color"
 msgstr "Màu đơn sắc"
 
-#: wp-includes/js/dist/block-library.js:15737
+#: wp-includes/js/dist/block-library.js:15741
 msgid "Give special visual emphasis to a quote from your text."
 msgstr "Đưa hình ảnh trực quan cho đoạn trích từ văn bản của bạn."
 
-#: wp-includes/js/dist/block-library.js:15736
+#: wp-includes/js/dist/block-library.js:15740
 msgid "Pullquote"
 msgstr "Trích dẫn"
 
-#: wp-includes/js/dist/block-library.js:15580
+#: wp-includes/js/dist/block-library.js:15584
 msgid "Main Color"
 msgstr "Màu chính"
 
 #. translators: placeholder text used for the citation
-#: wp-includes/js/dist/block-library.js:5687
-#: wp-includes/js/dist/block-library.js:15568
+#: wp-includes/js/dist/block-library.js:5691
+#: wp-includes/js/dist/block-library.js:15572
 msgid "Write citation…"
 msgstr "Viết trích dẫn…"
 
 #. translators: placeholder text used for the quote
-#: wp-includes/js/dist/block-library.js:5667
-#: wp-includes/js/dist/block-library.js:15563
+#: wp-includes/js/dist/block-library.js:5671
+#: wp-includes/js/dist/block-library.js:15567
 msgid "Write quote…"
 msgstr "Viết trích dẫn..."
 
-#: wp-includes/js/dist/block-library.js:15022
+#: wp-includes/js/dist/block-library.js:15026
 msgid "Write preformatted text…"
 msgstr "Viết text được định dạng trước..."
 
-#: wp-includes/js/dist/block-library.js:15146
+#: wp-includes/js/dist/block-library.js:15150
 msgid "Add text that respects your spacing and tabs, and also allows styling."
 msgstr "Thêm văn bản giữ nguyên khoảng cách và tab, đồng thời cũng cho phép tạo định dạng."
 
@@ -2290,227 +2290,227 @@ msgstr "Hiển thị chữ cái đầu tiên lớn"
 msgid "Showing large initial letter."
 msgstr "Đang hiển thị chữ cái lớn."
 
-#: wp-includes/js/dist/block-library.js:14984
+#: wp-includes/js/dist/block-library.js:14988
 msgid "pagination"
 msgstr "phân trang"
 
-#: wp-includes/js/dist/block-library.js:14984
+#: wp-includes/js/dist/block-library.js:14988
 msgid "next page"
 msgstr "tiếp theo"
 
-#: wp-includes/js/dist/block-library.js:14982
+#: wp-includes/js/dist/block-library.js:14986
 msgid "Separate your content into a multi-page experience."
 msgstr "Tách nội dung thành nhiều trang."
 
-#: wp-includes/js/dist/block-library.js:14880
+#: wp-includes/js/dist/block-library.js:14884
 msgctxt "block name"
 msgid "More"
 msgstr "Xem thêm"
 
-#: wp-includes/js/dist/block-library.js:14660
+#: wp-includes/js/dist/block-library.js:14664
 msgid "Your site doesn’t include support for this block."
 msgstr "Trang của bạn không hỗ trợ block này."
 
-#: wp-includes/js/dist/block-library.js:14659
+#: wp-includes/js/dist/block-library.js:14663
 msgid "Unrecognized Block"
 msgstr "Block không thể nhận diện"
 
-#: wp-includes/js/dist/block-library.js:14590
+#: wp-includes/js/dist/block-library.js:14594
 msgid "Your site doesn’t include support for the \"%s\" block. You can leave this block intact or remove it entirely."
 msgstr "Trang web của bạn không hỗ trợ block \"%s\". Bạn có thể giữ nguyên block này hoặc xóa hoàn toàn."
 
-#: wp-includes/js/dist/block-library.js:14588
+#: wp-includes/js/dist/block-library.js:14592
 msgid "Keep as HTML"
 msgstr "Giữ dưới dạng HTML"
 
-#: wp-includes/js/dist/block-library.js:14582
+#: wp-includes/js/dist/block-library.js:14586
 msgid "Your site doesn’t include support for the \"%s\" block. You can leave this block intact, convert its content to a Custom HTML block, or remove it entirely."
 msgstr "Trang web của bạn không hỗ trợ block \"%s\". Bạn có thể giữ nguyên block này, chuyển nội dung của nó sang block Tùy chỉnh HTML hoặc xóa hoàn toàn."
 
-#: wp-includes/js/dist/block-library.js:12979
+#: wp-includes/js/dist/block-library.js:12983
 msgid "Media area"
 msgstr "Khu vực media"
 
-#: wp-includes/js/dist/block-library.js:13573
+#: wp-includes/js/dist/block-library.js:13577
 msgid "Set media and words side-by-side for a richer layout."
 msgstr "Đặt media và chữ cạnh nhau để bố cục hấp dẫn hơn."
 
-#: wp-includes/js/dist/block-library.js:13572
+#: wp-includes/js/dist/block-library.js:13576
 msgid "Media & Text"
 msgstr "Đa phương tiện và văn bản"
 
-#: wp-includes/js/dist/block-library.js:13278
+#: wp-includes/js/dist/block-library.js:13282
 msgid "Media & Text Settings"
 msgstr "Cài đặt đa phương tiện và văn bản"
 
-#: wp-includes/js/dist/block-library.js:13256
+#: wp-includes/js/dist/block-library.js:13260
 msgid "Show media on right"
 msgstr "Hiển thị hình ảnh bên phải"
 
-#: wp-includes/js/dist/block-library.js:13247
+#: wp-includes/js/dist/block-library.js:13251
 msgid "Show media on left"
 msgstr "Hiển thị hình ảnh bên trái"
 
-#: wp-includes/js/dist/block-library.js:14288
+#: wp-includes/js/dist/block-library.js:14292
 msgid "Write list…"
 msgstr "Viết danh sách…"
 
-#: wp-includes/js/dist/block-library.js:14265
+#: wp-includes/js/dist/block-library.js:14269
 msgid "Indent list item"
 msgstr "Lùi danh sách vào"
 
-#: wp-includes/js/dist/block-library.js:14258
+#: wp-includes/js/dist/block-library.js:14262
 msgid "Outdent list item"
 msgstr "Lùi danh sách ra"
 
-#: wp-includes/js/dist/block-library.js:14243
+#: wp-includes/js/dist/block-library.js:14247
 msgid "Convert to ordered list"
 msgstr "Chuyển sang danh sách có thứ tự"
 
-#: wp-includes/js/dist/block-library.js:14228
+#: wp-includes/js/dist/block-library.js:14232
 msgid "Convert to unordered list"
 msgstr "Chuyển sang danh sách không có thứ tự"
 
-#: wp-includes/js/dist/block-library.js:14533
+#: wp-includes/js/dist/block-library.js:14537
 msgid "numbered list"
 msgstr "danh sách số"
 
-#: wp-includes/js/dist/block-library.js:14531
+#: wp-includes/js/dist/block-library.js:14535
 msgid "Create a bulleted or numbered list."
 msgstr "Tạo danh sách gạch đầu dòng hoặc số."
 
-#: wp-includes/js/dist/block-library.js:14113
+#: wp-includes/js/dist/block-library.js:14117
 msgid "recent posts"
 msgstr "bài viết gần đây"
 
-#: wp-includes/js/dist/block-library.js:14110
+#: wp-includes/js/dist/block-library.js:14114
 msgid "Display a list of your most recent posts."
 msgstr "Hiển thị danh sách bài viết mới."
 
-#: wp-includes/js/dist/block-library.js:13954
-#: wp-includes/js/dist/block-library.js:14109
+#: wp-includes/js/dist/block-library.js:13958
+#: wp-includes/js/dist/block-library.js:14113
 msgid "Latest Posts"
 msgstr "Bài viết mới nhất"
 
-#: wp-includes/js/dist/block-library.js:13901
+#: wp-includes/js/dist/block-library.js:13905
 msgid "Display post date"
 msgstr "Hiển thị ngày đăng"
 
-#: wp-includes/js/dist/block-library.js:13750
+#: wp-includes/js/dist/block-library.js:13754
 msgid "recent comments"
 msgstr "bình luận gần đây"
 
-#: wp-includes/js/dist/block-library.js:13747
+#: wp-includes/js/dist/block-library.js:13751
 msgid "Display a list of your most recent comments."
 msgstr "Hiển thị danh sách bình luận mới."
 
-#: wp-includes/js/dist/block-library.js:13746
+#: wp-includes/js/dist/block-library.js:13750
 msgid "Latest Comments"
 msgstr "Bình luận mới nhất"
 
-#: wp-includes/js/dist/block-library.js:13698
+#: wp-includes/js/dist/block-library.js:13702
 msgid "Number of Comments"
 msgstr "Số bình luận"
 
-#: wp-includes/js/dist/block-library.js:13694
+#: wp-includes/js/dist/block-library.js:13698
 msgid "Display Excerpt"
 msgstr "Hiển thị tóm tắt"
 
-#: wp-includes/js/dist/block-library.js:13690
+#: wp-includes/js/dist/block-library.js:13694
 msgid "Display Date"
 msgstr "Hiển thị thời gian"
 
-#: wp-includes/js/dist/block-library.js:13686
+#: wp-includes/js/dist/block-library.js:13690
 msgid "Display Avatar"
 msgstr "Hiển thị ảnh đại diện"
 
-#: wp-includes/js/dist/block-library.js:13684
+#: wp-includes/js/dist/block-library.js:13688
 msgid "Latest Comments Settings"
 msgstr "Cài đặt bình luận mới nhất"
 
-#: wp-includes/js/dist/block-library.js:4945
+#: wp-includes/js/dist/block-library.js:4949
 #: wp-includes/js/dist/format-library.js:582
 msgid "photo"
 msgstr "ảnh"
 
-#: wp-includes/js/dist/block-library.js:4942
+#: wp-includes/js/dist/block-library.js:4946
 msgid "Insert an image to make a visual statement."
 msgstr "Chèn một hình ảnh để trực quan hơn."
 
-#: wp-includes/js/dist/block-library.js:4420
+#: wp-includes/js/dist/block-library.js:4424
 msgid "Image Dimensions"
 msgstr "Kích thước hình ảnh"
 
-#: wp-includes/js/dist/block-library.js:4405
-#: wp-includes/js/dist/block-library.js:13305
+#: wp-includes/js/dist/block-library.js:4409
+#: wp-includes/js/dist/block-library.js:13309
 msgid "Alt Text (Alternative Text)"
 msgstr "Alt Text (Chữ thay thế)"
 
-#: wp-includes/js/dist/block-library.js:4403
+#: wp-includes/js/dist/block-library.js:4407
 msgid "Image Settings"
 msgstr "Cài đặt ảnh"
 
-#: wp-includes/js/dist/block-library.js:4329
-#: wp-includes/js/dist/block-library.js:4358
+#: wp-includes/js/dist/block-library.js:4333
 #: wp-includes/js/dist/block-library.js:4362
-#: wp-includes/js/dist/block-library.js:4363
+#: wp-includes/js/dist/block-library.js:4366
+#: wp-includes/js/dist/block-library.js:4367
 msgid "Edit image"
 msgstr "Sửa ảnh"
 
-#: wp-includes/js/dist/block-library.js:12612
+#: wp-includes/js/dist/block-library.js:12616
 msgid "Write HTML…"
 msgstr "Viết HTML..."
 
-#: wp-includes/js/dist/block-library.js:12714
+#: wp-includes/js/dist/block-library.js:12718
 msgid "embed"
 msgstr "nhúng"
 
-#: wp-includes/js/dist/block-library.js:12712
+#: wp-includes/js/dist/block-library.js:12716
 msgid "Add custom HTML code and preview it as you edit."
 msgstr "Thêm đoạn mã HTML tùy chỉnh và xem trước khi bạn chỉnh sửa."
 
-#: wp-includes/js/dist/block-library.js:5471
+#: wp-includes/js/dist/block-library.js:5475
 msgid "subtitle"
 msgstr "phụ đề"
 
-#: wp-includes/js/dist/block-library.js:5471
+#: wp-includes/js/dist/block-library.js:5475
 msgid "title"
 msgstr "tiêu đề"
 
-#: wp-includes/js/dist/block-library.js:5469
+#: wp-includes/js/dist/block-library.js:5473
 msgid "Introduce new sections and organize content to help visitors (and search engines) understand the structure of your content."
 msgstr "Giới thiệu section mới và sắp xếp nội dung để người đọc (và công cụ tìm kiếm) hiểu cấu trúc nội dung."
 
-#: wp-includes/js/dist/block-library.js:5468
+#: wp-includes/js/dist/block-library.js:5472
 msgid "Heading"
 msgstr "Tiêu đề"
 
 #. translators: %s: heading level e.g: "1", "2", "3"
-#: wp-includes/js/dist/block-library.js:5145
+#: wp-includes/js/dist/block-library.js:5149
 msgid "Heading %d"
 msgstr "Tiêu đề %d"
 
-#: wp-includes/js/dist/block-library.js:5290
+#: wp-includes/js/dist/block-library.js:5294
 msgid "Write heading…"
 msgstr "Viết tiêu đề..."
 
-#: wp-includes/js/dist/block-library.js:5252
+#: wp-includes/js/dist/block-library.js:5256
 msgid "Level"
 msgstr "Cấp độ"
 
-#: wp-includes/js/dist/block-library.js:5251
+#: wp-includes/js/dist/block-library.js:5255
 msgid "Heading Settings"
 msgstr "Cấu hình tiêu đề"
 
-#: wp-includes/js/dist/block-library.js:7335
+#: wp-includes/js/dist/block-library.js:7339
 msgid "photos"
 msgstr "ảnh"
 
-#: wp-includes/js/dist/block-library.js:7335
+#: wp-includes/js/dist/block-library.js:7339
 msgid "images"
 msgstr "ảnh"
 
-#: wp-includes/js/dist/block-library.js:7333
+#: wp-includes/js/dist/block-library.js:7337
 msgid "Display multiple images in a rich gallery."
 msgstr "Hiển thị nhiều ảnh bằng thư viện."
 
@@ -2518,195 +2518,195 @@ msgstr "Hiển thị nhiều ảnh bằng thư viện."
 msgid "Remove Image"
 msgstr "Xóa ảnh"
 
-#: wp-includes/js/dist/block-library.js:6971
+#: wp-includes/js/dist/block-library.js:6975
 msgid "Crop Images"
 msgstr "Cắt ảnh"
 
-#: wp-includes/js/dist/block-library.js:6943
+#: wp-includes/js/dist/block-library.js:6947
 msgid "Drag images, upload new ones or select files from your library."
 msgstr "Thả ảnh vào, tải lên mới hoặc chọn từ thư viện có sẵn của bạn."
 
-#: wp-includes/js/dist/block-library.js:6848
+#: wp-includes/js/dist/block-library.js:6852
 msgid "Thumbnails are not cropped."
 msgstr "Hình thu nhỏ không bị cắt."
 
-#: wp-includes/js/dist/block-library.js:6848
+#: wp-includes/js/dist/block-library.js:6852
 msgid "Thumbnails are cropped to align."
 msgstr "Ảnh thu nhỏ được cắt đúng chiều."
 
-#: wp-includes/js/dist/block-library.js:11976
+#: wp-includes/js/dist/block-library.js:11980
 msgid "Show download button"
 msgstr "Hiển thị nút tải về"
 
-#: wp-includes/js/dist/block-library.js:11974
+#: wp-includes/js/dist/block-library.js:11978
 msgid "Download button settings"
 msgstr "Thiết lập nút tải xuống"
 
-#: wp-includes/js/dist/block-library.js:11963
+#: wp-includes/js/dist/block-library.js:11967
 msgid "Text link settings"
 msgstr "Tuỳ chọn liên kết văn bản"
 
-#: wp-includes/js/dist/block-library.js:12076
+#: wp-includes/js/dist/block-library.js:12080
 msgctxt "button label"
 msgid "Download"
 msgstr "Tải xuống"
 
-#: wp-includes/js/dist/block-library.js:12509
+#: wp-includes/js/dist/block-library.js:12513
 msgid "pdf"
 msgstr "pdf"
 
-#: wp-includes/js/dist/block-library.js:12509
+#: wp-includes/js/dist/block-library.js:12513
 msgid "document"
 msgstr "tài liệu"
 
-#: wp-includes/js/dist/block-library.js:12507
+#: wp-includes/js/dist/block-library.js:12511
 msgid "Add a link to a downloadable file."
 msgstr "Thêm đường dẫn tới tập tin có thể tải xuống"
 
-#: wp-includes/js/dist/block-library.js:12256
+#: wp-includes/js/dist/block-library.js:12260
 msgid "Copy URL"
 msgstr "Sao chép URL"
 
-#: wp-includes/js/dist/block-library.js:12228
+#: wp-includes/js/dist/block-library.js:12232
 msgid "Write file name…"
 msgstr "Viết tên tệp…"
 
-#: wp-includes/js/dist/block-library.js:12210
+#: wp-includes/js/dist/block-library.js:12214
 msgid "Edit file"
 msgstr "Sửa tệp"
 
-#: wp-includes/js/dist/block-library.js:11759
+#: wp-includes/js/dist/block-library.js:11763
 msgid "Add a block that displays content pulled from other sites, like Twitter, Instagram or YouTube."
 msgstr "Thêm một block hiển thị nội dung được lấy từ những trang khác, chẳng hạn như Twitter, Instagram hoặc Youtube."
 
-#: wp-includes/js/dist/block-library.js:11882
+#: wp-includes/js/dist/block-library.js:11886
 msgid "Embed videos, images, tweets, audio, and other content from external sources."
 msgstr "Nhúng video, hình ảnh, tweet, âm thanh và nội dung khác từ các nguồn bên ngoài."
 
-#: wp-includes/js/dist/block-library.js:11881
+#: wp-includes/js/dist/block-library.js:11885
 msgctxt "block title"
 msgid "Embed"
 msgstr "Nhúng"
 
-#: wp-includes/js/dist/block-library.js:11375
+#: wp-includes/js/dist/block-library.js:11379
 msgid "Embedded content from %s"
 msgstr "Nhúng nội dung từ %s"
 
-#: wp-includes/js/dist/block-library.js:11192
+#: wp-includes/js/dist/block-library.js:11196
 msgctxt "button label"
 msgid "Embed"
 msgstr "Nhúng"
 
-#: wp-includes/js/dist/block-library.js:11187
+#: wp-includes/js/dist/block-library.js:11191
 msgid "Enter URL to embed here…"
 msgstr "Nhập địa chỉ web URL để nhúng..."
 
-#: wp-includes/js/dist/block-library.js:11638
+#: wp-includes/js/dist/block-library.js:11642
 msgid "%s URL"
 msgstr "%s URL"
 
-#: wp-includes/js/dist/block-library.js:11148
+#: wp-includes/js/dist/block-library.js:11152
 msgid "Embedding…"
 msgstr "Đang nhúng..."
 
-#: wp-includes/js/dist/block-library.js:11127
+#: wp-includes/js/dist/block-library.js:11131
 msgid "Resize for smaller devices"
 msgstr "Giảm kích thước trên màn hình nhỏ"
 
-#: wp-includes/js/dist/block-library.js:10659
-#: wp-includes/js/dist/block-library.js:11124
+#: wp-includes/js/dist/block-library.js:10663
+#: wp-includes/js/dist/block-library.js:11128
 msgid "Media Settings"
 msgstr "Cài đặt media"
 
-#: wp-includes/js/dist/block-library.js:11120
+#: wp-includes/js/dist/block-library.js:11124
 msgid "Edit URL"
 msgstr "Sửa URL"
 
-#: wp-includes/js/dist/block-library.js:11601
+#: wp-includes/js/dist/block-library.js:11605
 msgid "This embed may not preserve its aspect ratio when the browser is resized."
 msgstr "Phần nhúng có thể không giữ nguyên tỉ lệ khung hình khi trình duyệt thay đổi kích thước."
 
-#: wp-includes/js/dist/block-library.js:11601
+#: wp-includes/js/dist/block-library.js:11605
 msgid "This embed will preserve its aspect ratio when the browser is resized."
 msgstr "Phần nhúng sẽ giữ nguyên tỉ lệ khung hình khi trình duyệt thay đổi kích thước."
 
-#: wp-includes/js/dist/block-library.js:3230
+#: wp-includes/js/dist/block-library.js:3234
 msgid "Embed a WordPress.tv video."
 msgstr "Nhúng video WordPress.tv."
 
-#: wp-includes/js/dist/block-library.js:3222
+#: wp-includes/js/dist/block-library.js:3226
 msgid "Embed a VideoPress video."
 msgstr "Nhúng video VidoPress."
 
-#: wp-includes/js/dist/block-library.js:3213
+#: wp-includes/js/dist/block-library.js:3217
 msgid "Embed a Tumblr post."
 msgstr "Nhúng bài viết Tumblr."
 
-#: wp-includes/js/dist/block-library.js:3205
+#: wp-includes/js/dist/block-library.js:3209
 msgid "Embed a TED video."
 msgstr "Nhúng một video TED"
 
-#: wp-includes/js/dist/block-library.js:3197
+#: wp-includes/js/dist/block-library.js:3201
 msgid "Embed Speaker Deck content."
 msgstr "Nhúng nội dung Speaker Deck."
 
-#: wp-includes/js/dist/block-library.js:3169
+#: wp-includes/js/dist/block-library.js:3173
 msgid "Embed SmugMug content."
 msgstr "Nhúng nội dung SmugMug."
 
-#: wp-includes/js/dist/block-library.js:3161
+#: wp-includes/js/dist/block-library.js:3165
 msgid "Embed Slideshare content."
 msgstr "Nhúng nội dung Slideshare."
 
-#: wp-includes/js/dist/block-library.js:3153
+#: wp-includes/js/dist/block-library.js:3157
 msgid "Embed Scribd content."
 msgstr "Nhúng nội dung Scribd."
 
-#: wp-includes/js/dist/block-library.js:3145
+#: wp-includes/js/dist/block-library.js:3149
 msgid "Embed Screencast content."
 msgstr "Nhúng nội dung Screencast."
 
-#: wp-includes/js/dist/block-library.js:3137
+#: wp-includes/js/dist/block-library.js:3141
 msgid "Embed ReverbNation content."
 msgstr "Nhúng nội dung ReverbNation."
 
-#: wp-includes/js/dist/block-library.js:3129
+#: wp-includes/js/dist/block-library.js:3133
 msgid "Embed a Reddit thread."
 msgstr "Nhúng một chủ đề Reddit."
 
-#: wp-includes/js/dist/block-library.js:3118
+#: wp-includes/js/dist/block-library.js:3122
 msgid "Embed Polldaddy content."
 msgstr "Nhúng nội dung Polldaddy."
 
-#: wp-includes/js/dist/block-library.js:3109
+#: wp-includes/js/dist/block-library.js:3113
 msgid "Embed Mixcloud content."
 msgstr "Nhúng nội dung Mixcloud."
 
-#: wp-includes/js/dist/block-library.js:3100
+#: wp-includes/js/dist/block-library.js:3104
 msgid "Embed Meetup.com content."
 msgstr "Nhúng nội dung Meetup.com."
 
-#: wp-includes/js/dist/block-library.js:3092
+#: wp-includes/js/dist/block-library.js:3096
 msgid "Embed Kickstarter content."
 msgstr "Nhúng nội dung Kickstarter."
 
-#: wp-includes/js/dist/block-library.js:3084
+#: wp-includes/js/dist/block-library.js:3088
 msgid "Embed Issuu content."
 msgstr "Nhúng nội dung từ Issuu."
 
-#: wp-includes/js/dist/block-library.js:3076
+#: wp-includes/js/dist/block-library.js:3080
 msgid "Embed Imgur content."
 msgstr "Nhúng nội dung Imgur."
 
-#: wp-includes/js/dist/block-library.js:3068
+#: wp-includes/js/dist/block-library.js:3072
 msgid "Embed Hulu content."
 msgstr "Nhúng nội dung Hulu."
 
-#: wp-includes/js/dist/block-library.js:3060
+#: wp-includes/js/dist/block-library.js:3064
 msgid "Embed a Dailymotion video."
 msgstr "Nhúng video Dailymotion."
 
-#: wp-includes/js/dist/block-library.js:3034
+#: wp-includes/js/dist/block-library.js:3035
 msgid "Embed CollegeHumor content."
 msgstr "Nhúng nội dung CollegeHumor."
 
@@ -2736,7 +2736,7 @@ msgstr "Nhúng nội dung SoundCloud."
 
 #: wp-includes/js/dist/block-library.js:2981
 #: wp-includes/js/dist/block-library.js:2990
-#: wp-includes/js/dist/block-library.js:3108
+#: wp-includes/js/dist/block-library.js:3112
 msgid "audio"
 msgstr "audio"
 
@@ -2754,7 +2754,7 @@ msgstr "Nhúng bài viết Instagram."
 
 #: wp-includes/js/dist/block-library.js:2963
 #: wp-includes/js/dist/block-library.js:2999
-#: wp-includes/js/dist/block-library.js:13575
+#: wp-includes/js/dist/block-library.js:13579
 msgid "image"
 msgstr "ảnh"
 
@@ -2768,15 +2768,15 @@ msgstr "Nhúng video Youtube."
 
 #: wp-includes/js/dist/block-library.js:2946
 #: wp-includes/js/dist/block-library.js:3008
-#: wp-includes/js/dist/block-library.js:3221
-#: wp-includes/js/dist/block-library.js:13575
+#: wp-includes/js/dist/block-library.js:3225
+#: wp-includes/js/dist/block-library.js:13579
 msgid "video"
 msgstr "video"
 
 #: wp-includes/js/dist/block-library.js:2946
 #: wp-includes/js/dist/block-library.js:2981
 #: wp-includes/js/dist/block-library.js:2990
-#: wp-includes/js/dist/block-library.js:3108
+#: wp-includes/js/dist/block-library.js:3112
 msgid "music"
 msgstr "nhạc"
 
@@ -2784,160 +2784,160 @@ msgstr "nhạc"
 msgid "Embed a tweet."
 msgstr "Nhúng một tweet."
 
-#: wp-includes/js/dist/block-library.js:10243
-#: wp-includes/js/dist/block-library.js:10299
-#: wp-includes/js/dist/block-library.js:10345
-#: wp-includes/js/dist/block-library.js:10418
+#: wp-includes/js/dist/block-library.js:10247
+#: wp-includes/js/dist/block-library.js:10303
+#: wp-includes/js/dist/block-library.js:10349
+#: wp-includes/js/dist/block-library.js:10422
 msgid "Write title…"
 msgstr "Viết tiêu đề…"
 
-#: wp-includes/js/dist/block-library.js:10705
+#: wp-includes/js/dist/block-library.js:10709
 msgid "Background Opacity"
 msgstr "Độ mờ nền"
 
-#: wp-includes/js/dist/block-library.js:10702
+#: wp-includes/js/dist/block-library.js:10706
 msgid "Overlay Color"
 msgstr "Màu lớp phủ"
 
-#: wp-includes/js/dist/block-library.js:10697
+#: wp-includes/js/dist/block-library.js:10701
 msgid "Overlay"
 msgstr "Lớp phủ"
 
-#: wp-includes/js/dist/block-library.js:10661
+#: wp-includes/js/dist/block-library.js:10665
 msgid "Fixed Background"
 msgstr "Nền cố định"
 
-#: wp-includes/js/dist/block-library.js:8196
+#: wp-includes/js/dist/block-library.js:8200
 msgid "Border Settings"
 msgstr "Cài đặt viền"
 
-#: wp-includes/js/dist/block-library.js:10653
-#: wp-includes/js/dist/block-library.js:12929
+#: wp-includes/js/dist/block-library.js:10657
+#: wp-includes/js/dist/block-library.js:12933
 msgid "Edit media"
 msgstr "Sửa media"
 
-#: wp-includes/js/dist/block-library.js:11074
+#: wp-includes/js/dist/block-library.js:11078
 msgid "Add an image or video with a text overlay — great for headers."
 msgstr "Thêm ảnh hay video với chữ nổi lên trên - phù hợp cho đầu trang."
 
-#: wp-includes/js/dist/block-library.js:10719
-#: wp-includes/js/dist/block-library.js:11073
+#: wp-includes/js/dist/block-library.js:10723
+#: wp-includes/js/dist/block-library.js:11077
 msgid "Cover"
 msgstr "Cover"
 
-#: wp-includes/js/dist/block-library.js:9849
+#: wp-includes/js/dist/block-library.js:9853
 msgid "Add a block that displays content in multiple columns, then add whatever content blocks you’d like."
 msgstr "Thêm block hiển thị nội dung nhiều cột, sau đó thêm bất cứ nội dung nào bạn thích."
 
-#: wp-includes/js/dist/block-library.js:10097
+#: wp-includes/js/dist/block-library.js:10101
 msgid "A single column within a columns block."
 msgstr "Một cột đơn trong một khối cột."
 
-#: wp-includes/js/dist/block-library.js:9186
+#: wp-includes/js/dist/block-library.js:9190
 msgid "Display code snippets that respect your spacing and tabs."
 msgstr "Hiển thị một đoạn code với khoảng cách và tab chuẩn."
 
-#: wp-includes/js/dist/block-library.js:9097
+#: wp-includes/js/dist/block-library.js:9101
 msgid "Write code…"
 msgstr "Viết mã…"
 
-#: wp-includes/js/dist/block-library.js:20284
+#: wp-includes/js/dist/block-library.js:20288
 msgid "Use the classic WordPress editor."
 msgstr "Sử dụng trình soạn thảo WordPress cổ điển."
 
-#: wp-includes/js/dist/block-library.js:20283
+#: wp-includes/js/dist/block-library.js:20287
 msgctxt "block title"
 msgid "Classic"
 msgstr "Cổ điển"
 
-#: wp-includes/js/dist/block-library.js:20157
+#: wp-includes/js/dist/block-library.js:20161
 msgid "Classic"
 msgstr "Cổ điển"
 
-#: wp-includes/js/dist/block-library.js:20089
+#: wp-includes/js/dist/block-library.js:20093
 msgctxt "button to expand options"
 msgid "More"
 msgstr "Thêm nữa"
 
-#: wp-includes/js/dist/block-library.js:8945
+#: wp-includes/js/dist/block-library.js:8949
 msgid "Display a list of all categories."
 msgstr "Hiển thị danh sách chuyên mục."
 
-#: wp-includes/js/dist/block-library.js:8868
+#: wp-includes/js/dist/block-library.js:8872
 msgid "Show Hierarchy"
 msgstr "Hiển thị phân cấp"
 
-#: wp-includes/js/dist/block-library.js:8862
+#: wp-includes/js/dist/block-library.js:8866
 msgid "Categories Settings"
 msgstr "Cài đặt chuyên mục"
 
-#: wp-includes/js/dist/block-library.js:8527
+#: wp-includes/js/dist/block-library.js:8531
 msgid "Outline"
 msgstr "Outline"
 
-#: wp-includes/js/dist/block-library.js:8506
+#: wp-includes/js/dist/block-library.js:8510
 msgid "Button"
 msgstr "Nút"
 
 #: wp-includes/js/dist/block-library.js:2346
-#: wp-includes/js/dist/block-library.js:5209
-#: wp-includes/js/dist/block-library.js:8329
-#: wp-includes/js/dist/block-library.js:13313
-#: wp-includes/js/dist/block-library.js:15576
-#: wp-includes/js/dist/block-library.js:16533
-#: wp-includes/js/dist/block-library.js:16765
-#: wp-includes/js/dist/block-library.js:18490
+#: wp-includes/js/dist/block-library.js:5213
+#: wp-includes/js/dist/block-library.js:8333
+#: wp-includes/js/dist/block-library.js:13317
+#: wp-includes/js/dist/block-library.js:15580
+#: wp-includes/js/dist/block-library.js:16537
+#: wp-includes/js/dist/block-library.js:16769
+#: wp-includes/js/dist/block-library.js:18494
 msgid "Color Settings"
 msgstr "Cài đặt màu"
 
-#: wp-includes/js/dist/block-library.js:8290
-#: wp-includes/js/dist/block-library.js:12243
+#: wp-includes/js/dist/block-library.js:8294
+#: wp-includes/js/dist/block-library.js:12247
 msgid "Add text…"
 msgstr "Thêm chữ..."
 
 #. translators: %s: title/name of the reusable block
-#: wp-includes/js/dist/block-library.js:15900
+#: wp-includes/js/dist/block-library.js:15904
 msgid "Reusable Block: %s"
 msgstr "Khối có thể sử dụng lại: %s"
 
-#: wp-includes/js/dist/block-library.js:16151
+#: wp-includes/js/dist/block-library.js:16155
 msgid "Reusable Block"
 msgstr "Block tái sử dụng"
 
-#: wp-includes/js/dist/block-library.js:16068
+#: wp-includes/js/dist/block-library.js:16072
 msgid "Block has been deleted or is unavailable."
 msgstr "Block đã bị xóa hoặc không có sẵn."
 
-#: wp-includes/js/dist/block-library.js:7883
+#: wp-includes/js/dist/block-library.js:7887
 msgid "Embed a simple audio player."
 msgstr "Nhúng audio player đơn giản."
 
-#: wp-includes/js/dist/block-library.js:4577
-#: wp-includes/js/dist/block-library.js:6574
-#: wp-includes/js/dist/block-library.js:7716
-#: wp-includes/js/dist/block-library.js:11418
-#: wp-includes/js/dist/block-library.js:19568
+#: wp-includes/js/dist/block-library.js:4581
+#: wp-includes/js/dist/block-library.js:6578
+#: wp-includes/js/dist/block-library.js:7720
+#: wp-includes/js/dist/block-library.js:11422
+#: wp-includes/js/dist/block-library.js:19572
 msgid "Write caption…"
 msgstr "Viết chú thích…"
 
-#: wp-includes/js/dist/block-library.js:7680
+#: wp-includes/js/dist/block-library.js:7684
 msgid "Audio Settings"
 msgstr "Cài đặt audio"
 
-#: wp-includes/js/dist/block-library.js:7676
+#: wp-includes/js/dist/block-library.js:7680
 msgid "Edit audio"
 msgstr "Sửa audio"
 
-#: wp-includes/js/dist/block-library.js:7426
+#: wp-includes/js/dist/block-library.js:7430
 msgid "Display a monthly archive of your posts."
 msgstr "Hiển thị danh sách bài viết theo tháng."
 
-#: wp-includes/js/dist/block-library.js:7385
-#: wp-includes/js/dist/block-library.js:8872
+#: wp-includes/js/dist/block-library.js:7389
+#: wp-includes/js/dist/block-library.js:8876
 msgid "Show Post Counts"
 msgstr "Hiển thị số lần đăng"
 
-#: wp-includes/js/dist/block-library.js:7375
+#: wp-includes/js/dist/block-library.js:7379
 msgid "Archives Settings"
 msgstr "Cài đặt lưu trữ"
 
@@ -3392,7 +3392,7 @@ msgid "HTML Anchor"
 msgstr "Điểm neo HTML"
 
 #: wp-includes/js/dist/block-editor.js:16172
-#: wp-includes/js/dist/block-library.js:8351
+#: wp-includes/js/dist/block-library.js:8355
 msgid "Link settings"
 msgstr "Cài đặt liên kết"
 
@@ -3593,7 +3593,7 @@ msgid "Copy Link"
 msgstr "Sao chép liên kết"
 
 #: wp-includes/js/dist/editor.js:10162 wp-includes/js/dist/edit-post.js:825
-#: wp-includes/js/dist/block-library.js:12256
+#: wp-includes/js/dist/block-library.js:12260
 msgid "Copied!"
 msgstr "Đã sao chép"
 
@@ -3748,7 +3748,7 @@ msgstr "Tiêu chuẩn"
 msgid "Aside"
 msgstr "Cột bên"
 
-#: wp-includes/js/dist/block-library.js:19550
+#: wp-includes/js/dist/block-library.js:19554
 msgid "Replace image"
 msgstr "Thay thế ảnh"
 
@@ -4045,7 +4045,7 @@ msgid "Error loading block: %s"
 msgstr "Lỗi nạp khối: %s"
 
 #: wp-includes/js/dist/components.js:42254
-#: wp-includes/js/dist/block-library.js:16294
+#: wp-includes/js/dist/block-library.js:16298
 msgid "Number of items"
 msgstr "Số đối tượng"
 
@@ -4104,7 +4104,7 @@ msgstr "Thêm item"
 
 #: wp-includes/js/dist/components.js:39712
 #: wp-includes/js/dist/components.js:39909
-#: wp-includes/js/dist/block-library.js:4454
+#: wp-includes/js/dist/block-library.js:4458
 msgid "Reset"
 msgstr "Đặt lại"
 
@@ -4115,10 +4115,10 @@ msgstr "Bình thường"
 
 #. translators: accessibility text
 #. translators: Accessibility text.
-#: wp-login.php:647 wp-includes/widgets/class-wp-widget-custom-html.php:314
+#: wp-login.php:661 wp-includes/widgets/class-wp-widget-custom-html.php:314
 #: wp-includes/media-template.php:173
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
-#: wp-includes/functions.php:7166
+#: wp-includes/functions.php:7233
 #: wp-includes/class-wp-customize-manager.php:4307
 #: wp-includes/class-wp-customize-manager.php:5609
 #: wp-includes/class-wp-customize-manager.php:5630
@@ -4788,15 +4788,15 @@ msgstr "Người dùng WordPress"
 msgid "WordPress Media"
 msgstr "WordPress Media"
 
-#: wp-includes/script-loader.php:1806
+#: wp-includes/script-loader.php:1809
 msgid "An error occurred while attempting to export personal data."
 msgstr "Đã xảy ra lỗi trong khi cố gắng xuất dữ liệu cá nhân."
 
-#: wp-includes/script-loader.php:1805
+#: wp-includes/script-loader.php:1808
 msgid "No personal data export file was generated."
 msgstr "Không có tệp xuất dữ liệu cá nhân nào được tạo."
 
-#: wp-login.php:1129
+#: wp-login.php:1145
 msgid "User action confirmed."
 msgstr "Đã xác nhận hành động của người dùng."
 
@@ -4834,12 +4834,12 @@ msgid "User Requests"
 msgstr "Yêu cầu người dùng"
 
 #. translators: Deleted long text.
-#: wp-includes/functions.php:6891
+#: wp-includes/functions.php:6958
 msgid "This content was deleted by the author."
 msgstr "Nội dung đã được xóa bởi tác giả."
 
 #. translators: Deleted text.
-#: wp-includes/functions.php:6887
+#: wp-includes/functions.php:6954
 msgid "[deleted]"
 msgstr "[đã xóa]"
 
@@ -4895,23 +4895,23 @@ msgstr ""
 "###SITENAME###\n"
 "###SITEURL###"
 
-#: wp-includes/script-loader.php:1803
+#: wp-includes/script-loader.php:1806
 msgid "An error occurred while attempting to find and erase personal data."
 msgstr "Có lỗi xảy ra khi thử tìm và xóa dữ liệu cá nhân."
 
-#: wp-includes/script-loader.php:1802
+#: wp-includes/script-loader.php:1805
 msgid "Personal data was found for this user but some of the personal data found was not erased."
 msgstr "Đã tìm thấy dữ liệu cá nhân cho tài khoản này nhưng một số dữ liệu cá nhân đã tìm thấy không bị xóa."
 
-#: wp-includes/script-loader.php:1801
+#: wp-includes/script-loader.php:1804
 msgid "Personal data was found for this user but was not erased."
 msgstr "Dữ liệu cá nhân đã được tìm thấy cho tài khoản này nhưng không bị xóa."
 
-#: wp-includes/script-loader.php:1800
+#: wp-includes/script-loader.php:1803
 msgid "All of the personal data found for this user was erased."
 msgstr "Tất cả dữ liệu cá nhân được tìm thấy cho tài khoản này đã bị xóa."
 
-#: wp-includes/script-loader.php:1799
+#: wp-includes/script-loader.php:1802
 msgid "No personal data was found for this user."
 msgstr "Không tìm thấy dữ liệu cá nhân cho người dùng này."
 
@@ -5000,18 +5000,18 @@ msgstr "Của bạn"
 msgid "Whether or not the post type can be viewed."
 msgstr "Có thể xem loại bài đăng hay không."
 
-#: wp-includes/functions.php:3078
+#: wp-includes/functions.php:3145
 msgid "The link you followed has expired."
 msgstr "Liên kết bạn theo dõi đã hết hạn."
 
-#: wp-includes/script-loader.php:1547
+#: wp-includes/script-loader.php:1550
 #: wp-includes/class-wp-customize-manager.php:515
 msgid "You need a higher level of permission."
 msgstr "Bạn cần quyền cao hơn."
 
-#: wp-includes/script-loader.php:1047 wp-includes/script-loader.php:1546
-#: wp-includes/script-loader.php:1634 wp-includes/script-loader.php:1891
-#: wp-includes/class-wp-xmlrpc-server.php:3928 wp-includes/functions.php:3089
+#: wp-includes/script-loader.php:1047 wp-includes/script-loader.php:1549
+#: wp-includes/script-loader.php:1637 wp-includes/script-loader.php:1894
+#: wp-includes/class-wp-xmlrpc-server.php:3928 wp-includes/functions.php:3156
 #: wp-includes/class-wp-customize-manager.php:450
 msgid "Something went wrong."
 msgstr "Có lỗi gì đó đã xảy ra."
@@ -5034,7 +5034,7 @@ msgstr "Cập nhật bất kể có thể gây lỗi và làm hỏng website c�
 msgid "The query only expected one placeholder, but an array of multiple placeholders was sent."
 msgstr "The query only expected one placeholder, but an array of multiple placeholders was sent."
 
-#: wp-includes/script-loader.php:1536
+#: wp-includes/script-loader.php:1539
 msgctxt "customizer changeset status"
 msgid "Scheduled"
 msgstr "Đã lên lịch"
@@ -5051,7 +5051,7 @@ msgid "%1$s is not a valid property of Object."
 msgstr "%1$s không phải là một thuộc tính hợp lệ của Object."
 
 #. translators: %s: URL to Add Themes admin screen.
-#: wp-includes/script-loader.php:1583
+#: wp-includes/script-loader.php:1586
 msgid "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href=\"%s\">add themes in the admin</a>."
 msgstr "Bạn sẽ không thể cài đặt các theme mới từ đây vì bạn cần tài khoản SFTP. Bây giờ, hãy <a href=\"%s\">thêm theme mới trong trang quản trị</a>."
 
@@ -5076,12 +5076,12 @@ msgstr "Click &#8220;Tiếp theo&#8221; để bắt đầu thêm liên kết và
 msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
 msgstr "Xin lỗi, chúng tôi không thể tải video dựa vào URL được cung cấp. Vui lòng xác nhận URL được dùng là tập tin video được hỗ trợ (%s) hay là URL stream (ví dụ YouTube và Vimeo)."
 
-#: wp-includes/script-loader.php:1696
+#: wp-includes/script-loader.php:1699
 msgctxt "post action/button label"
 msgid "Schedule"
 msgstr "Lên lịch"
 
-#: wp-includes/script-loader.php:1535
+#: wp-includes/script-loader.php:1538
 #: wp-includes/class-wp-customize-manager.php:4771
 msgctxt "customizer changeset action/button label"
 msgid "Schedule"
@@ -5107,11 +5107,11 @@ msgstr "Thêm trình đơn vào sidebar của bạn."
 
 #. translators: %s: Display name of the user who has taken over the changeset
 #. in customizer.
-#: wp-includes/script-loader.php:1560
+#: wp-includes/script-loader.php:1563
 msgid "%s has taken over and is currently customizing."
 msgstr "%s đã được tiếp nhận và đang được chỉnh sửa."
 
-#: wp-includes/script-loader.php:1554
+#: wp-includes/script-loader.php:1557
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "Có lỗi đã xảy ra. Hãy chờ vài giây, sau đó thử lại."
 
@@ -5247,8 +5247,8 @@ msgid "Displays an image gallery."
 msgstr "Hiển thị thư viện ảnh."
 
 #: wp-includes/widgets/class-wp-widget-media-gallery.php:28
-#: wp-includes/js/dist/editor.js:8105 wp-includes/js/dist/block-library.js:6942
-#: wp-includes/js/dist/block-library.js:7332
+#: wp-includes/js/dist/editor.js:8105 wp-includes/js/dist/block-library.js:6946
+#: wp-includes/js/dist/block-library.js:7336
 msgid "Gallery"
 msgstr "Gallery ảnh"
 
@@ -5311,32 +5311,32 @@ msgstr "&larr; Quay lại Chuyên mục"
 msgid "&larr; Back to Link Categories"
 msgstr "&larr; Quay lại Danh mục liên kết"
 
-#: wp-includes/script-loader.php:1914
+#: wp-includes/script-loader.php:1917
 msgid "Color value"
 msgstr "Mã màu"
 
-#: wp-includes/script-loader.php:1910
+#: wp-includes/script-loader.php:1913
 msgid "Clear color"
 msgstr "Xóa màu"
 
-#: wp-includes/script-loader.php:1851
+#: wp-includes/script-loader.php:1854
 msgid "Installation Failed!"
 msgstr "Cài đặt không thành công!"
 
-#: wp-includes/script-loader.php:1580
+#: wp-includes/script-loader.php:1583
 msgid "Sorry, you can&#8217;t preview new themes when you have changes scheduled or saved as a draft. Please publish your changes, or wait until they publish to preview new themes."
 msgstr "Xin lỗi, bạn không thể xem thử giao diện mới trong khi đang có những thay đổi chờ công bố hoặc lưu nháp. Hãy công bố các thay đổi, hoặc chờ tới khi các thay đổi này được công bố để xem giao diện mới."
 
-#: wp-includes/script-loader.php:1579
+#: wp-includes/script-loader.php:1582
 msgid "Schedule your customization changes to publish (\"go live\") at a future date."
 msgstr "Lên lịch áp dụng các tùy biến của bạn trong tương lai."
 
-#: wp-includes/script-loader.php:1572
+#: wp-includes/script-loader.php:1575
 msgid "Homepage and posts page must be different."
 msgstr "Trang chủ và trang danh sách bài phải khác nhau."
 
 #. translators: %d: Error count.
-#: wp-includes/script-loader.php:1568 wp-includes/script-loader.php:1570
+#: wp-includes/script-loader.php:1571 wp-includes/script-loader.php:1573
 #: wp-includes/widgets/class-wp-widget-custom-html.php:226
 #: wp-includes/widgets/class-wp-widget-custom-html.php:228
 msgid "There is %d error which must be fixed before you can save."
@@ -5344,31 +5344,31 @@ msgid_plural "There are %d errors which must be fixed before you can save."
 msgstr[0] "Có %d lỗi cần được sửa trước khi bạn có thể lưu. "
 
 #. translators: %s: URL to the Customizer to load the autosaved version.
-#: wp-includes/script-loader.php:1562
+#: wp-includes/script-loader.php:1565
 msgid "There is a more recent autosave of your changes than the one you are previewing. <a href=\"%s\">Restore the autosave</a>"
 msgstr "Đây là bản tự động lưu gần nhất các thay đổi của bạn hơn bản bạn đang xem thử. <a href=\"%s\">Hồi phục bản tự động lưu</a>"
 
-#: wp-includes/script-loader.php:1558
+#: wp-includes/script-loader.php:1561
 msgid "Are you sure you want to discard your unpublished changes?"
 msgstr "Bạn có chắc bạn muốn bỏ qua các thay đổi chưa được công bố?"
 
-#: wp-includes/script-loader.php:1557
+#: wp-includes/script-loader.php:1560
 msgid "Reverting unpublished changes&hellip;"
 msgstr "Khôi phục các thay đổi chưa công bố&hellip;"
 
-#: wp-includes/script-loader.php:1556
+#: wp-includes/script-loader.php:1559
 msgid "Setting up your live preview. This may take a bit."
 msgstr "Đang thiết lập xem thử. Vui lòng chờ một chút."
 
-#: wp-includes/script-loader.php:1555
+#: wp-includes/script-loader.php:1558
 msgid "Downloading your new theme&hellip;"
 msgstr "Đang tải về giao diện mới&hellip;"
 
-#: wp-includes/script-loader.php:1545
+#: wp-includes/script-loader.php:1548
 msgid "Discard changes"
 msgstr "Hủy các thay đổi"
 
-#: wp-includes/script-loader.php:1538
+#: wp-includes/script-loader.php:1541
 msgid "Please save your changes in order to share the preview."
 msgstr "Vui lòng lưu thay đổi của bạn để chia sẻ bản xem trước."
 
@@ -5376,15 +5376,15 @@ msgstr "Vui lòng lưu thay đổi của bạn để chia sẻ bản xem trướ
 msgid "Schedule…"
 msgstr "Lên lịch..."
 
-#: wp-includes/script-loader.php:1534
+#: wp-includes/script-loader.php:1537
 msgid "Updating"
 msgstr "Đang cập nhật"
 
-#: wp-includes/script-loader.php:1533
+#: wp-includes/script-loader.php:1536
 msgid "Draft Saved"
 msgstr "Bản nháp đã lưu"
 
-#: wp-includes/script-loader.php:1528
+#: wp-includes/script-loader.php:1531
 msgid "Activate &amp; Publish"
 msgstr "Cài &amp; Công bố"
 
@@ -5760,7 +5760,7 @@ msgstr "Kiểm tra scrape nonce không thành công. Vui lòng thử lại."
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:6727
+#: wp-includes/functions.php:6794
 msgid ""
 "Hi,\n"
 "\n"
@@ -5785,7 +5785,7 @@ msgstr ""
 "###SITENAME###\n"
 "###SITEURL###"
 
-#: wp-includes/functions.php:6643
+#: wp-includes/functions.php:6710
 msgid "Only UUID V4 is supported at this time."
 msgstr "Chỉ UUID V4 được hỗ trợ ở thời điểm này."
 
@@ -6002,7 +6002,7 @@ msgstr "Thư viện giao diện WordPress.org"
 msgid "Installed themes"
 msgstr "Giao diện đã cài đặt"
 
-#: wp-includes/script-loader.php:1586
+#: wp-includes/script-loader.php:1589
 msgid "Publish Settings"
 msgstr "Lưu và công bố tùy chọn"
 
@@ -6044,13 +6044,13 @@ msgid "There was an authentication problem. Please reload and try again."
 msgstr "Đã xảy ra sự cố xác thực. Vui lòng tải lại và thử một lần nữa."
 
 #. translators: %s: Number of invalid settings.
-#: wp-includes/script-loader.php:1575 wp-includes/script-loader.php:1577
+#: wp-includes/script-loader.php:1578 wp-includes/script-loader.php:1580
 #: wp-includes/class-wp-customize-manager.php:2774
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
 msgstr[0] "Không thể lưu do cài đặt không hợp lệ %s."
 
-#: wp-includes/script-loader.php:1539
+#: wp-includes/script-loader.php:1542
 #: wp-includes/class-wp-customize-manager.php:2655
 #: wp-includes/class-wp-customize-manager.php:2670
 msgid "You must supply a future date to schedule."
@@ -6105,7 +6105,7 @@ msgid "Some HTML tags are not permitted, including:"
 msgstr "Một số thẻ HTML không được phép dùng:"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:53
-#: wp-includes/js/dist/block-library.js:12711
+#: wp-includes/js/dist/block-library.js:12715
 msgid "Custom HTML"
 msgstr "HTML Tùy chỉnh"
 
@@ -6148,23 +6148,23 @@ msgid "(no author)"
 msgstr "(không có tác giả)"
 
 #. translators: %s: The name of a city.
-#: wp-includes/script-loader.php:2422
+#: wp-includes/script-loader.php:2425
 msgid "City updated. Listing events near %s."
 msgstr "Thành phố đã được cập nhật. Đang liệt kê các sự kiện gần %s."
 
-#: wp-includes/script-loader.php:2418
+#: wp-includes/script-loader.php:2421
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
 msgstr "Chúng tôi không thể xác định được thành phố %s. Hãy thử những nơi khác gần đó. Ví dụ: Hà Nội, Đà Nẵng, Hồ Chí Minh."
 
-#: wp-includes/script-loader.php:2400
+#: wp-includes/script-loader.php:2403
 msgid "Attend an upcoming event near you."
 msgstr "Tham dự một sự kiện sắp diễn ra tại Việt Nam."
 
-#: wp-includes/script-loader.php:2399
+#: wp-includes/script-loader.php:2402
 msgid "An error occurred. Please try again."
 msgstr "Đã xảy ra lỗi. Vui lòng thử lại."
 
-#: wp-includes/script-loader.php:2398
+#: wp-includes/script-loader.php:2401
 msgid "Enter your closest city to find nearby events."
 msgstr "Nhập thành phố gần bạn nhất để tìm các sự kiện gần đó."
 
@@ -6369,62 +6369,62 @@ msgstr "Không có audio nào được chọn"
 msgid "Displays an audio player."
 msgstr "Hiển thị trình chơi audio."
 
-#: wp-includes/script-loader.php:1880
+#: wp-includes/script-loader.php:1883
 msgctxt "theme"
 msgid "Deleted!"
 msgstr "Đã xóa!"
 
-#: wp-includes/script-loader.php:1879
+#: wp-includes/script-loader.php:1882
 msgctxt "plugin"
 msgid "Deleted!"
 msgstr "Đã xóa!"
 
-#: wp-includes/script-loader.php:1850
+#: wp-includes/script-loader.php:1853
 msgctxt "theme"
 msgid "Installed!"
 msgstr "Đã cài đặt!"
 
-#: wp-includes/script-loader.php:1849
+#: wp-includes/script-loader.php:1852
 msgctxt "plugin"
 msgid "Installed!"
 msgstr "Đã cài đặt!"
 
 #. translators: %s: Plugin name.
-#: wp-includes/script-loader.php:1847
+#: wp-includes/script-loader.php:1850
 msgctxt "plugin"
 msgid "Install %s now"
 msgstr "Cài đặt %s ngay bây giờ"
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1837
+#: wp-includes/script-loader.php:1840
 msgctxt "plugin"
 msgid "%s update failed"
 msgstr "Cập nhật %s thất bại"
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1835
+#: wp-includes/script-loader.php:1838
 msgctxt "plugin"
 msgid "%s updated!"
 msgstr "%s đã cập nhật!"
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1833
+#: wp-includes/script-loader.php:1836
 msgctxt "plugin"
 msgid "Updating %s..."
 msgstr "Đang cập nhật %s..."
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1828
+#: wp-includes/script-loader.php:1831
 msgctxt "plugin"
 msgid "Update %s now"
 msgstr "Cập nhật %s ngay bây giờ"
 
-#: wp-includes/script-loader.php:1824
+#: wp-includes/script-loader.php:1827
 msgctxt "theme"
 msgid "Updated!"
 msgstr "Đã cập nhật!"
 
-#: wp-includes/script-loader.php:1823
+#: wp-includes/script-loader.php:1826
 msgctxt "plugin"
 msgid "Updated!"
 msgstr "Đã cập nhật!"
@@ -6518,7 +6518,7 @@ msgid "Featured Image"
 msgstr "Ảnh đại diện"
 
 #. translators: 1: $sanitize_callback, 2: register_setting()
-#: wp-includes/option.php:2233
+#: wp-includes/option.php:2236
 msgid "%1$s is deprecated. The callback from %2$s is used instead."
 msgstr "%1$s không còn được hỗ trợ. Sử dụng callback từ %2$s để thay thế."
 
@@ -6547,7 +6547,7 @@ msgstr ""
 msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "Kích thước ảnh để nghị: %1$s x %2$s pixels."
 
-#: wp-includes/script-loader.php:1229 wp-includes/functions.php:2505
+#: wp-includes/script-loader.php:1229 wp-includes/functions.php:2572
 #: wp-includes/js/dist/media-utils.js:926
 msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "Rất tiếc, định dạng tập tin này không được cho phép vì lý do bảo mật."
@@ -6645,7 +6645,7 @@ msgstr[0] "Giao diện của bạn có %s khu vực widget khác, nhưng trang n
 msgid "Your theme has 1 other widget area, but this particular page doesn&#8217;t display it."
 msgstr "Giao diện của bạn có 1 khu vực widget khác, nhưng trang này không hiển thị nó."
 
-#: wp-includes/option.php:1955
+#: wp-includes/option.php:1958
 msgid "This address is used for admin purposes, like new user notification."
 msgstr "Địa chỉ này được dùng cho các mục đích liên quan đến quản trị viên, ví dụ như thông báo có người dùng mới."
 
@@ -6837,11 +6837,11 @@ msgstr "Miêu tả của tập tin đính kèm."
 msgid "The attachment caption."
 msgstr "Chú thích của tập tin đính kèm."
 
-#: wp-includes/option.php:2032
+#: wp-includes/option.php:2035
 msgid "Default post category."
 msgstr "Chuyên mục mặc định cho bài viết."
 
-#: wp-includes/option.php:1922
+#: wp-includes/option.php:1925
 msgid "Site tagline."
 msgstr "Khẩu hiệu của website."
 
@@ -6896,7 +6896,7 @@ msgstr "Hàm callback JSONP không hợp lệ."
 msgid "Invalid page template."
 msgstr "Giao diện trang mẫu không hợp lệ."
 
-#: wp-includes/script-loader.php:1587 wp-includes/rest-api.php:1320
+#: wp-includes/script-loader.php:1590 wp-includes/rest-api.php:1320
 #: wp-includes/post.php:3725
 msgid "Invalid date."
 msgstr "Ngày tháng không hợp lệ"
@@ -7078,7 +7078,7 @@ msgstr "Xin lỗi, bạn không được phép tạo bài dính."
 msgid "Reassign the deleted user's posts and links to this user ID."
 msgstr "Gán lại bài viết và các liên kết của người dùng bị xóa cho người dùng với ID này."
 
-#: wp-includes/script-loader.php:1563
+#: wp-includes/script-loader.php:1566
 msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "Giao diện này không hỗ trợ video đầu trang trên trang này. Di chuyển đến trang chủ hoặc một trang khác có hỗ trợ video header."
 
@@ -7212,12 +7212,12 @@ msgstr "Tên người dùng chứa những kí tự không hợp lệ."
 msgid "Invalid user parameter(s)."
 msgstr "Tham số người dùng không hợp lệ."
 
-#: wp-includes/script-loader.php:1552
+#: wp-includes/script-loader.php:1555
 msgctxt "label for hide controls button without length constraints"
 msgid "Show Controls"
 msgstr "Hiển thị điều khiển"
 
-#: wp-includes/script-loader.php:1551
+#: wp-includes/script-loader.php:1554
 msgctxt "label for hide controls button without length constraints"
 msgid "Hide Controls"
 msgstr "Ẩn điều khiển"
@@ -7355,19 +7355,19 @@ msgstr "Trang chủ"
 msgid "Hours"
 msgstr "Giờ"
 
-#: wp-includes/script-loader.php:1677
+#: wp-includes/script-loader.php:1680
 msgid "Term removed."
 msgstr "Term đã bị xóa."
 
-#: wp-includes/script-loader.php:1676
+#: wp-includes/script-loader.php:1679
 msgid "Term added."
 msgstr "Term đã được thêm."
 
-#: wp-includes/script-loader.php:1675
+#: wp-includes/script-loader.php:1678
 msgid "Term selected."
 msgstr "Term được chọn."
 
-#: wp-includes/script-loader.php:1674
+#: wp-includes/script-loader.php:1677
 msgid "Remove term:"
 msgstr "Xóa term:"
 
@@ -8196,48 +8196,48 @@ msgstr "%1$s %2$s, %3$s (%4$s)"
 
 #. translators: %s: misc
 #. translators: %s: privacy
-#: wp-includes/option.php:2150 wp-includes/option.php:2163
-#: wp-includes/option.php:2203 wp-includes/option.php:2216
+#: wp-includes/option.php:2153 wp-includes/option.php:2166
+#: wp-includes/option.php:2206 wp-includes/option.php:2219
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr "Nhóm tuỳ chọn \"%s\" đã bị xóa. Sử dụng nhóm tuỳ chọn khác."
 
-#: wp-includes/option.php:2067
+#: wp-includes/option.php:2070
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles."
 msgstr "Cho phép thông báo liên kết (pingback và trackback) từ các blog khác trên các bài viết mới."
 
-#: wp-includes/option.php:2052
+#: wp-includes/option.php:2055
 msgid "Blog pages show at most."
 msgstr "Những trang blog được hiển thị nhiều nhất."
 
-#: wp-includes/option.php:2042
+#: wp-includes/option.php:2045
 msgid "Default post format."
 msgstr "Bài định dạng mặc định."
 
-#: wp-includes/option.php:2021
+#: wp-includes/option.php:2024
 msgid "Convert emoticons like :-) and :-P to graphics on display."
 msgstr "Chuyển biểu tượng cảm xúc như :-) và :-P thành đồ họa khi hiển thị."
 
-#: wp-includes/option.php:2010
+#: wp-includes/option.php:2013
 msgid "WordPress locale code."
 msgstr "Mã quốc gia WordPress."
 
-#: wp-includes/option.php:1998
+#: wp-includes/option.php:2001
 msgid "A day number of the week that the week should start on."
 msgstr "Ngày (thứ) bắt đầu trong tuần."
 
-#: wp-includes/option.php:1988
+#: wp-includes/option.php:1991
 msgid "A time format for all time strings."
 msgstr "Định dạng thời gian cho tất cả các chuỗi thời gian."
 
-#: wp-includes/option.php:1978
+#: wp-includes/option.php:1981
 msgid "A date format for all date strings."
 msgstr "Định dạng ngày cho tất cả các chuỗi ngày tháng."
 
-#: wp-includes/option.php:1968
+#: wp-includes/option.php:1971
 msgid "A city in the same timezone as you."
 msgstr "Một thành phố chung múi giờ với bạn."
 
-#: wp-includes/option.php:1910
+#: wp-includes/option.php:1913
 msgid "Site title."
 msgstr "Tên website."
 
@@ -8245,17 +8245,17 @@ msgstr "Tên website."
 msgid "Search media items..."
 msgstr "Tìm các mục media..."
 
-#: wp-includes/link-template.php:2719
+#: wp-includes/link-template.php:2722
 msgctxt "next set of posts"
 msgid "Next"
 msgstr "Tiếp theo"
 
-#: wp-includes/link-template.php:2718
+#: wp-includes/link-template.php:2721
 msgctxt "previous set of posts"
 msgid "Previous"
 msgstr "Trước"
 
-#: wp-login.php:829 wp-login.php:1334 wp-includes/general-template.php:463
+#: wp-login.php:845 wp-login.php:1356 wp-includes/general-template.php:463
 msgid "Username or Email Address"
 msgstr "Tên người dùng hoặc Địa chỉ Email"
 
@@ -8433,8 +8433,8 @@ msgid "Repeat Background Image"
 msgstr "Lặp lại ảnh nền"
 
 #: wp-includes/class-wp-customize-manager.php:5472
-#: wp-includes/js/dist/block-library.js:4412
-#: wp-includes/js/dist/block-library.js:4439
+#: wp-includes/js/dist/block-library.js:4416
+#: wp-includes/js/dist/block-library.js:4443
 msgid "Image Size"
 msgstr "Kích thước hình ảnh"
 
@@ -8573,7 +8573,7 @@ msgstr "Sửa menu đã chọn"
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "Cảnh báo: liên kết đã được chèn nhưng có thể có lỗi. Vui lòng kiểm tra nó."
 
-#: wp-includes/script-loader.php:1819
+#: wp-includes/script-loader.php:1822
 msgid "Search Results"
 msgstr "Kết quả tìm kiếm"
 
@@ -8630,75 +8630,75 @@ msgid "Inexistent terms."
 msgstr "Điều kiện không tồn tại."
 
 #. translators: %s: Importer name.
-#: wp-includes/script-loader.php:1890
+#: wp-includes/script-loader.php:1893
 msgid "Run %s"
 msgstr "Chạy %s"
 
-#: wp-includes/script-loader.php:1888
+#: wp-includes/script-loader.php:1891
 msgid "Run Importer"
 msgstr "Chạy trình nhập"
 
 #. translators: %s: Activation URL.
-#: wp-includes/script-loader.php:1869
+#: wp-includes/script-loader.php:1872
 msgid "Importer installed successfully. <a href=\"%s\">Run importer</a>"
 msgstr "Trình nhập đã cài đặt thành công. <a href=\"%s\">Chạy trình nhập</a>"
 
 #. translators: %s: Theme name.
-#: wp-includes/script-loader.php:1887
+#: wp-includes/script-loader.php:1890
 msgctxt "theme"
 msgid "Activate %s"
 msgstr "Kích hoạt %s"
 
 #. translators: %s: Theme name.
-#: wp-includes/script-loader.php:1887
+#: wp-includes/script-loader.php:1890
 msgctxt "theme"
 msgid "Network Activate %s"
 msgstr "Mạng lưới kích hoạt %s "
 
 #. translators: %s: Plugin name.
-#: wp-includes/script-loader.php:1885
+#: wp-includes/script-loader.php:1888
 msgctxt "plugin"
 msgid "Activate %s"
 msgstr "Kích hoạt %s"
 
 #. translators: %s: Plugin name.
-#: wp-includes/script-loader.php:1885
+#: wp-includes/script-loader.php:1888
 msgctxt "plugin"
 msgid "Network Activate %s"
 msgstr "Mạng lưới kích hoạt %s"
 
 #. translators: %s: Theme name and version.
-#: wp-includes/script-loader.php:1865
+#: wp-includes/script-loader.php:1868
 msgctxt "theme"
 msgid "%s installation failed"
 msgstr "%s cài đặt thất bại"
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1863
+#: wp-includes/script-loader.php:1866
 msgctxt "plugin"
 msgid "%s installation failed"
 msgstr "%s cài đặt thất bại"
 
 #. translators: %s: Theme name and version.
-#: wp-includes/script-loader.php:1861
+#: wp-includes/script-loader.php:1864
 msgctxt "theme"
 msgid "%s installed!"
 msgstr "%s đã cài đặt xong!"
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1859
+#: wp-includes/script-loader.php:1862
 msgctxt "plugin"
 msgid "%s installed!"
 msgstr "%s đã cài đặt xong!"
 
 #. translators: %s: Theme name and version.
-#: wp-includes/script-loader.php:1857
+#: wp-includes/script-loader.php:1860
 msgctxt "theme"
 msgid "Installing %s..."
 msgstr "Đang cài đặt %s..."
 
 #. translators: %s: Plugin name and version.
-#: wp-includes/script-loader.php:1855
+#: wp-includes/script-loader.php:1858
 msgctxt "plugin"
 msgid "Installing %s..."
 msgstr "Đang cài đặt %s..."
@@ -8708,7 +8708,7 @@ msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "Rất tiếc, bạn không được phép truy cập vào dữ liệu người dùng trên trang web này."
 
 #. translators: %s: Number of plugins.
-#: wp-includes/script-loader.php:1895
+#: wp-includes/script-loader.php:1898
 msgid "Number of plugins found: %d"
 msgstr "Số plugin được tìm thấy: %d"
 
@@ -8756,7 +8756,7 @@ msgid "Tan"
 msgstr "Nâu nhạt"
 
 #. translators: %s: Error string for a failed installation.
-#: wp-includes/script-loader.php:1853
+#: wp-includes/script-loader.php:1856
 msgid "Installation failed: %s"
 msgstr "Cài đặt thất bại: %s"
 
@@ -8791,7 +8791,7 @@ msgstr "Không thể truy xuất thông báo lỗi từ MySQL"
 msgid "Edit Menu"
 msgstr "Sửa Menu"
 
-#: wp-includes/script-loader.php:2342
+#: wp-includes/script-loader.php:2345
 msgid "Today"
 msgstr "Hôm nay"
 
@@ -8799,7 +8799,7 @@ msgstr "Hôm nay"
 msgid "An unknown error occurred."
 msgstr "Có lỗi nào đó đã xảy ra."
 
-#: wp-includes/script-loader.php:1882
+#: wp-includes/script-loader.php:1885
 msgid "Network Activate"
 msgstr "Kích hoạt mạng lưới"
 
@@ -8808,50 +8808,50 @@ msgid "Deleted:"
 msgstr "Đã xóa:"
 
 #. translators: %s: Error string for a failed deletion.
-#: wp-includes/script-loader.php:1878
+#: wp-includes/script-loader.php:1881
 msgid "Deletion failed: %s"
 msgstr "Xóa không thành công: %s"
 
-#: wp-includes/script-loader.php:1876
+#: wp-includes/script-loader.php:1879
 msgid "Deleting..."
 msgstr "Đang xóa..."
 
-#: wp-includes/script-loader.php:1875
+#: wp-includes/script-loader.php:1878
 msgid "Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?"
 msgstr "Cảnh báo: Các giao diện này có thể hoạt động trên các trang web khác trong mạng. Bạn có chắc muốn tiếp tục?"
 
-#: wp-includes/script-loader.php:1874
+#: wp-includes/script-loader.php:1877
 msgid "Are you sure you want to delete the selected plugins and their data?"
 msgstr "Bạn có chắc chắn muốn xóa plugin đã chọn và dữ liệu của nó?"
 
 #. translators: %s: Plugin name.
-#: wp-includes/script-loader.php:1873
+#: wp-includes/script-loader.php:1876
 msgid "Are you sure you want to delete %s and its data?"
 msgstr "Bạn có chắc chắn muốn xóa  %s và dữ liệu của nó?"
 
 #. translators: %s: Theme name.
-#: wp-includes/script-loader.php:1871
+#: wp-includes/script-loader.php:1874
 msgid "Are you sure you want to delete %s?"
 msgstr "Bạn có chắn chắn muốn xóa %s?"
 
-#: wp-includes/script-loader.php:1826
+#: wp-includes/script-loader.php:1829
 msgid "Update Now"
 msgstr "Cập nhật ngay bây giờ."
 
-#: wp-includes/script-loader.php:1821
+#: wp-includes/script-loader.php:1824
 msgid "Please select at least one item to perform this action on."
 msgstr "Vui lòng chọn ít nhất một mục để thực hiện hành động này."
 
-#: wp-includes/script-loader.php:1820
+#: wp-includes/script-loader.php:1823
 msgid "You do not appear to have any plugins available at this time."
 msgstr "Bạn dường như không có bất kỳ gói mở rộng nào có sẵn tại thời điểm này."
 
 #. translators: %s: Search query.
-#: wp-includes/script-loader.php:1818
+#: wp-includes/script-loader.php:1821
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Kết quả tìm kiếm cho &#8220;%s&#8221;"
 
-#: wp-includes/script-loader.php:1648
+#: wp-includes/script-loader.php:1651
 msgid ""
 "Are you sure you want to do this?\n"
 "The comment changes you made will be lost."
@@ -8859,7 +8859,7 @@ msgstr ""
 "Bạn có chắc chắn muốn làm điều này?\n"
 "Những bình luận mà bạn thay đổi sẽ bị mất."
 
-#: wp-login.php:953 wp-includes/script-loader.php:1480
+#: wp-login.php:969 wp-includes/script-loader.php:1480
 msgid "Confirm use of weak password"
 msgstr "Chấp nhận sử dụng mật khẩu yếu."
 
@@ -8868,7 +8868,7 @@ msgctxt "password strength"
 msgid "Password strength unknown"
 msgstr "Mật khẩu mạnh không xác định"
 
-#: wp-includes/script-loader.php:1046 wp-includes/script-loader.php:1633
+#: wp-includes/script-loader.php:1046 wp-includes/script-loader.php:1636
 #: wp-includes/rest-api/class-wp-rest-server.php:921
 msgid "Sorry, you are not allowed to do that."
 msgstr "Xin lỗi, bạn không được phép làm điều đó."
@@ -8892,7 +8892,7 @@ msgid "Image crop area preview. Requires mouse interaction."
 msgstr "Xem trước vùng cắt hình ảnh khu vực. Yêu cầu tương tác với chuột."
 
 #. translators: %s: Documentation URL.
-#: wp-includes/formatting.php:4769
+#: wp-includes/formatting.php:4780
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 msgstr "Một thẻ cấu trúc là cần thiết khi sử dụng đường dẫn tùy chỉnh. <a href=\"%s\"> Tìm hiểu thêm </a>"
 
@@ -8913,13 +8913,13 @@ msgstr "Xin lỗi, bạn không được phép thêm mục mới."
 msgid "Sorry, you are not allowed to list users."
 msgstr "Xin lỗi, bạn không được phép phê duyệt người dùng."
 
-#: wp-includes/script-loader.php:1588
+#: wp-includes/script-loader.php:1591
 #: wp-includes/class-wp-customize-setting.php:577
 #: wp-includes/class-wp-customize-manager.php:2360
 msgid "Invalid value."
 msgstr "Giá trị không hợp lệ."
 
-#: wp-includes/script-loader.php:1548
+#: wp-includes/script-loader.php:1551
 #: wp-includes/class-wp-customize-manager.php:516
 msgid "Sorry, you are not allowed to customize this site."
 msgstr "Xin lỗi, bạn không có quyền tùy biến trang này."
@@ -8950,7 +8950,7 @@ msgstr "Link đã chọn"
 msgid "%s is required to strip image meta."
 msgstr "Yêu cầu phải có %s để bỏ dữ liệu meta của ảnh."
 
-#: wp-includes/script-loader.php:1786
+#: wp-includes/script-loader.php:1789
 msgid "Plugin details"
 msgstr "Thông tin về plugin"
 
@@ -9000,7 +9000,7 @@ msgstr "Loại bỏ %1$s một cách thủ công sẽ dẫn đến các cảnh b
 msgid "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo."
 msgstr "Các nhóm tiếp theo của các phím tắt định dạng được áp dụng khi bạn gõ hoặc khi bạn chèn chúng xung quanh văn bản thô trong cùng một đoạn. Nhấn Escape hoặc nút Undo để quay lại."
 
-#: wp-login.php:1279
+#: wp-login.php:1301
 msgid "Your session has expired. Please log in to continue where you left off."
 msgstr "Phiên đăng nhập của bạn đã hết hạn. Xin vui lòng đăng nhập để quay lại trang vừa rồi."
 
@@ -9023,11 +9023,11 @@ msgstr "<strong>LỖI</strong>: Trường email rỗng."
 msgid "Unregistering a built-in taxonomy is not allowed."
 msgstr "Không thể hủy đăng ký taxonomy có sẵn của hệ thống."
 
-#: wp-includes/script-loader.php:1662
+#: wp-includes/script-loader.php:1665
 msgid "Drag boxes here"
 msgstr "Kéo các hộp vào đây"
 
-#: wp-includes/script-loader.php:1553 wp-includes/js/dist/block-library.js:8773
+#: wp-includes/script-loader.php:1556 wp-includes/js/dist/block-library.js:8777
 msgid "(Untitled)"
 msgstr "(Không có tiêu đề)"
 
@@ -9089,13 +9089,13 @@ msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "Nguồn cấp %1$s %2$s %3$s %4$s"
 
 #: wp-includes/media-template.php:205 wp-includes/media-template.php:353
-#: wp-includes/functions.php:6210 wp-includes/js/dist/components.js:41427
+#: wp-includes/functions.php:6277 wp-includes/js/dist/components.js:41427
 msgid "Close dialog"
 msgstr "Đóng hộp thoại"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: Version number,
 #. 4: __construct() method.
-#: wp-includes/functions.php:4629
+#: wp-includes/functions.php:4696
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "Việc gọi phương thức khởi tạo cho %1$s in %2$s là <strong>không được phép</strong> từ phiên bản %3$s! đã được thay thế bằng %4$s"
 
@@ -9227,7 +9227,7 @@ msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of th
 msgstr "Hãy xem qua <a href=\"%s\" target=\"_blank\">trang báo cáo lỗi</a>. Các hướng dẫn trong có đó thể giúp bạn tìm ra cách giải quyết cho những vấn đề hiện tại. "
 
 #. translators: %s: Documentation URL.
-#: wp-includes/functions.php:4899
+#: wp-includes/functions.php:4966
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "Vui lòng xem <a href=\"%s\">Hướng dẫn Debug trong WordPress</a> để biết thêm thông tin."
 
@@ -9236,7 +9236,7 @@ msgstr "Vui lòng xem <a href=\"%s\">Hướng dẫn Debug trong WordPress</a> đ
 msgid "<strong>ERROR</strong>: %1$s in %2$s can only contain numbers, letters, and underscores."
 msgstr "<strong>LỖI</strong>: %1$s trong %2$s chỉ có thể chứa số, chữ cái, và dấu gạch dưới."
 
-#: wp-includes/script-loader.php:1766 wp-includes/script-loader.php:1776
+#: wp-includes/script-loader.php:1769 wp-includes/script-loader.php:1779
 msgid "Changes saved."
 msgstr "Thay đổi đã được lưu lại."
 
@@ -9527,7 +9527,7 @@ msgstr "Tên shortcode không xác thực: %1$s. Không dùng dấu cách hay k�
 msgid "Invalid shortcode name: Empty name given."
 msgstr "Tên shortcode không hợp lệ: Tên rỗng."
 
-#: wp-includes/script-loader.php:1708
+#: wp-includes/script-loader.php:1711
 msgid "Permalink saved"
 msgstr "Đã lưu Đường dẫn tĩnh"
 
@@ -9757,11 +9757,11 @@ msgctxt "Sunday initial"
 msgid "S"
 msgstr "C"
 
-#: wp-includes/link-template.php:3037
+#: wp-includes/link-template.php:3040
 msgid "Newer comments"
 msgstr "Các bình luận mới hơn"
 
-#: wp-includes/link-template.php:3036
+#: wp-includes/link-template.php:3039
 msgid "Older comments"
 msgstr "Các bình luận trước"
 
@@ -9806,8 +9806,8 @@ msgid_plural "%s <span class=\"screen-reader-text\">Comments</span>"
 msgstr[0] "%s <span class=\"screen-reader-text\">Bình luận</span>"
 
 #: wp-includes/blocks/latest-posts.php:70
-#: wp-includes/js/dist/block-library.js:14014
-#: wp-includes/js/dist/block-library.js:14705
+#: wp-includes/js/dist/block-library.js:14018
+#: wp-includes/js/dist/block-library.js:14709
 msgid "Read more"
 msgstr "Xem thêm"
 
@@ -9877,7 +9877,7 @@ msgstr "Bật/tắt phần: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/script-loader.php:2288 wp-includes/formatting.php:3856
+#: wp-includes/script-loader.php:2291 wp-includes/formatting.php:3867
 #: wp-includes/js/dist/editor.js:12146
 msgctxt "Word count type. Do not translate!"
 msgid "words"
@@ -9901,11 +9901,11 @@ msgstr "Phần bật/tắt: Liên kết tùy chỉnh"
 msgid "Your new password has not been saved."
 msgstr "Mật khẩu mới của bạn chưa được lưu."
 
-#: wp-login.php:946 wp-includes/script-loader.php:1485
+#: wp-login.php:962 wp-includes/script-loader.php:1485
 msgid "Hide password"
 msgstr "Ẩn mật khẩu"
 
-#: wp-login.php:1342 wp-includes/script-loader.php:1484
+#: wp-login.php:1364 wp-includes/script-loader.php:1484
 msgid "Show password"
 msgstr "Hiện mật khẩu"
 
@@ -9935,7 +9935,7 @@ msgstr "Là một biểu tượng trình duyệt"
 msgid "No items"
 msgstr "Không có mục nào"
 
-#: wp-login.php:1076
+#: wp-login.php:1092
 msgid "Registration confirmation will be emailed to you."
 msgstr "Email xác nhận sẽ được gửi tới hộp thư của bạn."
 
@@ -10000,11 +10000,11 @@ msgstr "Thêm vào menu: %1$s (%2$s)"
 msgid "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo."
 msgstr "Khi bắt đầu 1 đoạn mới với 1 trong những mẫu này được theo sau bởi 1 dấu space, định dạng sẽ được áp dụng tự động. Nhấn phím Backspace hoặc Escape để hoàn nguyên."
 
-#: wp-login.php:792
+#: wp-login.php:808
 msgid "Your password reset link has expired. Please request a new link below."
 msgstr "Liên kết đặt lại mật khẩu của bạn đã hết hạn. Hãy yêu cầu 1 liên kết mới bên dưới."
 
-#: wp-login.php:790
+#: wp-login.php:806
 msgid "Your password reset link appears to be invalid. Please request a new link below."
 msgstr "Liên kết đặt lại mật khẩu của bạn không hợp lệ. Hãy yêu cầu 1 liên kết mới bên dưới."
 
@@ -10021,7 +10021,7 @@ msgid "Username may not be longer than 60 characters."
 msgstr "Tên người dùng không thể dài hơn 60 kí tự."
 
 #. translators: 1: PHP class name, 2: Version number, 3: __construct() method.
-#: wp-includes/functions.php:4640
+#: wp-includes/functions.php:4707
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "Phương thức khởi tạo được gọi cho %1$s bị <strong>phản đối</strong> kể từ phiên bản %2$s! Sử dụng %3$s thay thế."
 
@@ -10155,11 +10155,11 @@ msgid "Attempting to parse a shortcode without a valid callback: %s"
 msgstr "Đang thử phân tách 1 shortcode mà không có 1 callback hợp lệ: %s"
 
 #. translators: %s: Error string for a failed update.
-#: wp-includes/script-loader.php:1831
+#: wp-includes/script-loader.php:1834
 msgid "Update Failed: %s"
 msgstr "Cập nhật bị lỗi: %s"
 
-#: wp-includes/script-loader.php:1647
+#: wp-includes/script-loader.php:1650
 msgid ""
 "Are you sure you want to edit this comment?\n"
 "The changes you made will be lost."
@@ -10403,7 +10403,7 @@ msgstr "Các mục bổ sung tìm thấy: %d"
 msgid "Number of items found: %d"
 msgstr "Số mục tìm thấy: %d"
 
-#: wp-includes/js/dist/block-library.js:19882
+#: wp-includes/js/dist/block-library.js:19886
 msgid "Taxonomy"
 msgstr "Phân loại"
 
@@ -10530,20 +10530,20 @@ msgstr "https://codex.wordpress.org/"
 msgid "No %1$s was set in the arguments array for the \"%2$s\" sidebar. Defaulting to \"%3$s\". Manually set the %1$s to \"%3$s\" to silence this notice and keep existing sidebar content."
 msgstr "Không có đối số %1$s cho sidebar \"%2$s\". Mặc định là \"%3$s\". Hãy đặt %1$s là \"%3$s\" để tắt thông báo này và giữ nội dung hiện tại của sidebar."
 
-#: wp-includes/script-loader.php:1892
+#: wp-includes/script-loader.php:1895
 msgid "Connection lost or the server is busy. Please try again later."
 msgstr "Bị mất kết nối hoặc server bị quá tải. Vui lòng thử lại lần sau."
 
-#: wp-includes/script-loader.php:1844
+#: wp-includes/script-loader.php:1847
 msgid "Updates may not complete if you navigate away from this page."
 msgstr "Việc cập nhật plugin có thể không hoàn tất nếu bạn rời khỏi trang này. "
 
-#: wp-includes/script-loader.php:1829
+#: wp-includes/script-loader.php:1832
 msgid "Update Failed!"
 msgstr "Cập nhật không thành công!"
 
 #. translators: Accessibility text.
-#: wp-includes/script-loader.php:1843
+#: wp-includes/script-loader.php:1846
 msgid "Update canceled."
 msgstr "Đã hủy thay đổi."
 
@@ -10562,37 +10562,37 @@ msgid "%1$s response to %2$s"
 msgid_plural "%1$s responses to %2$s"
 msgstr[0] " %1$s bình luận cho %2$s"
 
-#: wp-includes/script-loader.php:1549
+#: wp-includes/script-loader.php:1552
 msgid "Site Preview"
 msgstr "Xem trước website"
 
-#: wp-includes/script-loader.php:1822
+#: wp-includes/script-loader.php:1825
 msgid "Updating..."
 msgstr "Đang cập nhật..."
 
-#: wp-includes/script-loader.php:1845
+#: wp-includes/script-loader.php:1848
 msgid "Install Now"
 msgstr "Cài đặt"
 
-#: wp-includes/script-loader.php:1848
+#: wp-includes/script-loader.php:1851
 msgid "Installing..."
 msgstr "Đang cài đặt..."
 
-#: wp-includes/script-loader.php:1866
+#: wp-includes/script-loader.php:1869
 msgid "Installing... please wait."
 msgstr "Đang cài đặt...xin đợi."
 
 #. translators: Accessibility text.
-#: wp-includes/script-loader.php:1839
+#: wp-includes/script-loader.php:1842
 msgid "Updating... please wait."
 msgstr "Đang cập nhật... vui lòng chờ. "
 
 #. translators: Accessibility text.
-#: wp-includes/script-loader.php:1841
+#: wp-includes/script-loader.php:1844
 msgid "Update completed successfully."
 msgstr "Cập nhật thành công. "
 
-#: wp-includes/script-loader.php:1867
+#: wp-includes/script-loader.php:1870
 msgid "Installation completed successfully."
 msgstr "Cài đặt đã hoàn thành."
 
@@ -10767,7 +10767,7 @@ msgstr "Tùy chọn %1$s không được khuyến khích dùng trong các hàm %
 msgid "Theme Details"
 msgstr "Thông tin về giao diện"
 
-#: wp-includes/script-loader.php:1881
+#: wp-includes/script-loader.php:1884
 #: wp-includes/customize/class-wp-customize-theme-control.php:124
 msgid "Live Preview"
 msgstr "Xem trước"
@@ -10846,20 +10846,20 @@ msgctxt "translations"
 msgid "Available"
 msgstr "Có sẵn bản dịch"
 
-#: wp-includes/link-template.php:2653
+#: wp-includes/link-template.php:2656
 msgid "Older posts"
 msgstr "Bài viết cũ hơn"
 
-#: wp-includes/link-template.php:2655 wp-includes/link-template.php:2720
-#: wp-includes/link-template.php:2768
+#: wp-includes/link-template.php:2658 wp-includes/link-template.php:2723
+#: wp-includes/link-template.php:2771
 msgid "Posts navigation"
 msgstr "Điều hướng bài viết"
 
-#: wp-includes/link-template.php:2654
+#: wp-includes/link-template.php:2657
 msgid "Newer posts"
 msgstr "Các bài viết mới hơn"
 
-#: wp-includes/script-loader.php:2346
+#: wp-includes/script-loader.php:2349
 msgid "Previous"
 msgstr "Quay về"
 
@@ -11054,7 +11054,7 @@ msgid "Custom color"
 msgstr "Màu tùy chỉnh"
 
 #: wp-includes/class-wp-editor.php:1174
-#: wp-includes/js/dist/block-library.js:16769
+#: wp-includes/js/dist/block-library.js:16773
 msgid "Color"
 msgstr "Màu sắc"
 
@@ -11102,7 +11102,7 @@ msgctxt "add new media"
 msgid "Add New"
 msgstr "Thêm mới"
 
-#: wp-login.php:1294
+#: wp-login.php:1316
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
 msgstr "<strong>Bạn đã cập nhật WordPress thành công!</strong>Vui lòng đăng nhập lại để xem những tính năng mới."
 
@@ -11128,7 +11128,7 @@ msgstr "Chọn nhiều"
 msgid "%s: %l."
 msgstr "%s: %l."
 
-#: wp-includes/script-loader.php:1965
+#: wp-includes/script-loader.php:1968
 #: wp-includes/class-wp-customize-nav-menus.php:445
 msgctxt "missing menu item navigation label"
 msgid "(no label)"
@@ -11138,7 +11138,7 @@ msgstr "(không có nhãn)"
 msgid "This site is no longer available."
 msgstr "Trang web này là không còn nữa."
 
-#: wp-includes/script-loader.php:1896
+#: wp-includes/script-loader.php:1899
 msgid "No plugins found. Try a different search."
 msgstr "Không tìm thấy plugin. Hãy thử một truy vấn khác."
 
@@ -11285,12 +11285,12 @@ msgid "Keyboard Shortcuts"
 msgstr "Phím tắt"
 
 #. translators: %s: Browser cookie documentation URL.
-#: wp-login.php:1190
+#: wp-login.php:1206
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
 msgstr "<strong>LỖI</strong>: Cookies bị chặn hoặc không được hỗ trợ bởi trình duyệt của bạn. Bạn phải <a href=\"%s\">kích hoạt cookies</a> để sử dụng WordPress."
 
 #. translators: 1: Browser cookie documentation URL, 2: Support forums URL.
-#: wp-login.php:1179
+#: wp-login.php:1195
 msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
 msgstr "<strong>ERROR</strong>: Cookies bị chặn do xuất ra bất ngờ. Để được trợ giúp, vui lòng xem <a href=\"%1$s\">tài liệu này</a> hoặc thử <a href=\"%2$s\">các diễn đàn trợ giúp</a>."
 
@@ -11396,7 +11396,7 @@ msgstr "Hiển thị danh sách video"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:129
 #: wp-includes/media-template.php:1156
-#: wp-includes/js/dist/block-library.js:4343
+#: wp-includes/js/dist/block-library.js:4347
 msgid "Link CSS Class"
 msgstr "Liên kết lớp CSS"
 
@@ -11737,8 +11737,8 @@ msgstr "Kéo và thả để sắp xếp danh sách bài hát"
 msgid "Add Subtitles"
 msgstr "Thêm phụ đề"
 
-#: wp-includes/media.php:3907 wp-includes/js/dist/block-library.js:19540
-#: wp-includes/js/dist/block-library.js:19550
+#: wp-includes/media.php:3907 wp-includes/js/dist/block-library.js:19544
+#: wp-includes/js/dist/block-library.js:19554
 msgid "Select Poster Image"
 msgstr "Chọn ảnh áp phích"
 
@@ -11808,24 +11808,24 @@ msgid "There are no associated subtitles."
 msgstr "Không có phụ đề liên quan."
 
 #: wp-includes/media-template.php:1331
-#: wp-includes/js/dist/block-library.js:19539
+#: wp-includes/js/dist/block-library.js:19543
 msgid "Poster Image"
 msgstr "Ảnh poster"
 
 #: wp-includes/media-template.php:1252 wp-includes/media-template.php:1351
-#: wp-includes/js/dist/block-library.js:7682
-#: wp-includes/js/dist/block-library.js:19499
+#: wp-includes/js/dist/block-library.js:7686
+#: wp-includes/js/dist/block-library.js:19503
 msgid "Autoplay"
 msgstr "Phát tự động"
 
 #: wp-includes/media-template.php:1243 wp-includes/media-template.php:1342
-#: wp-includes/js/dist/block-library.js:7704
-#: wp-includes/js/dist/block-library.js:19532
+#: wp-includes/js/dist/block-library.js:7708
+#: wp-includes/js/dist/block-library.js:19536
 msgid "Metadata"
 msgstr "Metadata"
 
-#: wp-includes/js/dist/block-library.js:7701
-#: wp-includes/js/dist/block-library.js:19529
+#: wp-includes/js/dist/block-library.js:7705
+#: wp-includes/js/dist/block-library.js:19533
 msgid "Auto"
 msgstr "Tự động"
 
@@ -11873,8 +11873,8 @@ msgid "Tools"
 msgstr "Công cụ"
 
 #: wp-includes/js/dist/list-reusable-blocks.js:647
-#: wp-includes/js/dist/block-library.js:12178
-#: wp-includes/js/dist/block-library.js:12506
+#: wp-includes/js/dist/block-library.js:12182
+#: wp-includes/js/dist/block-library.js:12510
 msgid "File"
 msgstr "Tệp"
 
@@ -11951,7 +11951,7 @@ msgid "Paste as text"
 msgstr "Dán như văn bản"
 
 #: wp-includes/class-wp-editor.php:1150
-#: wp-includes/js/dist/block-library.js:14905
+#: wp-includes/js/dist/block-library.js:14909
 msgid "Page break"
 msgstr "Ngắt trang"
 
@@ -12039,7 +12039,7 @@ msgstr "Căn giữa"
 msgid "Clear formatting"
 msgstr "Xóa định dạng"
 
-#: wp-includes/js/dist/block-library.js:14533
+#: wp-includes/js/dist/block-library.js:14537
 msgid "bullet list"
 msgstr "danh sách kiểu bullet"
 
@@ -12060,7 +12060,7 @@ msgstr "Danh sách được đánh số"
 msgid "Align right"
 msgstr "Căn lề phải"
 
-#: wp-includes/script-loader.php:1893 wp-includes/script-loader.php:1928
+#: wp-includes/script-loader.php:1896 wp-includes/script-loader.php:1931
 #: wp-includes/class-wp-customize-widgets.php:781
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "Đã xảy ra lỗi. Xin vui lòng tải lại trang và thử lại."
@@ -12170,8 +12170,8 @@ msgstr "Nhóm cột"
 msgid "Could not find the specified string."
 msgstr "Không thể tìm thấy chuỗi quy định."
 
-#: wp-includes/js/dist/block-library.js:18426
-#: wp-includes/js/dist/block-library.js:18780
+#: wp-includes/js/dist/block-library.js:18430
+#: wp-includes/js/dist/block-library.js:18784
 msgid "Table"
 msgstr "Bảng"
 
@@ -12200,7 +12200,7 @@ msgid "Attempted to set image quality outside of the range [1,100]."
 msgstr "Cố gắng thiết lập chất lượng hình ảnh ngoài phạm vi [1, 100]."
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:26
-#: wp-includes/js/dist/block-library.js:19921
+#: wp-includes/js/dist/block-library.js:19925
 msgid "A cloud of your most used tags."
 msgstr "Một danh sách các thẻ (tags) được sử dụng nhiều dưới dạng đám mây."
 
@@ -12243,13 +12243,13 @@ msgstr "Danh sách các Trang của website"
 msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
 msgstr "Đã xảy ra lỗi không mong muốn. Có thể có sự cố với WordPress.org hoặc cấu hình của máy chủ. Nếu bạn tiếp tục gặp sự cố, vui lòng thử hỏi trong <a href=\"%s\">diễn đàn hỗ trợ</a>."
 
-#: wp-includes/script-loader.php:2025
+#: wp-includes/script-loader.php:2028
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "vietnamese"
 
 #. translators: %s: The word 'and'.
-#: wp-includes/link-template.php:1719
+#: wp-includes/link-template.php:1722
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "Dùng dấu phẩy thay vì %s để phân cách các thuật ngữ bị loại bỏ."
 
@@ -12290,7 +12290,7 @@ msgstr "đây,đã,đến,ở,bởi,của,cho,dưới,gì,kia,là,một,nào,nh�
 msgid "This content is password protected. To view it please enter your password below:"
 msgstr "Nội dung này được bảo mật. Hãy nhập mật khẩu để xem tiếp:"
 
-#: wp-includes/functions.php:1523
+#: wp-includes/functions.php:1528
 msgid "ERROR: This is not a valid feed template."
 msgstr "LỖI: Định dạng nguồn tin không hợp lệ."
 
@@ -12352,27 +12352,27 @@ msgstr "Tải video về"
 msgid "Failed"
 msgstr "Thất bại"
 
-#: wp-includes/script-loader.php:1537
+#: wp-includes/script-loader.php:1540
 msgid "Invalid"
 msgstr "Không hợp lệ"
 
 #. translators: Time difference between two dates, in years. %s: Number of
 #. years.
-#: wp-includes/formatting.php:3750
+#: wp-includes/formatting.php:3761
 msgid "%s year"
 msgid_plural "%s years"
 msgstr[0] "%s năm"
 
 #. translators: Time difference between two dates, in months. %s: Number of
 #. months.
-#: wp-includes/formatting.php:3743
+#: wp-includes/formatting.php:3754
 msgid "%s month"
 msgid_plural "%s months"
 msgstr[0] "%s tháng"
 
 #. translators: Time difference between two dates, in weeks. %s: Number of
 #. weeks.
-#: wp-includes/formatting.php:3736
+#: wp-includes/formatting.php:3747
 msgid "%s week"
 msgid_plural "%s weeks"
 msgstr[0] "%s tuần"
@@ -12451,7 +12451,7 @@ msgid "Have you entered your email correctly? You have entered %s, if it&#8217;s
 msgstr "Bạn đã nhập chính xác email? Bạn đã nhập là %s, nếu email này không đúng, bạn sẽ không nhận được email gửi tới."
 
 #. translators: 1: Month, 2: Day, 3: Year, 4: Hour, 5: Minute.
-#: wp-includes/script-loader.php:1692 wp-includes/script-loader.php:1724
+#: wp-includes/script-loader.php:1695 wp-includes/script-loader.php:1727
 msgid "%1$s %2$s, %3$s at %4$s:%5$s"
 msgstr "%2$s %1$s %3$s lúc %4$s : %5$s"
 
@@ -12459,7 +12459,7 @@ msgstr "%2$s %1$s %3$s lúc %4$s : %5$s"
 msgid "Your session has expired. You can log in again from this page or go to the login page."
 msgstr "Phiên làm việc của bạn đã hết hạn. Hãy đăng nhập lại tại đây hoặc tại trang đăng nhập."
 
-#: wp-includes/functions.php:6230
+#: wp-includes/functions.php:6297
 msgid "The login page will open in a new tab. After logging in you can close it and return to this page."
 msgstr "Trang đăng nhập sẽ được mở trong cửa sổ mới. Sau khi đăng nhập, bạn có thể đóng cửa sổ và quay lại trang hiện tại."
 
@@ -12484,7 +12484,7 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Tìm kiếm &hellip;"
 
-#: wp-includes/script-loader.php:1550 wp-includes/functions.php:6228
+#: wp-includes/script-loader.php:1553 wp-includes/functions.php:6295
 msgid "Session expired"
 msgstr "Phiên làm việc đã hết hạn"
 
@@ -12589,7 +12589,7 @@ msgstr "Quản lý Video"
 #: wp-includes/widgets/class-wp-widget-media-video.php:28
 #: wp-includes/post.php:2729 wp-includes/js/dist/editor.js:8123
 #: wp-includes/js/dist/block-editor.js:16430
-#: wp-includes/js/dist/block-library.js:19780
+#: wp-includes/js/dist/block-library.js:19784
 msgid "Video"
 msgstr "Video"
 
@@ -12624,7 +12624,7 @@ msgstr "Chèn vào trang"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:28
 #: wp-includes/post.php:2720 wp-includes/js/dist/editor.js:8126
 #: wp-includes/js/dist/block-editor.js:16426
-#: wp-includes/js/dist/block-library.js:7882
+#: wp-includes/js/dist/block-library.js:7886
 msgid "Audio"
 msgstr "Audio"
 
@@ -12645,12 +12645,12 @@ msgstr "&#8592; Trở lại thư viện"
 msgid "Custom URL"
 msgstr "URL tùy chỉnh"
 
-#: wp-includes/media-template.php:846 wp-includes/js/dist/block-library.js:6964
-#: wp-includes/js/dist/block-library.js:9669
-#: wp-includes/js/dist/block-library.js:9847
-#: wp-includes/js/dist/block-library.js:13938
-#: wp-includes/js/dist/block-library.js:16328
-#: wp-includes/js/dist/block-library.js:18886
+#: wp-includes/media-template.php:846 wp-includes/js/dist/block-library.js:6968
+#: wp-includes/js/dist/block-library.js:9673
+#: wp-includes/js/dist/block-library.js:9851
+#: wp-includes/js/dist/block-library.js:13942
+#: wp-includes/js/dist/block-library.js:16332
+#: wp-includes/js/dist/block-library.js:18890
 msgid "Columns"
 msgstr "Cột"
 
@@ -12676,7 +12676,7 @@ msgstr "&#8592; Bỏ bộ sưu tập"
 msgid "Upload Images"
 msgstr "Tải ảnh lên"
 
-#: wp-includes/media-template.php:821 wp-includes/js/dist/block-library.js:6962
+#: wp-includes/media-template.php:821 wp-includes/js/dist/block-library.js:6966
 msgid "Gallery Settings"
 msgstr "Tùy chọn hiển thị bộ sưu tập"
 
@@ -12764,24 +12764,24 @@ msgstr ""
 
 #: wp-includes/media-template.php:762 wp-includes/media-template.php:837
 #: wp-includes/media-template.php:1110
-#: wp-includes/js/dist/block-library.js:4226
-#: wp-includes/js/dist/block-library.js:6642
-#: wp-includes/js/dist/block-library.js:11955
+#: wp-includes/js/dist/block-library.js:4230
+#: wp-includes/js/dist/block-library.js:6646
+#: wp-includes/js/dist/block-library.js:11959
 msgid "Media File"
 msgstr "Tập tin đa phương tiện"
 
 #: wp-includes/media-template.php:769 wp-includes/media-template.php:834
 #: wp-includes/media-template.php:1113
-#: wp-includes/js/dist/block-library.js:4231
-#: wp-includes/js/dist/block-library.js:6639
+#: wp-includes/js/dist/block-library.js:4235
+#: wp-includes/js/dist/block-library.js:6643
 msgid "Attachment Page"
 msgstr "Trang nội dung đính kèm"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:104
 #: wp-includes/media-template.php:739 wp-includes/media-template.php:824
 #: wp-includes/media-template.php:991 wp-includes/media-template.php:1106
-#: wp-includes/js/dist/block-library.js:6976
-#: wp-includes/js/dist/block-library.js:11965
+#: wp-includes/js/dist/block-library.js:6980
+#: wp-includes/js/dist/block-library.js:11969
 msgid "Link To"
 msgstr "Liên kết tới"
 
@@ -12850,11 +12850,11 @@ msgstr "%2$s %1$s"
 msgid "Could not insert term relationship into the database."
 msgstr "Không thể lưu quan hệ phân loại vào cơ sở dữ liệu."
 
-#: wp-includes/script-loader.php:1913
+#: wp-includes/script-loader.php:1916
 msgid "Select Color"
 msgstr "Chọn màu"
 
-#: wp-includes/script-loader.php:1909 wp-includes/media-template.php:699
+#: wp-includes/script-loader.php:1912 wp-includes/media-template.php:699
 #: wp-includes/js/dist/components.js:37309
 msgid "Clear"
 msgstr "Xóa"
@@ -12871,7 +12871,7 @@ msgstr "Chèn vào bài viết"
 msgid "Create a new gallery"
 msgstr "Tạo một bộ sưu tập mới"
 
-#: wp-includes/js/dist/block-library.js:20105
+#: wp-includes/js/dist/block-library.js:20109
 msgid "Insert Media"
 msgstr "Chèn nội dung đa phương tiện vào"
 
@@ -12956,12 +12956,12 @@ msgstr "Màu chữ đầu trang"
 msgid "Colors"
 msgstr "Màu sắc"
 
-#: wp-includes/script-loader.php:1541 wp-includes/script-loader.php:1738
+#: wp-includes/script-loader.php:1544 wp-includes/script-loader.php:1741
 #: wp-includes/js/dist/editor.js:10545
 msgid "Saved"
 msgstr "Đã lưu"
 
-#: wp-includes/script-loader.php:1529
+#: wp-includes/script-loader.php:1532
 msgid "Save &amp; Publish"
 msgstr "Lưu &amp; Đăng"
 
@@ -13041,17 +13041,17 @@ msgstr "Ảnh nền"
 
 #: wp-includes/class-wp-customize-manager.php:5228
 #: wp-includes/js/dist/block-library.js:2351
-#: wp-includes/js/dist/block-library.js:8333
-#: wp-includes/js/dist/block-library.js:13243
-#: wp-includes/js/dist/block-library.js:16537
-#: wp-includes/js/dist/block-library.js:18495
+#: wp-includes/js/dist/block-library.js:8337
+#: wp-includes/js/dist/block-library.js:13247
+#: wp-includes/js/dist/block-library.js:16541
+#: wp-includes/js/dist/block-library.js:18499
 msgid "Background Color"
 msgstr "Màu nền"
 
 #: wp-includes/js/dist/block-library.js:2355
-#: wp-includes/js/dist/block-library.js:5214
-#: wp-includes/js/dist/block-library.js:8337
-#: wp-includes/js/dist/block-library.js:15584
+#: wp-includes/js/dist/block-library.js:5218
+#: wp-includes/js/dist/block-library.js:8341
+#: wp-includes/js/dist/block-library.js:15588
 msgid "Text Color"
 msgstr "Màu chữ"
 
@@ -13060,7 +13060,7 @@ msgid "Change image"
 msgstr "Thay đổi ảnh"
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:140
-#: wp-includes/js/dist/block-library.js:6570
+#: wp-includes/js/dist/block-library.js:6574
 msgid "Remove image"
 msgstr "Xóa ảnh"
 
@@ -13072,7 +13072,7 @@ msgstr "Xin lỗi, bạn không được phép chỉnh sửa loại post này"
 msgid "Posts page"
 msgstr "Trang tập hợp bài viết"
 
-#: wp-includes/script-loader.php:1565
+#: wp-includes/script-loader.php:1568
 msgid "Allowed Files"
 msgstr "Tệp tin cho phép"
 
@@ -13267,7 +13267,7 @@ msgstr "Xin lỗi, bạn không được phép chỉnh sửa bài viết này."
 msgid "Edit Site"
 msgstr "Sửa trang web"
 
-#: wp-includes/script-loader.php:1673 wp-includes/script-loader.php:1765
+#: wp-includes/script-loader.php:1676 wp-includes/script-loader.php:1768
 #: wp-includes/post.php:4534
 msgctxt "tag delimiter"
 msgid ","
@@ -13402,7 +13402,7 @@ msgid "Your site at %1$s is active. You may now log in to your site using your c
 msgstr "Trang mạng của bạn tại địa chỉ %1$s đã được kích hoạt. Bạn có thể sử dụng tên người dùng &#8220;%2$s&#8221; để đăng nhập vào trang web này. Hãy kiểm tra hòm thư %3$s của bạn để nhận mật khẩu và đọc hướng dẫn đăng nhập. Nếu bạn không tìm thấy thư điện tử nào cung cấp những thông tin này, hãy thử kiểm tra thư mục thư rác. Nếu bạn không nhận được thông tin cần thiết trong một giờ tới, bạn có thể yêu cầu <a href=\"%4$s\">đặt lại mật khẩu</a>."
 
 #. translators: %s: Database repair URL.
-#: wp-includes/functions.php:1715
+#: wp-includes/functions.php:1720
 msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
 msgstr "Một hoặc một vài bảng dữ liệu không thể hoạt động. Cơ sở dữ liệu cần được <a href=\"%s\">sửa chữa</a>."
 
@@ -13476,7 +13476,7 @@ msgstr "<strong>LỖI</strong>: vui lòng điền email hợp lệ."
 msgid "<strong>ERROR</strong>: please type a comment."
 msgstr "<strong>LỖI</strong>: vui lòng điền bình luận."
 
-#: wp-includes/script-loader.php:1937
+#: wp-includes/script-loader.php:1940
 msgid "Could not load the preview image. Please reload the page and try again."
 msgstr "Không thể nạp ảnh xem trước. Vui lòng tải lại trang."
 
@@ -13492,16 +13492,16 @@ msgstr "<strong>LỖI</strong>: Địa chỉ liên kết đã tồn tại."
 msgid "Documentation"
 msgstr "Tài liệu"
 
-#: wp-includes/general-template.php:4205 wp-includes/formatting.php:3844
+#: wp-includes/general-template.php:4205 wp-includes/formatting.php:3855
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/wp-db.php:1681 wp-includes/functions.php:4508
+#: wp-includes/wp-db.php:1681 wp-includes/functions.php:4575
 #: wp-includes/ms-load.php:470
 msgid "Error establishing a database connection"
 msgstr "Lỗi kết nối tới cơ sở dữ liệu"
 
-#: wp-includes/functions.php:4508
+#: wp-includes/functions.php:4575
 msgid "Database Error"
 msgstr "Lỗi cơ sở dữ liệu"
 
@@ -13559,7 +13559,7 @@ msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Xanh dương"
 
-#: wp-includes/formatting.php:4751
+#: wp-includes/formatting.php:4762
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "Múi giờ không hợp lệ, vui lòng nhập lại."
 
@@ -13604,16 +13604,16 @@ msgid "All Posts"
 msgstr "Tất cả bài viết"
 
 #: wp-includes/class-wp-editor.php:1163 wp-includes/js/dist/editor.js:8108
-#: wp-includes/js/dist/block-library.js:8307
+#: wp-includes/js/dist/block-library.js:8311
 #: wp-includes/js/dist/format-library.js:1232
 msgid "Link"
 msgstr "Liên kết"
 
-#: wp-includes/script-loader.php:1645
+#: wp-includes/script-loader.php:1648
 msgid "Approve and Reply"
 msgstr "Chấp thuận và phản hồi"
 
-#: wp-includes/link-template.php:2576
+#: wp-includes/link-template.php:2579
 msgid "Post navigation"
 msgstr "Điều hướng bài viết"
 
@@ -13621,7 +13621,7 @@ msgstr "Điều hướng bài viết"
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: wp-includes/link-template.php:3038 wp-includes/link-template.php:3098
+#: wp-includes/link-template.php:3041 wp-includes/link-template.php:3101
 msgid "Comments navigation"
 msgstr "Điều hướng bình luận"
 
@@ -13636,8 +13636,8 @@ msgstr "Màu xám đậm"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:71
 #: wp-includes/widgets/class-wp-widget-media-video.php:73
 #: wp-includes/media-template.php:1239 wp-includes/media-template.php:1338
-#: wp-includes/js/dist/block-library.js:7691
-#: wp-includes/js/dist/block-library.js:19520
+#: wp-includes/js/dist/block-library.js:7695
+#: wp-includes/js/dist/block-library.js:19524
 msgid "Preload"
 msgstr "Tải trước"
 
@@ -13692,13 +13692,13 @@ msgid "The user is already active."
 msgstr "Tài khoản người dùng đã được kích hoạt."
 
 #. translators: %s: Version number.
-#: wp-includes/functions.php:4895
+#: wp-includes/functions.php:4962
 msgid "(This message was added in version %s.)"
 msgstr "(Thông điệp này đã được thêm vào trong phiên bản %s.)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message.
-#: wp-includes/functions.php:4903
+#: wp-includes/functions.php:4970
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s được gọi là <strong>không chính xác</strong>. %2$s %3$s"
 
@@ -13795,7 +13795,7 @@ msgstr "Không tìm thấy trang nào."
 msgid "No pages found in Trash."
 msgstr "Không tìm thấy trang nào trong Thùng rác."
 
-#: wp-includes/script-loader.php:1883
+#: wp-includes/script-loader.php:1886
 msgid "Network Enable"
 msgstr "Mạng đang bật."
 
@@ -13814,7 +13814,7 @@ msgstr "Định danh nội dung đính kèm không hợp lệ."
 msgid "This file no longer needs to be included."
 msgstr "Tập tin này không còn cần thiết."
 
-#: wp-login.php:817
+#: wp-login.php:833
 msgid "Please enter your username or email address. You will receive a link to create a new password via email."
 msgstr "Vui lòng nhập tên người dùng hoặc email. Bạn sẽ nhận được email có chứa đường dẫn URL để tạo mật khẩu mới."
 
@@ -13851,12 +13851,12 @@ msgstr "Chiều rộng ảnh kích thước trung bình"
 msgid "Large size image height"
 msgstr "Chiều cao ảnh kích thước lớn"
 
-#: wp-includes/js/dist/block-library.js:4339
+#: wp-includes/js/dist/block-library.js:4343
 #: wp-includes/js/dist/format-library.js:1154
 msgid "Open in New Tab"
 msgstr "Mở trong cửa sổ mới"
 
-#: wp-login.php:932
+#: wp-login.php:948
 msgid "Enter your new password below."
 msgstr "Nhập mật khẩu mới của bạn dưới đây."
 
@@ -13868,19 +13868,19 @@ msgstr "Nếu thấy đây là việc không cần thiết, bạn có thể bỏ
 msgid "Someone has requested a password reset for the following account:"
 msgstr "Một ai đó vừa yêu cầu đặt lại mật khẩu cho tài khoản sau:"
 
-#: wp-login.php:924
+#: wp-login.php:940
 msgid "Your password has been reset."
 msgstr "Mật khẩu của bạn đã được đặt lại."
 
-#: wp-login.php:924
+#: wp-login.php:940
 msgid "Password Reset"
 msgstr "Đặt lại mật khẩu"
 
-#: wp-login.php:908
+#: wp-login.php:924
 msgid "The passwords do not match."
 msgstr "Các mật khẩu không khớp."
 
-#: wp-login.php:932 wp-login.php:979
+#: wp-login.php:948 wp-login.php:995
 msgid "Reset Password"
 msgstr "Thiết lập lại mật khẩu"
 
@@ -13888,11 +13888,11 @@ msgstr "Thiết lập lại mật khẩu"
 msgid "To reset your password, visit the following address:"
 msgstr "Để thiết lập lại mật khẩu của bạn, hãy truy cập vào địa chỉ sau đây:"
 
-#: wp-login.php:958
+#: wp-login.php:974
 msgid "Confirm new password"
 msgstr "Xác nhận mật khẩu mới"
 
-#: wp-login.php:940
+#: wp-login.php:956
 msgid "New password"
 msgstr "Mật khẩu mới"
 
@@ -13977,7 +13977,7 @@ msgid "F, Y"
 msgstr "F, Y"
 
 #. translators: Used to join items in a list with only 2 items.
-#: wp-includes/formatting.php:5013
+#: wp-includes/formatting.php:5049
 msgid "%1$s and %2$s"
 msgstr "%1$s và %2$s."
 
@@ -14153,7 +14153,7 @@ msgstr "Bạn không được phép đăng bài trên trang này."
 msgid "Sorry, you are not allowed to post on this site."
 msgstr "Bạn không được phân quyền để viết bài cho website này."
 
-#: wp-includes/option.php:1938
+#: wp-includes/option.php:1941
 msgid "Site URL."
 msgstr "Đường dẫn của trang"
 
@@ -14250,15 +14250,15 @@ msgstr "Trang này đang trong trạng thái lưu trữ hoặc ngừng hoạt đ
 msgid "The given object ID is not that of a menu item."
 msgstr "ID của đối tượng không thuộc menu nào cả."
 
-#: wp-includes/formatting.php:4692
+#: wp-includes/formatting.php:4703
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Địa chỉ bạn nhập không hợp lệ, hãy nhập lại đường dẫn hợp lệ."
 
-#: wp-includes/formatting.php:4679
+#: wp-includes/formatting.php:4690
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Địa chỉ WordPress bạn nhập không hợp lệ, hãy nhập lại đường dẫn hợp lệ."
 
-#: wp-includes/formatting.php:4569
+#: wp-includes/formatting.php:4580
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "Địa chỉ email bạn nhập không đúng, hãy nhập lại địa chỉ email hợp lệ."
 
@@ -14321,11 +14321,11 @@ msgstr "Bạn phải <a href=\"%s\">đăng nhập</a> để tạo trang web mớ
 msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
 msgstr "Ít nhất phải có 4 kí tự, chữ hoặc số. Bạn không thể thay đổi được sau này, hãy chọn cẩn thận!"
 
-#: wp-includes/script-loader.php:1787
+#: wp-includes/script-loader.php:1790
 msgid "Are you sure you want to install this plugin?"
 msgstr "Bạn có chắc chắn muốn cài đặt gói mở rộng này?"
 
-#: wp-includes/script-loader.php:1946
+#: wp-includes/script-loader.php:1949
 msgid "Use as featured image"
 msgstr "Dùng làm ảnh tiêu biểu"
 
@@ -14369,7 +14369,7 @@ msgstr "Tùy chỉnh"
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr "Hiện chưa có trình đơn nào được tạo. Hãy <a href=\"%s\">bắt đầu tạo mới</a>."
 
-#: wp-includes/script-loader.php:1963
+#: wp-includes/script-loader.php:1966
 msgid ""
 "You are about to permanently delete this menu. \n"
 " 'Cancel' to stop, 'OK' to delete."
@@ -14377,7 +14377,7 @@ msgstr ""
 "Bạn đang tiến hành xóa vĩnh viễn trình đơn này. \n"
 " 'Cancel' để dừng lại, 'OK' để xác nhận xóa."
 
-#: wp-includes/link-template.php:3958
+#: wp-includes/link-template.php:3961
 msgid "This is the short link."
 msgstr "Đây là liên kết ngắn."
 
@@ -14753,7 +14753,7 @@ msgstr "Nhưng trước khi bạn có thể sử dụng tại khoản của mìn
 msgid "%s is your new username"
 msgstr "%s là tên người dùng mới của bạn"
 
-#: wp-includes/script-loader.php:2345
+#: wp-includes/script-loader.php:2348
 #: wp-includes/class-wp-customize-nav-menus.php:1047 wp-signup.php:621
 msgid "Next"
 msgstr "Tiếp theo"
@@ -14801,40 +14801,40 @@ msgstr "Không có thư mới."
 msgid "Slow down cowboy, no need to check for new mails so often!"
 msgstr "Chậm thôi bạn, không cần phải kiểm tra thư mới quá thường xuyên!"
 
-#: wp-login.php:1292
+#: wp-login.php:1314
 msgid "Registration complete. Please check your email."
 msgstr "Đăng ký hoàn tất. Hãy kiểm tra email của bạn."
 
-#: wp-login.php:1290
+#: wp-login.php:1312
 msgid "Check your email for your new password."
 msgstr "Kiểm tra email của bạn để biết mật khẩu mới."
 
-#: wp-login.php:1288
+#: wp-login.php:1310
 msgid "Check your email for the confirmation link."
 msgstr "Kiểm tra email của bạn để lấy đường dẫn xác nhận đăng ký."
 
-#: wp-login.php:1286
+#: wp-login.php:1308
 msgid "User registration is currently not allowed."
 msgstr "Hệ thống đăng ký hiện đang không được mở."
 
-#: wp-login.php:1284
+#: wp-login.php:1306
 msgid "You are now logged out."
 msgstr "Bạn đã đăng xuất thành công."
 
-#: wp-login.php:1211
+#: wp-login.php:1227
 msgid "You have logged in successfully."
 msgstr "Bạn đã đăng nhập thành công."
 
-#: wp-login.php:1088 wp-login.php:1401 wp-includes/user.php:179
+#: wp-login.php:1104 wp-login.php:1423 wp-includes/user.php:179
 #: wp-includes/user.php:250
 msgid "Lost your password?"
 msgstr "Bạn quên mật khẩu?"
 
-#: wp-login.php:1053
+#: wp-login.php:1069
 msgid "Register For This Site"
 msgstr "Đăng ký trên web này"
 
-#: wp-login.php:1053
+#: wp-login.php:1069
 msgid "Registration Form"
 msgstr "Form đăng ký"
 
@@ -14842,11 +14842,11 @@ msgstr "Form đăng ký"
 msgid "&larr; Back to Tags"
 msgstr "&larr; Quay lại Thẻ"
 
-#: wp-login.php:844
+#: wp-login.php:860
 msgid "Get New Password"
 msgstr "Lấy mật khẩu mới"
 
-#: wp-login.php:817
+#: wp-login.php:833
 msgid "Lost Password"
 msgstr "Quên mật khẩu"
 
@@ -14894,7 +14894,7 @@ msgstr "<strong>LỖI</strong>: WordPress %1$s yêu cầu MySQL %2$s hoặc là 
 msgid "Sidebar %d"
 msgstr "Sidebar %d"
 
-#: wp-includes/user.php:290 wp-includes/functions.php:6229
+#: wp-includes/user.php:290 wp-includes/functions.php:6296
 msgid "Please log in again."
 msgstr "Hãy đăng nhập lại."
 
@@ -14941,51 +14941,51 @@ msgstr "ID không hợp lệ."
 msgid "Empty Term."
 msgstr "Không tìm thấy mục nào."
 
-#: wp-includes/script-loader.php:1707
+#: wp-includes/script-loader.php:1710
 msgid "Saving Draft&#8230;"
 msgstr "Lưu bản nháp&#8230;"
 
-#: wp-includes/script-loader.php:1948
+#: wp-includes/script-loader.php:1951
 msgid "Could not set that as the thumbnail image. Try a different attachment."
 msgstr "Không thể sử dụng tập tin bạn chọn làm ảnh thu nhỏ, hãy thử tập tin khác."
 
-#: wp-includes/script-loader.php:1947
+#: wp-includes/script-loader.php:1950
 msgid "Saving..."
 msgstr "Đang lưu..."
 
-#: wp-includes/script-loader.php:1763
+#: wp-includes/script-loader.php:1766
 msgid "Remove From Bulk Edit"
 msgstr "Xóa khỏi danh sách Chỉnh sửa hàng loạt"
 
-#: wp-includes/script-loader.php:1762 wp-includes/script-loader.php:1775
+#: wp-includes/script-loader.php:1765 wp-includes/script-loader.php:1778
 msgid "Error while saving the changes."
 msgstr "Lỗi khi lưu các thay đổi."
 
-#: wp-includes/script-loader.php:1722
+#: wp-includes/script-loader.php:1725
 msgid "Submitted on:"
 msgstr "Đăng:"
 
-#: wp-includes/script-loader.php:1703 wp-includes/js/dist/editor.js:9174
+#: wp-includes/script-loader.php:1706 wp-includes/js/dist/editor.js:9174
 msgid "Password Protected"
 msgstr "Được bảo vệ bằng mật khẩu"
 
-#: wp-includes/script-loader.php:1694
+#: wp-includes/script-loader.php:1697
 msgid "No more comments found."
 msgstr "Không tìm thấy phản hồi nào nữa."
 
-#: wp-includes/script-loader.php:1693
+#: wp-includes/script-loader.php:1696
 msgid "Show more comments"
 msgstr "Hiện thêm phản hồi"
 
-#: wp-includes/script-loader.php:1690
+#: wp-includes/script-loader.php:1693
 msgid "Published on:"
 msgstr "Được đăng:"
 
-#: wp-includes/script-loader.php:1689
+#: wp-includes/script-loader.php:1692
 msgid "Schedule for:"
 msgstr "Đã lên kế hoạch:"
 
-#: wp-includes/script-loader.php:1688
+#: wp-includes/script-loader.php:1691
 msgid "Publish on:"
 msgstr "Bài viết được đăng:"
 
@@ -15050,8 +15050,8 @@ msgstr "của"
 #: wp-includes/widgets/class-wp-widget-media-image.php:28
 #: wp-includes/class-wp-editor.php:1119 wp-includes/js/dist/editor.js:8111
 #: wp-includes/js/dist/block-editor.js:16428
-#: wp-includes/js/dist/block-library.js:4358
-#: wp-includes/js/dist/block-library.js:4941
+#: wp-includes/js/dist/block-library.js:4362
+#: wp-includes/js/dist/block-library.js:4945
 msgid "Image"
 msgstr "Ảnh"
 
@@ -15364,11 +15364,11 @@ msgstr "chiều"
 msgid "am"
 msgstr "sáng"
 
-#: wp-includes/link-template.php:2935
+#: wp-includes/link-template.php:2938
 msgid "&laquo; Older Comments"
 msgstr "&laquo; Phản hồi cũ hơn"
 
-#: wp-includes/link-template.php:2888
+#: wp-includes/link-template.php:2891
 msgid "Newer Comments &raquo;"
 msgstr "Phản hồi mới hơn &raquo;"
 
@@ -15376,15 +15376,15 @@ msgstr "Phản hồi mới hơn &raquo;"
 msgid "Last Post"
 msgstr "Bài viết cuối"
 
-#: wp-includes/link-template.php:1910 wp-includes/link-template.php:2160
+#: wp-includes/link-template.php:1913 wp-includes/link-template.php:2163
 msgid "Next Post"
 msgstr "Bài sau"
 
-#: wp-includes/link-template.php:1910 wp-includes/link-template.php:2160
+#: wp-includes/link-template.php:1913 wp-includes/link-template.php:2163
 msgid "Previous Post"
 msgstr "Bài trước"
 
-#: wp-includes/link-template.php:756
+#: wp-includes/link-template.php:759
 msgid "Comments Feed"
 msgstr "Dòng tin RSS của phản hồi"
 
@@ -15397,18 +15397,18 @@ msgstr "Thêm thẻ ngắt trang"
 msgid "Fill Screen"
 msgstr "Cả màn hình"
 
-#: wp-includes/js/dist/editor.js:8114 wp-includes/js/dist/block-library.js:5969
+#: wp-includes/js/dist/editor.js:8114 wp-includes/js/dist/block-library.js:5973
 msgid "Quote"
 msgstr "Trích dẫn"
 
 #: wp-includes/class-wp-editor.php:1160
-#: wp-includes/js/dist/block-library.js:3874
+#: wp-includes/js/dist/block-library.js:3878
 msgid "Remove link"
 msgstr "Xóa đường dẫn"
 
 #: wp-includes/script-loader.php:1012 wp-includes/class-wp-editor.php:1164
 #: wp-includes/js/dist/block-editor.js:17682
-#: wp-includes/js/dist/block-library.js:3838
+#: wp-includes/js/dist/block-library.js:3842
 msgid "Insert link"
 msgstr "Thêm đường dẫn"
 
@@ -15420,7 +15420,7 @@ msgstr "Kiểm tra chính tả"
 msgid "Select all"
 msgstr "Chọn tất cả"
 
-#: wp-includes/script-loader.php:1544 wp-includes/class-wp-editor.php:1314
+#: wp-includes/script-loader.php:1547 wp-includes/class-wp-editor.php:1314
 msgid "Action"
 msgstr "Tác vụ"
 
@@ -15430,7 +15430,7 @@ msgstr "Letter"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:136
 #: wp-includes/media-template.php:1152
-#: wp-includes/js/dist/block-library.js:4349
+#: wp-includes/js/dist/block-library.js:4353
 msgid "Link Rel"
 msgstr "Đường dẫn"
 
@@ -15477,8 +15477,8 @@ msgstr "Cân dòng"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:76
 #: wp-includes/widgets/class-wp-widget-media-video.php:79
 #: wp-includes/media-template.php:1257 wp-includes/media-template.php:1356
-#: wp-includes/js/dist/block-library.js:7687
-#: wp-includes/js/dist/block-library.js:19504
+#: wp-includes/js/dist/block-library.js:7691
+#: wp-includes/js/dist/block-library.js:19508
 msgid "Loop"
 msgstr "Lặp lại"
 
@@ -15486,7 +15486,7 @@ msgstr "Lặp lại"
 msgid "Constrain proportions"
 msgstr "Giữ tỉ lệ gốc"
 
-#: wp-includes/js/dist/block-library.js:14530
+#: wp-includes/js/dist/block-library.js:14534
 msgid "List"
 msgstr "Danh sách"
 
@@ -15525,7 +15525,7 @@ msgid "Vertical space"
 msgstr "Khoảng trống chiều dọc"
 
 #: wp-includes/class-wp-editor.php:1129
-#: wp-includes/js/dist/block-library.js:10688
+#: wp-includes/js/dist/block-library.js:10692
 msgid "Dimensions"
 msgstr "Kích thước"
 
@@ -15537,7 +15537,7 @@ msgstr "Viền"
 msgid "Image description"
 msgstr "Mô tả về ảnh"
 
-#: wp-includes/js/dist/block-library.js:15864
+#: wp-includes/js/dist/block-library.js:15868
 msgid "Name:"
 msgstr "Tên:"
 
@@ -15570,7 +15570,7 @@ msgstr "Chữ nhỏ ở dưới"
 msgid "Unlink"
 msgstr "Bỏ liên kết"
 
-#: wp-includes/js/dist/block-library.js:14533
+#: wp-includes/js/dist/block-library.js:14537
 msgid "ordered list"
 msgstr "danh sách theo thứ tự"
 
@@ -15607,8 +15607,8 @@ msgid "Bold"
 msgstr "Đậm"
 
 #: wp-includes/script-loader.php:1026 wp-includes/class-wp-editor.php:1065
-#: wp-includes/js/dist/block-library.js:9098
-#: wp-includes/js/dist/block-library.js:9185
+#: wp-includes/js/dist/block-library.js:9102
+#: wp-includes/js/dist/block-library.js:9189
 msgid "Code"
 msgstr "Mã"
 
@@ -15640,7 +15640,7 @@ msgstr "Tiêu đề 2"
 msgid "Heading 1"
 msgstr "Tiêu đề 1"
 
-#: wp-includes/js/dist/block-library.js:15145
+#: wp-includes/js/dist/block-library.js:15149
 msgid "Preformatted"
 msgstr "Định dạng trước"
 
@@ -15666,14 +15666,14 @@ msgstr "Ngôn ngữ"
 msgid "Document properties"
 msgstr "Thuộc tính tài liệu"
 
-#: wp-includes/script-loader.php:1436 wp-includes/script-loader.php:1540
-#: wp-includes/script-loader.php:1706 wp-includes/script-loader.php:1739
-#: wp-includes/script-loader.php:1964 wp-includes/theme.php:3179
+#: wp-includes/script-loader.php:1436 wp-includes/script-loader.php:1543
+#: wp-includes/script-loader.php:1709 wp-includes/script-loader.php:1742
+#: wp-includes/script-loader.php:1967 wp-includes/theme.php:3179
 #: wp-includes/class-wp-editor.php:1270
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Các thay đổi bạn vừa thực hiện sẽ bị mất nếu bạn đi khỏi trang này khi chưa lưu bài."
 
-#: wp-includes/js/dist/block-library.js:10094
+#: wp-includes/js/dist/block-library.js:10098
 msgid "Column"
 msgstr "Cột"
 
@@ -16009,12 +16009,12 @@ msgstr "Kết quả tìm kiếm %1$s %2$s"
 msgid "Site Admin"
 msgstr "Quản lý"
 
-#: wp-login.php:853 wp-login.php:988 wp-login.php:1081 wp-login.php:1392
+#: wp-login.php:869 wp-login.php:1004 wp-login.php:1097 wp-login.php:1414
 #: wp-includes/general-template.php:595
 msgid "Register"
 msgstr "Đăng ký"
 
-#: wp-login.php:1357 wp-includes/general-template.php:465
+#: wp-login.php:1379 wp-includes/general-template.php:465
 msgid "Remember Me"
 msgstr "Tự động đăng nhập"
 
@@ -16022,39 +16022,39 @@ msgstr "Tự động đăng nhập"
 msgid "Log out"
 msgstr "Đăng xuất"
 
-#: wp-login.php:849 wp-login.php:924 wp-login.php:984 wp-login.php:1086
+#: wp-login.php:865 wp-login.php:940 wp-login.php:1000 wp-login.php:1102
 #: wp-includes/general-template.php:324
 msgid "Log in"
 msgstr "Đăng nhập"
 
-#: wp-includes/functions.php:5529
+#: wp-includes/functions.php:5596
 msgid "Manual Offsets"
 msgstr "Chỉnh vị trí bằng tay"
 
-#: wp-includes/functions.php:5520 wp-includes/functions.php:5525
+#: wp-includes/functions.php:5587 wp-includes/functions.php:5592
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:5475
+#: wp-includes/functions.php:5542
 msgid "Select a city"
 msgstr "Chọn thành phố"
 
 #. translators: 1: PHP function name, 2: Version number.
-#: wp-includes/functions.php:4785
+#: wp-includes/functions.php:4852
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s đã gọi đến một tham số đã được <strong>loại bỏ</strong> kể từ phiên bản %2$s mà không có lựa chọn phụ nào cả."
 
 #. translators: 1: PHP function name, 2: Version number, 3: Optional message
 #. regarding the change.
-#: wp-includes/functions.php:4782
+#: wp-includes/functions.php:4849
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s được gọi với một tham số đã bị <strong>loại bỏ</strong> kể từ phiên bản %2$s! %3$s"
 
 #. translators: 1: PHP function name, 2: Version number.
 #. translators: 1: PHP file name, 2: Version number.
 #. translators: 1: WordPress hook name, 2: Version number.
-#: wp-includes/functions.php:4568 wp-includes/functions.php:4722
-#: wp-includes/functions.php:4844
+#: wp-includes/functions.php:4635 wp-includes/functions.php:4789
+#: wp-includes/functions.php:4911
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s is <strong>deprecated</strong> since version %2$s! Hiện không có giải pháp thay thế."
 
@@ -16063,44 +16063,44 @@ msgstr "%1$s is <strong>deprecated</strong> since version %2$s! Hiện không c�
 #. translators: 1: PHP file name, 2: Version number, 3: Alternative file name.
 #. translators: 1: WordPress hook name, 2: Version number, 3: Alternative hook
 #. name.
-#: wp-includes/functions.php:4565 wp-includes/functions.php:4719
-#: wp-includes/functions.php:4841
+#: wp-includes/functions.php:4632 wp-includes/functions.php:4786
+#: wp-includes/functions.php:4908
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s đã bị <strong>loại bỏ</strong> từ phiên bản %2$s! Hãy sử dụng %3$s."
 
-#: wp-load.php:92 wp-includes/functions.php:3708
+#: wp-load.php:92 wp-includes/functions.php:3775
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; Lỗi"
 
-#: wp-includes/functions.php:3254
+#: wp-includes/functions.php:3321
 msgid "&laquo; Back"
 msgstr "&laquo; Quay lại"
 
-#: wp-includes/functions.php:3084
+#: wp-includes/functions.php:3151
 msgid "Please try again."
 msgstr "Xin vui lòng thử lại."
 
 #. translators: %s: Logout URL.
-#: wp-includes/functions.php:3074
+#: wp-includes/functions.php:3141
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "Bạn có thực sự muốn <a href='%s'>đăng xuất</a> không?"
 
 #. translators: %s: Site title.
-#: wp-includes/functions.php:3067
+#: wp-includes/functions.php:3134
 msgid "You are attempting to log out of %s"
 msgstr "Bạn đang đăng xuất khỏi %s"
 
 #. translators: %s: File name.
-#: wp-includes/functions.php:2559
+#: wp-includes/functions.php:2626
 msgid "Could not write file %s"
 msgstr "Không thể ghi tập tin %s"
 
-#: wp-includes/functions.php:2500
+#: wp-includes/functions.php:2567
 msgid "Empty filename"
 msgstr "Tên tập tin rỗng"
 
 #. translators: %s: Directory path.
-#: wp-includes/functions.php:2263 wp-includes/functions.php:2549
+#: wp-includes/functions.php:2268 wp-includes/functions.php:2616
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
 msgstr "Không thể tạo thư mục %s. Máy chủ có cho phép ghi chép trong thư mục mẹ không?"
 
@@ -16115,7 +16115,7 @@ msgid ", "
 msgstr ", "
 
 #. translators: Time difference between two dates, in days. %s: Number of days.
-#: wp-includes/formatting.php:3729
+#: wp-includes/formatting.php:3740
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s ngày"
@@ -16123,14 +16123,14 @@ msgstr[0] "%s ngày"
 #. translators: %s: Time duration in hour or hours.
 #. translators: Time difference between two dates, in hours. %s: Number of
 #. hours.
-#: wp-includes/functions.php:504 wp-includes/formatting.php:3722
+#: wp-includes/functions.php:509 wp-includes/formatting.php:3733
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s giờ"
 
 #. translators: Time difference between two dates, in minutes (min=minute). %s:
 #. Number of minutes.
-#: wp-includes/formatting.php:3715
+#: wp-includes/formatting.php:3726
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s phút"
@@ -16178,7 +16178,7 @@ msgid "new WordPress Loop"
 msgstr "Vòng lặp mới của WordPress"
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:29
-#: wp-includes/js/dist/block-library.js:19920
+#: wp-includes/js/dist/block-library.js:19924
 msgid "Tag Cloud"
 msgstr "Mây Thẻ"
 
@@ -16243,18 +16243,18 @@ msgid "Text"
 msgstr "Văn bản"
 
 #: wp-includes/widgets/class-wp-widget-calendar.php:37
-#: wp-includes/js/dist/block-library.js:8660
+#: wp-includes/js/dist/block-library.js:8664
 msgid "Calendar"
 msgstr "Lịch"
 
-#: wp-includes/js/dist/block-library.js:7377
-#: wp-includes/js/dist/block-library.js:8864
+#: wp-includes/js/dist/block-library.js:7381
+#: wp-includes/js/dist/block-library.js:8868
 msgid "Display as Dropdown"
 msgstr "Hiện dạng thả xuống"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:176
 #: wp-includes/widgets/class-wp-widget-archives.php:204
-#: wp-includes/js/dist/block-library.js:19887
+#: wp-includes/js/dist/block-library.js:19891
 msgid "Show post counts"
 msgstr "Hiện số bài viết"
 
@@ -16422,7 +16422,7 @@ msgstr "Bình luận của bạn đang chờ phản hồi."
 msgid "Comments are closed."
 msgstr "Bình luận đã bị đóng."
 
-#: wp-includes/script-loader.php:1912
+#: wp-includes/script-loader.php:1915
 msgid "Select default color"
 msgstr "Chọn màu mặc định"
 
@@ -16431,7 +16431,7 @@ msgid "Pages:"
 msgstr "Trang:"
 
 #. translators: %s: Comments count.
-#: wp-includes/script-loader.php:1651
+#: wp-includes/script-loader.php:1654
 msgid "Comments (%s)"
 msgstr "Bình luận (%s)"
 
@@ -16444,8 +16444,8 @@ msgstr "Thẻ:"
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Bạn phải <a href=\"%s\">đăng nhập</a> để gửi phản hồi."
 
-#: wp-includes/link-template.php:1062 wp-includes/link-template.php:1422
-#: wp-includes/link-template.php:1530 wp-includes/link-template.php:1593
+#: wp-includes/link-template.php:1065 wp-includes/link-template.php:1425
+#: wp-includes/link-template.php:1533 wp-includes/link-template.php:1596
 msgid "Edit This"
 msgstr "Sửa"
 
@@ -16471,16 +16471,16 @@ msgid "Comments on %s"
 msgstr "Phản hồi cho %s"
 
 #: wp-includes/script-loader.php:1174 wp-includes/script-loader.php:1504
-#: wp-includes/script-loader.php:1962
+#: wp-includes/script-loader.php:1965
 #: wp-includes/class-wp-customize-nav-menus.php:289
 msgid "No results found."
 msgstr "Không tìm thấy kết quả."
 
-#: wp-includes/link-template.php:2366 wp-includes/link-template.php:2506
+#: wp-includes/link-template.php:2369 wp-includes/link-template.php:2509
 msgid "Next Page &raquo;"
 msgstr "Trang sau &raquo;"
 
-#: wp-includes/link-template.php:2452 wp-includes/link-template.php:2505
+#: wp-includes/link-template.php:2455 wp-includes/link-template.php:2508
 msgid "&laquo; Previous Page"
 msgstr "&laquo; Trang trước"
 
@@ -16499,7 +16499,7 @@ msgid "For some strange yet very annoying reason, this post could not be edited.
 msgstr "Gặp phải lỗi lạ, bạn không thể chỉnh sửa bài viết này được."
 
 #: wp-includes/admin-bar.php:952 wp-includes/class-wp-customize-widgets.php:417
-#: wp-includes/functions.php:4455 wp-includes/js/dist/blocks.js:5540
+#: wp-includes/functions.php:4522 wp-includes/js/dist/blocks.js:5540
 msgid "Widgets"
 msgstr "Widget"
 
@@ -16534,28 +16534,28 @@ msgstr "Phân cách các thẻ bằng dấu phẩy (,)."
 msgid "Title:"
 msgstr "Tiêu đề:"
 
-#: wp-includes/js/dist/block-library.js:12613
+#: wp-includes/js/dist/block-library.js:12617
 msgid "HTML"
 msgstr "HTML"
 
-#: wp-includes/script-loader.php:1785
+#: wp-includes/script-loader.php:1788
 msgid "Plugin:"
 msgstr "Plugin:"
 
-#: wp-includes/script-loader.php:1911
+#: wp-includes/script-loader.php:1914
 #: wp-includes/customize/class-wp-customize-color-control.php:51
 #: wp-includes/customize/class-wp-customize-media-control.php:221
 #: wp-includes/customize/class-wp-customize-media-control.php:231
 #: wp-includes/customize/class-wp-customize-media-control.php:242
 #: wp-includes/customize/class-wp-customize-media-control.php:252
 #: wp-includes/class-wp-customize-manager.php:5146
-#: wp-includes/js/dist/block-library.js:16895
+#: wp-includes/js/dist/block-library.js:16899
 msgid "Default"
 msgstr "Mặc định"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:83
 #: wp-includes/media-template.php:1098 wp-includes/class-wp-editor.php:1231
-#: wp-includes/js/dist/block-library.js:4432
+#: wp-includes/js/dist/block-library.js:4436
 msgid "Height"
 msgstr "Cao"
 
@@ -16567,7 +16567,7 @@ msgstr "Định dạng thời gian"
 msgid "Date Format"
 msgstr "Định dạng ngày tháng"
 
-#: wp-login.php:1062 wp-includes/comment-template.php:2300
+#: wp-login.php:1078 wp-includes/comment-template.php:2300
 msgid "Email"
 msgstr "Email"
 
@@ -16603,7 +16603,7 @@ msgid "Sites"
 msgstr "Trang web"
 
 #: wp-includes/js/dist/block-editor.js:17682
-#: wp-includes/js/dist/block-library.js:3838
+#: wp-includes/js/dist/block-library.js:3842
 msgid "Edit link"
 msgstr "Sửa liên kết"
 
@@ -16615,11 +16615,11 @@ msgstr "Có"
 msgid "Edit Category"
 msgstr "Chỉnh sửa chuyên mục"
 
-#: wp-login.php:1315 wp-login.php:1359 wp-includes/general-template.php:466
+#: wp-login.php:1337 wp-login.php:1381 wp-includes/general-template.php:466
 msgid "Log In"
 msgstr "Đăng nhập"
 
-#: wp-login.php:949
+#: wp-login.php:965
 msgid "Strength indicator"
 msgstr "Độ bảo mật"
 
@@ -16643,7 +16643,7 @@ msgstr "<strong>LỖI</strong>: Xin điền tên người dùng."
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:77
 #: wp-includes/media-template.php:1093 wp-includes/class-wp-editor.php:1232
-#: wp-includes/js/dist/block-library.js:4425
+#: wp-includes/js/dist/block-library.js:4429
 #: wp-includes/js/dist/format-library.js:713
 msgid "Width"
 msgstr "Rộng"
@@ -16703,13 +16703,13 @@ msgstr "Đen"
 msgid "Help"
 msgstr "Trợ giúp"
 
-#: wp-includes/script-loader.php:1503 wp-includes/script-loader.php:1764
+#: wp-includes/script-loader.php:1503 wp-includes/script-loader.php:1767
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:97
 #: wp-includes/blocks/rss.php:35 wp-includes/blocks/latest-comments.php:31
 #: wp-includes/blocks/latest-posts.php:37 wp-includes/media.php:3427
 #: wp-includes/js/dist/editor.js:10143 wp-includes/js/dist/editor.js:14172
 #: wp-includes/js/dist/edit-post.js:4559
-#: wp-includes/js/dist/block-library.js:14007
+#: wp-includes/js/dist/block-library.js:14011
 msgid "(no title)"
 msgstr "(không có tiêu đề)"
 
@@ -16730,7 +16730,7 @@ msgid "Select"
 msgstr "Chọn"
 
 #: wp-includes/script-loader.php:1213 wp-includes/script-loader.php:1319
-#: wp-includes/script-loader.php:1543 wp-includes/script-loader.php:2341
+#: wp-includes/script-loader.php:1546 wp-includes/script-loader.php:2344
 #: wp-includes/class-wp-customize-manager.php:5637
 #: wp-includes/class-wp-editor.php:1086 wp-includes/class-wp-editor.php:1737
 #: wp-includes/js/dist/components.js:37978
@@ -16769,7 +16769,7 @@ msgstr "Xem trang"
 msgid "Images"
 msgstr "Hình ảnh"
 
-#: wp-includes/js/dist/block-library.js:18787
+#: wp-includes/js/dist/block-library.js:18791
 msgid "Version"
 msgstr "Phiên bản"
 
@@ -16777,7 +16777,7 @@ msgstr "Phiên bản"
 #: wp-includes/blocks/search.php:78 wp-includes/blocks/search.php:86
 #: wp-includes/media.php:3807 wp-includes/media.php:3851
 #: wp-includes/class-wp-editor.php:1758
-#: wp-includes/js/dist/block-library.js:16447
+#: wp-includes/js/dist/block-library.js:16451
 msgid "Search"
 msgstr "Tìm kiếm"
 
@@ -16802,8 +16802,8 @@ msgstr "Thêm"
 msgid "Add or remove tags"
 msgstr "Thêm/Xóa thẻ"
 
-#: wp-login.php:681 wp-includes/script-loader.php:1501
-#: wp-includes/script-loader.php:1697 wp-includes/script-loader.php:1825
+#: wp-login.php:695 wp-includes/script-loader.php:1501
+#: wp-includes/script-loader.php:1700 wp-includes/script-loader.php:1828
 #: wp-includes/media.php:3810 wp-includes/js/dist/editor.js:8955
 msgid "Update"
 msgstr "Cập nhật"
@@ -16812,28 +16812,28 @@ msgstr "Cập nhật"
 msgid "Schedule"
 msgstr "Lên lịch"
 
-#: wp-includes/script-loader.php:1701 wp-includes/js/dist/editor.js:9166
+#: wp-includes/script-loader.php:1704 wp-includes/js/dist/editor.js:9166
 msgid "Public"
 msgstr "Công khai"
 
-#: wp-includes/script-loader.php:1702
+#: wp-includes/script-loader.php:1705
 msgid "Public, Sticky"
 msgstr "Đăng, dán"
 
-#: wp-includes/script-loader.php:1700 wp-includes/post.php:940
+#: wp-includes/script-loader.php:1703 wp-includes/post.php:940
 #: wp-includes/post.php:960 wp-includes/js/dist/editor.js:9170
 msgid "Private"
 msgstr "Riêng tư"
 
-#: wp-includes/script-loader.php:1686 wp-includes/class-wp-editor.php:1084
+#: wp-includes/script-loader.php:1689 wp-includes/class-wp-editor.php:1084
 msgid "OK"
 msgstr "Ok"
 
-#: wp-includes/script-loader.php:1704
+#: wp-includes/script-loader.php:1707
 msgid "Privately Published"
 msgstr "Được đăng ở chế độ riêng tư"
 
-#: wp-includes/script-loader.php:1698 wp-includes/js/dist/editor.js:10556
+#: wp-includes/script-loader.php:1701 wp-includes/js/dist/editor.js:10556
 msgid "Save as Pending"
 msgstr "Lưu vào danh sách chờ duyệt"
 
@@ -16935,11 +16935,11 @@ msgstr "Ảnh thu nhỏ"
 msgid "Redo"
 msgstr "Làm lại bước vừa rồi"
 
-#: wp-login.php:1339 wp-includes/general-template.php:464
+#: wp-login.php:1361 wp-includes/general-template.php:464
 msgid "Password"
 msgstr "Mật khẩu"
 
-#: wp-login.php:1058
+#: wp-login.php:1074
 msgid "Username"
 msgstr "Tên người dùng"
 
@@ -16947,7 +16947,7 @@ msgstr "Tên người dùng"
 #: wp-includes/widgets/class-wp-widget-archives.php:43
 #: wp-includes/blocks/archives.php:35 wp-includes/general-template.php:1559
 #: wp-includes/theme-compat/sidebar.php:119
-#: wp-includes/js/dist/block-library.js:7425
+#: wp-includes/js/dist/block-library.js:7429
 msgid "Archives"
 msgstr "Lưu trữ"
 
@@ -16975,11 +16975,11 @@ msgstr "Trackback"
 msgid "Pingback"
 msgstr "Pingback"
 
-#: wp-includes/script-loader.php:1646 wp-includes/comment-template.php:1631
+#: wp-includes/script-loader.php:1649 wp-includes/comment-template.php:1631
 msgid "Reply"
 msgstr "Trả lời"
 
-#: wp-includes/script-loader.php:1532 wp-includes/script-loader.php:1699
+#: wp-includes/script-loader.php:1535 wp-includes/script-loader.php:1702
 #: wp-includes/class-wp-customize-manager.php:4766
 #: wp-includes/js/dist/editor.js:10556
 msgid "Save Draft"
@@ -16993,8 +16993,8 @@ msgstr "Thẻ"
 msgid "Content"
 msgstr "Nội dung"
 
-#: wp-includes/script-loader.php:1483 wp-includes/script-loader.php:1542
-#: wp-includes/script-loader.php:1687 wp-includes/media.php:3809
+#: wp-includes/script-loader.php:1483 wp-includes/script-loader.php:1545
+#: wp-includes/script-loader.php:1690 wp-includes/media.php:3809
 #: wp-includes/class-wp-editor.php:1085 wp-includes/class-wp-editor.php:1783
 #: wp-includes/js/dist/block-editor.js:16472
 #: wp-includes/js/dist/block-editor.js:16475
@@ -17014,12 +17014,12 @@ msgstr "Phản hồi gần đây"
 #: wp-includes/class-wp-customize-manager.php:4264
 #: wp-includes/class-wp-editor.php:1152
 #: wp-includes/js/dist/block-editor.js:19033
-#: wp-includes/js/dist/block-library.js:12601
+#: wp-includes/js/dist/block-library.js:12605
 msgid "Preview"
 msgstr "Xem thử"
 
 #: wp-includes/widgets/class-wp-widget-rss.php:33
-#: wp-includes/js/dist/block-library.js:16362
+#: wp-includes/js/dist/block-library.js:16366
 msgid "RSS"
 msgstr "Dòng thông tin - RSS"
 
@@ -17033,7 +17033,7 @@ msgstr "Gửi"
 msgid "Anonymous"
 msgstr "Khách"
 
-#: wp-includes/script-loader.php:1949
+#: wp-includes/script-loader.php:1952
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:57
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
 msgid "Done"
@@ -17065,9 +17065,9 @@ msgstr "Sửa thẻ"
 #: wp-includes/media-template.php:984 wp-includes/media-template.php:1001
 #: wp-includes/media-template.php:1048 wp-includes/media-template.php:1124
 #: wp-includes/media-template.php:1244 wp-includes/media-template.php:1343
-#: wp-includes/deprecated.php:688 wp-includes/js/dist/block-library.js:6645
-#: wp-includes/js/dist/block-library.js:7707
-#: wp-includes/js/dist/block-library.js:19535
+#: wp-includes/deprecated.php:688 wp-includes/js/dist/block-library.js:6649
+#: wp-includes/js/dist/block-library.js:7711
+#: wp-includes/js/dist/block-library.js:19539
 msgid "None"
 msgstr "Trống"
 
@@ -17094,15 +17094,15 @@ msgstr "Mục tiêu"
 #: wp-includes/widgets/class-wp-widget-categories.php:47
 #: wp-includes/category-template.php:532
 #: wp-includes/theme-compat/sidebar.php:129
-#: wp-includes/js/dist/block-library.js:8828
-#: wp-includes/js/dist/block-library.js:8880
-#: wp-includes/js/dist/block-library.js:8944
+#: wp-includes/js/dist/block-library.js:8832
+#: wp-includes/js/dist/block-library.js:8884
+#: wp-includes/js/dist/block-library.js:8948
 msgid "Categories"
 msgstr "Chuyên mục"
 
-#: wp-includes/script-loader.php:1737 wp-includes/class-wp-editor.php:1154
+#: wp-includes/script-loader.php:1740 wp-includes/class-wp-editor.php:1154
 #: wp-includes/js/dist/editor.js:11568
-#: wp-includes/js/dist/block-library.js:15879
+#: wp-includes/js/dist/block-library.js:15883
 msgid "Save"
 msgstr "Lưu thay đổi"
 
@@ -17135,14 +17135,14 @@ msgstr "Phiên bản tự động lưu"
 msgid "Excerpt"
 msgstr "Tóm tắt"
 
-#: wp-includes/script-loader.php:1530 wp-includes/script-loader.php:1695
+#: wp-includes/script-loader.php:1533 wp-includes/script-loader.php:1698
 #: wp-includes/class-wp-customize-manager.php:4761
 #: wp-includes/js/dist/editor.js:8960 wp-includes/js/dist/edit-post.js:4715
 msgid "Publish"
 msgstr "Đăng"
 
-#: wp-includes/script-loader.php:1649 wp-includes/comment.php:3485
-#: wp-includes/link-template.php:3039 wp-includes/link-template.php:3099
+#: wp-includes/script-loader.php:1652 wp-includes/comment.php:3485
+#: wp-includes/link-template.php:3042 wp-includes/link-template.php:3102
 msgid "Comments"
 msgstr "Bình luận"
 
@@ -17172,7 +17172,7 @@ msgstr "%s trước"
 #: wp-includes/class-walker-comment.php:242
 #: wp-includes/class-walker-comment.php:392 wp-includes/js/dist/editor.js:11740
 #: wp-includes/js/dist/block-editor.js:15685
-#: wp-includes/js/dist/block-library.js:15858
+#: wp-includes/js/dist/block-library.js:15862
 msgid "Edit"
 msgstr "Chỉnh sửa"
 
@@ -17199,7 +17199,7 @@ msgstr "Bình luận"
 #: wp-includes/class-wp-customize-nav-menus.php:1194
 #: wp-includes/js/dist/block-editor.js:15990
 #: wp-includes/js/dist/block-editor.js:16239
-#: wp-includes/js/dist/block-library.js:11949
+#: wp-includes/js/dist/block-library.js:11953
 msgid "URL"
 msgstr "URL"
 
@@ -17230,7 +17230,7 @@ msgstr "Bản nháp"
 msgid "Pending Review"
 msgstr "Chờ duyệt"
 
-#: wp-includes/script-loader.php:1531 wp-includes/script-loader.php:1705
+#: wp-includes/script-loader.php:1534 wp-includes/script-loader.php:1708
 #: wp-includes/post.php:941 wp-includes/post.php:961
 #: wp-includes/js/dist/editor.js:10279
 msgid "Published"
@@ -17242,7 +17242,7 @@ msgstr "Đã xuất bản"
 msgid "Title"
 msgstr "Tiêu đề"
 
-#: wp-includes/post.php:1692 wp-includes/js/dist/block-library.js:13955
+#: wp-includes/post.php:1692 wp-includes/js/dist/block-library.js:13959
 msgid "No posts found."
 msgstr "Không tìm thấy bài viết nào."
 
@@ -17262,8 +17262,8 @@ msgstr "Gặp lỗi trong quá trình kích hoạt"
 msgid "Your account is now active!"
 msgstr "Tài khoản của bạn đã được kích hoạt!"
 
-#: wp-activate.php:133 wp-includes/script-loader.php:1882
-#: wp-includes/script-loader.php:1883
+#: wp-activate.php:133 wp-includes/script-loader.php:1885
+#: wp-includes/script-loader.php:1886
 msgid "Activate"
 msgstr "Kích hoạt"
 

@@ -232,3 +232,5 @@ add_action( 'enqueue_block_editor_assets', 'justread_style_editor_gutenberg' );
  */
 require get_template_directory() . '/inc/dashboard-widget.php';
 new Justread_Dashboard_Widget();
+
+  show_admin_bar(false);
