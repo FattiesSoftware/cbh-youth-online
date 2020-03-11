@@ -1,0 +1,507 @@
+# Translation of Themes - Elegant Pink in Vietnamese
+# This file is distributed under the same license as the Themes - Elegant Pink package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-28 19:18:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - Elegant Pink\n"
+
+#. Description of the plugin/theme
+msgid "Elegant Pink is a versatile masonry based, feminine and girly WordPress theme that can be used for building lively and eye-catching websites. The theme can be used to build beautiful blog or magazine related to photography, nature, art and design, lifestyle, food, fashion, babies, kids, wedding or any other creative image centric websites. The responsive design of the theme ensures that your website is mobile friendly and looks great on every device including desktops, laptops, mobiles and tablets. The theme is loaded with features and tools that allows customization of different aspects of the theme. The theme features multiple post formats, custom menu, custom footer, custom slider and customizer options to create a visually appealing website. Infinite Scroll gives an unique loading of the blog posts. The masonry works by placing elements in the optimal position based on the available space, so that your posts are automatically presented in the most visually pleasing and organized way. The theme is SEO friendly and make it easy to find on Google and other search engines. It is loaded with theme options and provides several features to make user-friendly, interactive and visually stunning website.The pinterest style layout makes the theme an ideal option for blogs, portfolios, magazine and other creative websites. Whether you are a fashion blogger or simply want to share your wedding experiences in a beautiful and sophisticated website, Elegant Pink is just perfect for you."
+msgstr "Elegant Pink có một phong cách trang trí đa năng, với chủ đề giao diện WordPress nữ tính có thể được sử dụng để xây dựng các trang web sống động và bắt mắt. Các chủ đề có thể được sử dụng để xây dựng đẹp trên blog hoặc tạp chí liên quan đến nhiếp ảnh, thiên nhiên, nghệ thuật và thiết kế, lối sống, thực phẩm, thời trang, trẻ sơ sinh, trẻ em, đám cưới hay bất kỳ trung tâm hình ảnh sáng tạo khác. Giao diện được thiết kế đảm bảo đáp ứng các trang web của bạn thân thiện với thiết bị di động và trông tuyệt vời trên mọi thiết bị bao gồm máy tính để bàn, máy tính xách tay, điện thoại di động và máy tính bảng. Giao diện được nạp với các tính năng và các công cụ cho phép tùy biến các khía cạnh khác nhau của chủ đề. Giao diện đặc trưng bài nhiều định dạng, tùy chỉnh trình đơn, tùy chỉnh footer, slider tùy chỉnh và Widgets tùy chọn để tạo ra một trang web trực quan hấp dẫn. Infinite Scroll cho phép tải các bài đăng trên blog. Môi trường làm việc được tối ưu dựa trên không gian có sẵn, để các bài viết của bạn được tự động trình bày theo cách trực quan nhất và dễ chịu nhất. Các chủ đề được SEO thân thiện và làm cho nó dễ dàng để tìm thấy trên Google và công cụ tìm kiếm khác. Nó được tải với chủ đề lựa chọn và cung cấp một số tính năng để làm cho thân thiện với người sử dụng website.The Pinterest phong cách tương tác và trực quan tuyệt đẹp bố trí làm cho các chủ đề một lựa chọn lý tưởng cho các blog, danh mục đầu tư, tạp chí và sáng tạo khác trang web. Cho dù bạn là một blogger thời trang hoặc đơn giản chỉ muốn chia sẻ kinh nghiệm đám cưới của bạn trong một trang web đẹp và tinh vi, Elegant Pink chỉ là hoàn hảo cho bạn ."
+
+#. Theme Name of the plugin/theme
+msgid "Elegant Pink"
+msgstr "Elegant Pink"
+
+#: inc/extras.php:455
+msgid "Elegant Pink by: Rara Theme"
+msgstr "Elegant Pink by: Rara Theme"
+
+#: inc/customizer.php:508 inc/extras.php:99 inc/widget-social-links.php:67
+#: inc/widget-social-links.php:137
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: comments.php:94
+msgid "Comment"
+msgstr "Bình luận"
+
+#: comments.php:79
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:76
+msgid "Email*"
+msgstr "Email*"
+
+#: comments.php:73
+msgid "Name*"
+msgstr "Tên*"
+
+#. Template Name of the plugin/theme
+msgid "Home Page"
+msgstr "Trang chủ"
+
+#: template-home.php:55
+msgid "Newer Entries"
+msgstr "Mục mới hơn"
+
+#: template-home.php:54
+msgid "Older Entries"
+msgstr "Các mục cũ hơn"
+
+#. translators: %s: Name of current post.
+#: template-parts/content-single.php:35 template-parts/content.php:38
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tiếp tục đọc %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-page.php:35 template-parts/content-single.php:40
+#: template-parts/content.php:44
+msgid "Pages:"
+msgstr "Trang:"
+
+#: template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Có vẻ như chúng tôi không thể tìm thấy những gì bạn đang tìm kiếm. Có lẽ tìm kiếm có thể giúp đỡ."
+
+#: template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Rất tiếc, không có nội dung nào khớp với yêu cầu tìm kiếm của bạn. Hãy thử lại với các từ khóa khác."
+
+#: template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bạn đã sẵn sàng đăng bài viết đầu tiên chưa? <a href=\"%1$s\">Hãy bắt đầu tại đây</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Không có kết quả"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "Tìm kiếm kết quả cho: %s"
+
+#: inc/widget-social-links.php:103 inc/widget-social-links.php:109
+#: inc/widget-social-links.php:115 inc/widget-social-links.php:121
+#: inc/widget-social-links.php:127 inc/widget-social-links.php:133
+#: inc/widget-social-links.php:139
+msgid "Leave blank if you do not want to show."
+msgstr "Để trống nếu bạn không muốn hiển thị."
+
+#: inc/widget-social-links.php:61
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: inc/widget-social-links.php:40 inc/widget-social-links.php:84
+#: inc/widget-social-links.php:157
+msgid "Social"
+msgstr "Mạng Xã hội"
+
+#: inc/widget-social-links.php:26
+msgid "A Social Links Widget"
+msgstr "Tiện ích liên kết mạng xã hội"
+
+#: inc/widget-social-links.php:25
+msgid "RARA: Social Links"
+msgstr "RARA: Liên kết mạng xã hội"
+
+#: inc/widget-recent-post.php:40 inc/widget-recent-post.php:91
+#: inc/widget-recent-post.php:134
+msgid "Recent Posts"
+msgstr "Bài gần đây"
+
+#: inc/widget-recent-post.php:26
+msgid "A Recent Post Widget"
+msgstr "Widget bài viết gần đây"
+
+#: inc/widget-recent-post.php:25
+msgid "RARA: Recent Post"
+msgstr "RARA: Bài viết gần đây"
+
+#: inc/widget-popular-post.php:116 inc/widget-recent-post.php:115
+msgid "Show Post Date"
+msgstr "Hiển thị ngày bài viết"
+
+#: inc/widget-popular-post.php:105 inc/widget-recent-post.php:104
+msgid "Number of Posts"
+msgstr "Số bài viết"
+
+#: inc/widget-popular-post.php:100 inc/widget-recent-post.php:99
+#: inc/widget-social-links.php:96
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: inc/widget-popular-post.php:40 inc/widget-popular-post.php:92
+#: inc/widget-popular-post.php:134
+msgid "Popular Posts"
+msgstr "Bài viết phổ biến"
+
+#: inc/widget-popular-post.php:26
+msgid "A Popular Post Widget"
+msgstr "Widget bài viết phổ biến"
+
+#: inc/widget-popular-post.php:25
+msgid "RARA: Popular Post"
+msgstr "RARA: Bài viết phổ biến"
+
+#: inc/widget-featured-post.php:122 inc/widget-popular-post.php:111
+#: inc/widget-recent-post.php:110
+msgid "Show Post Thumbnail"
+msgstr "Hiển thị hình thu nhỏ bài viết"
+
+#: inc/widget-featured-post.php:116
+msgid "Excerpt Character"
+msgstr "Nhân vật trích dẫn"
+
+#: inc/widget-featured-post.php:111
+msgid "Read More Text"
+msgstr "Đọc thêm Văn bản"
+
+#: inc/widget-featured-post.php:101
+msgid "Posts"
+msgstr "Bài viết"
+
+#: inc/widget-featured-post.php:82
+msgid "--Choose--"
+msgstr "--Chọn--"
+
+#: inc/widget-featured-post.php:26
+msgid "A Featured Post Widget"
+msgstr "Widget bài viết nổi bật"
+
+#: inc/widget-featured-post.php:25
+msgid "RARA: Featured Post"
+msgstr "RARA: Bài viết nổi bật"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:59
+msgid "Edit %s"
+msgstr "Sửa %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:25 inc/template-tags.php:30 inc/template-tags.php:44
+msgid ", "
+msgstr ", "
+
+#: inc/metabox.php:41
+msgid "Choose Sidebar Template"
+msgstr "Chọn Mẫu Sidebar"
+
+#: inc/metabox.php:29
+msgid "No sidebar"
+msgstr "Không có thanh bên"
+
+#: inc/metabox.php:24
+msgid "Right sidebar (default)"
+msgstr "Thanh bên phải (mặc định)"
+
+#: inc/metabox.php:14
+msgid "Sidebar Layout"
+msgstr "Bố cục Sidebar"
+
+#: inc/extras.php:457
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/extras.php:457
+msgid "Powered by: %s"
+msgstr "Powered by: %s"
+
+#: inc/extras.php:452
+msgid "Copyright &copy; "
+msgstr "Bản quyền & bản sao; "
+
+#. translators: 1: date, 2: time
+#: inc/extras.php:370 inc/template-tags.php:18 inc/template-tags.php:19
+#: inc/template-tags.php:27 inc/template-tags.php:32 inc/template-tags.php:46
+#: inc/widget-popular-post.php:69 inc/widget-recent-post.php:68
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/extras.php:361
+msgid "Your comment is awaiting moderation."
+msgstr "Bình luận của bạn đang chờ kiểm duyệt."
+
+#: inc/extras.php:358
+msgid "<b class=\"fn\">%s</b> <span class=\"says\">says:</span>"
+msgstr "<b class=\"fn\">%s</b> <span class=\"says\">nói:</span>"
+
+#: inc/customizer.php:571
+msgid "Put your custom CSS"
+msgstr "Đặt CSS tuỳ chỉnh của bạn"
+
+#: inc/customizer.php:569
+msgid "Custom Css"
+msgstr "Css Tuỳ chỉnh"
+
+#: inc/customizer.php:551
+msgid "Custom CSS Settings"
+msgstr "Cài đặt CSS Tuỳ chỉnh"
+
+#: inc/customizer.php:541
+msgid "Load More"
+msgstr "Tải thêm"
+
+#: inc/customizer.php:540
+msgid "Default"
+msgstr "Mặc định"
+
+#: inc/customizer.php:536
+msgid "Pagination Type"
+msgstr "Loại phân loại"
+
+#: inc/customizer.php:519
+msgid "Pagination Settings"
+msgstr "Cài đặt trang web"
+
+#: inc/customizer.php:490 inc/extras.php:97 inc/widget-social-links.php:65
+#: inc/widget-social-links.php:131
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/customizer.php:472 inc/extras.php:95 inc/widget-social-links.php:63
+#: inc/widget-social-links.php:125
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/customizer.php:454 inc/extras.php:93 inc/widget-social-links.php:119
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: inc/customizer.php:436 inc/extras.php:91 inc/widget-social-links.php:59
+#: inc/widget-social-links.php:113
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: inc/customizer.php:418 inc/extras.php:89 inc/widget-social-links.php:57
+#: inc/widget-social-links.php:107
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/customizer.php:400 inc/extras.php:87 inc/widget-social-links.php:55
+#: inc/widget-social-links.php:101
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/customizer.php:382
+msgid "Enable Social Links"
+msgstr "Bật liên kết mạng xã hội"
+
+#: inc/customizer.php:364
+msgid "Leave blank if you do not want to show the social link."
+msgstr "Để trống nếu bạn không muốn hiển thị liên kết mạng xã hội."
+
+#: inc/customizer.php:363
+msgid "Social Settings"
+msgstr "Thiết lập mạng xã hội"
+
+#: inc/customizer.php:350
+msgid "Slider Post Three"
+msgstr "Slider Ba Bài Đăng"
+
+#: inc/customizer.php:330
+msgid "Slider Post Two"
+msgstr "Slider Hai Bài Đăng"
+
+#: inc/customizer.php:310
+msgid "Slider Post One"
+msgstr "Slider Một Bài Đăng"
+
+#: inc/customizer.php:290
+msgid "Choose Slider Category"
+msgstr "Chọn danh mục Trình chiếu"
+
+#: inc/customizer.php:273
+msgid "Single Posts"
+msgstr "Bài đăng đơn"
+
+#: inc/customizer.php:272
+msgid "Category Posts"
+msgstr "Danh mục bài viết"
+
+#: inc/customizer.php:268
+msgid "Choose Slider Type"
+msgstr "Chọn Loại trượt"
+
+#: inc/customizer.php:250
+msgid "Readmore Text"
+msgstr "Đọc thêm Văn bản"
+
+#: inc/customizer.php:242 inc/extras.php:217 inc/widget-featured-post.php:40
+#: inc/widget-featured-post.php:94 inc/widget-featured-post.php:140
+#: template-parts/content.php:33
+msgid "Read More"
+msgstr "Đọc tiếp"
+
+#: inc/customizer.php:232
+msgid "Character Count"
+msgstr "Số ký tự"
+
+#: inc/customizer.php:214
+msgid "Slider Pause"
+msgstr "Ngừng tạm dừng"
+
+#: inc/customizer.php:196
+msgid "Slider Speed"
+msgstr "Tốc độ Trình chiếu"
+
+#: inc/customizer.php:179
+msgid "Slide"
+msgstr "Trình chiếu"
+
+#: inc/customizer.php:178
+msgid "Fade"
+msgstr "Phai màu"
+
+#: inc/customizer.php:174
+msgid "Choose Slider Transition"
+msgstr "Chọn Slider Chuyển tiếp"
+
+#: inc/customizer.php:156
+msgid "Enable Slider Caption"
+msgstr "Bật Phụ đề Slider"
+
+#: inc/customizer.php:138
+msgid "Enable Slider Control"
+msgstr "Bật điều khiển trượt"
+
+#: inc/customizer.php:120
+msgid "Enable Slider Loop"
+msgstr "Bật thanh vòng lặp trình chiếu"
+
+#: inc/customizer.php:102
+msgid "Enable Slider Auto Transition"
+msgstr "Bật tự động chuyển trình chiếu"
+
+#: inc/customizer.php:84
+msgid "Enable Home Page Slider"
+msgstr "Kích hoạt tính năng Slider Trang chủ"
+
+#: inc/customizer.php:66
+msgid "Slider Settings"
+msgstr "Cài đặt thanh trượt"
+
+#: inc/customizer.php:47
+msgid "Default section provided by WordPress customizer."
+msgstr "Phần mặc định được cung cấp bởi WordPress customizer."
+
+#: inc/customizer.php:46
+msgid "Default Settings"
+msgstr "Thiết lập mặc định"
+
+#: inc/customizer.php:34
+msgid "Choose Category"
+msgstr "Chọn Thể Loại"
+
+#: inc/customizer.php:18
+msgid "Choose Post"
+msgstr "Chọn bài viết"
+
+#: header.php:55
+msgid "Primary Menu"
+msgstr "thực đơn chính"
+
+#: functions.php:246
+msgid "No more posts."
+msgstr "Không có bài đăng nào."
+
+#: functions.php:245
+msgid "Loading..."
+msgstr "Tải..."
+
+#: functions.php:244
+msgid "Load More Posts"
+msgstr "Tải thêm bài đăng"
+
+#: functions.php:163
+msgid "Footer Three"
+msgstr "Cuối trang Ba"
+
+#: functions.php:153
+msgid "Footer Two"
+msgstr "Cuối trang hai"
+
+#: functions.php:143
+msgid "Footer One"
+msgstr "Cuối trang đầu tiên"
+
+#: functions.php:133
+msgid "Right Sidebar"
+msgstr "Sidebar bên phải"
+
+#: functions.php:47
+msgid "Primary"
+msgstr "Sơ cấp"
+
+#: comments.php:105
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Đăng nhập như <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Đăng xuất khỏi tài khoản này\">Đăng xuất?</a>"
+
+#: comments.php:99
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "bạn phải <a href=\"%s\">đăng nhập</a>để đăng bình luận."
+
+#: comments.php:91
+msgid "POST COMMENT"
+msgstr "ĐĂNG BÌNH LUẬN"
+
+#: comments.php:90
+msgid "Cancel Reply"
+msgstr "Hủy trả lời"
+
+#: comments.php:89
+msgid "Leave a Reply to %s"
+msgstr "Để lại trả lời đến %s"
+
+#: comments.php:88
+msgid "Leave a Reply"
+msgstr "Để lại Trả lời"
+
+#: comments.php:62
+msgid "Comments are closed."
+msgstr "Đã đóng bình luận."
+
+#: comments.php:49
+msgid "Newer Comments"
+msgstr "Các bình luận mới hơn"
+
+#: comments.php:48
+msgid "Older Comments"
+msgstr "Các bình luận cũ hơn"
+
+#: comments.php:45
+msgid "Comment navigation"
+msgstr "Điều hướng bình luận"
+
+#: comments.php:29
+msgid "Comments"
+msgstr "Bình luận"
+
+#: 404.php:16
+msgid "Sorry but the page you are looking for cannot be found. Take a moment and do a search below or start from our %s."
+msgstr "Xin lỗi, nhưng trang bạn đang tìm kiếm không thể tìm thấy. Dành ít phút và thực hiện tìm kiếm dưới đây hoặc bắt đầu từ%s."
+
+#: 404.php:15
+msgid "The requested page can&rsquo;t be found."
+msgstr "Bạn không thể tìm thấy trang yêu cầu."
+
+#: 404.php:14
+msgid "404!"
+msgstr "404!"
+
+#. Author URI of the plugin/theme
+msgid "http://raratheme.com/"
+msgstr "http://raratheme.com/"
+
+#. Theme URI of the plugin/theme
+msgid "http://raratheme.com/wordpress-themes/elegant-pink/"
+msgstr "http://raratheme.com/wordpress-themes/elegant-pink/"
+
+#. Author of the plugin/theme
+msgid "Rara Theme"
+msgstr "Rara Theme"

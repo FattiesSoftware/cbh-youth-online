@@ -1,0 +1,27 @@
+.header-avatar {
+    display: none;
+}
+.header-channel {
+    text-transform: uppercase;
+}
+.theme--yellow .header-bar {
+    background-color: #dbb926;
+}
+.theme--yellow .me, .theme--pop .me .post-avatar--troll {
+    background-color: #ffffdb;
+}
+.theme--yellow .post {
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border-top-width: 1px;
+    border-color: rgba(0,0,0,0.1);
+    background-color: #ffffcf;
+}
+.post-name {
+    position: absolute;
+    color: #f33;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
