@@ -2171,7 +2171,30 @@
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 
 </div>
-      <footer class="footer">
+ <div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="Trở lên đầu trang"><span class="glyphicon glyphicon-circle-arrow-up text-primary"></span></div>
+	<style>
+		.back-to-top {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 15px;
+    bottom: 15px;
+    font-size: 32px;
+    opacity: 0.8;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+		</style>
+		<script>
+		$("#back-to-top").click(function(){return $("body, html").animate({scrollTop:0},400),!1});
+$(function(){$('[data-toggle="tooltip"]').tooltip()});
+		</script>  
+  <footer class="footer">
+	
 		<hr>
 		<div class="container" style="
     margin-right: 15px;
