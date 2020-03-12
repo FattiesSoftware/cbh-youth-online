@@ -1,3 +1,18 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	$PROP = 'none';
+	$OUT = 'none';
+} else {
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
   <!-- Trang web được lập trình bởi Dương Tùng Anh - C4K60 Chuyên Hà Nam -->
@@ -351,13 +366,38 @@ h3 {
 <br>Và nhiều hơn thế... Hãy tự mình khám phá nhé!
 </p>
 <br>
-<p style="float:left">&copy; Đoàn trường Chuyên Biên Hoà 2019. Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
-</div>
+<div class="main-content">
+    <div class="column">
+        <p>&copy; Đoàn trường Chuyên Biên Hoà</p>
+    </div>
 
+    <div class="column">
+        <p id="demo"></p>
+    </div>
+
+     <div class="column">
+        <p> Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
+    </div>
+</div>
+<style>
+.column {    
+    display: inline-block;
+}
+</style>
+</div>
+<script>
+
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = n + ".";
+}
+myFunction()
+</script>
 <nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='https://tunganh03.github.io/xungkich-cbh/'>Đoàn trường - CBH</a>
+<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
 <span class='icon-bar'></span>
 <span class='icon-bar'></span>
@@ -367,6 +407,7 @@ h3 {
 <div class='collapse navbar-collapse' id='myNavbar'>
 <ul class='nav navbar-nav'>
 <li class='active'><a href='/'>Trang chủ</a></li>
+<li class=''><a href='/forum'>Diễn đàn</a></li>
 <li class=''><a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		  <a class="dropdown-item " style="
     margin-left: 10px;
@@ -384,7 +425,12 @@ h3 {
 <li class=''><a href='/lienhe'>Liên hệ</a></li>
 </ul> 
 <ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
-<li class=''><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+<li id="profile" style="display:<?=$PROP?>">
+<a href="profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
+<li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+<li class='' style="display:<?=$OUT?>"><a href='/logout.php'><i class="fas fa-sign-in-alt"></i> Đăng xuất</a></li>
+
+</ul>
 
 </div>
 </div>

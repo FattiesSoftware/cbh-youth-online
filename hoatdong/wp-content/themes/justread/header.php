@@ -10,6 +10,17 @@
  * @subpackage Twenty_Nineteen
  * @since 1.0.0
  */
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	$PROP = 'none';
+	$OUT = 'none';
+} else {
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
 ?><!doctype html>
 <head>
 <html <?php language_attributes(); ?>>
@@ -43,10 +54,10 @@
 <body <?php body_class(); ?>>
 
 <?php wp_body_open(); ?>
-<nav class='navbar navbar-inverse'>
+<nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='https://tunganh03.github.io/xungkich-cbh/'>Đoàn trường - CBH</a>
+<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
 <span class='icon-bar'></span>
 <span class='icon-bar'></span>
@@ -56,6 +67,7 @@
 <div class='collapse navbar-collapse' id='myNavbar'>
 <ul class='nav navbar-nav'>
 <li class=''><a href='/'>Trang chủ</a></li>
+<li class=''><a href='/forum'>Diễn đàn</a></li>
 <li class=''><a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		  <a class="dropdown-item " style="
     margin-left: 10px;
@@ -73,7 +85,12 @@
 <li class=''><a href='/lienhe'>Liên hệ</a></li>
 </ul> 
 <ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
-<li class=''><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+<li id="profile" style="display:<?=$PROP?>">
+<a href="profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
+<li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+<li class='' style="display:<?=$OUT?>"><a href='/logout.php'><i class="fas fa-sign-in-alt"></i> Đăng xuất</a></li>
+
+</ul>
 
 </div>
 </div>

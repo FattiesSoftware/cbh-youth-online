@@ -26,16 +26,35 @@ _WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '81529303940
     margin-right: 15px;
     margin-left: 15px;
 ">
-        <p style="float:left">&copy; Đoàn trường Chuyên Biên Hoà 2019. Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Tung Anh Duong</a> and <a href="https://www.facebook.com/hoang.phat.handsome/">Hoang Phat</a></p>
-        <div style="float:right">
-        <!--GitHub-->
-        <a class="fb-ic mr-3 socialfooter" role="button" href="https://github.com/tunganh03/"><i class="fab fa-lg fa-github"></i></a>
-        <!--Facebook-->
-        <a class="fb-ic mr-3 socialfooter" role="button" href="https://www.facebook.com/groups/c4k60/"><i class="fab fa-lg fa-facebook-f"></i></a>
-        <!--Instagram-->
-        <a class="ins-ic mr-3 socialfooter2" role="button" href="https://instagram.com/c4k60"><i class="fab fa-lg fa-instagram"></i></a>
-        </div>
-		</div>
+       <div class="main-content">
+    <div class="column">
+        <p>&copy; Đoàn trường Chuyên Biên Hoà</p>
+    </div>
+
+    <div class="column">
+        <p id="demo"></p>
+    </div>
+
+     <div class="column">
+        <p> Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
+    </div>
+</div>
+<style>
+.column {    
+    display: inline-block;
+}
+</style>
+</div>
+<script>
+
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = n + ".";
+}
+myFunction()
+</script>
+      
       </footer>
 </div><!-- #page -->
 

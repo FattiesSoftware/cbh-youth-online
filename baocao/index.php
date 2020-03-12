@@ -1,3 +1,19 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	
+	$PROP = 'none';
+	$OUT = 'none';
+} else {
+	header('Location: /baocao/home.php');
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -638,10 +654,10 @@ iframe {
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<span class="btn-show-pass">
+						<span class="btn-show-pass" onclick="myFunction()">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" type="password" name="password">
+						<input class="input100" type="password" name="password" id="myInput">
 						<span class="focus-input100" data-placeholder="Mật khẩu"></span>
 					</div>
 
@@ -654,7 +670,20 @@ iframe {
 							</button>
 						</div>
 					</div>
-					
+					<div class="text-center p-t-20">
+                        hoặc đăng nhập bằng...
+                    </div>
+<div class="text-center p-t-10"><div class="row" style="text-align: center;margin-left: 0px;margin-right: 30px;"><div class="col-12"><a type="button" href="#" class="col-1" style="color: rgb(221, 75, 57);"><i class="fab fa-2x fa-google-plus"></i></a> <a type="button" href="#" class="col-1" style="color: rgb(59, 89, 152);"><i class="fab fa-2x fa-facebook"></i></a>  <a type="button" href="#" class="col-1" style="color: rgb(51, 51, 51);"><i class="fab fa-2x fa-github"></i></a></div></div></div>
+					<script>
+					function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+					</script>
 				</form>
 				<center style="padding-top:20px;"><a href="register.html">Không có tài khoản? Đăng ký tại đây...</a></center>
 			</div>

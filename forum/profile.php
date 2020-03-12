@@ -39,7 +39,7 @@ $stmt->close();
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1><a href="home.php">Đoàn trường THPT Chuyên Biên Hoà</a></h1>
+				<h1><a href="index.php">Đoàn trường THPT Chuyên Biên Hoà</a></h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Trang cá nhân</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
 			</div>

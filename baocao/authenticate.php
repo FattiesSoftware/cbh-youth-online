@@ -42,12 +42,14 @@ if ($stmt = $con->prepare('SELECT id, password, email, name FROM accounts WHERE 
 		$_SESSION['id'] = $id;
 		$_SESSION['email'] = $email;
 		$_SESSION['name'] = $name;
-		$error = $_SESSION['id'];
-if ($error == 11) {
-		header('Location: admin/index.php');
+		$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
+if ($error == 11) { // nếu id = 11
+		header('Location: admin/index.php'); // chuyển đến trang admin
 		
+} elseif ($error == 15) { // nếu id = 15
+	header('Location: home.php'); // chuyển đến xung kích
 } else {
-	header('Location: home.php');
+	header('Location: /forum'); // còn lại nếu không phải thì chuyển về forum
 }
 	} else {
 		$error = 'Incorrect password!';

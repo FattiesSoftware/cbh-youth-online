@@ -3,9 +3,55 @@
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
+	header('Location: index.php');
 	exit();
 }
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'members';
+// Try and connect using the info above.
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if ($stmt = $con->prepare('SELECT id, password, email, name FROM accounts WHERE username = ?')) {
+	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+	$stmt->bind_param('s', $_POST['username']);
+	$stmt->execute();
+	// Store the result so we can check if the account exists in the database.
+	$stmt->store_result();
+	if ($stmt->num_rows > 0) {
+	$stmt->bind_result($id, $password, $email, $name);
+	$stmt->fetch();
+	// Account exists, now we verify the password.
+	// Note: remember to use password_hash in your registration file to store the hashed passwords.
+	if (password_verify($_POST['password'], $password)) {
+		// Verification success! User has loggedin!
+		// Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
+		session_regenerate_id();
+		$_SESSION['loggedin'] = TRUE;
+		$_SESSION['username'] = $_POST['username'];
+		$_SESSION['id'] = $id;
+		$_SESSION['email'] = $email;
+		$_SESSION['name'] = $name;
+		$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
+		die("$error");
+if ($error == 11) { // nếu id = 11
+		header('Location: admin/index.php'); // chuyển đến trang admin
+		
+} elseif ($error == 15) { // nếu id = 15
+	header('Location: home.php'); // chuyển đến xung kích
+} else {
+	header('Location: /forum'); // còn lại nếu không phải thì chuyển về forum
+}
+	} else {
+		$error = 'Incorrect password!';
+		
+	}
+} else {
+	$error = 'Incorrect username!';
+}
+$stmt->close();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -118,7 +164,7 @@ body.loggedin {
 	</style>
 		<nav class="navtop">
 			<div>
-				<h1><a href="home.php">Đoàn trường THPT Chuyên Biên Hoà</a></h1>
+				<h1><a href="/">Đoàn trường THPT Chuyên Biên Hoà</a></h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Trang cá nhân</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
 			</div>
@@ -220,7 +266,7 @@ function rebuild_date( $format, $time = 0 )
     return preg_replace( array_keys( $replaces ), array_values( $replaces ), $return );
 }
 
-
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
  echo $contents;
 ?>
