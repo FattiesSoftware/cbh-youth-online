@@ -4,7 +4,7 @@ $username = 'guest';
 } else {
 $username = $_SESSION['username'];
 }
-	$query = "SELECT * FROM users WHERE username='".$username."'";
+	$query = "SELECT * FROM accounts WHERE username='".$username."'";
 		$result = mysqli_query($db, $query);
 		if (mysqli_num_rows($result) !=0) {
 			while($row = mysqli_fetch_assoc($result)){

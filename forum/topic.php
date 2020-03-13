@@ -202,11 +202,13 @@ body.loggedin {
 		if (mysqli_num_rows($results)){
 			while($row=mysqli_fetch_assoc($results)){
 				$view=$row['view'];
-				$query_u = "SELECT * FROM users WHERE username='".$row['topic_creator']."'";
+				$query_u = "SELECT * FROM accounts WHERE username='".$row['topic_creator']."'";
 				$results_u = mysqli_query($db, $query_u);
+				if( $results ){
 				while($row_u=mysqli_fetch_assoc($results_u)){
-					$user_idc = $row_u['id'];
-					
+					$user_idc = $row_u['id'];					
+				}
+				} else {
 				}
 				echo "<h1>" .$row['topic_name']."</h1>";
 				$class = '"fas fa-eye"';

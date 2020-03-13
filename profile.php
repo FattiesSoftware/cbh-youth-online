@@ -20,20 +20,92 @@ if (mysqli_connect_errno()) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $con->prepare('SELECT name, password, email FROM accounts WHERE id = ?');
+$stmt = $con->prepare('SELECT name, password, email, date FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
-$stmt->bind_result($name, $password, $email);
+$stmt->bind_result($name, $password, $email, $date);
 $stmt->fetch();
 $stmt->close();
+
+
+if (!isset($_SESSION['loggedin'])) {
+	$PROP = 'none';
+	$OUT = 'none';
+} else {
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
+$id = $_SESSION['id'];
+// read data from collumn profile_pic from accounts table only at id=11
+$sql = "SELECT profile_pic FROM accounts WHERE id='$id'";
+$result = $con->query($sql);
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $prof_pic = $row["profile_pic"];
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>Trang cá nhân</title>
-			<link rel="stylesheet" type="text/css" href="style.css">
+		  <!-- Trang web được lập trình bởi Dương Tùng Anh - C4K60 Chuyên Hà Nam -->
+<!-- Mọi thông tin chi tiết xin liên hệ https://facebook.com/tunnaduong/ -->
+	<!DOCTYPE html>
+<title>Login V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--===============================================================================================-->
+<!-- Latest compiled JavaScript -->
+<link href='https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
+<meta content='width=device-width, initial-scale = 1.0, user-scalable = no' name='viewport'/>
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:600,700%7CDamion" rel="stylesheet" type="text/css">
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://c4k60.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://doantruongthptchuyenbienhoa.online/' rel='canonical'/>
+<meta content='https://doantruongthptchuyenbienhoa.online/' property='og:url'/>
+<meta content='Đoàn trường THPT Chuyên Biên Hoà' property='og:title'/>
+<meta content='Cổng thông tin điện tử Đoàn trường THPT Chuyên Biên Hoà Online' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<!-- Latest compiled and minified CSS -->
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+<!-- jQuery library -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<!-- Latest compiled JavaScript -->
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
+<title>Đoàn trường - CBH</title>
+<script src="https://global.oktacdn.com/okta-signin-widget/3.2.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+
+<link href="https://global.oktacdn.com/okta-signin-widget/3.2.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body class="loggedin">
@@ -169,18 +241,59 @@ body.loggedin {
 	margin: 0 0 10px 0;
 }
 	</style>
-		<nav class="navtop">
-			<div>
-				<h1><a href="index.php">Đoàn trường THPT Chuyên Biên Hoà</a></h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Trang cá nhân</a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
-			</div>
-		</nav>
+<nav class='navbar navbar-inverse '>
+<div class='container-fluid'>
+<div class='navbar-header'>
+<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
+<button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+</div>
+<div class='collapse navbar-collapse' id='myNavbar'>
+<ul class='nav navbar-nav'>
+<li class=''><a href='/'>Trang chủ</a></li>
+<li class=''><a href='/forum'>Diễn đàn</a></li>
+<li class=''><a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item " style="
+    margin-left: 10px;
+" href="/loivipham">Các lỗi vi phạm</a><br>
+          <a class="dropdown-item " style="
+    margin-left: 10px;
+" href="/thoikhoabieu">Thời khoá biểu</a><br>
+          <a class="dropdown-item " style="
+    margin-left: 10px;
+" href="/hocsinh">Học sinh</a>
+        </div></li>
+<li class=''><a href='/topvipham'>Top vi phạm</a></li>
+<li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
+<li class=''><a href='/baocao'>Báo cáo</a></li>
+<li class=''><a href='/lienhe'>Liên hệ</a></li>
+</ul> 
+<ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
+<li id="profile" class="active" style="display:<?=$PROP?>">
+<a href="profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
+<li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+<li class='' style="display:<?=$OUT?>"><a href='/logout.php'><i class="fas fa-sign-in-alt"></i> Đăng xuất</a></li>
+
+</ul>
+
+</div>
+</div>
+</nav>
 		<div class="content">
 			<h2>Trang cá nhân</h2>
 			<div>
-				<p>Dưới đây là một số thông tin của bạn:</p>
+
+  <div>
+  <?php echo "<img src='$prof_pic' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'>";?></div>
+
+
+
 				<table>
+
+
 					<tr>
 						<td>Họ và tên:</td>
 						<td><?=$_SESSION['name']?></td>
@@ -190,14 +303,113 @@ body.loggedin {
 						<td><?=$_SESSION['username']?></td>
 					</tr>
 					<tr>
-						<td>Mật khẩu:</td>
-						<td><?=$password?></td>
+						<td>ID:</td>
+						<td><?=$id?></td>
 					</tr>
 					<tr>
 						<td>Email:</td>
 						<td><?=$email?></td>
 					</tr>
+					<tr>
+						<td>Ngày tham gia:</td>
+						<td><?=$date?></td>
+					</tr>
+					<div style="float:right">
+				<a href='profile.php?action=cp'><i class="fas fa-key"></i> Thay đổi mật khẩu </a><br/>
+	<a href='profile.php?action=ca'><i class="fas fa-user"></i> Thay đổi ảnh đại diện </a>
+	</div>
 				</table>
+				
+				<br>
+				
+	<?php
+		if(@$_GET['action']=="cp"){
+		echo "<form action='profile.php?action=cp' method='POST'><center>";
+		echo "<div style='width: 30%;'>
+		Mật khẩu cũ: <input type='password' class='form-control form-control-sm' name='pass' ><br/>
+		Mật khẩu mới: <input type='password' class='form-control form-control-sm' name='newpass'><br/>
+		Nhập lại mật khẩu: <input type='password' class='form-control form-control-sm' name='repass'><br/>
+			<button type='submit' name='change_pass' class='btn btn-primary' value='change' >Đổi mật khẩu</button>
+	</div>
+	";
+	// See the password_hash() example to see where this came from.
+	$query = "SELECT password FROM accounts WHERE username='".$_SESSION['username']."'";
+			$results = mysqli_query($con, $query);
+	if( $results ){
+			while($row = mysqli_fetch_assoc($results)){
+$hash = $row['password'];
+			}
+	}
+
+		
+		if(isset($_POST['change_pass'])){
+			$pass = mysqli_real_escape_string($con, $_POST['pass']);
+			$newpass = mysqli_real_escape_string($con, $_POST['newpass']);
+			$repass = mysqli_real_escape_string($con, $_POST['repass']);
+			$query = "SELECT * FROM accounts WHERE username='".$_SESSION['username']."'";
+			$results = mysqli_query($con, $query);
+			if (password_verify($pass, $hash)) {
+    if($newpass==$repass){
+		$upd = "UPDATE accounts SET password='".password_hash($newpass, PASSWORD_DEFAULT)."' WHERE username='".$_SESSION['username']."'";
+		mysqli_query($con, $upd);
+		echo "Thay đổi mật khẩu mới thành công!";
+	} else {
+	echo 'Mật khẩu nhập lại không khớp';
+	}
+} else {
+    echo 'Mật khẩu hiện tại không chính xác';
+}
+
+		}
+		}
+		
+	echo "</center></form>";
+	
+	
+		if(@$_GET['action']=="ca"){
+		echo "<form action='profile.php?action=ca' method='POST' enctype='multipart/form-data' ><center>
+		<br/> 
+		Chỉ có thể tải được ảnh dạng <b> .PNG .JPG .JPEG </b><br/>
+		<input type ='file' name ='image'><br/>
+		<input type ='submit' class='btn btn-primary'  name ='change_pic' value='Tải lên'><br/>
+		";
+		if(isset($_POST['change_pic'])){
+			$errors=array();
+			$allowed_e=array('png','jpg','jpeg');
+			$file_name=$_FILES['image']['name'];
+			$file_e=strtolower(pathinfo($file_name,PATHINFO_EXTENSION));
+			$file_s= $_FILES['image']['size'];
+			$file_tmp=$_FILES['image']['tmp_name'];
+			
+			if(in_array($file_e, $allowed_e)==false){
+				$errors[]='Phần mở rộng của ảnh không hợp lệ';
+			}
+			if($file_s>5097152){
+				$errors[]='Chỉ có thể upload ảnh <5MB';
+			}
+			if(empty($errors)){
+				move_uploaded_file($file_tmp,'images/'.$file_name);
+				$image_up='images/'.$file_name;
+				$query = "SELECT * FROM accounts WHERE username='".$_SESSION['username']."'";
+				$results = mysqli_query($con, $query);
+				$rows= mysqli_num_rows($results);
+				while($row = mysqli_fetch_assoc($results)){
+				$db_image=$row['profile_pic'];
+				}	
+				$upd = "UPDATE accounts SET profile_pic='".$image_up." 'WHERE username='".$_SESSION['username']."'";
+				mysqli_query($con, $upd);
+				echo "Đổi ảnh đại diện thành công";
+			}else{
+				foreach($errors as $error){
+					echo $error,'<br/>';
+				}
+			}
+		}
+		echo "</form></center>";
+	}
+	
+	
+?>
 			</div>
 		</div>
 	</body>

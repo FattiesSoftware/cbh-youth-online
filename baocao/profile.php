@@ -6,6 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit();
 }
+header('Location: /profile.php'); // chuyển đến profile
 //$DATABASE_HOST = 'sql303.unaux.com';
 //$DATABASE_USER = 'unaux_24697656';
 //$DATABASE_PASS = 'tunganh2003';

@@ -18,12 +18,16 @@ if (!$db) {
   die("Error connecting to database: " . mysqli_connect_error($db));
   exit();
 }
-	$query = "SELECT * FROM users WHERE username='$USER'";
+	$query = "SELECT * FROM accounts WHERE username='$USER'";
 	$results = mysqli_query($db, $query);
 	$rows= mysqli_num_rows($results);
+	if( $results ){
 	while($row = mysqli_fetch_assoc($results)){
 		$user_id=$row['id'];
 	}
+	}else{
+// failure! check for errors and do something else
+}
 
 
 // if user clicks like or dislike button

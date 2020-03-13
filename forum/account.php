@@ -78,7 +78,8 @@
 				$db_image=$row['profile_pic'];
 				}	
 				$upd = "UPDATE users SET profile_pic='".$image_up." 'WHERE username='".$_SESSION['username']."'";
-				$check = mysqli_query($db, $upd);
+				mysqli_query($db, $upd);
+				
 				echo "Đổi ảnh đại diện thành cmn công";
 			}else{
 				foreach($errors as $error){

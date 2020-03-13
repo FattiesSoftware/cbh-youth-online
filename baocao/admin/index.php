@@ -21,6 +21,20 @@ $stmt->execute();
 $stmt->bind_result($name);
 $stmt->fetch();
 $stmt->close();
+$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
+if ($error == 11) { // nếu id = 11
+		 // chuyển đến trang admin
+		
+} elseif ($error == 15) { // nếu id = 15
+echo '<a href="/"> Bấm vào đây để quay lại</a><br>';
+die ('Bạn không có quyền truy cập vào trang này!');
+
+	header('Location: /baocao/home.php'); // chuyển đến xung kích
+} else {
+	echo '<a href="/"> Bấm vào đây để quay lại</a><br>';
+	die ('Bạn không có quyền truy cập vào trang này!');
+	header('Location: /forum'); // còn lại nếu không phải thì chuyển về forum
+}
 ?>
 <!DOCTYPE html>
 <html>

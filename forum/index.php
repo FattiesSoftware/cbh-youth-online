@@ -18,7 +18,7 @@ if (!isset($_SESSION['loggedin'])) {
 <!DOCTYPE html>
 <html>
 	<head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Trang web được lập trình bởi Dương Tùng Anh - C4K60 Chuyên Hà Nam -->
 <!-- Mọi thông tin chi tiết xin liên hệ https://facebook.com/tunnaduong/ -->
 	<!DOCTYPE html>
@@ -326,12 +326,9 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 			echo "<td style='text-align:left;'><a href='topic.php?id=$id'>".$row['topic_name']."</a></td>";
 			echo "<td style='text-align:center;'>".$row['view']."</td>";
 			$query_u = "SELECT * FROM users WHERE username='".$row['topic_creator']."'";
-			$results_u = mysqli_query($db, $query_u);
+			$results_u = mysqli_query($conn, $query_u);
 			$i=0;
-			while($row_u=mysqli_fetch_assoc($results_u)){
-						$user_id=$row_u['id'];
-						$i=$i+1;
-			}
+
 			if($i==0) $user_id=1000;
 			echo "<td style='text-align:center;'><a href='profile.php?id=$user_id'>".$row['topic_creator']."</a></td>";
 			$get_date=$row['date'];
