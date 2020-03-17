@@ -1,6 +1,12 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
+// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'User.class.php';
+$user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	$WELCOME = 'Bạn chưa đăng nhập! Hãy đăng nhập để tham gia thảo luận.';
@@ -11,7 +17,37 @@ if (!isset($_SESSION['loggedin'])) {
 	$PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';
+	$nam = $_SESSION['name'];
+}
+if(isset($accessToken)){
+	   // Get the user profile info from Github
+    $gitUser = $gitClient->apiRequest($accessToken);
 
+    if(!empty($gitUser)){
+        // User profile data
+        $gitUserData = array();
+        $gitUserData['oauth_provider'] = 'github';
+        $gitUserData['oauth_uid'] = !empty($gitUser->id)?$gitUser->id:'';
+        $gitUserData['name'] = !empty($gitUser->name)?$gitUser->name:'';
+        $gitUserData['username'] = !empty($gitUser->login)?$gitUser->login:'';
+        $gitUserData['email'] = !empty($gitUser->email)?$gitUser->email:'';
+        $gitUserData['location'] = !empty($gitUser->location)?$gitUser->location:'';
+        $gitUserData['picture'] = !empty($gitUser->avatar_url)?$gitUser->avatar_url:'';
+        $gitUserData['link'] = !empty($gitUser->html_url)?$gitUser->html_url:'';
+        
+        // Insert or update user data to the database
+        $userData = $user->checkUser($gitUserData);
+        
+        // Put user data into the session
+        $_SESSION['userData'] = $userData;
+$OUT1 = 'none';
+}
+    }
+if(isset($accessToken)){
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+	$nam = $userData['name'];
 }
 ?>
 
@@ -192,7 +228,7 @@ body.loggedin {
 		<div class="content">
 			<h2>Diễn đàn</h2>
 			<p style="display:<?=$IN?>"><?=$WELCOME?></p>
-			<p style="display:<?=$OUT?>">Chào mừng, <?=$_SESSION['name']?>!
+			<p style="display:<?=$OUT?>">Chào mừng, <?=$nam?>!
 			<br>
 				<button style="float:right" type="button" class="btn btn-danger" onClick="window.location.reload();"><i class="fas fa-redo-alt"></i> Tải lại</button>
 			<?php
@@ -325,19 +361,20 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 			echo "<td>".$row['topic_id']."</td>";
 			echo "<td style='text-align:left;'><a href='topic.php?id=$id'>".$row['topic_name']."</a></td>";
 			echo "<td style='text-align:center;'>".$row['view']."</td>";
-			$query_u = "SELECT * FROM users WHERE username='".$row['topic_creator']."'";
+			$query_u = "SELECT id FROM accounts WHERE username='".$row['topic_creator']."'";
 			$results_u = mysqli_query($conn, $query_u);
 			$i=0;
-
+while($row_u = $results_u->fetch_assoc()) {
 			if($i==0) $user_id=1000;
-			echo "<td style='text-align:center;'><a href='profile.php?id=$user_id'>".$row['topic_creator']."</a></td>";
+			$user_id = $row_u['id'];
+			echo "<td style='text-align:center;'><a href='/profile.php?id=$user_id'>".$row['topic_creator']."</a></td>";
 			$get_date=$row['date'];
 			echo "<td style='text-align:center;'><a href='index.php?date=$get_date'>".$row['date']."</a></td>";
 			echo "</tr>";
-			
+}
     }
 }else {
-		echo "Không bài viết";
+		echo "Không có bài viết nào";
 	}
 }
 	

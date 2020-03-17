@@ -52,11 +52,11 @@ if ($error == 11) { // nếu id = 11
 	header('Location: /forum'); // còn lại nếu không phải thì chuyển về forum
 }
 	} else {
-		$error = 'Incorrect password!';
+		$error = 'Sai mật khẩu!';
 		
 	}
 } else {
-	$error = 'Incorrect username!';
+	$error = 'Tài khoản không tồn tại!';
 }
 $stmt->close();
 }
@@ -666,20 +666,7 @@ iframe {
     padding-right: 15px;
     padding-left: 15px;
 ">
-   <form class="form" role="form" action="welcome.php" method="POST">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Mật khẩu" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Quên mật khẩu?</a></small>
-                                </div>
-                            </form>
+  
                         </li>
                     </ul>
                 </li>
@@ -688,7 +675,25 @@ iframe {
 </div>
 </nav>
 
+<style>
+.container-login100 {
+ background-image: url("/background-login.jpg");
+background-repeat: no-repeat ;
+}
+.wrap-login100 {
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
 
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 13px 13px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+</style>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -699,7 +704,7 @@ iframe {
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
 						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Username"></span>
+						<span class="focus-input100" data-placeholder="Tên đăng nhập"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
@@ -707,28 +712,41 @@ iframe {
 							<i class="zmdi zmdi-eye"></i>
 						</span>
 						<input class="input100" type="password" name="password">
-						<span class="focus-input100" data-placeholder="Password"></span>
+						<span class="focus-input100" data-placeholder="Mật khẩu"></span>
 					</div>
 					<div>
-					<p style="color:red;"><?php echo $error; ?></p>
+					<p style="color:red;text-align:center;"><?php echo $error; ?></p>
 					</div>
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
                             
 							<button class="login100-form-btn">
-								Login
+								Đăng nhập
 							</button>
 						</div>
 					</div>
-
+<div class="text-center p-t-20">
+                        hoặc đăng nhập bằng...
+                    </div>
+<div class="text-center p-t-10"><div class="row" style="text-align: center;margin-left: 0px;margin-right: 30px;"><div class="col-12"><a type="button" href="#" class="col-1" style="color: rgb(221, 75, 57);"><i class="fab fa-2x fa-google-plus"></i></a> <a type="button" href="#" class="col-1" style="color: rgb(59, 89, 152);"><i class="fab fa-2x fa-facebook"></i></a>  <a type="button" href="#" class="col-1" style="color: rgb(51, 51, 51);"><i class="fab fa-2x fa-github"></i></a></div></div></div>
+					
 				</form>
-				<center style="padding-top:20px;"><a href="register.html">Don't have an account? Sign up here...</a></center>
+				<center style="padding-top:20px;"><a href="register.html">Không có tài khoản? Đăng ký tại đây...</a></center>
 			</div>
 		</div>
 	</div>
 
-
+<script>
+					function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+					</script>
         <!-- Javascript -->
         <script src="assets/js/jquery-1.11.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -742,22 +760,41 @@ iframe {
 
 
 </div>
-      <footer class="footer">
+            <footer class="footer">
 		<hr>
-		<div class="container" style="
+		<div class="main-content" style="
     margin-right: 15px;
     margin-left: 15px;
 ">
-        <p style="float:left">&copy; Đoàn trường Chuyên Biên Hoà 2019. Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Tung Anh Duong</a> and <a href="https://www.facebook.com/hoang.phat.handsome/">Hoang Phat</a></p>
-        <div style="float:right">
-        <!--GitHub-->
-        <a class="fb-ic mr-3 socialfooter" role="button" href="https://github.com/tunganh03/"><i class="fab fa-lg fa-github"></i></a>
-        <!--Facebook-->
-        <a class="fb-ic mr-3 socialfooter" role="button" href="https://www.facebook.com/groups/c4k60/"><i class="fab fa-lg fa-facebook-f"></i></a>
-        <!--Instagram-->
-        <a class="ins-ic mr-3 socialfooter2" role="button" href="https://instagram.com/c4k60"><i class="fab fa-lg fa-instagram"></i></a>
-        </div>
-		</div>
+    <div class="column">
+        <p>&copy; Đoàn trường Chuyên Biên Hoà</p>
+    </div>
+
+    <div class="column">
+        <p id="demo"></p>
+    </div>
+
+     <div class="column">
+        <p> Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
+    
+</div>
+	
+</div>
+<style>
+.column {    
+    display: inline-block;
+}
+</style>
+</div>
+<script>
+
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = n + ".";
+}
+myFunction()
+</script>
       </footer>
       <!-- Bootstrap nhân JavaScript
     ================================================== -->

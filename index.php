@@ -143,7 +143,7 @@ if (!isset($_SESSION['loggedin'])) {
 <script>
 		$(function() {
 			$('body').chocolate({
-				images		: ['https://raw.githubusercontent.com/tunganh03/xungkich-cbh/master/bienhoa11.jpg', 'https://raw.githubusercontent.com/tunganh03/xungkich-cbh/master/bienhoa22.jpg','https://raw.githubusercontent.com/tunganh03/xungkich-cbh/master/bienhoa33.jpg'],
+				images		: ['/bienhoa11.jpg', '/bienhoa22.jpg','/bienhoa33.jpg'],
 				interval	: 4000,
 				speed		: 2000,
 			});
@@ -348,13 +348,20 @@ h3 {
     padding-top: 5px;
     padding-bottom: 15px;
 ">
+
 <img src="/60namcbh.png" style="width: 100px;"/>
 <h2><strong class='sep-onenbt'></strong>Cổng thông tin điện tử Đoàn trường<strong class='sep-twonbt'></strong></h2>
 <h2>THPT Chuyên Biên Hoà</h2>
-</div></center>
+
+</div>
+						
+					  
+</center>
 <div class='containerbg sma' style="
     top: 150px;
 ">
+
+
 <big><b><i class="fas fa-question-circle"></i> Đây là gì?</b></big>
 <p>Chào mừng đến với cổng thông tin điện tử Đoàn trường Chuyên Biên Hoà!<br> Đây là nơi để tra cứu các thông tin, vấn đề liên quan đến Đoàn trường THPT Chuyên Biên Hoà.</p>
 <br>

@@ -2,14 +2,29 @@
 	session_start();
 	require('connect.php');
 	include('server2.php');
+// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'User.class.php';
+$user = new User();
 
 if (!isset($_SESSION['loggedin'])) {
+
 	$OUT = 'none';
 	$NOTICE = 'block';
 		$WELCOME = 'Bạn chưa đăng nhập! Hãy đăng nhập để tham gia thảo luận.';
 	$PROP = 'none';
 	$OUT = 'none';
 	$width = '490px';
+		if(isset($accessToken)){
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+	$NOTICE = 'none';
+	$width = '131px';
+	$WELCOME = '';
+}
 } else {
 	$NOTICE = 'none';
 		$WELCOME = '';

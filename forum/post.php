@@ -1,14 +1,53 @@
 <?php
 	session_start();
 	require('connect.php');
+	// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'User.class.php';
+$user = new User();
+
 if (!isset($_SESSION['loggedin'])) {
-	header('location: login.php');
+	   // Get the user profile info from Github
+    $gitUser = $gitClient->apiRequest($accessToken);
+
+    if(!empty($gitUser)){
+        // User profile data
+        $gitUserData = array();
+        $gitUserData['oauth_provider'] = 'github';
+        $gitUserData['oauth_uid'] = !empty($gitUser->id)?$gitUser->id:'';
+        $gitUserData['name'] = !empty($gitUser->name)?$gitUser->name:'';
+        $gitUserData['username'] = !empty($gitUser->login)?$gitUser->login:'';
+        $gitUserData['email'] = !empty($gitUser->email)?$gitUser->email:'';
+        $gitUserData['location'] = !empty($gitUser->location)?$gitUser->location:'';
+        $gitUserData['picture'] = !empty($gitUser->avatar_url)?$gitUser->avatar_url:'';
+        $gitUserData['link'] = !empty($gitUser->html_url)?$gitUser->html_url:'';
+        
+        // Insert or update user data to the database
+        $userData = $user->checkUser($gitUserData);
+        
+        // Put user data into the session
+        $_SESSION['userData'] = $userData;
+$OUT1 = 'none';
+}
 	$OUT = 'none';
 	$NOTICE = 'block';
 		$WELCOME = 'Bạn chưa đăng nhập! Hãy đăng nhập để tham gia thảo luận.';
 	$PROP = 'none';
 	$OUT = 'none';
+	if(isset($accessToken)){
+	$NOTICE = 'none';
+		$WELCOME = '';
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+	$usen = $userData['username'];
 } else {
+header('location: login.php');
+}
+} else {
+	$usen = $_SESSION['username'];
 	$NOTICE = 'none';
 		$WELCOME = '';
 	$PROP = 'block';
@@ -244,7 +283,7 @@ input[type=submit] {
 			{
 				if(strlen($topic_name)>=10){
 					$query = "INSERT INTO topics (topic_name, topic_content, topic_creator, date) 
-								VALUES('$topic_name', '$content', '".$_SESSION['username']."', '$date')";
+								VALUES('$topic_name', '$content', '".$usen."', '$date')";
 					mysqli_query($db, $query);
 					echo "Đăng bài viết thành công !";
 				}else{

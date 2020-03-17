@@ -1,10 +1,82 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
+// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'User.class.php';
+$user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
-	exit();
+$none = 'block';
+$logi = 'none';
+$usern = 'none';
+$OUT1 = 'none';
+} else {
+	$none = 'none';
+	$logi = $_SESSION['loggedin'];
+	$usern = $_SESSION['username'];
+	$OUT1 = 'none';
+}
+if(isset($accessToken)){
+	   // Get the user profile info from Github
+    $gitUser = $gitClient->apiRequest($accessToken);
+
+    if(!empty($gitUser)){
+        // User profile data
+        $gitUserData = array();
+        $gitUserData['oauth_provider'] = 'github';
+        $gitUserData['oauth_uid'] = !empty($gitUser->id)?$gitUser->id:'';
+        $gitUserData['name'] = !empty($gitUser->name)?$gitUser->name:'';
+        $gitUserData['username'] = !empty($gitUser->login)?$gitUser->login:'';
+        $gitUserData['email'] = !empty($gitUser->email)?$gitUser->email:'';
+        $gitUserData['location'] = !empty($gitUser->location)?$gitUser->location:'';
+        $gitUserData['picture'] = !empty($gitUser->avatar_url)?$gitUser->avatar_url:'';
+        $gitUserData['link'] = !empty($gitUser->html_url)?$gitUser->html_url:'';
+        
+        // Insert or update user data to the database
+        $userData = $user->checkUser($gitUserData);
+        
+        // Put user data into the session
+        $_SESSION['userData'] = $userData;
+$OUT1 = 'none';
+
+    }else{
+		    $OUT1 = 'block';
+        $output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
+    }
+    
+	$none = 'none';
+$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+	}elseif(isset($_GET['code'])){
+    // Verify the state matches the stored state
+    if(!$_GET['state'] || $_SESSION['state'] != $_GET['state']) {
+        header("Location: ".$_SERVER['PHP_SELF']);
+    }
+    
+    // Exchange the auth code for a token
+    $accessToken = $gitClient->getAccessToken($_GET['state'], $_GET['code']);
+  
+    $_SESSION['access_token'] = $accessToken;
+  
+    header('Location: ./');
+}else{
+// Generate a random hash and store in the session for security
+    $_SESSION['state'] = hash('sha256', microtime(TRUE) . rand() . $_SERVER['REMOTE_ADDR']);
+    
+    // Remove access token from the session
+    unset($_SESSION['access_token']);
+  
+    // Get the URL to authorize
+    $loginURL = $gitClient->getAuthorizeURL($_SESSION['state']);
+    
+    // Render Github login button
+    $output2 = '<a type="button" href="'.htmlspecialchars($loginURL).'" class="col-1" style="color: rgb(51, 51, 51);"><i class="fab fa-2x fa-github"></i></a>';
+$PROP = 'none';
+	$OUT = 'none';
 }
 //$DATABASE_HOST = 'sql303.unaux.com';
 //$DATABASE_USER = 'unaux_24697656';
@@ -32,11 +104,18 @@ $stmt->close();
 if (!isset($_SESSION['loggedin'])) {
 	$PROP = 'none';
 	$OUT = 'none';
+	
 } else {
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';	
+}
+if(isset($accessToken)){
 	$PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';
 }
+
 $id = $_SESSION['id'];
 // read data from collumn profile_pic from accounts table only at id=11
 $sql = "SELECT profile_pic FROM accounts WHERE id='$id'";
@@ -287,34 +366,97 @@ body.loggedin {
 			<div>
 
   <div>
-  <?php echo "<img src='$prof_pic' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'>";?></div>
+  <div class="wrapper" style='display:<?=$OUT1?>'><?php echo $output; ?></div></div>
 
 
 
 				<table>
 
+<?php 
+if(isset($accessToken)){
+	$usern = 'none';
+} elseif ($logi) {
+	
+$query = "SELECT * FROM accounts WHERE username='".$usern."'";
+			$results = mysqli_query($con, $query);
+			if (mysqli_num_rows($results) !=0) {
+				while($row = mysqli_fetch_assoc($results)){
+					$login = 'block';
+					if(@$_GET['id']){
+						$login = 'none';	
+					}
+					echo "<div style='display:$login'>";
+					echo "<div><img src='".$row["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
+					echo "<h1 style='
+    margin-top: 0px;
+'>".$row["username"]."</h1>";
+					
+					echo "<tr style='display:$login'><td>Họ và tên :</td> <td>".$row["name"]."</td>";
+					echo "<tr style='display:$login'><td>Ngày tham gia :</td> <td>".$row["date"]."</td>";
+					echo "<tr style='display:$login'><td>ID : </td><td>".$row["id"]."</td>";
+					echo "<tr style='display:$login'><td>Email : </td><td>". $row["email"]."</td>";
+					//echo "Điểm : ". $row["score"]."<br/>";
+					//echo "Số câu trả lời : ". $row["replies"]."<br/>";
+					//echo "Số lượng bài viết : ". $row["topics"]."<br/>";
+echo "</div>";
+				}
+			}
+} 
+if(isset($accessToken)){
+        // Render Github profile data
+$login = 'block';
+$tunna = 1;
+if(@$_GET['id']){
+						$login = 'none';	
+						$tunna = 0;
+					}
+					
+		if($tunna == 1){
+		echo "<div style='display:$login'><div><img src='".$userData["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
+        echo "<h1 style='margin-top: 0px;'>".$userData["username"]."</h1>";
+        echo "<table><tr><td style=''>Họ và tên :</td> <td>".$userData['name'].'</td>';
+		echo "<tr><td>ID : </td><td>".$userData['oauth_uid'].'</td>';
+		echo "<tr><td>Email : </td><td>".$userData['email'].'</td>';
+        echo "<tr><td>Địa chỉ : </td><td>".$userData['location'].'</td>';
+        echo '<tr><td>Profile Link :  </td><td><a href="'.$userData['link'].'" target="_blank">Click để mở GitHub</a></td>';
+        echo '</table></div>'; 
+		}
+}
 
-					<tr>
-						<td>Họ và tên:</td>
-						<td><?=$_SESSION['name']?></td>
-					</tr>
-					<tr>
-						<td>Tên đăng nhập:</td>
-						<td><?=$_SESSION['username']?></td>
-					</tr>
-					<tr>
-						<td>ID:</td>
-						<td><?=$id?></td>
-					</tr>
-					<tr>
-						<td>Email:</td>
-						<td><?=$email?></td>
-					</tr>
-					<tr>
-						<td>Ngày tham gia:</td>
-						<td><?=$date?></td>
-					</tr>
-					<div style="float:right">
+
+		if(@$_GET['id']){
+			$login = 'none';	
+			$query = "SELECT * FROM accounts WHERE id='".$_GET['id']."'";
+			$results = mysqli_query($con, $query);
+			if (mysqli_num_rows($results) !=0) {
+				while($row = mysqli_fetch_assoc($results)){
+					
+					echo "<div><img src='".$row["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
+					echo "<h1 style='
+    margin-top: 0px;
+'>".$row["username"]."</h1>";
+					
+					echo "<tr><td>Họ và tên :</td> <td>".$row["name"]."</td>";
+					echo "<tr><td>Ngày tham gia :</td> <td>".$row["date"]."</td>";
+					echo "<tr><td>ID : </td><td>".$row["id"]."</td>";
+					echo "<tr><td>Email : </td><td>". $row["email"]."</td>";
+					//echo "Điểm : ". $row["score"]."<br/>";
+					//echo "Số câu trả lời : ". $row["replies"]."<br/>";
+					//echo "Số lượng bài viết : ". $row["topics"]."<br/>";
+					
+					
+				}
+			}else{
+					echo "Không tìm thấy thông tin của ID này!";
+			}
+		}else {
+		echo "<p style='display:$none'>Bạn chưa đăng nhập!</p>";
+		}
+		if ($logi) {
+			$login = 'block';
+		}
+	?>
+					<div style="float:right;display:<?=$OUT?>">
 				<a href='profile.php?action=cp'><i class="fas fa-key"></i> Thay đổi mật khẩu </a><br/>
 	<a href='profile.php?action=ca'><i class="fas fa-user"></i> Thay đổi ảnh đại diện </a>
 	</div>

@@ -1,6 +1,12 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
+// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'User.class.php';
+$user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	
@@ -12,6 +18,38 @@ if (!isset($_SESSION['loggedin'])) {
 	$IN = 'none';
 	$OUT = 'block';
 
+}
+if(isset($accessToken)){
+	header("Location: /profile.php");
+$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+	}elseif(isset($_GET['code'])){
+    // Verify the state matches the stored state
+    if(!$_GET['state'] || $_SESSION['state'] != $_GET['state']) {
+        header("Location: ".$_SERVER['PHP_SELF']);
+    }
+    
+    // Exchange the auth code for a token
+    $accessToken = $gitClient->getAccessToken($_GET['state'], $_GET['code']);
+  
+    $_SESSION['access_token'] = $accessToken;
+  
+    header('Location: ./');
+}else{
+// Generate a random hash and store in the session for security
+    $_SESSION['state'] = hash('sha256', microtime(TRUE) . rand() . $_SERVER['REMOTE_ADDR']);
+    
+    // Remove access token from the session
+    unset($_SESSION['access_token']);
+  
+    // Get the URL to authorize
+    $loginURL = $gitClient->getAuthorizeURL($_SESSION['state']);
+    
+    // Render Github login button
+    $output2 = '<a type="button" href="'.htmlspecialchars($loginURL).'" class="col-1" style="color: rgb(51, 51, 51);"><i class="fab fa-2x fa-github"></i></a>';
+$PROP = 'none';
+	$OUT = 'none';
 }
 ?>
 <!DOCTYPE html>
@@ -569,6 +607,25 @@ iframe {
 
 
               </style>
+			  <style>
+.container-login100 {
+ background-image: url("/background-login.jpg");
+background-repeat: no-repeat ;
+}
+.wrap-login100 {
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 13px 13px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+</style>
     <nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
     
@@ -654,7 +711,7 @@ iframe {
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<span class="btn-show-pass" onclick="myFunction()">
+						<span class="btn-show-pass" onclick="myFunction2()">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
 						<input class="input100" type="password" name="password" id="myInput">
@@ -673,9 +730,9 @@ iframe {
 					<div class="text-center p-t-20">
                         hoặc đăng nhập bằng...
                     </div>
-<div class="text-center p-t-10"><div class="row" style="text-align: center;margin-left: 0px;margin-right: 30px;"><div class="col-12"><a type="button" href="#" class="col-1" style="color: rgb(221, 75, 57);"><i class="fab fa-2x fa-google-plus"></i></a> <a type="button" href="#" class="col-1" style="color: rgb(59, 89, 152);"><i class="fab fa-2x fa-facebook"></i></a>  <a type="button" href="#" class="col-1" style="color: rgb(51, 51, 51);"><i class="fab fa-2x fa-github"></i></a></div></div></div>
+<div class="text-center p-t-10"><div class="row" style="text-align: center;margin-left: 0px;margin-right: 30px;"><div class="col-12"><a type="button" href="#" class="col-1" style="color: rgb(221, 75, 57);"><i class="fab fa-2x fa-google-plus"></i></a> <a type="button" href="#" class="col-1" style="color: rgb(59, 89, 152);"><i class="fab fa-2x fa-facebook"></i></a>  <?php echo $output2; ?></div></div></div>
 					<script>
-					function myFunction() {
+					function myFunction2() {
   var x = document.getElementById("myInput");
   if (x.type === "password") {
     x.type = "text";
@@ -706,20 +763,38 @@ iframe {
 </div>
       <footer class="footer">
 		<hr>
-		<div class="container" style="
+		<div class="main-content" style="
     margin-right: 15px;
     margin-left: 15px;
 ">
-        <p style="float:left">&copy; Đoàn trường Chuyên Biên Hoà 2019. Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Tung Anh Duong</a> and <a href="https://www.facebook.com/hoang.phat.handsome/">Hoang Phat</a></p>
-        <div style="float:right">
-        <!--GitHub-->
-        <a class="fb-ic mr-3 socialfooter" role="button" href="https://github.com/tunganh03/"><i class="fab fa-lg fa-github"></i></a>
-        <!--Facebook-->
-        <a class="fb-ic mr-3 socialfooter" role="button" href="https://www.facebook.com/groups/c4k60/"><i class="fab fa-lg fa-facebook-f"></i></a>
-        <!--Instagram-->
-        <a class="ins-ic mr-3 socialfooter2" role="button" href="https://instagram.com/c4k60"><i class="fab fa-lg fa-instagram"></i></a>
-        </div>
-		</div>
+    <div class="column">
+        <p>&copy; Đoàn trường Chuyên Biên Hoà</p>
+    </div>
+
+    <div class="column">
+        <p id="demo"></p>
+    </div>
+
+     <div class="column">
+        <p> Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
+    </div>
+</div>
+<style>
+.column {    
+    display: inline-block;
+}
+</style>
+</div>
+<script>
+
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = n + ".";
+}
+myFunction()
+
+</script>
       </footer>
       <!-- Bootstrap nhân JavaScript
     ================================================== -->
