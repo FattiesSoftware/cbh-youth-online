@@ -342,7 +342,17 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 			</tr>
 	</thead>
 	</center>
+<style>
+@media only screen and (max-width: 790px) {
+.content {
+	width: auto;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
 
+}
+}
+</style>
 	</body>
 </html>
 

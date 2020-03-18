@@ -290,10 +290,7 @@ body {
 body.loggedin {
 	background-color: #f3f4f7;
 }
-.content {
-	width: 1000px;
-	margin: 0 auto;
-}
+
 .content h2 {
 	margin: 0;
 	padding: 25px 0;
@@ -318,6 +315,15 @@ body.loggedin {
 .content > div p {
 	padding: 5px;
 	margin: 0 0 10px 0;
+}
+@media only screen and (max-width: 790px) {
+.content {
+	width: 720px;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
 }
 	</style>
 <nav class='navbar navbar-inverse '>
@@ -409,6 +415,7 @@ $tunna = 1;
 if(@$_GET['id']){
 						$login = 'none';	
 						$tunna = 0;
+						$OUT = 'none';
 					}
 					
 		if($tunna == 1){
@@ -426,6 +433,7 @@ if(@$_GET['id']){
 
 		if(@$_GET['id']){
 			$login = 'none';	
+			$OUT = 'none';
 			$query = "SELECT * FROM accounts WHERE id='".$_GET['id']."'";
 			$results = mysqli_query($con, $query);
 			if (mysqli_num_rows($results) !=0) {

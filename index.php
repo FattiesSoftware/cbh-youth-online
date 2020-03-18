@@ -1,12 +1,24 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
+// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'User.class.php';
+$user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	$PROP = 'none';
 	$OUT = 'none';
 } else {
 	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
+if(isset($accessToken)){
+		$none = 'none';
+$PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';
 }
@@ -415,7 +427,8 @@ myFunction()
 <ul class='nav navbar-nav'>
 <li class='active'><a href='/'>Trang chủ</a></li>
 <li class=''><a href='/forum'>Diễn đàn</a></li>
-<li class=''><a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<li class=''><a class="nav-link dropdown-toggle" href="/tracuu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tra cứu</a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		  <a class="dropdown-item " style="
     margin-left: 10px;
 " href="/loivipham">Các lỗi vi phạm</a><br>

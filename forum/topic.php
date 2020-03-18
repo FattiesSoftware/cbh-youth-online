@@ -208,7 +208,17 @@ body.loggedin {
 </div>
 </nav>
 <div class="content">
-	
+	<style>
+@media only screen and (max-width: 790px) {
+.content {
+	width: auto;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+}
+</style>
 	<?php 
 	if($_GET["id"]){
 		

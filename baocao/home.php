@@ -21,6 +21,9 @@ if ($error == 11) { // nếu id = 11
 } elseif ($error == 15) { // nếu id = 15
 	 // chuyển đến xung kích
 	 $none = $_SESSION['id'];
+} elseif ($error == 1) {// nếu id = 1
+	// chuyển đến xung kích
+	
 } else {
 	echo '<a href="/"> Bấm vào đây để quay lại</a><br>';
 die ('Bạn không có quyền truy cập vào trang này!');
@@ -34,41 +37,33 @@ die ('Bạn không có quyền truy cập vào trang này!');
 
 <!DOCTYPE html>
 <html>
-	<head>
-
-  <!-- Trang web được lập trình bởi Dương Tùng Anh - C4K60 Chuyên Hà Nam -->
-<!-- Mọi thông tin chi tiết xin liên hệ https://facebook.com/tunnaduong/ -->
-	<!DOCTYPE html>
-<title>Login V2</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
+<meta content='width=device-width, initial-scale = 1.0, user-scalable = no' name='viewport'/>
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:600,700%7CDamion" rel="stylesheet" type="text/css">
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://c4k60.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://doantruongthptchuyenbienhoa.online/' rel='canonical'/>
+<meta content='https://doantruongthptchuyenbienhoa.online/' property='og:url'/>
+<meta content='Đoàn trường THPT Chuyên Biên Hoà' property='og:title'/>
+<meta content='Cổng thông tin điện tử Đoàn trường THPT Chuyên Biên Hoà Online' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<!-- Latest compiled and minified CSS -->
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+<!-- jQuery library -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <!-- Latest compiled JavaScript -->
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-	</head>
+<title>Đoàn trường - CBH</title>
+<script src="https://global.oktacdn.com/okta-signin-widget/3.2.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+
+<link href="https://global.oktacdn.com/okta-signin-widget/3.2.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+</head>
 	<body class="loggedin">
 	<style>
 	.navtop {
@@ -139,14 +134,64 @@ body.loggedin {
 	padding: 5px;
 	margin: 0 0 10px 0;
 }
+@media only screen and (max-width: 790px) {
+.content {
+	width: auto;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.navtop {
+	width: 500px;
+	margin: 0 auto;
+
+
+}
+}
 	</style>
-		<nav class="navtop">
-			<div>
-				<h1><a href="/">Đoàn trường THPT Chuyên Biên Hoà</a></h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Trang cá nhân</a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
-			</div>
-		</nav>
+<nav class='navbar navbar-inverse '>
+<div class='container-fluid'>
+<div class='navbar-header'>
+<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
+<button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+</div>
+<div class='collapse navbar-collapse' id='myNavbar'>
+<ul class='nav navbar-nav'>
+<li class=''><a href='/'>Trang chủ</a></li>
+<li class=''><a href='/forum'>Diễn đàn</a></li>
+<li class=''><a class="nav-link dropdown-toggle" href="/tracuu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tra cứu</a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item " style="
+    margin-left: 10px;
+" href="/loivipham">Các lỗi vi phạm</a><br>
+          <a class="dropdown-item " style="
+    margin-left: 10px;
+" href="/thoikhoabieu">Thời khoá biểu</a><br>
+          <a class="dropdown-item " style="
+    margin-left: 10px;
+" href="/hocsinh">Học sinh</a>
+        </div></li>
+<li class=''><a href='/topvipham'>Top vi phạm</a></li>
+<li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
+<li class='active'><a href='/baocao'>Báo cáo</a></li>
+<li class=''><a href='/lienhe'>Liên hệ</a></li>
+</ul> 
+<ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
+<li id="profile" style="display:<?=$PROP?>">
+<a href="profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
+<li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+
+
+</ul>
+
+</div>
+</div>
+</nav>
 		<div class="content">
 			<h2>Hệ thống báo cáo dành cho xung kích</h2>
 			<p>Chào mừng, <?=$_SESSION['name']?>!<br>

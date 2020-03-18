@@ -119,6 +119,17 @@ header('location: login.php');
 
 </head>
 <body>
+<style>
+@media only screen and (max-width: 790px) {
+.content {
+	width: auto;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+}
+</style>
 	<style>
 	.navtop {
 	background-color: #2f3947;
@@ -158,10 +169,6 @@ header('location: login.php');
 }
 body.loggedin {
 	background-color: #f3f4f7;
-}
-.content {
-	width: 1000px;
-	margin: 0 auto;
 }
 .content h2 {
 	margin: 0;
