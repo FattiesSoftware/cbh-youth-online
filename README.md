@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-final/master/60namcbh.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-final/master/60namcbh.png" height="100" width="100"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/flarum/core"><img src="https://travis-ci.org/flarum/core.svg" alt="Build Status"></a>
