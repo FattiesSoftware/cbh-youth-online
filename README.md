@@ -1,12 +1,14 @@
 <p align="center"><img src="https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-final/master/60namcbh.png" height="100" width="100"></p>
 
 <p align="center">
-[![buddy pipeline](https://app.buddy.works/duongtunganh2111/doantruong-cbh-beta-final/pipelines/pipeline/246032/badge.svg?token=2e0813dbe17bf3d9cb39c14bd1503a57a10e9f2bc5a6049c70bfd9e5cbb67072 "buddy pipeline")](https://app.buddy.works/duongtunganh2111/doantruong-cbh-beta-final/pipelines/pipeline/246032)
+
 <a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/license.svg" alt="License"></a>
 </p>
 
+
+[![buddy pipeline](https://app.buddy.works/duongtunganh2111/doantruong-cbh-beta-final/pipelines/pipeline/246032/badge.svg?token=2e0813dbe17bf3d9cb39c14bd1503a57a10e9f2bc5a6049c70bfd9e5cbb67072 "buddy pipeline")](https://app.buddy.works/duongtunganh2111/doantruong-cbh-beta-final/pipelines/pipeline/246032)
 ## Giới thiệu về dự án
 
 **[Đoàn trường THPT Chuyên Biên Hoà Online](https://youth.cbh.vn/) là một cổng thông tin điện tử trực tuyến của Đoàn trường THPT Chuyên Biên Hoà.** Nó nhanh gọn và đáp ứng đầy đủ các tính năng của một đoàn trường trực tuyến. Các tính năng chính gồm có:
