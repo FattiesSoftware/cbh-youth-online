@@ -1,4 +1,4 @@
-<p align="center"><img src="https://flarum.org/img/logo.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-final/master/60namcbh.png"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/flarum/core"><img src="https://travis-ci.org/flarum/core.svg" alt="Build Status"></a>
@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/license.svg" alt="License"></a>
 </p>
 
-## About Flarum
+## Giới thiệu về dự án
 
-**[Flarum](https://flarum.org/) is a delightfully simple discussion platform for your website.** It's fast and easy to use, with all the features you need to run a successful community. It is designed to be:
+**[Đoàn trường THPT Chuyên Biên Hoà Online](https://youth.cbh.vn/) là một cổng thông tin điện tử trực tuyến của Đoàn trường THPT Chuyên Biên Hoà.** Nó nhanh gọn và đáp ứng đầy đủ các tính năng của một đoàn trường trực tuyến. Các tính năng chính gồm có:
 
 * **Fast and simple.** No clutter, no bloat, no complex dependencies. Flarum is built with PHP so it’s quick and easy to deploy. The interface is powered by Mithril, a performant JavaScript framework with a tiny footprint.
 
