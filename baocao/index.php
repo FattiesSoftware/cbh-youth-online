@@ -20,7 +20,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 }
 if(isset($accessToken)){
-	header("Location: /profile.php");
+	header('Location: /baocao/home.php');
 $PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';

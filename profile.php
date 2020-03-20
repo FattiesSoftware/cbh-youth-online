@@ -290,7 +290,10 @@ body {
 body.loggedin {
 	background-color: #f3f4f7;
 }
-
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
 .content h2 {
 	margin: 0;
 	padding: 25px 0;

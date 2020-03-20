@@ -75,26 +75,10 @@ $DATABASE_PASS = '';
 $DATABASE_NAME = 'members';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-$error2 = 1;
+
+		$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
+		$error2 = $userData['oauth_uid'];
 if (!isset($_SESSION['loggedin'])) {	
-$error = '';
-
-} else {
-$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
-	$none = 'none';
-$PROP = 'block';
-	$IN = 'none';
-	$OUT = 'block';
-}
-
-if ($error2==1) {
-	if(isset($accessToken)){
-	$error2 = $userData['oauth_uid'];
-		$none = 'none';
-$PROP = 'block';
-	$IN = 'none';
-	$OUT = 'block';
-	}
 }
 if ($error == 11) { // nếu id = 11
 		header('Location: admin/index.php'); // chuyển đến trang admin
@@ -141,22 +125,15 @@ die ('Bạn không có quyền truy cập vào trang này!');
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
 <title>Đoàn trường - CBH</title>
-<!-- typeahead -->
+<!-- BS datapicker -->
 <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js" type="text/javascript"></script>
-<!-- tagsinput -->
+<link href="https://twitter.github.io/css/main.css" type="text/css" rel="stylesheet"/>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
 <link rel="stylesheet" href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/assets/app.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/github.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
 * {
   box-sizing: border-box;
@@ -236,38 +213,37 @@ die ('Bạn không có quyền truy cập vào trang này!');
 body.loggedin {
 	background-color: #f3f4f7;
 }
-.content2 {
+.content {
 	width: 1000px;
 	margin: 0 auto;
 }
-.content2 h2 {
+.content h2 {
 	margin: 0;
 	padding: 25px 0;
 	font-size: 22px;
 	border-bottom: 1px solid #e0e0e3;
 	color: #4a536e;
 }
-.content2 > p {
+.content > p, .content > div {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	margin: 25px 0;
 	padding: 25px;
 	background-color: #fff;
 }
-
-.content2 > p table td, .content2 > div table td {
+.content > p table td, .content > div table td {
 	padding: 5px;
 }
-.content2 > p table td:first-child, .content > div table td:first-child {
+.content > p table td:first-child, .content > div table td:first-child {
 	font-weight: bold;
 	color: #4a536e;
 	padding-right: 15px;
 }
-.content2 > div p {
+.content > div p {
 	padding: 5px;
 	margin: 0 0 10px 0;
 }
 @media only screen and (max-width: 790px) {
-.content2 {
+.content {
 	width: auto;
 	margin: 0 auto;
     padding-left: 25px;
@@ -281,8 +257,6 @@ body.loggedin {
 
 }
 }
-
-
 	</style>
 <nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
@@ -326,10 +300,10 @@ body.loggedin {
 </div>
 </div>
 </nav>
-		<div class="content2">
+		<div class="content">
 			<h2>Hệ thống báo cáo dành cho xung kích</h2>
 			<p>Chào mừng, <?=$nam?>!<br>
-				
+				<button style="float:right" type="button" class="btn btn-danger" onClick="window.location.reload();"><i class="fas fa-redo-alt"></i> Tải lại</button>
 			<?php
 			
 function rebuild_date( $format, $time = 0 )
@@ -427,63 +401,36 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
  echo $contents;
 ?>
-
+    <h3>Báo cáo hằng ngày</h3>
 <style>
 /* Center the loader */
-.sk-chase {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  animation: sk-chase 2.5s infinite linear both;
-}
-
-.sk-chase-dot {
-  width: 100%;
-  height: 100%;
+#loader {
   position: absolute;
-  left: 0;
-  top: 0; 
-  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-.sk-chase-dot:before {
-  content: '';
-  display: block;
-  width: 25%;
-  height: 25%;
-  background-color: #6495ED;
-  border-radius: 100%;
-  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
-.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
-.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
-.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
-.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
-.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
-.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
-.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
-.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
-.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
-.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
-.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
-.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
-
-@keyframes sk-chase {
-  100% { transform: rotate(360deg); } 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-@keyframes sk-chase-dot {
-  80%, 100% { transform: rotate(360deg); } 
-}
-
-@keyframes sk-chase-dot-before {
-  50% {
-    transform: scale(0.4); 
-  } 100%, 0% {
-    transform: scale(1.0); 
-  } 
-}
 /* Add animation to "page content" */
 .animate-bottom {
   position: relative;
@@ -502,230 +449,121 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
- .Center { 
-            width:80px; 
-            height:80px; 
-            position: fixed; 
-            top: 60%; 
-            left: 55%; 
-            margin-top: -100px; 
-            margin-left: -100px; 
-        } 
-		.ml12 {
-  font-weight: 200;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-}
 
-.ml12 .letter {
-  display: inline-block;
-  line-height: 1em;
+#myDiv {
+  display: none;
 }
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
-<center>
-<div id="loader2">
-<h1 class="ml12">Đang tải báo cáo</h1>
-</div>
-</center>
-<div id="loader" class="sk-chase center" style="display:none">
 
-  <div class="sk-chase-dot"></div>
-  <div class="sk-chase-dot"></div>
-  <div class="sk-chase-dot"></div>
-  <div class="sk-chase-dot"></div>
-  <div class="sk-chase-dot"></div>
-  <div class="sk-chase-dot"></div>
-</div>
+<div id="loader" style="color:red;"></div>
 
-<div class="card card-warning animate-bottom" id="main2" style="display:none">
-    <h3>Báo cáo hằng ngày</h3>
+<div class="card card-warning">
               <!-- /.card-header -->
               <div class="card-body">
-                <form role="form" action="confirm.php" method="GET">
+                <form role="form">
                   
-				  
-
-				  
                       <!-- text input -->
                       <div class="form-group">
-                        <label><i class="fas fa-map-marker-alt"></i> Tên lớp</label>
-                        <select class="selectpicker form-control" data-live-search="true" name="lop">
-
-				  <optgroup label="Khối 12">
-						<option>12 Toán</option>
-						<option>12 Lý</option>
-						<option>12 Hoá</option>
-						<option>12 Sinh</option>
-						<option>12 Tin</option>
-						<option>12 Văn</option>
-						<option>12 Sử - Địa</option>
-						<option>12 Anh</option>
-						<option>12 Nga</option>
-				  </optgroup>
-				  <optgroup label="Khối 11">
-						<option>11 Toán</option>
-						<option>11 Lý</option>
-						<option>11 Hoá</option>
-						<option>11 Sinh</option>
-						<option>11 Tin</option>
-						<option>11 Văn</option>
-						<option>11 Sử - Địa</option>
-						<option>11 Anh</option>
-						<option>11 Nga</option>
-				  </optgroup>
-				  <optgroup label="Khối 10">
-						<option>10 Toán</option>
-						<option>10 Lý</option>
-						<option>10 Hoá</option>
-						<option>10 Sinh</option>
-						<option>10 Tin</option>
-						<option>10 Văn</option>
-						<option>10 Sử - Địa</option>
-						<option>10 Anh</option>
-						<option>10 Nga</option>
-				  </optgroup>
-
-				  <optgroup label="THCS">
-						<option>9A1</option>
-						<option>9A2</option>
-						<option>8A1</option>
-						<option>8A2</option>
-						<option>7A1</option>
-						<option>7A2</option>
-						<option>6A1</option>
-						<option>6A2</option>
-				  </optgroup>
-				  </select>
+                        <label>Tên lớp</label>
+                        <select class="form-control">
+                          <option>9A1</option>
+                          <option>9A2</option>
+                          <option>9A3</option>
+                        </select>
                       </div>
 
 
                     
                       <!-- datearea -->
 <div class="form-group">
-<label><i class="fas fa-clock"></i> Thời gian báo cáo</label>
-<input class="form-control" id="disabledInput" name="date" type="text" placeholder="<?=rebuild_date('H:i l, d/m/Y' )?>" disabled>
+<label>Thời gian báo cáo</label>
+<input class="form-control" id="disabledInput" type="text" placeholder="<?=rebuild_date('H:i l, d/m/Y' )?>" disabled>
    </div>
             
                       <div class="form-group">
-                        <label><i class="fas fa-users"></i> Vắng</label>
-                        <input type="text" name="vang" class="form-control" placeholder="Để trống nếu đủ" value="">
+                        <label>Vắng</label>
+                        <input type="text" class="form-control" value="0">
                       </div>
 
 
                   <!-- input states -->
                   <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="fas fa-quidditch"></i> Vệ sinh</label>
-                    <select class="form-control" name="vesinh">
+                    <label class="col-form-label" for="inputError"> Vệ sinh</label>
+                    <select class="form-control">
                           <option>Sạch</option>
                           <option>Bẩn</option>
                         </select>
                   </div>
                   <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="fas fa-tshirt"></i> Đồng phục</label>
-                    <select class="form-control" name="dongphuc">
+                    <label class="col-form-label" for="inputError"> Đồng phục</label>
+                    <select class="form-control">
                           <option>Đủ</option>
                           <option>Thiếu</option>
                         </select>
                   </div>
                   <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm</label>
-					<input type="text" name="loivipham" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
-					<input type="text" name="diem" class="form-control is-invalid inputError2" id="inputError2" value="" data-role="tagsinput" placeholder="Nhập lại lỗi ..."/>
-					<a  data-toggle="modal" data-target="#exampleModal">Xem danh sách đầy đủ các lỗi vi phạm...</a>
-				  </div>
-
-<!-- Modal1 -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Tra cứu lỗi vi phạm</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-<p>1. Đi muộn (Trừ 1 điểm)<br />
-2. Đi muộn (bỏ chạy) (-10 điểm)<br />
-3. Đi muộn sau 7 giờ (-15 điểm)<br />
-4. Đi muộn trèo tường (-10 điểm)<br />
-5. Vắng mặt không lí do giờ truy bài (-2 điểm)<br />
-6. Ra ngoài giờ truy bài (bỏ chạy) (-10 điểm)<br />
-7. Không đúng trang phục: áo,phù hiệu,giày (-1 điểm)<br />
-8. Tập trung muộn (-5 điểm)<br />
-9. Nghỉ không phép, làm việc riêng trong giờ tập trung (-1 điểm)<br />
-10. Tập trung muộn, sau 10 phút xếp hàng chưa ngay ngắn (-10 điểm)<br />
-11. Mất trật tự trong buổi tập trung (-5 điểm)<br />
-12. Không cất ghế sau giờ tập trung (-1 điểm)<br />
-13. Nói bậy (-2 điểm)<br />
-14. Ăn quà không đúng nơi quy định (-2 điểm)<br />
-15. Hút thuốc lá trong trường (-5 điểm)<br />
-16. Không dừng xe ở cổng trường (-5 điểm)<br />
-17. Không dừng xe ở cổng trường khi đã nhắc nhở (-10 điểm)<br />
-18. Không đội mũ bảo hiểm (-10 điểm)<br />
-19. Vô lễ với cán bộ giáo viên (-50 điểm)<br />
-20. Xả, đổ rác không đúng nơi quy định (-2 điểm)<br />
-21. Trực nhật muộn, đổ rác muộn (-1 điểm)<br />
-22. Không lấy sổ đầu bài sáng thứ 2 (-5 điểm)<br />
-23. Trực nhật bẩn, không trực khu vực (-2 điểm)<br />
-24. Để xe không đúng nơi quy định (-2 điểm)<br />
-25. Khu vực để xe lộn xộn, không ngăn nắp (-5 điểm)<br />
-26. Không đóng cửa tắt điện sau giờ học (-2 điểm)<br />
-27. Sử dụng nhà vệ sinh không đúng cách (-2 điểm)<br />
-28. Làm vỡ cửa kính (-5 điểm)<br />
-29. Đá bóng không đúng nơi quy định (-2 điểm)<br />
-30. Sử dụng không đúng khu vực vệ sinh cho phép (-5 điểm)<br />
-31. Đánh nhau (-50 điểm)<br />
-32. Đánh nhau không khai báo thành khẩn (-80 điểm)<br />
-33. Vi phạm ATGT (có báo cáo về trường) (-20 điểm)<br />
-34. Vi phạm quy chế thi (-10 điểm)<br />
-35. Giờ tự quản ồn, học sinh ra ngoài, ảnh hưởng đến lớp khác (-10 điểm)<br />
-36. Cán bộ lớp, BCH chi đoàn đến họp muộn (-3 điểm)<br />
-37. Cán bộ lớp, BCH chi đoàn vắng mặt không lí do (-5 điểm)<br />
-38. Cán bộ lớp, BCH chi đoàn không hoàn thành nhiệm vụ (-10 điểm)<br />
-39. Xung kích không thực hiện nhiệm vụ (-1 điểm)<br />
-40. Đội văn nghệ không thực hiện nhiệm vụ (-2 điểm)<br />
-41. Lớp trực tuần bỏ buổi trực (-10 điểm)<br />
-42. Lớp trực tuần xuống trực cổng muộn (-5 điểm)<br />
-43. Lớp trực tuần chuẩn bị không tốt cho buổi tập trung (-10 điểm)<br />
-44. Đội mũ bảo hiểm không cài quai (-5 điểm)<br />
-</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-      </div>
-    </div>
-  </div>
-</div>
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi khác</label>
+                    <input type="text" class="form-control is-invalid" id="inputError" placeholder="Nhập lỗi ...">
+                  </div>
 
 
+<h2>My Phonebook</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction3()" placeholder="Search for names.." title="Type in a name" >
+
+<ul id="myUL">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
 <script>
-var error = new Bloodhound({
-  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
-  queryTokenizer: Bloodhound.tokenizers.whitespace,
-  prefetch: 'js/cacloi.json'
-});
-error.initialize();
+function myFunction3() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 
-$('.inputError').tagsinput({
-itemValue: 'value',
-  itemText: 'text',
-  typeaheadjs: {
-    name: 'error',
-    displayKey: 'text',
-    source: error.ttAdapter()
+<input type="text" value="Amsterdam,Washington" data-role="tagsinput" />
+<script>
+var citynames = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  prefetch: {
+    url: 'https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/assets/citynames.json',
+    filter: function(list) {
+      return $.map(list, function(cityname) {
+        return { name: cityname }; });
+    }
   }
 });
-$('.inputError2').tagsinput({
-itemValue: 'point',
-  itemText: 'text',
+citynames.initialize();
+
+$('input').tagsinput({
   typeaheadjs: {
-    name: 'error',
-    displayKey: 'text',
-    source: error.ttAdapter()
+    name: 'citynames',
+    displayKey: 'name',
+    valueKey: 'name',
+    source: citynames.ttAdapter()
   }
 });
 </script>
@@ -733,49 +571,124 @@ itemValue: 'point',
                     <div class="col-sm-6" style="
     left: 18px;
 ">
+                      <!-- radio -->
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radio1"checked>
+                          <label class="form-check-label">Đi muộn (-1 điểm)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radio1" >
+                          <label class="form-check-label">Đi muộn (bỏ chạy) (-10 điểm)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio">
+                          <label class="form-check-label">Đi muộn sau 7 giờ (-15 điểm)</label>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   </div>
-				  <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2""><i class="fas fa-paper-plane"></i> Gửi báo cáo</button>
-				</form>
-                
-				<button style="float:right" type="button" class="btn btn-danger" onClick="window.location.reload();"><i class="fas fa-redo-alt"></i> Tải lại</button>
-			  </div>
+                </form>
+                <button type="button" class="btn btn-info" onclick="myFunc3()">Tiếp theo ></button>
+              </div>
 <script>
-
+function myFunc() {
+	if(document.getElementById('option1').checked) {
+  //Male radio button is checked
+  showPage2();
+}else if(document.getElementById('option2').checked) {
+  //Female radio button is checked
+  showPage3();
+}
+}
+function myFunc2() {
+	if(document.getElementById('lop6').checked) {
+  //Male radio button is checked
+  showPageLop6();
+}else if(document.getElementById('lop7').checked) {
+  //Female radio button is checked
+  showPageLop7();
+}else if(document.getElementById('lop8').checked) {
+  //Female radio button is checked
+  showPageLop8();
+}else if(document.getElementById('lop9').checked) {
+  //Female radio button is checked
+  showPageLop9();
+}
+}
+function myFunc3() {
+	if(document.getElementById('lop10').checked) {
+  //Male radio button is checked
+  showPageLop10();
+}else if(document.getElementById('lop11').checked) {
+  //Female radio button is checked
+  showPageLop11();
+}else if(document.getElementById('lop12').checked) {
+  //Female radio button is checked
+  showPageLop12();
+}
+}
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 3300);
+  myVar = setTimeout(showPage, 1000);
+}
+function myFunction2() {
+	document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(showPage2, 1000);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("loader2").style.display = "none";
-  document.getElementById("main2").style.display = "block";
+  document.getElementById("myDiv").style.display = "block";
 }
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml12');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml12 .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 500,
-    delay: (el, i) => 50 + 30 * i
-  }).add({
-    targets: '.ml12 .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 500,
-    delay: (el, i) => 50 + 30 * i
-  });
+function showPage2() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "none";
+  document.getElementById("myDiv2").style.display = "block";
+}
+function showPage3() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "none";
+  document.getElementById("myDiv3").style.display = "block";
+}
+function showPageLop6() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv2").style.display = "none";
+  document.getElementById("myDiv6").style.display = "block";
+}
+function showPageLop7() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv2").style.display = "none";
+  document.getElementById("myDiv7").style.display = "block";
+}
+function showPageLop8() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv2").style.display = "none";
+  document.getElementById("myDiv8").style.display = "block";
+}
+function showPageLop9() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv2").style.display = "none";
+  document.getElementById("myDiv9").style.display = "block";
+}
+function showPageLop10() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv3").style.display = "none";
+  document.getElementById("myDiv10").style.display = "block";
+}
+function showPageLop11() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv3").style.display = "none";
+  document.getElementById("myDiv11").style.display = "block";
+}
+function showPageLop12() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv3").style.display = "none";
+  document.getElementById("myDiv12").style.display = "block";
+}
 </script>
-<br>
+
 	</body>
 </html>
