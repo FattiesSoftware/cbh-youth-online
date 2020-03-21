@@ -31,7 +31,7 @@ Cảm ơn bạn đã xem xét đóng góp cho Đoàn trường THPT Chuyên Biê
 
 ## Các lỗ hổng bảo mật
 
-Nếu bạn phát hiện ra lỗ hổng bảo mật trong Flarum, vui lòng gửi e-mail đến [security@fatties.io](mailto: security@fatties.io). Tất cả các lỗ hổng bảo mật sẽ được giải quyết kịp thời.
+Nếu bạn phát hiện ra lỗ hổng bảo mật trong Flarum, vui lòng gửi e-mail đến [security@fatties.io](mailto:security@fatties.io). Tất cả các lỗ hổng bảo mật sẽ được giải quyết kịp thời.
 
 ## Giấy phép
 
