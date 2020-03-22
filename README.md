@@ -17,7 +17,7 @@
 
 * **Mạnh mẽ và tuỳ biến.** Tùy chỉnh, mở rộng và tích hợp Đoàn trường THPT Chuyên Biên Hoà Online cho phù hợp với trường học của bạn. Với mã nguồn mở và API mở rộng mạnh mẽ, thoả sức chỉnh sửa lại giao diện trang web và tuỳ chỉnh các tính năng.
 
-![screenshot](https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-final/master/doantruong.png)
+![screenshot](https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-beta-final/17dc6f8eb814df31e45f74fe2711f39b1c44dc5e/doantruong.png)
 
 ## Cài đặt
 
