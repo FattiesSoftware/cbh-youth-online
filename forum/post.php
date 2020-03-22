@@ -223,7 +223,7 @@ input[type=submit] {
 	<nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
+<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
 <span class='icon-bar'></span>
 <span class='icon-bar'></span>

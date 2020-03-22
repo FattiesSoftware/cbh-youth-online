@@ -77,17 +77,193 @@ $PROP = 'none';
 	$vang = $_GET['vang'];
 	$vesinh = $_GET['vesinh'];
 	$dongphuc = $_GET['dongphuc'];
-	$loivipham = $_GET['loivipham'];
-	$diem = $_GET['diem'];
+	$soloi = $_GET['soloi'];
+	$loivipham1 = $_GET['loivipham1'];
+	$loivipham2 = $_GET['loivipham2'];
+	$loivipham3 = $_GET['loivipham3'];
+	$loivipham4 = $_GET['loivipham4'];
+	$loivipham5 = $_GET['loivipham5'];
+	$loi2 = 'block';
+	$loi3 = 'block';
+	$loi4 = 'block';
+	$loi5 = 'block';
+	$tenloi1= 'Không có lỗi';
+	$tenloi2= 'Không có lỗi';
+	$tenloi3= 'Không có lỗi';
+	$tenloi4= 'Không có lỗi';
+	$tenloi5= 'Không có lỗi';
+
 	if ($vang == ''){
 		$vang = '0';
 	}
-	if ($loivipham == ''){
-		$loivipham = 'Không có lỗi';
+	if ($soloi == 1){
+		$loi2 = 'none';
+		$loi3 = 'none';
+		$loi4 = 'none';
+		$loi5 = 'none';
 	}
-	if ($loivipham == ''){
-		$loivipham = 'Không có lỗi';
+	if ($soloi == 2){
+
+		$loi3 = 'none';
+		$loi4 = 'none';
+		$loi5 = 'none';
 	}
+		if ($soloi == 3){
+
+
+		$loi4 = 'none';
+		$loi5 = 'none';
+	}
+			if ($soloi == 4){
+
+
+
+		$loi5 = 'none';
+	}
+
+	if ($loivipham1 == ''){
+		$loivipham1 = 'Không có lỗi';
+		$point1 = '0';
+	}
+	if ($loivipham2 == ''){
+		$loivipham2 = 'Không có lỗi';
+		$point2 = '0';
+	}
+	if ($loivipham3 == ''){
+		$loivipham3 = 'Không có lỗi';
+		$point3 = '0';
+	}
+	if ($loivipham4 == ''){
+		$loivipham4 = 'Không có lỗi';
+		$point4 = '0';
+	}
+	if ($loivipham5 == ''){
+		$loivipham5 = 'Không có lỗi';
+		$point5 = '0';
+	}
+	// thuật toán tính tổng điểm trừ đối với lỗi vi phạm 1
+	if ($loivipham1 == '1'){
+		$point1 = '1';
+		$tenloi1= 'Đi muộn';
+	}
+	if ($loivipham1 == '2'){
+		$point1 = '10';
+		$tenloi1= 'Đi muộn (bỏ chạy)';
+	}
+	if ($loivipham1 == '3'){
+		$point1 = '15';
+		$tenloi1= 'Đi muộn sau 7 giờ';
+	}
+	if ($loivipham1 == '4'){
+		$point1 = '10';
+		$tenloi1= 'Đi muộn trèo tường';
+	}
+	if ($loivipham1 == '5'){
+		$point1 = '2';
+		$tenloi1= 'Vắng mặt không lí do giờ truy bài';
+	}
+	if ($loivipham1 == '6'){
+		$point1 = '10';
+		$tenloi1= 'Ra ngoài giờ truy bài (bỏ chạy)';
+	}
+	if ($loivipham1 == '7'){
+		$point1 = '1';
+		$tenloi1= 'Không đúng trang phục: áo phù hiệu giày';
+	}
+	if ($loivipham1 == '8'){
+		$point1 = '5';
+		$tenloi1= 'Tập trung muộn';
+	}
+	if ($loivipham1 == '9'){
+		$point1 = '1';
+		$tenloi1= 'Nghỉ không phép làm việc riêng trong giờ tập trung';
+	}
+	if ($loivipham1 == '10'){
+		$point1 = '10';
+		$tenloi1= 'Tập trung muộn sau 10 phút xếp hàng chưa ngay ngắn';
+	}
+	if ($loivipham1 == '11'){
+		$point1 = '5';
+		$tenloi1= 'Mất trật tự trong buổi tập trung';
+	}
+	if ($loivipham1 == '12'){
+		$point1 = '1';
+		$tenloi1= 'Không cất ghế sau giờ tập trung';
+	}
+	if ($loivipham1 == '13'){
+		$point1 = '2';
+		$tenloi1= 'Nói bậy';
+	}
+	if ($loivipham1 == '14'){
+		$point1 = '2';
+		$tenloi1= 'Ăn quà không đúng nơi quy định';
+	}
+	if ($loivipham1 == '15'){
+		$point1 = '5';
+		$tenloi1= 'Hút thuốc lá trong trường';
+	}
+		// thuật toán tính tổng điểm trừ đối với lỗi vi phạm 2
+	if ($loivipham2 == '1'){
+		$point2 = '1';
+		$tenloi2= 'Đi muộn';
+	}
+	if ($loivipham2 == '2'){
+		$point2 = '10';
+		$tenloi2= 'Đi muộn (bỏ chạy)';
+	}
+	if ($loivipham2 == '3'){
+		$point2 = '15';
+		$tenloi2= 'Đi muộn sau 7 giờ';
+	}
+	if ($loivipham2 == '4'){
+		$point2 = '10';
+		$tenloi2= 'Đi muộn trèo tường';
+	}
+	if ($loivipham2 == '5'){
+		$point2 = '2';
+		$tenloi2= 'Vắng mặt không lí do giờ truy bài';
+	}
+	if ($loivipham2 == '6'){
+		$point2 = '10';
+		$tenloi2= 'Ra ngoài giờ truy bài (bỏ chạy)';
+	}
+	if ($loivipham2 == '7'){
+		$point2 = '1';
+		$tenloi2= 'Không đúng trang phục: áo phù hiệu giày';
+	}
+	if ($loivipham2 == '8'){
+		$point2 = '5';
+		$tenloi2= 'Tập trung muộn';
+	}
+	if ($loivipham2 == '9'){
+		$point2 = '1';
+		$tenloi2= 'Nghỉ không phép làm việc riêng trong giờ tập trung';
+	}
+	if ($loivipham2 == '10'){
+		$point2 = '10';
+		$tenloi2= 'Tập trung muộn sau 10 phút xếp hàng chưa ngay ngắn';
+	}
+	if ($loivipham2 == '11'){
+		$point2 = '5';
+		$tenloi2= 'Mất trật tự trong buổi tập trung';
+	}
+	if ($loivipham2 == '12'){
+		$point2 = '1';
+		$tenloi2= 'Không cất ghế sau giờ tập trung';
+	}
+	if ($loivipham2 == '13'){
+		$point2 = '2';
+		$tenloi2= 'Nói bậy';
+	}
+	if ($loivipham2 == '14'){
+		$point2 = '2';
+		$tenloi2= 'Ăn quà không đúng nơi quy định';
+	}
+	if ($loivipham2 == '15'){
+		$point2 = '5';
+		$tenloi2= 'Hút thuốc lá trong trường';
+	}
+	$tongdiem = $point1 + $point2 + $point3 + $point4 + $point5;
 	function rebuild_date( $format, $time = 0 )
 {
     if ( ! $time ) $time = time();
@@ -411,8 +587,13 @@ input[type=submit] {
 	<b>Vắng:</b> <?=$vang?><br>
 	<b>Vệ sinh:</b> <?=$vesinh?><br>
 	<b>Đồng phục:</b> <?=$dongphuc?><br>
-	<b>Mã lỗi vi phạm:</b> <?=$loivipham?><br>
-	<b>Tổng điểm trừ:</b> <p id="demo"><?=$diem?></p><br>
+	<b>Số lỗi vi phạm:</b> <?=$soloi?><br>
+	<b>Lỗi vi phạm 1: <?=$tenloi1?></b><br>
+	<b style="display:<?=$loi2?>">Lỗi vi phạm 2: <?=$tenloi2?></b>
+	<b style="display:<?=$loi3?>">Lỗi vi phạm 3: <?=$tenloi3?></b>
+	<b style="display:<?=$loi4?>">Lỗi vi phạm 4: <?=$tenloi4?></b>
+	<b style="display:<?=$loi5?>">Lỗi vi phạm 5: <?=$tenloi5?></b>
+	<b id="demo">Tổng điểm trừ: <?=$tongdiem?></b><br>
 	</p>
 	<button type="button" style="float:right" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2""><i class="fas fa-paper-plane"></i> Xác nhận và gửi báo cáo</button>
 	<button style="float:left" type="button" class="btn btn-danger" onclick="location.href='/baocao'"><i class="fas fa-redo-alt"></i> Quay lại</button>
@@ -425,6 +606,7 @@ str = str.replace(",", "+");
 document.getElementById("demo").innerHTML = str;
 }
 myFunction2()
+
 </script>
 	<?php
 // Username doesnt exists, insert new account

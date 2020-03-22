@@ -361,9 +361,8 @@ h3 {
     padding-bottom: 15px;
 ">
 
-<img src="/60namcbh.png" style="width: 100px;"/>
-<h2><strong class='sep-onenbt'></strong>Cổng thông tin điện tử Đoàn trường<strong class='sep-twonbt'></strong></h2>
-<h2>THPT Chuyên Biên Hoà</h2>
+<img src="/logo2.png" style="width: 550px;"/>
+
 
 </div>
 						
@@ -380,9 +379,11 @@ h3 {
 <big><b><i class="fas fa-bolt"></i> Bạn có thể làm được gì với website này?</b></big>
 <p>- Tra cứu các lỗi vi phạm trong tuần của lớp
 <br>- Tra cứu xếp hạng tháng
+<br>- Tra cứu thời khoá biểu
+<br>- Tra cứu danh sách học sinh của trường
 <br>- Biết được những sự kiện, hoạt động mới nhất của Đoàn trường THPT Chuyên Biên Hoà
-<br>- Có thể đóng góp ý kiến, phản hồi của mình trực tiếp với xung kích hoặc thầy cô giáo
-<br>Và nhiều hơn thế... Hãy tự mình khám phá nhé!
+<br>- Có thể đóng góp ý kiến, phản hồi của mình trực tiếp với xung kích hoặc thầy cô giáo qua tính năng diễn đàn
+<br>Và còn nhiều hơn thế... Hãy tự mình khám phá nhé!
 </p>
 <br>
 <div class="main-content">
@@ -413,10 +414,12 @@ function myFunction() {
 }
 myFunction()
 </script>
-<nav class='navbar navbar-inverse '>
+<nav class='navbar navbar-inverse'>
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
+	<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
+
+
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
 <span class='icon-bar'></span>
 <span class='icon-bar'></span>

@@ -287,7 +287,7 @@ body.loggedin {
 <nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
+<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
 <span class='icon-bar'></span>
 <span class='icon-bar'></span>
@@ -522,6 +522,11 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
   display: inline-block;
   line-height: 1em;
 }
+input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
@@ -630,13 +635,41 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
                           <option>Thiếu</option>
                         </select>
                   </div>
+				  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Số lỗi vi phạm</label>
+                    <select class="form-control" name="soloi" id="selectBox" onchange="changeFunc();">
+                          <option>1</option>
+                          <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+                        </select>
+                  </div>
+				<div id="error_fileds">
                   <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm</label>
-					<input type="text" name="loivipham" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
-					<input type="text" name="diem" class="form-control is-invalid inputError2" id="inputError2" value="" data-role="tagsinput" placeholder="Nhập lại lỗi ..."/>
-					<a  data-toggle="modal" data-target="#exampleModal">Xem danh sách đầy đủ các lỗi vi phạm...</a>
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 1</label>
+					<input type="text" name="loivipham1" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
 				  </div>
+				  <div class="form-group example2" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 2</label>
+					<input type="text" name="loivipham2" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example3" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 3</label>
+					<input type="text" name="loivipham3" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example4" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 4</label>
+					<input type="text" name="loivipham4" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example5" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 5</label>
+					<input type="text" name="loivipham5" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <a  data-toggle="modal" data-target="#exampleModal">Xem danh sách đầy đủ các lỗi vi phạm...</a>
+				</div>
 
+				
 <!-- Modal1 -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -710,7 +743,8 @@ var error = new Bloodhound({
 });
 error.initialize();
 
-$('.inputError').tagsinput({
+$('input').tagsinput({
+	maxTags: 1,
 itemValue: 'value',
   itemText: 'text',
   typeaheadjs: {
@@ -719,15 +753,40 @@ itemValue: 'value',
     source: error.ttAdapter()
   }
 });
-$('.inputError2').tagsinput({
-itemValue: 'point',
-  itemText: 'text',
-  typeaheadjs: {
-    name: 'error',
-    displayKey: 'text',
-    source: error.ttAdapter()
-  }
-});
+function changeFunc() {
+    var selectBox = document.getElementById("selectBox");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    if (selectedValue == 1){
+		document.querySelector(".example2").style.display = "none";
+		document.querySelector(".example3").style.display = "none";
+		document.querySelector(".example4").style.display = "none";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 2){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "none";
+		document.querySelector(".example4").style.display = "none";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 3){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "block";
+		document.querySelector(".example4").style.display = "none";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 4){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "block";
+		document.querySelector(".example4").style.display = "block";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 5){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "block";
+		document.querySelector(".example4").style.display = "block";
+		document.querySelector(".example5").style.display = "block";
+	}
+   }
 </script>
                   <div class="row">
                     <div class="col-sm-6" style="

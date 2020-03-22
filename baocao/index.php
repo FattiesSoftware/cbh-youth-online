@@ -630,7 +630,7 @@ background-repeat: no-repeat ;
 <div class='container-fluid'>
     
 <div class="navbar-header" style="float: left;">
-<a class="navbar-brand" href="/">Đoàn trường - CBH</a>
+<a class="navbar-brand" href="/"><img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 0px;margin-right: 10px;" alt=""> Đoàn trường THPT Chuyên Biên Hoà Online | <p style="display: inline;">Đăng nhập</p></a>
 
 </div>
 <center>
