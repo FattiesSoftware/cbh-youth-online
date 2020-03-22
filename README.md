@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-beta-final/master/logo.png" height="100" width="100"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/FattiesSoftware/doantruong-cbh-beta-final/master/logo.png" height="100"></p>
 
 <p align="center">
 
