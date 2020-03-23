@@ -310,7 +310,7 @@ body.loggedin {
     margin-left: 10px;
 " href="/hocsinh">Học sinh</a>
         </div></li>
-<li class=''><a href='/topvipham'>Top vi phạm</a></li>
+<li class=''><a href='/xephang'>Xếp hạng</a></li>
 <li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
 <li class='active'><a href='/baocao'>Báo cáo</a></li>
 <li class=''><a href='/lienhe'>Liên hệ</a></li>
@@ -648,23 +648,23 @@ input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
 				<div id="error_fileds">
                   <div class="form-group">
                     <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 1</label>
-					<input type="text" name="loivipham1" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+					<input type="text" name="loivipham1" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
 				  </div>
 				  <div class="form-group example2" style="display:none">
                     <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 2</label>
-					<input type="text" name="loivipham2" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+					<input type="text" name="loivipham2" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
 				  </div>
 				  <div class="form-group example3" style="display:none">
                     <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 3</label>
-					<input type="text" name="loivipham3" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+					<input type="text" name="loivipham3" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
 				  </div>
 				  <div class="form-group example4" style="display:none">
                     <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 4</label>
-					<input type="text" name="loivipham4" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+					<input type="text" name="loivipham4" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
 				  </div>
 				  <div class="form-group example5" style="display:none">
                     <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 5</label>
-					<input type="text" name="loivipham5" class="form-control is-invalid inputError" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+					<input type="text" name="loivipham5" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
 				  </div>
 				  <a  data-toggle="modal" data-target="#exampleModal">Xem danh sách đầy đủ các lỗi vi phạm...</a>
 				</div>
@@ -743,7 +743,7 @@ var error = new Bloodhound({
 });
 error.initialize();
 
-$('input').tagsinput({
+$('.tagsinput').tagsinput({
 	maxTags: 1,
 itemValue: 'value',
   itemText: 'text',

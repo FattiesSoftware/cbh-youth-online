@@ -209,7 +209,7 @@ body.loggedin {
     margin-left: 10px;
 " href="/hocsinh">Học sinh</a>
         </div></li>
-<li class=''><a href='/topvipham'>Top vi phạm</a></li>
+<li class=''><a href='/xephang'>Xếp hạng</a></li>
 <li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
 <li class=''><a href='/baocao'>Báo cáo</a></li>
 <li class=''><a href='/lienhe'>Liên hệ</a></li>

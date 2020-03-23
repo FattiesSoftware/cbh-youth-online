@@ -235,6 +235,7 @@ margin-left: -384px;
 color: #fff;
 padding-top: 24px;
 margin-top: 125px;
+    top: 150px;
 }
 .containerbg2 {
 width: 800px;
@@ -249,6 +250,10 @@ color: #fff;
 padding-top: 24px;
 margin-top: 0px;
 }
+.logo{
+	width: 550px;
+}
+
 #wrappernbt{position:relative;width:100%;margin:auto}
 #headernbt{width:100%;padding:40px 0;margin:auto}
 h1{font-family:'Damion',cursive;font-size:103px;text-align:center;color:#fff;}
@@ -277,6 +282,7 @@ top: 70px;
 left: 96%;
 margin-left: -384px;
 margin-top: 0px;
+    top: 120px;
 }
 .containerbg2 {
 text-align:center;
@@ -287,6 +293,12 @@ left: 96%;
 margin-left: -384px;
 margin-top: 0px;
 }
+.logo{
+	width:336px;
+}
+.logo2{
+	margin-left: 10px;
+}
 .container {
 
     margin-right: 3px;
@@ -296,6 +308,7 @@ margin-top: 0px;
 .sma {
 padding-top: 7px;
     margin-top: 80px;
+    top: 120px;
 }
 #headernbt{width:100%;padding:5px 0;margin:auto}
 h1{font-size:53px;color:#fff;}
@@ -361,16 +374,14 @@ h3 {
     padding-bottom: 15px;
 ">
 
-<img src="/logo2.png" style="width: 550px;"/>
+<img class="logo" src="/logo2.png" style=""/>
 
 
 </div>
 						
 					  
 </center>
-<div class='containerbg sma' style="
-    top: 150px;
-">
+<div class='containerbg sma' >
 
 
 <big><b><i class="fas fa-question-circle"></i> Đây là gì?</b></big>
@@ -381,6 +392,7 @@ h3 {
 <br>- Tra cứu xếp hạng tháng
 <br>- Tra cứu thời khoá biểu
 <br>- Tra cứu danh sách học sinh của trường
+<br>- Gửi tài liệu cần in ấn trực tuyến
 <br>- Biết được những sự kiện, hoạt động mới nhất của Đoàn trường THPT Chuyên Biên Hoà
 <br>- Có thể đóng góp ý kiến, phản hồi của mình trực tiếp với xung kích hoặc thầy cô giáo qua tính năng diễn đàn
 <br>Và còn nhiều hơn thế... Hãy tự mình khám phá nhé!
@@ -417,7 +429,7 @@ myFunction()
 <nav class='navbar navbar-inverse'>
 <div class='container-fluid'>
 <div class='navbar-header'>
-	<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
+	<img src="/cbh.png" class="logo2" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
 
 
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
@@ -442,7 +454,7 @@ myFunction()
     margin-left: 10px;
 " href="/hocsinh">Học sinh</a>
         </div></li>
-<li class=''><a href='/topvipham'>Top vi phạm</a></li>
+<li class=''><a href='/xephang'>Xếp hạng</a></li>
 <li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
 <li class=''><a href='/baocao'>Báo cáo</a></li>
 <li class=''><a href='/lienhe'>Liên hệ</a></li>

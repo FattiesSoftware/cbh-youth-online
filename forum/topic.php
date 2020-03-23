@@ -243,7 +243,7 @@ body.loggedin {
     padding-top: 5px;
     padding-bottom: 5px;
 "';
-				echo "<h5><i class=$class3></i> Bởi <a href='profile.php'>".$row['topic_creator']."</a><br/><i class=$class2 style=$style></i> Vào ngày ".$row['date']."<br><i class=$class></i> Lượt xem: " .$view. "</h5>";
+				echo "<h5><i class=$class3></i> Bởi <a href='/profile.php?id=".$user_idc."'>".$row['topic_creator']."</a><br/><i class=$class2 style=$style></i> Vào ngày ".$row['date']."<br><i class=$class></i> Lượt xem: " .$view. "</h5>";
 				echo "<hr>";
 				echo $row['topic_content'];
 				

@@ -294,10 +294,10 @@ input[type=submit] {
 					mysqli_query($db, $query);
 					echo "Đăng bài viết thành công !";
 				}else{
-					echo "Tiêu đề ngắn quá ! (>10 kí tự)";
+					echo "Tiêu đề quá ngắn! (>10 kí tự)";
 				}
 			}else{
-				echo "Đặt tiêu đề/ nọi dung đi bà nội";
+				echo "Bạn thiếu tiêu đề/ nội dung";
 			}
 		}
 		

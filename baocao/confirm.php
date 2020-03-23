@@ -73,16 +73,57 @@ $PROP = 'block';
 $PROP = 'none';
 	$OUT = 'none';
 }
+if (isset($_GET['lop'])){
 	$lop = $_GET['lop'];
+} else {
+	$lop = 'Không có thông tin';
+}
+	if (isset($_GET['vang'])){
 	$vang = $_GET['vang'];
+} else {
+	$vang = '0';
+}
+	if (isset($_GET['vesinh'])){
 	$vesinh = $_GET['vesinh'];
+} else {
+	$vesinh = 'Không có thông tin';
+}
+	if (isset($_GET['dongphuc'])){
 	$dongphuc = $_GET['dongphuc'];
+} else {
+	$dongphuc = 'Không có thông tin';
+}
+	if (isset($_GET['soloi'])){
 	$soloi = $_GET['soloi'];
+} else {
+	$soloi = '0';
+}
+	if (isset($_GET['loivipham1'])){
 	$loivipham1 = $_GET['loivipham1'];
+} else {
+	$loivipham1 = '';
+}
+	if (isset($_GET['loivipham2'])){
 	$loivipham2 = $_GET['loivipham2'];
+} else {
+	$loivipham2 = '';
+}
+	if (isset($_GET['loivipham3'])){
 	$loivipham3 = $_GET['loivipham3'];
+} else {
+	$loivipham3 = '';
+}
+	if (isset($_GET['loivipham4'])){
 	$loivipham4 = $_GET['loivipham4'];
+} else {
+	$loivipham4 = '';
+}
+	if (isset($_GET['loivipham5'])){
 	$loivipham5 = $_GET['loivipham5'];
+} else {
+	$loivipham5 = '';
+}
+
 	$loi2 = 'block';
 	$loi3 = 'block';
 	$loi4 = 'block';
@@ -202,6 +243,124 @@ $PROP = 'none';
 		$point1 = '5';
 		$tenloi1= 'Hút thuốc lá trong trường';
 	}
+	if ($loivipham1 == '16'){
+		$point1 = '5';
+		$tenloi1= 'Không dừng xe ở cổng trường';
+	}
+	if ($loivipham1 == '17'){
+		$point1 = '10';
+		$tenloi1= 'Không dừng xe ở cổng trường khi đã nhắc nhở';
+	}
+	if ($loivipham1 == '18'){
+		$point1 = '10';
+		$tenloi1= 'Không đội mũ bảo hiểm';
+	}
+	if ($loivipham1 == '19'){
+		$point1 = '50';
+		$tenloi1= 'Vô lễ với cán bộ giáo viên';
+	}
+	if ($loivipham1 == '20'){
+		$point1 = '2';
+		$tenloi1= 'Xả đổ rác không đúng nơi quy định';
+	}
+	if ($loivipham1 == '21'){
+		$point1 = '1';
+		$tenloi1= 'Trực nhật muộn đổ rác muộn';
+	}
+
+	if ($loivipham1 == '22'){
+		$point1 = '5';
+		$tenloi1= 'Không lấy sổ đầu bài sáng thứ 2';
+	}
+	if ($loivipham1 == '23'){
+		$point1 = '2';
+		$tenloi1= 'Trực nhật bẩn không trực khu vực';
+	}
+	if ($loivipham1 == '24'){
+		$point1 = '2';
+		$tenloi1= 'Để xe không đúng nơi quy định';
+	}
+	if ($loivipham1 == '25'){
+		$point1 = '5';
+		$tenloi1= 'Khu vực để xe lộn xộn không ngăn nắp';
+	}
+	if ($loivipham1 == '26'){
+		$point1 = '2';
+		$tenloi1= 'Không đóng cửa tắt điện sau giờ học';
+	}
+	if ($loivipham1 == '27'){
+		$point1 = '2';
+		$tenloi1= 'Sử dụng nhà vệ sinh không đúng cách';
+	}
+	if ($loivipham1 == '28'){
+		$point1 = '5';
+		$tenloi1= 'Làm vỡ cửa kính';
+	}
+	if ($loivipham1 == '29'){
+		$point1 = '2';
+		$tenloi1= 'Đá bóng không đúng nơi quy định';
+	}
+	if ($loivipham1 == '30'){
+		$point1 = '5';
+		$tenloi1= 'Sử dụng không đúng khu vực vệ sinh cho phép';
+	}
+	if ($loivipham1 == '31'){
+		$point1 = '50';
+		$tenloi1= 'Đánh nhau';
+	}
+	if ($loivipham1 == '32'){
+		$point1 = '80';
+		$tenloi1= 'Đánh nhau không khai báo thành khẩn';
+	}
+		if ($loivipham1 == '33'){
+		$point1 = '20';
+		$tenloi1= 'Vi phạm ATGT (có báo cáo về trường)';
+	}
+
+	if ($loivipham1 == '34'){
+		$point1 = '10';
+		$tenloi1= 'Vi phạm quy chế thi';
+	}
+	if ($loivipham1 == '35'){
+		$point1 = '10';
+		$tenloi1= 'Giờ tự quản ồn học sinh ra ngoài ảnh hưởng đến lớp khác';
+	}
+	if ($loivipham1 == '36'){
+		$point1 = '3';
+		$tenloi1= 'Cán bộ lớp BCH chi đoàn đến họp muộn';
+	}
+	if ($loivipham1 == '37'){
+		$point1 = '5';
+		$tenloi1= 'Cán bộ lớp BCH chi đoàn vắng mặt không lí do';
+	}
+	if ($loivipham1 == '38'){
+		$point1 = '10';
+		$tenloi1= 'Cán bộ lớp BCH chi đoàn không hoàn thành nhiệm vụ';
+	}
+	if ($loivipham1 == '39'){
+		$point1 = '1';
+		$tenloi1= 'Xung kích không thực hiện nhiệm vụ';
+	}
+	if ($loivipham1 == '40'){
+		$point1 = '2';
+		$tenloi1= 'Đội văn nghệ không thực hiện nhiệm vụ';
+	}
+	if ($loivipham1 == '41'){
+		$point1 = '10';
+		$tenloi1= 'Lớp trực tuần bỏ buổi trực';
+	}
+	if ($loivipham1 == '42'){
+		$point1 = '5';
+		$tenloi1= 'Lớp trực tuần xuống trực cổng muộn';
+	}
+	if ($loivipham1 == '43'){
+		$point1 = '10';
+		$tenloi1= 'Lớp trực tuần chuẩn bị không tốt cho buổi tập trung';
+	}
+	if ($loivipham1 == '44'){
+		$point1 = '5';
+		$tenloi1= 'Đánh nhau không khai báo thành khẩn';
+	}
 		// thuật toán tính tổng điểm trừ đối với lỗi vi phạm 2
 	if ($loivipham2 == '1'){
 		$point2 = '1';
@@ -263,6 +422,663 @@ $PROP = 'none';
 		$point2 = '5';
 		$tenloi2= 'Hút thuốc lá trong trường';
 	}
+	if ($loivipham2 == '16'){
+		$point2 = '5';
+		$tenloi2= 'Không dừng xe ở cổng trường';
+	}
+	if ($loivipham2 == '17'){
+		$point2 = '10';
+		$tenloi2= 'Không dừng xe ở cổng trường khi đã nhắc nhở';
+	}
+	if ($loivipham2 == '18'){
+		$point2 = '10';
+		$tenloi2= 'Không đội mũ bảo hiểm';
+	}
+	if ($loivipham2 == '19'){
+		$point2 = '50';
+		$tenloi2= 'Vô lễ với cán bộ giáo viên';
+	}
+	if ($loivipham2 == '20'){
+		$point2 = '2';
+		$tenloi2= 'Xả đổ rác không đúng nơi quy định';
+	}
+	if ($loivipham2 == '21'){
+		$point2 = '1';
+		$tenloi2= 'Trực nhật muộn đổ rác muộn';
+	}
+
+	if ($loivipham2 == '22'){
+		$point2 = '5';
+		$tenloi2= 'Không lấy sổ đầu bài sáng thứ 2';
+	}
+	if ($loivipham2 == '23'){
+		$point2 = '2';
+		$tenloi2= 'Trực nhật bẩn không trực khu vực';
+	}
+	if ($loivipham2 == '24'){
+		$point2 = '2';
+		$tenloi2= 'Để xe không đúng nơi quy định';
+	}
+	if ($loivipham2 == '25'){
+		$point2 = '5';
+		$tenloi2= 'Khu vực để xe lộn xộn không ngăn nắp';
+	}
+	if ($loivipham2 == '26'){
+		$point2 = '2';
+		$tenloi2= 'Không đóng cửa tắt điện sau giờ học';
+	}
+	if ($loivipham2 == '27'){
+		$point2 = '2';
+		$tenloi2= 'Sử dụng nhà vệ sinh không đúng cách';
+	}
+	if ($loivipham2 == '28'){
+		$point2 = '5';
+		$tenloi2= 'Làm vỡ cửa kính';
+	}
+	if ($loivipham2 == '29'){
+		$point2 = '2';
+		$tenloi2= 'Đá bóng không đúng nơi quy định';
+	}
+	if ($loivipham2 == '30'){
+		$point2 = '5';
+		$tenloi2= 'Sử dụng không đúng khu vực vệ sinh cho phép';
+	}
+	if ($loivipham2 == '31'){
+		$point2 = '50';
+		$tenloi2= 'Đánh nhau';
+	}
+	if ($loivipham2 == '32'){
+		$point2 = '80';
+		$tenloi2= 'Đánh nhau không khai báo thành khẩn';
+	}
+		if ($loivipham2 == '33'){
+		$point2 = '20';
+		$tenloi2= 'Vi phạm ATGT (có báo cáo về trường)';
+	}
+
+	if ($loivipham2 == '34'){
+		$point2 = '10';
+		$tenloi2= 'Vi phạm quy chế thi';
+	}
+	if ($loivipham2 == '35'){
+		$point2 = '10';
+		$tenloi2= 'Giờ tự quản ồn học sinh ra ngoài ảnh hưởng đến lớp khác';
+	}
+	if ($loivipham2 == '36'){
+		$point2 = '3';
+		$tenloi2= 'Cán bộ lớp BCH chi đoàn đến họp muộn';
+	}
+	if ($loivipham2 == '37'){
+		$point2 = '5';
+		$tenloi2= 'Cán bộ lớp BCH chi đoàn vắng mặt không lí do';
+	}
+	if ($loivipham2 == '38'){
+		$point2 = '10';
+		$tenloi2= 'Cán bộ lớp BCH chi đoàn không hoàn thành nhiệm vụ';
+	}
+	if ($loivipham2 == '39'){
+		$point2 = '1';
+		$tenloi2= 'Xung kích không thực hiện nhiệm vụ';
+	}
+	if ($loivipham2 == '40'){
+		$point2 = '2';
+		$tenloi2= 'Đội văn nghệ không thực hiện nhiệm vụ';
+	}
+	if ($loivipham2 == '41'){
+		$point2 = '10';
+		$tenloi2= 'Lớp trực tuần bỏ buổi trực';
+	}
+	if ($loivipham2 == '42'){
+		$point2 = '5';
+		$tenloi2= 'Lớp trực tuần xuống trực cổng muộn';
+	}
+	if ($loivipham2 == '43'){
+		$point2 = '10';
+		$tenloi2= 'Lớp trực tuần chuẩn bị không tốt cho buổi tập trung';
+	}
+	if ($loivipham2 == '44'){
+		$point2 = '5';
+		$tenloi2= 'Đội mũ bảo hiểm không cài quai';
+	}
+
+	// thuật toán tính tổng điểm trừ đối với lỗi vi phạm 3
+	if ($loivipham3 == '1'){
+		$point3 = '1';
+		$tenloi3= 'Đi muộn';
+	}
+	if ($loivipham3 == '2'){
+		$point3 = '10';
+		$tenloi3= 'Đi muộn (bỏ chạy)';
+	}
+	if ($loivipham3 == '3'){
+		$point3 = '15';
+		$tenloi3= 'Đi muộn sau 7 giờ';
+	}
+	if ($loivipham3 == '4'){
+		$point3 = '10';
+		$tenloi3= 'Đi muộn trèo tường';
+	}
+	if ($loivipham3 == '5'){
+		$point3 = '2';
+		$tenloi3= 'Vắng mặt không lí do giờ truy bài';
+	}
+	if ($loivipham3 == '6'){
+		$point3 = '10';
+		$tenloi3= 'Ra ngoài giờ truy bài (bỏ chạy)';
+	}
+	if ($loivipham3 == '7'){
+		$point3 = '1';
+		$tenloi3= 'Không đúng trang phục: áo phù hiệu giày';
+	}
+	if ($loivipham3 == '8'){
+		$point3 = '5';
+		$tenloi3= 'Tập trung muộn';
+	}
+	if ($loivipham3 == '9'){
+		$point3 = '1';
+		$tenloi3= 'Nghỉ không phép làm việc riêng trong giờ tập trung';
+	}
+	if ($loivipham3 == '10'){
+		$point3 = '10';
+		$tenloi3= 'Tập trung muộn sau 10 phút xếp hàng chưa ngay ngắn';
+	}
+	if ($loivipham3 == '11'){
+		$point3 = '5';
+		$tenloi3= 'Mất trật tự trong buổi tập trung';
+	}
+	if ($loivipham3 == '12'){
+		$point3 = '1';
+		$tenloi3= 'Không cất ghế sau giờ tập trung';
+	}
+	if ($loivipham3 == '13'){
+		$point3 = '2';
+		$tenloi3= 'Nói bậy';
+	}
+	if ($loivipham3 == '14'){
+		$point3 = '2';
+		$tenloi3= 'Ăn quà không đúng nơi quy định';
+	}
+	if ($loivipham3 == '15'){
+		$point3 = '5';
+		$tenloi3= 'Hút thuốc lá trong trường';
+	}
+	if ($loivipham3 == '16'){
+		$point3 = '5';
+		$tenloi3= 'Không dừng xe ở cổng trường';
+	}
+	if ($loivipham3 == '17'){
+		$point3 = '10';
+		$tenloi3= 'Không dừng xe ở cổng trường khi đã nhắc nhở';
+	}
+	if ($loivipham3 == '18'){
+		$point3 = '10';
+		$tenloi3= 'Không đội mũ bảo hiểm';
+	}
+	if ($loivipham3 == '19'){
+		$point3 = '50';
+		$tenloi3= 'Vô lễ với cán bộ giáo viên';
+	}
+	if ($loivipham3 == '20'){
+		$point3 = '2';
+		$tenloi3= 'Xả đổ rác không đúng nơi quy định';
+	}
+	if ($loivipham3 == '21'){
+		$point3 = '1';
+		$tenloi3= 'Trực nhật muộn đổ rác muộn';
+	}
+
+	if ($loivipham3 == '22'){
+		$point3 = '5';
+		$tenloi3= 'Không lấy sổ đầu bài sáng thứ 2';
+	}
+	if ($loivipham3 == '23'){
+		$point3 = '2';
+		$tenloi3= 'Trực nhật bẩn không trực khu vực';
+	}
+	if ($loivipham3 == '24'){
+		$point3 = '2';
+		$tenloi3= 'Để xe không đúng nơi quy định';
+	}
+	if ($loivipham3 == '25'){
+		$point3 = '5';
+		$tenloi3= 'Khu vực để xe lộn xộn không ngăn nắp';
+	}
+	if ($loivipham3 == '26'){
+		$point3 = '2';
+		$tenloi3= 'Không đóng cửa tắt điện sau giờ học';
+	}
+	if ($loivipham3 == '27'){
+		$point3 = '2';
+		$tenloi3= 'Sử dụng nhà vệ sinh không đúng cách';
+	}
+	if ($loivipham3 == '28'){
+		$point3 = '5';
+		$tenloi3= 'Làm vỡ cửa kính';
+	}
+	if ($loivipham3 == '29'){
+		$point3 = '2';
+		$tenloi3= 'Đá bóng không đúng nơi quy định';
+	}
+	if ($loivipham3 == '30'){
+		$point3 = '5';
+		$tenloi3= 'Sử dụng không đúng khu vực vệ sinh cho phép';
+	}
+	if ($loivipham3 == '31'){
+		$point3 = '50';
+		$tenloi3= 'Đánh nhau';
+	}
+	if ($loivipham3 == '32'){
+		$point3 = '80';
+		$tenloi3= 'Đánh nhau không khai báo thành khẩn';
+	}
+		if ($loivipham3 == '33'){
+		$point3 = '20';
+		$tenloi3= 'Vi phạm ATGT (có báo cáo về trường)';
+	}
+
+	if ($loivipham3 == '34'){
+		$point3 = '10';
+		$tenloi3= 'Vi phạm quy chế thi';
+	}
+	if ($loivipham3 == '35'){
+		$point3 = '10';
+		$tenloi3= 'Giờ tự quản ồn học sinh ra ngoài ảnh hưởng đến lớp khác';
+	}
+	if ($loivipham3 == '36'){
+		$point3 = '3';
+		$tenloi3= 'Cán bộ lớp BCH chi đoàn đến họp muộn';
+	}
+	if ($loivipham3 == '37'){
+		$point3 = '5';
+		$tenloi3= 'Cán bộ lớp BCH chi đoàn vắng mặt không lí do';
+	}
+	if ($loivipham3 == '38'){
+		$point3 = '10';
+		$tenloi3= 'Cán bộ lớp BCH chi đoàn không hoàn thành nhiệm vụ';
+	}
+	if ($loivipham3 == '39'){
+		$point3 = '1';
+		$tenloi3= 'Xung kích không thực hiện nhiệm vụ';
+	}
+	if ($loivipham3 == '40'){
+		$point3 = '2';
+		$tenloi3= 'Đội văn nghệ không thực hiện nhiệm vụ';
+	}
+	if ($loivipham3 == '41'){
+		$point3 = '10';
+		$tenloi3= 'Lớp trực tuần bỏ buổi trực';
+	}
+	if ($loivipham3 == '42'){
+		$point3 = '5';
+		$tenloi3= 'Lớp trực tuần xuống trực cổng muộn';
+	}
+	if ($loivipham3 == '43'){
+		$point3 = '10';
+		$tenloi3= 'Lớp trực tuần chuẩn bị không tốt cho buổi tập trung';
+	}
+	if ($loivipham3 == '44'){
+		$point3 = '5';
+		$tenloi3= 'Đội mũ bảo hiểm không cài quai';
+	}
+		// thuật toán tính tổng điểm trừ đối với lỗi vi phạm 4
+	if ($loivipham4 == '1'){
+		$point4 = '1';
+		$tenloi4= 'Đi muộn';
+	}
+	if ($loivipham4 == '2'){
+		$point4 = '10';
+		$tenloi4= 'Đi muộn (bỏ chạy)';
+	}
+	if ($loivipham4 == '3'){
+		$point4 = '15';
+		$tenloi4= 'Đi muộn sau 7 giờ';
+	}
+	if ($loivipham4 == '4'){
+		$point4 = '10';
+		$tenloi4= 'Đi muộn trèo tường';
+	}
+	if ($loivipham4 == '5'){
+		$point4 = '2';
+		$tenloi4= 'Vắng mặt không lí do giờ truy bài';
+	}
+	if ($loivipham4 == '6'){
+		$point4 = '10';
+		$tenloi4= 'Ra ngoài giờ truy bài (bỏ chạy)';
+	}
+	if ($loivipham4 == '7'){
+		$point4 = '1';
+		$tenloi4= 'Không đúng trang phục: áo phù hiệu giày';
+	}
+	if ($loivipham4 == '8'){
+		$point4 = '5';
+		$tenloi4= 'Tập trung muộn';
+	}
+	if ($loivipham4 == '9'){
+		$point4 = '1';
+		$tenloi4= 'Nghỉ không phép làm việc riêng trong giờ tập trung';
+	}
+	if ($loivipham4 == '10'){
+		$point4 = '10';
+		$tenloi4= 'Tập trung muộn sau 10 phút xếp hàng chưa ngay ngắn';
+	}
+	if ($loivipham4 == '11'){
+		$point4 = '5';
+		$tenloi4= 'Mất trật tự trong buổi tập trung';
+	}
+	if ($loivipham4 == '12'){
+		$point4 = '1';
+		$tenloi4= 'Không cất ghế sau giờ tập trung';
+	}
+	if ($loivipham4 == '13'){
+		$point4 = '2';
+		$tenloi4= 'Nói bậy';
+	}
+	if ($loivipham4 == '14'){
+		$point4 = '2';
+		$tenloi4= 'Ăn quà không đúng nơi quy định';
+	}
+	if ($loivipham4 == '15'){
+		$point4 = '5';
+		$tenloi4= 'Hút thuốc lá trong trường';
+	}
+	if ($loivipham4 == '16'){
+		$point4 = '5';
+		$tenloi4= 'Không dừng xe ở cổng trường';
+	}
+	if ($loivipham4 == '17'){
+		$point4 = '10';
+		$tenloi4= 'Không dừng xe ở cổng trường khi đã nhắc nhở';
+	}
+	if ($loivipham4 == '18'){
+		$point4 = '10';
+		$tenloi4= 'Không đội mũ bảo hiểm';
+	}
+	if ($loivipham4 == '19'){
+		$point4 = '50';
+		$tenloi4= 'Vô lễ với cán bộ giáo viên';
+	}
+	if ($loivipham4 == '20'){
+		$point4 = '2';
+		$tenloi4= 'Xả đổ rác không đúng nơi quy định';
+	}
+	if ($loivipham4 == '21'){
+		$point4 = '1';
+		$tenloi4= 'Trực nhật muộn đổ rác muộn';
+	}
+
+	if ($loivipham4 == '22'){
+		$point4 = '5';
+		$tenloi4= 'Không lấy sổ đầu bài sáng thứ 2';
+	}
+	if ($loivipham4 == '23'){
+		$point4 = '2';
+		$tenloi4= 'Trực nhật bẩn không trực khu vực';
+	}
+	if ($loivipham4 == '24'){
+		$point4 = '2';
+		$tenloi4= 'Để xe không đúng nơi quy định';
+	}
+	if ($loivipham4 == '25'){
+		$point4 = '5';
+		$tenloi4= 'Khu vực để xe lộn xộn không ngăn nắp';
+	}
+	if ($loivipham4 == '26'){
+		$point4 = '2';
+		$tenloi4= 'Không đóng cửa tắt điện sau giờ học';
+	}
+	if ($loivipham4 == '27'){
+		$point4 = '2';
+		$tenloi4= 'Sử dụng nhà vệ sinh không đúng cách';
+	}
+	if ($loivipham4 == '28'){
+		$point4 = '5';
+		$tenloi4= 'Làm vỡ cửa kính';
+	}
+	if ($loivipham4 == '29'){
+		$point4 = '2';
+		$tenloi4= 'Đá bóng không đúng nơi quy định';
+	}
+	if ($loivipham4 == '30'){
+		$point4 = '5';
+		$tenloi4= 'Sử dụng không đúng khu vực vệ sinh cho phép';
+	}
+	if ($loivipham4 == '31'){
+		$point4 = '50';
+		$tenloi4= 'Đánh nhau';
+	}
+	if ($loivipham4 == '32'){
+		$point4 = '80';
+		$tenloi4= 'Đánh nhau không khai báo thành khẩn';
+	}
+		if ($loivipham4 == '33'){
+		$point4 = '20';
+		$tenloi4= 'Vi phạm ATGT (có báo cáo về trường)';
+	}
+
+	if ($loivipham4 == '34'){
+		$point4 = '10';
+		$tenloi4= 'Vi phạm quy chế thi';
+	}
+	if ($loivipham4 == '35'){
+		$point4 = '10';
+		$tenloi4= 'Giờ tự quản ồn học sinh ra ngoài ảnh hưởng đến lớp khác';
+	}
+	if ($loivipham4 == '36'){
+		$point4 = '3';
+		$tenloi4= 'Cán bộ lớp BCH chi đoàn đến họp muộn';
+	}
+	if ($loivipham4 == '37'){
+		$point4 = '5';
+		$tenloi4= 'Cán bộ lớp BCH chi đoàn vắng mặt không lí do';
+	}
+	if ($loivipham4 == '38'){
+		$point4 = '10';
+		$tenloi4= 'Cán bộ lớp BCH chi đoàn không hoàn thành nhiệm vụ';
+	}
+	if ($loivipham4 == '39'){
+		$point4 = '1';
+		$tenloi4= 'Xung kích không thực hiện nhiệm vụ';
+	}
+	if ($loivipham4 == '40'){
+		$point4 = '2';
+		$tenloi4= 'Đội văn nghệ không thực hiện nhiệm vụ';
+	}
+	if ($loivipham4 == '41'){
+		$point4 = '10';
+		$tenloi4= 'Lớp trực tuần bỏ buổi trực';
+	}
+	if ($loivipham4 == '42'){
+		$point4 = '5';
+		$tenloi4= 'Lớp trực tuần xuống trực cổng muộn';
+	}
+	if ($loivipham4 == '43'){
+		$point4 = '10';
+		$tenloi4= 'Lớp trực tuần chuẩn bị không tốt cho buổi tập trung';
+	}
+	if ($loivipham4 == '44'){
+		$point4 = '5';
+		$tenloi4= 'Đội mũ bảo hiểm không cài quai';
+	}
+		// thuật toán tính tổng điểm trừ đối với lỗi vi phạm 5
+	if ($loivipham5 == '1'){
+		$point5 = '1';
+		$tenloi5= 'Đi muộn';
+	}
+	if ($loivipham5 == '2'){
+		$point5 = '10';
+		$tenloi5= 'Đi muộn (bỏ chạy)';
+	}
+	if ($loivipham5 == '3'){
+		$point5 = '15';
+		$tenloi5= 'Đi muộn sau 7 giờ';
+	}
+	if ($loivipham5 == '4'){
+		$point5 = '10';
+		$tenloi5= 'Đi muộn trèo tường';
+	}
+	if ($loivipham5 == '5'){
+		$point5 = '2';
+		$tenloi5= 'Vắng mặt không lí do giờ truy bài';
+	}
+	if ($loivipham5 == '6'){
+		$point5 = '10';
+		$tenloi5= 'Ra ngoài giờ truy bài (bỏ chạy)';
+	}
+	if ($loivipham5 == '7'){
+		$point5 = '1';
+		$tenloi5= 'Không đúng trang phục: áo phù hiệu giày';
+	}
+	if ($loivipham5 == '8'){
+		$point5 = '5';
+		$tenloi5= 'Tập trung muộn';
+	}
+	if ($loivipham5 == '9'){
+		$point5 = '1';
+		$tenloi5= 'Nghỉ không phép làm việc riêng trong giờ tập trung';
+	}
+	if ($loivipham5 == '10'){
+		$point5 = '10';
+		$tenloi5= 'Tập trung muộn sau 10 phút xếp hàng chưa ngay ngắn';
+	}
+	if ($loivipham5 == '11'){
+		$point5 = '5';
+		$tenloi5= 'Mất trật tự trong buổi tập trung';
+	}
+	if ($loivipham5 == '12'){
+		$point5 = '1';
+		$tenloi5= 'Không cất ghế sau giờ tập trung';
+	}
+	if ($loivipham5 == '13'){
+		$point5 = '2';
+		$tenloi5= 'Nói bậy';
+	}
+	if ($loivipham5 == '14'){
+		$point5 = '2';
+		$tenloi5= 'Ăn quà không đúng nơi quy định';
+	}
+	if ($loivipham5 == '15'){
+		$point5 = '5';
+		$tenloi5= 'Hút thuốc lá trong trường';
+	}
+	if ($loivipham5 == '16'){
+		$point5 = '5';
+		$tenloi5= 'Không dừng xe ở cổng trường';
+	}
+	if ($loivipham5 == '17'){
+		$point5 = '10';
+		$tenloi5= 'Không dừng xe ở cổng trường khi đã nhắc nhở';
+	}
+	if ($loivipham5 == '18'){
+		$point5 = '10';
+		$tenloi5= 'Không đội mũ bảo hiểm';
+	}
+	if ($loivipham5 == '19'){
+		$point5 = '50';
+		$tenloi5= 'Vô lễ với cán bộ giáo viên';
+	}
+	if ($loivipham5 == '20'){
+		$point5 = '2';
+		$tenloi5= 'Xả đổ rác không đúng nơi quy định';
+	}
+	if ($loivipham5 == '21'){
+		$point5 = '1';
+		$tenloi5= 'Trực nhật muộn đổ rác muộn';
+	}
+
+	if ($loivipham5 == '22'){
+		$point5 = '5';
+		$tenloi5= 'Không lấy sổ đầu bài sáng thứ 2';
+	}
+	if ($loivipham5 == '23'){
+		$point5 = '2';
+		$tenloi5= 'Trực nhật bẩn không trực khu vực';
+	}
+	if ($loivipham5 == '24'){
+		$point5 = '2';
+		$tenloi5= 'Để xe không đúng nơi quy định';
+	}
+	if ($loivipham5 == '25'){
+		$point5 = '5';
+		$tenloi5= 'Khu vực để xe lộn xộn không ngăn nắp';
+	}
+	if ($loivipham5 == '26'){
+		$point5 = '2';
+		$tenloi5= 'Không đóng cửa tắt điện sau giờ học';
+	}
+	if ($loivipham5 == '27'){
+		$point5 = '2';
+		$tenloi5= 'Sử dụng nhà vệ sinh không đúng cách';
+	}
+	if ($loivipham5 == '28'){
+		$point5 = '5';
+		$tenloi5= 'Làm vỡ cửa kính';
+	}
+	if ($loivipham5 == '29'){
+		$point5 = '2';
+		$tenloi5= 'Đá bóng không đúng nơi quy định';
+	}
+	if ($loivipham5 == '30'){
+		$point5 = '5';
+		$tenloi5= 'Sử dụng không đúng khu vực vệ sinh cho phép';
+	}
+	if ($loivipham5 == '31'){
+		$point5 = '50';
+		$tenloi5= 'Đánh nhau';
+	}
+	if ($loivipham5 == '32'){
+		$point5 = '80';
+		$tenloi5= 'Đánh nhau không khai báo thành khẩn';
+	}
+		if ($loivipham5 == '33'){
+		$point5 = '20';
+		$tenloi5= 'Vi phạm ATGT (có báo cáo về trường)';
+	}
+
+	if ($loivipham5 == '34'){
+		$point5 = '10';
+		$tenloi5= 'Vi phạm quy chế thi';
+	}
+	if ($loivipham5 == '35'){
+		$point5 = '10';
+		$tenloi5= 'Giờ tự quản ồn học sinh ra ngoài ảnh hưởng đến lớp khác';
+	}
+	if ($loivipham5 == '36'){
+		$point5 = '3';
+		$tenloi5= 'Cán bộ lớp BCH chi đoàn đến họp muộn';
+	}
+	if ($loivipham5 == '37'){
+		$point5 = '5';
+		$tenloi5= 'Cán bộ lớp BCH chi đoàn vắng mặt không lí do';
+	}
+	if ($loivipham5 == '38'){
+		$point5 = '10';
+		$tenloi5= 'Cán bộ lớp BCH chi đoàn không hoàn thành nhiệm vụ';
+	}
+	if ($loivipham5 == '39'){
+		$point5 = '1';
+		$tenloi5= 'Xung kích không thực hiện nhiệm vụ';
+	}
+	if ($loivipham5 == '40'){
+		$point5 = '2';
+		$tenloi5= 'Đội văn nghệ không thực hiện nhiệm vụ';
+	}
+	if ($loivipham5 == '41'){
+		$point5 = '10';
+		$tenloi5= 'Lớp trực tuần bỏ buổi trực';
+	}
+	if ($loivipham5 == '42'){
+		$point5 = '5';
+		$tenloi5= 'Lớp trực tuần xuống trực cổng muộn';
+	}
+	if ($loivipham5 == '43'){
+		$point5 = '10';
+		$tenloi5= 'Lớp trực tuần chuẩn bị không tốt cho buổi tập trung';
+	}
+	if ($loivipham5 == '44'){
+		$point5 = '5';
+		$tenloi5= 'Đội mũ bảo hiểm không cài quai';
+	}
+
 	$tongdiem = $point1 + $point2 + $point3 + $point4 + $point5;
 	function rebuild_date( $format, $time = 0 )
 {
@@ -380,6 +1196,9 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 	$IN = 'none';
 	$OUT = 'block';
 	}
+
+
+
 ?>
 <html>
 <head>
@@ -538,7 +1357,7 @@ input[type=submit] {
 	<nav class='navbar navbar-inverse '>
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='/'>Đoàn trường - CBH</a>
+<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
 <button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
 <span class='icon-bar'></span>
 <span class='icon-bar'></span>
@@ -560,7 +1379,7 @@ input[type=submit] {
     margin-left: 10px;
 " href="/hocsinh">Học sinh</a>
         </div></li>
-<li class=''><a href='/topvipham'>Top vi phạm</a></li>
+<li class=''><a href='/xephang'>Xếp hạng</a></li>
 <li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
 <li class='active'><a href='/baocao'>Báo cáo</a></li>
 <li class=''><a href='/lienhe'>Liên hệ</a></li>
@@ -576,8 +1395,34 @@ input[type=submit] {
 </div>
 </div>
 </nav>
+<script>
+function myFunction2() {
+var str = document.getElementById("demo").innerHTML; 
+str = str.replace(",", "+");
+document.getElementById("demo").innerHTML = str;
+}
+myFunction2()
+
+
+</script>
+<?php
+
+$datee = rebuild_date('Y-m-d' );
+// Username doesnt exists, insert new account
+if ($stmt = $con->prepare('INSERT INTO baocao (class, xungkich, date, diem, absent, vesinh, dongphuc, maloi1, maloi2, maloi3, maloi4, maloi5) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')) {
+	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
+	$stmt->bind_param('ssssssssssss', $lop, $usern, $datee, $tongdiem, $vang, $vesinh, $dongphuc, $tenloi1, $tenloi2, $tenloi3, $tenloi4, $tenloi5);
+	$stmt->execute();
+	$message = 'Gửi báo cáo thành công!';
+} else {
+	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
+	$message = 'Đã có lỗi xảy ra! Báo cáo của bạn chưa được gửi đi';
+}
+$con->close();	
+
+?>
 <div class="content">
-	<h2>Bạn có chắc chắn muốn gửi báo cáo?</h2>
+	<h2><?=$message?></h2>
 	<br>
 	<h3>Nội dung báo cáo:</h3>
 	<p>
@@ -594,35 +1439,13 @@ input[type=submit] {
 	<b style="display:<?=$loi4?>">Lỗi vi phạm 4: <?=$tenloi4?></b>
 	<b style="display:<?=$loi5?>">Lỗi vi phạm 5: <?=$tenloi5?></b>
 	<b id="demo">Tổng điểm trừ: <?=$tongdiem?></b><br>
+
 	</p>
-	<button type="button" style="float:right" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2""><i class="fas fa-paper-plane"></i> Xác nhận và gửi báo cáo</button>
+
 	<button style="float:left" type="button" class="btn btn-danger" onclick="location.href='/baocao'"><i class="fas fa-redo-alt"></i> Quay lại</button>
 	</div>
 	
-<script>
-function myFunction2() {
-var str = document.getElementById("demo").innerHTML; 
-str = str.replace(",", "+");
-document.getElementById("demo").innerHTML = str;
-}
-myFunction2()
 
-</script>
-	<?php
-// Username doesnt exists, insert new account
-if ($stmt = $con->prepare('INSERT INTO baocao (class, user, date, point, absent, vesinh, dongphuc, maloi) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')) {
-	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
-	$stmt->bind_param('ssss', $_POST['name'], $_POST['username'], $password, $_POST['email']);
-	$stmt->execute();
-	$message = 'You have successfully registered, you can now login!';
-} else {
-	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
-	$message = 'Could not prepare statement!';
-}
-	
-	$stmt->close();
 
-$con->close();
-	?>
 </body>
 </html>
