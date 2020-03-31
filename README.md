@@ -11,7 +11,7 @@
 
 **[Đoàn trường THPT Chuyên Biên Hoà Online](https://youth.cbh.edu.vn/) là một cổng thông tin điện tử trực tuyến của Đoàn trường THPT Chuyên Biên Hoà.** Nó nhanh gọn và đáp ứng đầy đủ các tính năng của một đoàn trường trực tuyến. Các tính năng chính gồm có:
 
-* **Nhanh gọn và nhẹ.** Không quảng cáo, không CMS, không tính năng rườm rà làm chậm tốc độ tải trang. Đoàn trường THPT Chuyên Biên Hoà Online được xây dựng bằng PHP nên deploy rất nhanh. Giao diện được cung cấp bởi bộ mã Bootstrap 4 của Twitter - Chứa các mẫu thiết kế dựa trên CSS và JavaScript cho kiểu chữ, biểu mẫu, nút, điều hướng và các thành phần giao diện khác.
+* **Nhanh gọn và nhẹ.** Không quảng cáo, không CMS bên thứ ba, không tính năng rườm rà làm chậm tốc độ tải trang. Đoàn trường THPT Chuyên Biên Hoà Online được xây dựng bằng PHP nên deploy rất nhanh. Giao diện được cung cấp bởi bộ mã Bootstrap 4 của Twitter - Chứa các mẫu thiết kế dựa trên CSS và JavaScript cho kiểu chữ, biểu mẫu, nút, điều hướng và các thành phần giao diện khác.
 
 * **Đẹp và hỗ trợ nhiều nền tảng thiết bị.** Đây là một trang web học đường dành cho học sinh. Đoàn trường THPT Chuyên Biên Hoà Online được thiết kế tỉ mỉ, đơn giản nhưng vẫn cầu kì và hỗ trợ trên nhiều nền tảng thiết bị khác nhau.
 
