@@ -317,7 +317,7 @@ body.loggedin {
 </ul> 
 <ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
 <li id="profile" style="display:<?=$PROP?>">
-<a href="profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
+<a href="/profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
 <li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
 <li class='' style="display:<?=$OUT?>"><a href='/logout.php'><i class="fas fa-sign-in-alt"></i> Đăng xuất</a></li>
 

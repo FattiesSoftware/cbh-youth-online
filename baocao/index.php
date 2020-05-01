@@ -611,6 +611,7 @@ iframe {
 .container-login100 {
  background-image: url("/background-login.jpg");
 background-repeat: no-repeat ;
+background-size: cover;
 }
 .wrap-login100 {
     width: 390px;
