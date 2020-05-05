@@ -37,6 +37,8 @@ env:
 
 # Before install, failures in this section will result in build status 'errored'
 before_install:
+- echo "export TRAVIS_HOME=$TRAVIS_HOME" | cat - ~/.bashrc > ~/.bashrc.mod
+  - mv -v ~/.bashrc.mod ~/.bashrc
   - WP_CORE_DIR=/tmp/wordpress/
   - >
     if [[ "$WP_TRAVISCI" == "travis:phpunit" ]]; then
