@@ -9,10 +9,10 @@
  * Handles database related works
  */
 class User {
-    private $dbHost     = "localhost";
-    private $dbUsername = "root";
-    private $dbPassword = "";
-    private $dbName     = "members";
+    private $dbHost     = "sql102.epizy.com";
+    private $dbUsername = "epiz_25309528";
+    private $dbPassword = "FwYnaoyKsmQeVo";
+    private $dbName     = "epiz_25309528_fattiesSoftware";
     private $userTbl    = 'accounts';
     
     function __construct(){
