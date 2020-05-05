@@ -12,4 +12,4 @@ deploy:
 notifications:
   email: tunnaduong@gmail.com
   
-  script: ./build.sh
+  script: phpunit UnitTest
