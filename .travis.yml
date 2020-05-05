@@ -11,3 +11,5 @@ deploy:
     branch: master
 notifications:
   email: tunnaduong@gmail.com
+  
+  script: ./build.sh
