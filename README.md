@@ -3,6 +3,7 @@
 <p align="center">
 
 <a href="https://app.buddy.works/duongtunganh2111/doantruong-cbh-beta-final/pipelines/pipeline/246032"><img src="https://app.buddy.works/duongtunganh2111/doantruong-cbh-beta-final/pipelines/pipeline/246032/badge.svg?token=2e0813dbe17bf3d9cb39c14bd1503a57a10e9f2bc5a6049c70bfd9e5cbb67072" alt="Build Status"></a>
+[![Build Status](https://travis-ci.org/FattiesSoftware/doantruong-cbh-online-beta-final.svg?branch=master)](https://travis-ci.org/FattiesSoftware/doantruong-cbh-online-beta-final)
 </p>
 
 
