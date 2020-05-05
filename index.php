@@ -134,7 +134,7 @@ require "include/header.php";
 	<style id='page-skin-1' type='text/css'><!--
 /*
 -----------------------------------------------
-Template Name  : Ego Cafe
+Template Name  : Ego Cafe Tunna
 Author         : NewBloggerThemes.com
 Author URL     : http://newbloggerthemes.com/
 Theme URL      : http://newbloggerthemes.com/ego-cafe-blogger-template/
