@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 24, 2020 lúc 02:54 AM
+-- Thời gian đã tạo: Th5 06, 2020 lúc 08:07 AM
 -- Phiên bản máy phục vụ: 10.4.8-MariaDB
 -- Phiên bản PHP: 7.3.10
 
@@ -50,7 +50,7 @@ CREATE TABLE `accounts` (
 INSERT INTO `accounts` (`id`, `oauth_provider`, `oauth_uid`, `name`, `username`, `password`, `email`, `date`, `profile_pic`, `activation_code`, `location`, `link`) VALUES
 (1, 'github', '17230355', 'Duong Tung Anh', 'tunganh03', '', 'duongtunganh2111@gmail.com', '2020-03-17', 'https://avatars2.githubusercontent.com/u/17230355?v=4', '', 'Vietnam', 'https://github.com/tunganh03'),
 (11, '', '', 'Dương Tùng Anh', 'admin', '$2y$10$1QLvQahvkZ6ZWYtV6w0xluJkg0SRIlvH8LlZGujHRk86DlMbZY1Dm', 'duongtunganh2111@gmail.com', '2020-03-13', '/forum/images/default_pic.jpg', '', '', ''),
-(15, '', '', 'Dương Tùng Anh', 'ta03', '$2y$10$E4jrBCuDcoZWr/D3SWShPuTDbX7Akx2wa3VGsQIS2k/uZAR7yoJdW', 'tunnaduong@gmail.com', '2020-03-13', 'images/IMG_0294.JPG ', '', '', ''),
+(15, '', '', 'Dương Tùng Anh', 'ta03', '$2y$10$E4jrBCuDcoZWr/D3SWShPuTDbX7Akx2wa3VGsQIS2k/uZAR7yoJdW', 'tunnaduong@gmail.com', '2020-03-13', 'images/91418261_617122312469777_1248862299381301248_n.png ', '', '', ''),
 (18, '', '', 'Hoàng Phát', 'hoangphat', '$2y$10$C1uVsfSKM0o8/H34DG2TBePq9alYJ3jSZpfa3xwpQ2kT0G4DyIpuK', 'hoangphat@gmail.com', '2020-03-13', '/forum/images/default_pic.jpg', '', '', ''),
 (19, '', '', 'haidz', 'haidz', '$2y$10$9tkFCK0IgrmvSeWxqb/Qq.sUGZ1WDqWbLlbVKXQbxO86UnqkSSgUu', 'haidz@gmail.com', '2020-03-13', '/forum/images/default_pic.jpg', '', '', ''),
 (22, '', '', 'Cái Lồn Má', 'clm', '$2y$10$mMudBQxN7pnYhB59wJN.CeYMZ2xZyTNSDFdTCehlQoNefNAE5QJ3W', 'concacne@gmail.com', '2020-03-13', '/forum/images/default_pic.jpg', '', '', ''),
@@ -83,11 +83,39 @@ CREATE TABLE `baocao` (
 --
 
 INSERT INTO `baocao` (`id`, `date`, `xungkich`, `class`, `diem`, `absent`, `vesinh`, `dongphuc`, `maloi1`, `maloi2`, `maloi3`, `maloi4`, `maloi5`) VALUES
-(10, '2020-03-23', 'tunganh03', '11 Nga', '91', '2', 'Bẩn', 'Thiếu', 'Đi muộn (bỏ chạy)', 'Không đúng trang phục: áo phù hiệu giày', 'Đánh nhau không khai báo thành khẩn', 'Không có lỗi', 'Không có lỗi'),
 (11, '2020-03-23', 'ta03', '12 Toán', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
-(14, '2020-03-23', 'ta03', '11 Nga', '6', '1', 'Sạch', 'Đủ', 'Đi muộn', 'Sử dụng không đúng khu vực vệ sinh cho phép', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(14, '2020-03-23', 'ta03', '11 Nga', '12', '1', 'Sạch', 'Đủ', 'Đi muộn', 'Sử dụng không đúng khu vực vệ sinh cho phép', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
 (15, '2020-03-23', 'ta03', '12 Toán', '2', '2', 'Sạch', 'Đủ', 'Vắng mặt không lí do giờ truy bài', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
-(16, '2020-03-23', 'tunganh03', '12 Toán', '10', '0', 'Sạch', 'Đủ', 'Ra ngoài giờ truy bài (bỏ chạy)', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi');
+(16, '2020-03-23', 'tunganh03', '12 Toán', '10', '0', 'Sạch', 'Đủ', 'Ra ngoài giờ truy bài (bỏ chạy)', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(17, '2020-03-24', 'ta03', '9A1', '0', '2', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(18, '2020-03-24', 'ta03', '9A1', '5', '0', 'Sạch', 'Đủ', 'Mất trật tự trong buổi tập trung', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(19, '2020-03-24', 'ta03', '12 Anh', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(20, '2020-03-24', 'ta03', '12 Anh', '5', '0', 'Sạch', 'Đủ', 'Hút thuốc lá trong trường', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(21, '2020-03-24', 'ta03', '12 Anh', '10', '0', 'Sạch', 'Đủ', 'Đi muộn trèo tường', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(22, '2020-03-25', 'tunganh03', '12 Toán', '2', '0', 'Sạch', 'Đủ', 'Vắng mặt không lí do giờ truy bài', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(23, '2020-03-25', 'tunganh03', '12 Toán', '50', '0', 'Sạch', 'Đủ', 'Đánh nhau', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(24, '2020-03-25', 'tunganh03', '12 Sử - Địa', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(26, '2020-03-25', 'tunganh03', '12 Sử - Địa', '50', '0', 'Sạch', 'Đủ', 'Vô lễ với cán bộ giáo viên', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(28, '2020-03-25', 'tunganh03', '9A1', '01', '0', 'Sạch', 'Đủ', 'Đi muộn', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(29, '2020-03-26', 'ta03', '9A1', '01', '0', 'Sạch', 'Đủ', 'Đi muộn', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(33, '2020-04-01', 'tunganh03', '9A1', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(34, '2020-04-01', 'tunganh03', '\'', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(35, '2020-04-01', 'tunganh03', '<script>alert(\"Mẹ bạn gay\")</script>', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(36, '2020-04-01', 'tunganh03', '<script>alert(\"Mẹ bạn gay\")</script>', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(37, '2020-04-01', 'tunganh03', '<script>alert(\"Mẹ bạn gay\")</script>', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(38, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(39, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(40, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(41, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(42, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(43, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(44, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(45, '2020-04-01', 'tunganh03', '11 Nga', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(46, '2020-04-21', 'ta03', '11 Nga', '10', '4', 'Sạch', 'Đủ', 'Ra ngoài giờ truy bài (bỏ chạy)', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(47, '2020-04-22', 'ta03', '12 Toán', '0', '0', 'Sạch', 'Đủ', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(48, '2020-04-22', 'ta03', '11 Nga', '4', '1', 'Bẩn', 'Thiếu', 'Ăn quà không đúng nơi quy định', 'Xả đổ rác không đúng nơi quy định', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(49, '2020-04-23', 'ta03', '10 Nga', '15', '1', 'Sạch', 'Đủ', 'Khu vực để xe lộn xộn không ngăn nắp', 'Không đội mũ bảo hiểm', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi'),
+(50, '2020-04-23', 'ta03', '10 Nga', '15', '1', 'Sạch', 'Đủ', 'Khu vực để xe lộn xộn không ngăn nắp', 'Không đội mũ bảo hiểm', 'Không có lỗi', 'Không có lỗi', 'Không có lỗi');
 
 -- --------------------------------------------------------
 
@@ -135,7 +163,8 @@ INSERT INTO `rating_info` (`topic_id`, `user_id`, `rating_action`) VALUES
 (23, 15, 'like'),
 (23, 2, 'like'),
 (28, 15, 'dislike'),
-(28, 2, 'dislike');
+(28, 2, 'dislike'),
+(17, 15, 'like');
 
 -- --------------------------------------------------------
 
@@ -165,8 +194,8 @@ INSERT INTO `topics` (`topic_id`, `topic_name`, `topic_content`, `topic_creator`
 (9, 'mieu ta con meo', ' con meo nhin giong con cho <3', 'tunganh03', 2, '2020-02-27'),
 (7, 'mieu ta con cho', ' con co co bon chan va mot dau', 'Hoangphat', 2, '2020-02-27'),
 (19, 'cái địt mẹ phát', 'alololo con cặc ', 'ccla', 4, '2020-03-12'),
-(17, 'Em có đánh mất 100k ở trước cửa VP Đoàn', ' địt mẹ thằng lồn phát', 'tunganh03', 4, '2020-03-12'),
-(20, 'method để truy cập profile: get', 'như tiêu đề? :> ', 'clm', 4, '2020-03-12'),
+(17, 'Em có đánh mất 100k ở trước cửa VP Đoàn', ' địt mẹ thằng lồn phát', 'tunganh03', 5, '2020-03-12'),
+(20, 'method để truy cập profile: get', 'như tiêu đề? :> ', 'clm', 5, '2020-03-12'),
 (23, 'đ ị t  m ẹ  c u ộ c  đ ờ i', 'đ ị t  m ẹ  c u ộ c  đ ờ i', 'tunganh03', 5, '2020-03-12'),
 (24, 'cặc cặc ặc cặc cặc cặc', 'cặccjawcjawjcawjcajwcjac', 'admin', 4, '2020-03-13'),
 (27, 'Tùng Anhhhhhhhhhhh', 'tunganh', 'ta03', 2, '2020-03-17'),
@@ -461,7 +490,36 @@ INSERT INTO `view` (`topic_id`, `user_id`, `view`) VALUES
 (28, 15, 1),
 (28, 15, 1),
 (28, 15, 1),
-(13, 15, 1);
+(13, 15, 1),
+(20, 2, 1),
+(20, 2, 1),
+(7, 2, 1),
+(7, 2, 1),
+(28, 2, 1),
+(23, 2, 1),
+(28, 2, 1),
+(2, 2, 1),
+(28, 2, 1),
+(28, 2, 1),
+(28, 2, 1),
+(27, 2, 1),
+(27, 15, 1),
+(27, 15, 1),
+(20, 15, 1),
+(20, 15, 1),
+(28, 2, 1),
+(23, 15, 1),
+(27, 2, 1),
+(27, 2, 1),
+(27, 2, 1),
+(19, 2, 1),
+(23, 2, 1),
+(17, 2, 1),
+(17, 15, 1),
+(17, 15, 1),
+(23, 2, 1),
+(28, 2, 1),
+(28, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -650,7 +708,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (101, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (103, 'sidebars_widgets', 'a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(104, 'cron', 'a:6:{i:1584970250;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1584995450;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1585038649;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1585038654;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1585038655;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(104, 'cron', 'a:6:{i:1588314650;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1588321849;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1588321850;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1588321854;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1588321855;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (105, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -666,11 +724,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (142, 'current_theme', 'Justread', 'yes'),
 (143, 'theme_mods_justread', 'a:2:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}}', 'yes'),
 (144, 'theme_switched', '', 'yes'),
-(178, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:62:\"https://downloads.wordpress.org/release/vi/wordpress-5.3.2.zip\";s:6:\"locale\";s:2:\"vi\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:62:\"https://downloads.wordpress.org/release/vi/wordpress-5.3.2.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.3.2\";s:7:\"version\";s:5:\"5.3.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1584966656;s:15:\"version_checked\";s:5:\"5.3.2\";s:12:\"translations\";a:0:{}}', 'no'),
-(204, '_site_transient_timeout_theme_roots', '1584968460', 'no'),
-(205, '_site_transient_theme_roots', 'a:6:{s:12:\"elegant-pink\";s:7:\"/themes\";s:8:\"justread\";s:7:\"/themes\";s:14:\"twentynineteen\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";s:13:\"twentysixteen\";s:7:\"/themes\";s:12:\"twentytwenty\";s:7:\"/themes\";}', 'no'),
-(206, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1584966665;s:7:\"checked\";a:6:{s:12:\"elegant-pink\";s:5:\"1.2.4\";s:8:\"justread\";s:5:\"1.1.1\";s:14:\"twentynineteen\";s:3:\"1.4\";s:15:\"twentyseventeen\";s:3:\"2.2\";s:13:\"twentysixteen\";s:3:\"2.0\";s:12:\"twentytwenty\";s:3:\"1.0\";}s:8:\"response\";a:3:{s:12:\"elegant-pink\";a:6:{s:5:\"theme\";s:12:\"elegant-pink\";s:11:\"new_version\";s:5:\"1.2.6\";s:3:\"url\";s:42:\"https://wordpress.org/themes/elegant-pink/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/theme/elegant-pink.1.2.6.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:3:\"5.6\";}s:8:\"justread\";a:6:{s:5:\"theme\";s:8:\"justread\";s:11:\"new_version\";s:5:\"1.2.0\";s:3:\"url\";s:38:\"https://wordpress.org/themes/justread/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/theme/justread.1.2.0.zip\";s:8:\"requires\";s:3:\"4.5\";s:12:\"requires_php\";s:3:\"5.2\";}s:12:\"twentytwenty\";a:6:{s:5:\"theme\";s:12:\"twentytwenty\";s:11:\"new_version\";s:3:\"1.1\";s:3:\"url\";s:42:\"https://wordpress.org/themes/twentytwenty/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/theme/twentytwenty.1.1.zip\";s:8:\"requires\";b:0;s:12:\"requires_php\";b:0;}}s:12:\"translations\";a:0:{}}', 'no'),
-(207, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1584966666;s:7:\"checked\";a:6:{s:19:\"akismet/akismet.php\";s:5:\"4.1.3\";s:9:\"hello.php\";s:5:\"1.7.2\";s:19:\"jetpack/jetpack.php\";s:3:\"8.3\";s:47:\"one-click-demo-import/one-click-demo-import.php\";s:5:\"2.5.2\";s:57:\"rara-one-click-demo-import/rara-one-click-demo-import.php\";s:5:\"1.2.7\";s:21:\"slim-seo/slim-seo.php\";s:5:\"3.2.2\";}s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.4\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.4.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:3:\"5.4\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:5:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}s:19:\"jetpack/jetpack.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:21:\"w.org/plugins/jetpack\";s:4:\"slug\";s:7:\"jetpack\";s:6:\"plugin\";s:19:\"jetpack/jetpack.php\";s:11:\"new_version\";s:3:\"8.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/jetpack/\";s:7:\"package\";s:54:\"https://downloads.wordpress.org/plugin/jetpack.8.3.zip\";s:5:\"icons\";a:3:{s:2:\"2x\";s:60:\"https://ps.w.org/jetpack/assets/icon-256x256.png?rev=1791404\";s:2:\"1x\";s:52:\"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404\";s:3:\"svg\";s:52:\"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:63:\"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1791404\";s:2:\"1x\";s:62:\"https://ps.w.org/jetpack/assets/banner-772x250.png?rev=1791404\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"one-click-demo-import/one-click-demo-import.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:35:\"w.org/plugins/one-click-demo-import\";s:4:\"slug\";s:21:\"one-click-demo-import\";s:6:\"plugin\";s:47:\"one-click-demo-import/one-click-demo-import.php\";s:11:\"new_version\";s:5:\"2.5.2\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/one-click-demo-import/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/plugin/one-click-demo-import.2.5.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:74:\"https://ps.w.org/one-click-demo-import/assets/icon-256x256.png?rev=1694310\";s:2:\"1x\";s:74:\"https://ps.w.org/one-click-demo-import/assets/icon-128x128.png?rev=1694310\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/one-click-demo-import/assets/banner-1544x500.png?rev=1694310\";s:2:\"1x\";s:76:\"https://ps.w.org/one-click-demo-import/assets/banner-772x250.png?rev=1694310\";}s:11:\"banners_rtl\";a:0:{}}s:57:\"rara-one-click-demo-import/rara-one-click-demo-import.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:40:\"w.org/plugins/rara-one-click-demo-import\";s:4:\"slug\";s:26:\"rara-one-click-demo-import\";s:6:\"plugin\";s:57:\"rara-one-click-demo-import/rara-one-click-demo-import.php\";s:11:\"new_version\";s:5:\"1.2.7\";s:3:\"url\";s:57:\"https://wordpress.org/plugins/rara-one-click-demo-import/\";s:7:\"package\";s:69:\"https://downloads.wordpress.org/plugin/rara-one-click-demo-import.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/rara-one-click-demo-import/assets/icon-128x128.png?rev=1939066\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:81:\"https://ps.w.org/rara-one-click-demo-import/assets/banner-772x250.png?rev=1939071\";}s:11:\"banners_rtl\";a:0:{}}s:21:\"slim-seo/slim-seo.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:22:\"w.org/plugins/slim-seo\";s:4:\"slug\";s:8:\"slim-seo\";s:6:\"plugin\";s:21:\"slim-seo/slim-seo.php\";s:11:\"new_version\";s:5:\"3.2.2\";s:3:\"url\";s:39:\"https://wordpress.org/plugins/slim-seo/\";s:7:\"package\";s:57:\"https://downloads.wordpress.org/plugin/slim-seo.3.2.2.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:53:\"https://ps.w.org/slim-seo/assets/icon.svg?rev=2005049\";s:3:\"svg\";s:53:\"https://ps.w.org/slim-seo/assets/icon.svg?rev=2005049\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:63:\"https://ps.w.org/slim-seo/assets/banner-772x250.png?rev=2005049\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no');
+(228, '_site_transient_timeout_theme_roots', '1588316186', 'no'),
+(229, '_site_transient_theme_roots', 'a:6:{s:12:\"elegant-pink\";s:7:\"/themes\";s:8:\"justread\";s:7:\"/themes\";s:14:\"twentynineteen\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";s:13:\"twentysixteen\";s:7:\"/themes\";s:12:\"twentytwenty\";s:7:\"/themes\";}', 'no'),
+(231, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:2:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.1.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.1.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.4.1-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.4.1-new-bundled.zip\";s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.4.1\";s:7:\"version\";s:5:\"5.4.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.1.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.1.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.4.1-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.4.1-new-bundled.zip\";s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.4.1\";s:7:\"version\";s:5:\"5.4.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1588314395;s:15:\"version_checked\";s:5:\"5.3.3\";s:12:\"translations\";a:0:{}}', 'no'),
+(232, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1588314396;s:7:\"checked\";a:6:{s:12:\"elegant-pink\";s:5:\"1.2.4\";s:8:\"justread\";s:5:\"1.1.1\";s:14:\"twentynineteen\";s:3:\"1.4\";s:15:\"twentyseventeen\";s:3:\"2.2\";s:13:\"twentysixteen\";s:3:\"2.0\";s:12:\"twentytwenty\";s:3:\"1.0\";}s:8:\"response\";a:6:{s:12:\"elegant-pink\";a:6:{s:5:\"theme\";s:12:\"elegant-pink\";s:11:\"new_version\";s:5:\"1.2.6\";s:3:\"url\";s:42:\"https://wordpress.org/themes/elegant-pink/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/theme/elegant-pink.1.2.6.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:3:\"5.6\";}s:8:\"justread\";a:6:{s:5:\"theme\";s:8:\"justread\";s:11:\"new_version\";s:5:\"1.2.0\";s:3:\"url\";s:38:\"https://wordpress.org/themes/justread/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/theme/justread.1.2.0.zip\";s:8:\"requires\";s:3:\"4.5\";s:12:\"requires_php\";s:3:\"5.2\";}s:14:\"twentynineteen\";a:6:{s:5:\"theme\";s:14:\"twentynineteen\";s:11:\"new_version\";s:3:\"1.5\";s:3:\"url\";s:44:\"https://wordpress.org/themes/twentynineteen/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/theme/twentynineteen.1.5.zip\";s:8:\"requires\";s:5:\"4.9.6\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:15:\"twentyseventeen\";a:6:{s:5:\"theme\";s:15:\"twentyseventeen\";s:11:\"new_version\";s:3:\"2.3\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentyseventeen/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentyseventeen.2.3.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:13:\"twentysixteen\";a:6:{s:5:\"theme\";s:13:\"twentysixteen\";s:11:\"new_version\";s:3:\"2.1\";s:3:\"url\";s:43:\"https://wordpress.org/themes/twentysixteen/\";s:7:\"package\";s:59:\"https://downloads.wordpress.org/theme/twentysixteen.2.1.zip\";s:8:\"requires\";s:3:\"4.4\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:12:\"twentytwenty\";a:6:{s:5:\"theme\";s:12:\"twentytwenty\";s:11:\"new_version\";s:3:\"1.2\";s:3:\"url\";s:42:\"https://wordpress.org/themes/twentytwenty/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/theme/twentytwenty.1.2.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:5:\"5.2.4\";}}s:12:\"translations\";a:0:{}}', 'no'),
+(233, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1588314398;s:7:\"checked\";a:6:{s:19:\"akismet/akismet.php\";s:5:\"4.1.3\";s:9:\"hello.php\";s:5:\"1.7.2\";s:19:\"jetpack/jetpack.php\";s:3:\"8.3\";s:47:\"one-click-demo-import/one-click-demo-import.php\";s:5:\"2.5.2\";s:57:\"rara-one-click-demo-import/rara-one-click-demo-import.php\";s:5:\"1.2.7\";s:21:\"slim-seo/slim-seo.php\";s:5:\"3.2.2\";}s:8:\"response\";a:4:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.5\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.5.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.4.1\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:19:\"jetpack/jetpack.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/jetpack\";s:4:\"slug\";s:7:\"jetpack\";s:6:\"plugin\";s:19:\"jetpack/jetpack.php\";s:11:\"new_version\";s:5:\"8.4.2\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/jetpack/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/jetpack.8.4.2.zip\";s:5:\"icons\";a:3:{s:2:\"2x\";s:60:\"https://ps.w.org/jetpack/assets/icon-256x256.png?rev=1791404\";s:2:\"1x\";s:52:\"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404\";s:3:\"svg\";s:52:\"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:63:\"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1791404\";s:2:\"1x\";s:62:\"https://ps.w.org/jetpack/assets/banner-772x250.png?rev=1791404\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.4.1\";s:12:\"requires_php\";s:3:\"5.6\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:57:\"rara-one-click-demo-import/rara-one-click-demo-import.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:40:\"w.org/plugins/rara-one-click-demo-import\";s:4:\"slug\";s:26:\"rara-one-click-demo-import\";s:6:\"plugin\";s:57:\"rara-one-click-demo-import/rara-one-click-demo-import.php\";s:11:\"new_version\";s:5:\"1.2.8\";s:3:\"url\";s:57:\"https://wordpress.org/plugins/rara-one-click-demo-import/\";s:7:\"package\";s:75:\"https://downloads.wordpress.org/plugin/rara-one-click-demo-import.1.2.8.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/rara-one-click-demo-import/assets/icon-128x128.png?rev=1939066\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:81:\"https://ps.w.org/rara-one-click-demo-import/assets/banner-772x250.png?rev=1939071\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.4.1\";s:12:\"requires_php\";s:3:\"5.6\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:21:\"slim-seo/slim-seo.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:22:\"w.org/plugins/slim-seo\";s:4:\"slug\";s:8:\"slim-seo\";s:6:\"plugin\";s:21:\"slim-seo/slim-seo.php\";s:11:\"new_version\";s:5:\"3.2.3\";s:3:\"url\";s:39:\"https://wordpress.org/plugins/slim-seo/\";s:7:\"package\";s:57:\"https://downloads.wordpress.org/plugin/slim-seo.3.2.3.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:53:\"https://ps.w.org/slim-seo/assets/icon.svg?rev=2005049\";s:3:\"svg\";s:53:\"https://ps.w.org/slim-seo/assets/icon.svg?rev=2005049\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:63:\"https://ps.w.org/slim-seo/assets/banner-772x250.png?rev=2005049\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.4.1\";s:12:\"requires_php\";s:3:\"5.6\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"one-click-demo-import/one-click-demo-import.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:35:\"w.org/plugins/one-click-demo-import\";s:4:\"slug\";s:21:\"one-click-demo-import\";s:6:\"plugin\";s:47:\"one-click-demo-import/one-click-demo-import.php\";s:11:\"new_version\";s:5:\"2.5.2\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/one-click-demo-import/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/plugin/one-click-demo-import.2.5.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:74:\"https://ps.w.org/one-click-demo-import/assets/icon-256x256.png?rev=1694310\";s:2:\"1x\";s:74:\"https://ps.w.org/one-click-demo-import/assets/icon-128x128.png?rev=1694310\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/one-click-demo-import/assets/banner-1544x500.png?rev=1694310\";s:2:\"1x\";s:76:\"https://ps.w.org/one-click-demo-import/assets/banner-772x250.png?rev=1694310\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(234, 'auto_core_update_notified', 'a:4:{s:4:\"type\";s:7:\"success\";s:5:\"email\";s:20:\"tunnaduong@gmail.com\";s:7:\"version\";s:5:\"5.3.3\";s:9:\"timestamp\";i:1588314397;}', 'no');
 
 -- --------------------------------------------------------
 
@@ -881,16 +940,21 @@ INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 CREATE TABLE `xephang` (
   `id` int(11) NOT NULL,
   `lop` varchar(55) NOT NULL,
-  `diem` varchar(55) NOT NULL
+  `diem` varchar(55) NOT NULL,
+  `rank` varchar(55) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Đang đổ dữ liệu cho bảng `xephang`
 --
 
-INSERT INTO `xephang` (`id`, `lop`, `diem`) VALUES
-(1, '11 Nga', '97'),
-(3, '12 Toán', '12');
+INSERT INTO `xephang` (`id`, `lop`, `diem`, `rank`) VALUES
+(1, 'lop', 'diem', ''),
+(18, '11 Nga', '22', ''),
+(19, '12 Toán', '64', ''),
+(20, '9A1', '07', ''),
+(21, '12 Anh', '15', ''),
+(22, '12 Sử - Địa', '50', '');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -1050,7 +1114,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT cho bảng `baocao`
 --
 ALTER TABLE `baocao`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT cho bảng `topics`
@@ -1086,7 +1150,7 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT cho bảng `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=208;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
 
 --
 -- AUTO_INCREMENT cho bảng `wp_postmeta`
@@ -1134,7 +1198,7 @@ ALTER TABLE `wp_users`
 -- AUTO_INCREMENT cho bảng `xephang`
 --
 ALTER TABLE `xephang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

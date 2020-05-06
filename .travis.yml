@@ -11,5 +11,3 @@ deploy:
     branch: master
 notifications:
   email: tunnaduong@gmail.com
-  
-  script: phpunit UnitTest
