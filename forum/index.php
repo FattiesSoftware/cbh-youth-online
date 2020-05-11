@@ -266,6 +266,7 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 
 <?php
 	$conn = new mysqli($servername, $username, $password, $dbname);
+	mysqli_set_charset($conn, 'UTF8');
 	if ($conn->connect_error) {
 			die("kết nối thất bại " . $conn->connect_error);
 		} 
