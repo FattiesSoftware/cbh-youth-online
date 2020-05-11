@@ -6,7 +6,7 @@
 require_once 'gitConfig.php';
 
 // Include and initialize user class
-require_once 'User.class.php';
+require_once 'user.class.php';
 $user = new User();
 
 if (!isset($_SESSION['loggedin'])) {
