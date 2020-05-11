@@ -1,7 +1,7 @@
 <?php 
 // connect to database
 $db = mysqli_connect('us-cdbr-east-06.cleardb.net', 'b3861ad067f78e', 'b5660ec4', 'heroku_e6de54bb91c7b51');
-
+mysqli_set_charset($db, 'UTF8');
 if (!isset($_SESSION['loggedin'])) {
 	$USER = 'guest';
 	$user_id = '2';
