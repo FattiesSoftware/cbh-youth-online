@@ -147,7 +147,7 @@ body.loggedin {
 	border-bottom: 1px solid #e0e0e3;
 	color: #4a536e;
 }
-.content > p, .content > div {
+.content > div {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	margin: 25px 0;
 	padding: 25px;
