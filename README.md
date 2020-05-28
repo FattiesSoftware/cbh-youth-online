@@ -24,15 +24,15 @@
 
 Bạn cần có một máy chủ chạy **PHP 7.1+** và **MySQL 5.6+**.
 
-Đọc **[Hướng dẫn cài đặt](https://youth.fatties.io/docs/install.html)** để có thêm thông tin chi tiết. Để được hỗ trợ, hãy mở trang [hướng dẫn](https://youth.fatties.io/docs/), và đặt các câu hỏi tại [diễn đàn dành cho cộng đồng](https://discuss.fatties.io/) hoặc [Discord chat](https://fatties.io/discord/).
+Đọc **[Hướng dẫn cài đặt](https://youth.fattiesoftware.com/docs/install.html)** để có thêm thông tin chi tiết. Để được hỗ trợ, hãy mở trang [hướng dẫn](https://youth.fatties.io/docs/), và đặt các câu hỏi tại [diễn đàn dành cho cộng đồng](https://discuss.fattiesoftware.com/) hoặc [Discord chat](https://fattiesoftware.com/discord/).
 
 ## Đóng góp
 
-Cảm ơn bạn đã xem xét đóng góp cho Đoàn trường THPT Chuyên Biên Hoà Online! Xin hãy đọc **[Hướng dẫn đóng góp](https://youth.fatties.io/docs/contributing.html)** để tìm hiểu các cách để đóng góp.
+Cảm ơn bạn đã xem xét đóng góp cho Đoàn trường THPT Chuyên Biên Hoà Online! Xin hãy đọc **[Hướng dẫn đóng góp](https://youth.fattiesoftware.com/docs/contributing.html)** để tìm hiểu các cách để đóng góp.
 
 ## Các lỗ hổng bảo mật
 
-Nếu bạn phát hiện ra lỗ hổng bảo mật trong Đoàn trường THPT Chuyên Biên Hoà Online!, vui lòng gửi e-mail đến [security@fatties.io](mailto:security@fatties.io). Tất cả các lỗ hổng bảo mật sẽ được giải quyết kịp thời.
+Nếu bạn phát hiện ra lỗ hổng bảo mật trong Đoàn trường THPT Chuyên Biên Hoà Online!, vui lòng gửi e-mail đến [security@fattiesoftware.com](mailto:security@fattiesoftware.com). Tất cả các lỗ hổng bảo mật sẽ được giải quyết kịp thời.
 
 ## Giấy phép
 
