@@ -17,6 +17,43 @@ if (!isset($_SESSION['loggedin'])) {
 	$PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';
+
+// Create connection
+
+    //$servername = 'sql102.epizy.com';
+    //$username = 'epiz_25309528';
+    //$password = 'FwYnaoyKsmQeVo';
+    //$dbname = 'epiz_25309528_fattiesSoftware';
+	$servername = 'localhost';
+    $username = 'root';
+    $password = '';
+    $dbname = 'members';
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    mysqli_set_charset($conn, 'UTF8');
+// Check connection
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+
+$sql_n = "Select name from accounts where username ='".$_SESSION['username']."'";
+
+$result_n =  $conn->query($sql_n);
+
+        if ($result_n ->num_rows >0) {
+            $row_n= $result_n->fetch_assoc();
+            $_SESSION["name"]= $row_n["name"];
+        }
+        else {
+            echo "<font color='red'>The name is not found!</font><br/ > 
+            <a href = '/baocao/index.php'>Click here to go back to login...</font></a>";
+        }
+
+
+    $conn->close(); 
+
+
+
 	$nam = $_SESSION['name'];
 }
 if(isset($accessToken)){
@@ -128,9 +165,13 @@ body.loggedin {
 <?php
 $diendan = 'active';
 require "include/navbar.php";
+require "include/style.php";
+
+
+
 ?>
 
-
+<?php ini_set('default_charset', 'utf-8'); ?>
 		<div class="content">
 			<h2>Diễn đàn</h2>
 			<p style="display:<?=$IN?>"><?=$WELCOME?></p>
@@ -233,8 +274,10 @@ function rebuild_date( $format, $time = 0 )
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
  echo $contents;
+
+
+
 ?>
-	<?php include("header.php"); ?>
 	<center>
 		<a href="post.php" style="    float: right;"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Đăng bài viết mới</button></a><br/><br/>
 	<?php echo '<table class="table table-hover" id="myTable">';?>
@@ -265,8 +308,12 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 </html>
 
 <?php
+$servername = 'localhost';
+    $username = 'root';
+    $password = '';
+    $dbname = 'members';
 	$conn = new mysqli($servername, $username, $password, $dbname);
-	mysqli_set_charset($conn, 'UTF8');
+    mysqli_set_charset($conn, 'UTF8');
 	if ($conn->connect_error) {
 			die("kết nối thất bại " . $conn->connect_error);
 		} 
@@ -301,7 +348,7 @@ while($row_u = $results_u->fetch_assoc()) {
 	if(@$_GET['date']){
 		
 		$query_d = "SELECT * FROM topics WHERE date='".$_GET['date']."'";
-		$results_d = mysqli_query($db, $query_d);
+		$results_d = mysqli_query($db, $query_d);mysqli_set_charset($db,"utf8");
 		
 		while($row_d=mysqli_fetch_assoc($results_d)){
 			
@@ -367,9 +414,11 @@ function sortTable() {
 sortTable()
 </script>
 </p>
-</div>
-</body>
 </center>
-	<?php
+<?php
 	require "include/footer.php";
 	?>
+</div>
+</body>
+
+	

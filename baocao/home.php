@@ -107,8 +107,7 @@ if ($error == 11) { // nếu id = 11
 	// chuyển đến xung kích
 	$nam = $userData['name'];
 } else {
-	echo '<a href="/"> Bấm vào đây để quay lại</a><br>';
-die ('Bạn không có quyền truy cập vào trang này!');
+	 header('Location: error.php');
 }
 	
 
@@ -119,44 +118,11 @@ die ('Bạn không có quyền truy cập vào trang này!');
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
-<meta charset='utf-8'/>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
-<meta content='width=device-width, initial-scale = 1.0, user-scalable = no' name='viewport'/>
-<link href="//fonts.googleapis.com/css?family=Josefin+Sans:600,700%7CDamion" rel="stylesheet" type="text/css">
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<meta content='blogger' name='generator'/>
-<link href='https://c4k60.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='http://doantruongthptchuyenbienhoa.online/' rel='canonical'/>
-<meta content='https://doantruongthptchuyenbienhoa.online/' property='og:url'/>
-<meta content='Đoàn trường THPT Chuyên Biên Hoà' property='og:title'/>
-<meta content='Cổng thông tin điện tử Đoàn trường THPT Chuyên Biên Hoà Online' property='og:description'/>
-<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
-<!-- Latest compiled and minified CSS -->
-<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
-<!-- jQuery library -->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<!-- Latest compiled JavaScript -->
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
-<title>Đoàn trường - CBH</title>
-<!-- typeahead -->
-<script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js" type="text/javascript"></script>
-<!-- tagsinput -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
-<link rel="stylesheet" href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/assets/app.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/github.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <?php
+require "include/header.php";
+require "include/style.php";
+$baocao = 'active';
+?>
 <style>
 * {
   box-sizing: border-box;
@@ -284,48 +250,9 @@ body.loggedin {
 
 
 	</style>
-<nav class='navbar navbar-inverse '>
-<div class='container-fluid'>
-<div class='navbar-header'>
-<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
-<button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</button>
-</div>
-<div class='collapse navbar-collapse' id='myNavbar'>
-<ul class='nav navbar-nav'>
-<li class=''><a href='/'>Trang chủ</a></li>
-<li class=''><a href='/forum'>Diễn đàn</a></li>
-<li class=''><a class="nav-link dropdown-toggle" href="/tracuu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tra cứu</a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		  <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/loivipham">Các lỗi vi phạm</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/thoikhoabieu">Thời khoá biểu</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/hocsinh">Học sinh</a>
-        </div></li>
-<li class=''><a href='/xephang'>Xếp hạng</a></li>
-<li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
-<li class='active'><a href='/baocao'>Báo cáo</a></li>
-<li class=''><a href='/lienhe'>Liên hệ</a></li>
-</ul> 
-<ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
-<li id="profile" style="display:<?=$PROP?>">
-<a href="/profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
-<li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
-<li class='' style="display:<?=$OUT?>"><a href='/logout.php'><i class="fas fa-sign-in-alt"></i> Đăng xuất</a></li>
-
-</ul>
-
-</div>
-</div>
-</nav>
+  <?php
+require "include/navbar.php";
+?>
 		<div class="content2">
 			<h2>Hệ thống báo cáo dành cho xung kích</h2>
 			<p>Chào mừng, <?=$nam?>!<br>
@@ -836,5 +763,6 @@ anime.timeline({loop: true})
   });
 </script>
 <br>
+
 	</body>
 </html>

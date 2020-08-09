@@ -50,29 +50,7 @@ if (!isset($_SESSION['loggedin'])) {
 <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
 </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-      <script>
-          var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validate(){
-var password = document.getElementById("form-password").value;
-if ( password == "ilovecbh123"){
-alert ("Đăng nhập thành công!");
-window.location = "welcome.php"; // Redirecting to other page.
-return false;
-}
-else{
-attempt --;// Decrementing by one.
-alert("Bạn còn "+attempt+" lượt đăng nhập;");
-// Disabling fields after 3 attempts.
-if( attempt == 0){
-document.getElementById("form-username").disabled = true;
-document.getElementById("form-password").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
-}
-}
-          </script>
+
           <style>
 
 
@@ -603,59 +581,7 @@ background-repeat: no-repeat ;
 <span class='icon-bar'></span>
 </button>
 </div>
-<div class='collapse navbar-collapse' id='myNavbar'>
-<ul class='nav navbar-nav'>
-<li class=''><a href='https://tunganh03.github.io/doantruong-cbh/'>Trang chủ</a></li>
-<li class=''><a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		  <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/loivipham">Các lỗi vi phạm</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/thoikhoabieu">Thời khoá biểu</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/hocsinh">Học sinh</a>
-        </div></li>
 
-<li class=''><a href='/topvipham'>Top vi phạm</a></li>
-<li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
-<li class='active'><a href='/baocao'>Báo cáo</a></li>
-<li class=''><a href='/lienhe'>Liên hệ</a></li>
-</ul>
-<ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
-<li class="dropdown order-1">
-                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" style="
-    margin-top: 8px;
-"><i class="fas fa-sign-in-alt"></i> Đăng nhập <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right mt-2">
-                       <li class="px-3 py-2" style="
-    height: 196px;
-    width: 240px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-">
-   <form class="form" role="form" action="welcome.php" method="POST">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Mật khẩu" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Quên mật khẩu?</a></small>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-</ul>
-</div>
-</div>
 </nav>
 
 

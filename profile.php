@@ -5,7 +5,7 @@ session_start();
 require_once 'gitConfig.php';
 
 // Include and initialize user class
-require_once 'user.class.php';
+require_once 'User.class.php';
 $user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
@@ -82,15 +82,11 @@ $PROP = 'none';
 //$DATABASE_USER = 'unaux_24697656';
 //$DATABASE_PASS = 'tunganh2003';
 //$DATABASE_NAME = 'unaux_24697656_doantruong';
-    //private $dbHost     = "us-cdbr-east-06.cleardb.net";
-    //private $dbUsername = "b3861ad067f78e";
-    //private $dbPassword = "b5660ec4";
-    //private $dbName     = "heroku_e6de54bb91c7b51";
-    //private $userTbl    = 'accounts';
-$DATABASE_HOST = 'us-cdbr-east-06.cleardb.net';
-$DATABASE_USER = 'b3861ad067f78e';
-$DATABASE_PASS = 'b5660ec4';
-$DATABASE_NAME = 'heroku_e6de54bb91c7b51';
+
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'members';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
@@ -134,15 +130,11 @@ require "include/header.php";
 	<body class="loggedin">
 	<style>
 	* {
-  	box-sizing: border-box;
-  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
-  	font-size: 16px;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 body {
   	background-color: #435165;
-  	margin: 0;
+
 }
 .register {
   	width: 400px;
@@ -195,42 +187,7 @@ body {
   	transition: background-color 0.2s;
 }	
 
-.navtop {
-	background-color: #2f3947;
-	height: 60px;
-	width: 100%;
-	border: 0;
-}
-.navtop div {
-	display: flex;
-	margin: 0 auto;
-	width: 1000px;
-	height: 100%;
-}
-.navtop div h1, .navtop div a {
-	display: inline-flex;
-	align-items: center;
-}
-.navtop div h1 {
-	flex: 1;
-	font-size: 24px;
-	padding: 0;
-	margin: 0;
-	color: #eaebed;
-	font-weight: normal;
-}
-.navtop div a {
-	padding: 0 20px;
-	text-decoration: none;
-	color: #c1c4c8;
-	font-weight: bold;
-}
-.navtop div a i {
-	padding: 2px 8px 0 0;
-}
-.navtop div a:hover {
-	color: #eaebed;
-}
+
 body.loggedin {
 	background-color: #f3f4f7;
 }

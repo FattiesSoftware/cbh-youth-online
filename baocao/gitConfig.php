@@ -13,7 +13,7 @@ require_once 'Github_OAuth_Client.php';
  */
 $clientID         = '512c3e376bd0a49792b5';
 $clientSecret     = '7a6d1cd0a7721e395877e5a18ab1c28d03ce8ab4';
-$redirectURL     = 'http://localhost/baocao/index2.php';
+$redirectURL     = 'https://youth.fattiesoftware.com/baocao/';
 
 $gitClient = new Github_OAuth_Client(array(
     'client_id' => $clientID,

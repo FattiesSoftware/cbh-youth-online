@@ -1,7 +1,28 @@
 <?php
 
 	session_start();
-	require('connect.php');
+	// Include GitHub API config file
+require_once 'gitConfig.php';
+
+// Include and initialize user class
+require_once 'user.class.php';
+$user = new User();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	$PROP = 'none';
+	$OUT = 'none';
+} else {
+	$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
+if(isset($accessToken)){
+		$none = 'none';
+$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
+require "include/header.php";
 
 ?>
 <html>
