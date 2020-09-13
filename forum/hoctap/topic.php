@@ -130,8 +130,8 @@ body.loggedin {
 </style>
 <ul class="breadcrumb" style="margin-bottom: 0px;">
   <li><a href="/">Trang chủ</a></li>
-  <li><a href="/forum/">Diễn đàn</li>
-  	<li><a href="/forum/hoctap">Học tập</li>
+  <li><a href="/forum/">Diễn đàn</a></li>
+  	<li><a href="/forum/hoctap">Học tập</a></li>
   		<li>Bài viết</li>
 </ul>
 	<?php 
