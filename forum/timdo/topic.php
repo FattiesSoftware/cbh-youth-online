@@ -128,6 +128,12 @@ body.loggedin {
 }
 }
 </style>
+<ul class="breadcrumb" style="margin-bottom: 0px;">
+  <li><a href="/">Trang chủ</a></li>
+  <li><a href="/forum/">Diễn đàn</li>
+  	<li><a href="/forum/timdo">Tìm đồ</li>
+  		<li>Bài viết</li>
+</ul>
 	<?php 
 	if($_GET["id"]){
 		$query = "SELECT * FROM topics WHERE topic_id='".$_GET['id']."'";
