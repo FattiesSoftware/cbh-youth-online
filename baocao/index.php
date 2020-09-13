@@ -1,26 +1,43 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
-// Include GitHub API config file
-require_once 'gitConfig.php';
 
-// Include and initialize user class
-require_once 'user.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
+
 $user = new User();
 // If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-	
-	$PROP = 'none';
-	$OUT = 'none';
-} else {
-	header('Location: /baocao/home.php');
-	$PROP = 'block';
-	$IN = 'none';
-	$OUT = 'block';
 
-}
 if(isset($accessToken)){
-	header('Location: /baocao/home.php');
+	   // Get the user profile info from Github
+    $gitUser = $gitClient->apiRequest($accessToken);
+
+    if(!empty($gitUser)){
+        // User profile data
+        $gitUserData = array();
+        $gitUserData['oauth_provider'] = 'github';
+        $gitUserData['oauth_uid'] = !empty($gitUser->id)?$gitUser->id:'';
+        $gitUserData['name'] = !empty($gitUser->name)?$gitUser->name:'';
+        $gitUserData['username'] = !empty($gitUser->login)?$gitUser->login:'';
+        $gitUserData['email'] = !empty($gitUser->email)?$gitUser->email:'';
+        $gitUserData['location'] = !empty($gitUser->location)?$gitUser->location:'';
+        $gitUserData['picture'] = !empty($gitUser->avatar_url)?$gitUser->avatar_url:'';
+        $gitUserData['link'] = !empty($gitUser->html_url)?$gitUser->html_url:'';
+        
+        // Insert or update user data to the database
+        $userData = $user->checkUser($gitUserData);
+        
+        // Put user data into the session
+        $_SESSION['userData'] = $userData;
+$OUT1 = 'none';
+
+    }else{
+		    $OUT1 = 'block';
+        $output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
+    }
+    
+	$none = 'none';
 $PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';
@@ -51,757 +68,697 @@ $PROP = 'block';
 $PROP = 'none';
 	$OUT = 'none';
 }
+
+
+$error2 = 1;
+if (!isset($_SESSION['loggedin'])) {	
+$error = '';
+
+} else {
+$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
+	$none = 'none';
+$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+}
+
+if ($error2==1) {
+	if(isset($accessToken)){
+	$error2 = $userData['oauth_uid'];
+		$none = 'none';
+$PROP = 'block';
+	$IN = 'none';
+	$OUT = 'block';
+	}
+}
+if ($error == 11) { // nếu id = 11
+		header('Location: admin/index.php'); // chuyển đến trang admin
+		
+} elseif ($error == 15) { // nếu id = 15
+	 // chuyển đến xung kích
+	 $nam = $_SESSION['name'];
+	 $none = $_SESSION['id'];
+} elseif ($error2 == 17230355) {// nếu id = 1
+	// chuyển đến xung kích
+	$nam = $userData['name'];
+} else {
+	 header('Location: error.php');
+}
+	
+
+
+
 ?>
+
 <!DOCTYPE html>
 <html>
-
-  <!-- Trang web được lập trình bởi Dương Tùng Anh - C4K60 Chuyên Hà Nam -->
-<!-- Mọi thông tin chi tiết xin liên hệ https://facebook.com/tunnaduong/ -->
-	<!DOCTYPE html>
-<title>Login V2</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-<!-- Latest compiled JavaScript -->
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'/>
-</head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-      <script>
-          var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validate(){
-var password = document.getElementById("form-password").value;
-if ( password == "ilovecbh123"){
-alert ("Đăng nhập thành công!");
-window.location = "welcome.php"; // Redirecting to other page.
-return false;
-}
-else{
-attempt --;// Decrementing by one.
-alert("Bạn còn "+attempt+" lượt đăng nhập;");
-// Disabling fields after 3 attempts.
-if( attempt == 0){
-document.getElementById("form-username").disabled = true;
-document.getElementById("form-password").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
-}
-}
-          </script>
-          <style>
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
-}
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
-
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-}
-
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
-}
-
-/*---------------------------------------------*/
-a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-}
-
-a:focus {
-	outline: none !important;
-}
-
-a:hover {
-	text-decoration: none;
-  color: #6a7dfe;
-  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  color: -o-linear-gradient(left, #21d4fd, #b721ff);
-  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  color: linear-gradient(left, #21d4fd, #b721ff);
-}
-
-/*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
-}
-
-p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-}
-
-ul, li {
-	margin: 0px;
-	list-style-type: none;
-}
-
-
-/*---------------------------------------------*/
-input {
-	outline: none;
-	border: none;
-}
-
-textarea {
-  outline: none;
-  border: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
-input::-moz-placeholder { color: #adadad;}
-input:-ms-input-placeholder { color: #adadad;}
-
-textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
-textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
-
-/*---------------------------------------------*/
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
-.txt1 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  color: #666666;
-  line-height: 1.5;
-}
-
-.txt2 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  color: #333333;
-  line-height: 1.5;
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ login ]*/
-
-.limiter {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.container-login100 {
-  width: 100%;  
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  background: #f2f2f2;  
-}
-
-.wrap-login100 {
-  width: 390px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 77px 55px 33px 55px;
-
-  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-
-/*------------------------------------------------------------------
-[ Form ]*/
-
-.login100-form {
-  width: 100%;
-}
-
-.login100-form-title {
-  display: block;
-  font-family: Poppins-Bold;
-  font-size: 30px;
-  color: #333333;
-  line-height: 1.2;
-  text-align: center;
-}
-.login100-form-title i {
-  font-size: 60px;
-}
-
-/*------------------------------------------------------------------
-[ Input ]*/
-
-.wrap-input100 {
-  width: 100%;
-  position: relative;
-  border-bottom: 2px solid #adadad;
-  margin-bottom: 37px;
-}
-
-.input100 {
-  font-family: Poppins-Regular;
-  font-size: 15px;
-  color: #555555;
-  line-height: 1.2;
-
-  display: block;
-  width: 100%;
-  height: 45px;
-  background: transparent;
-  padding: 0 5px;
-}
-
-/*---------------------------------------------*/ 
-.focus-input100 {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.focus-input100::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-
-  background: #6a7dfe;
-  background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  background: -o-linear-gradient(left, #21d4fd, #b721ff);
-  background: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  background: linear-gradient(left, #21d4fd, #b721ff);
-}
-
-.focus-input100::after {
-  font-family: Poppins-Regular;
-  font-size: 15px;
-  color: #999999;
-  line-height: 1.2;
-
-  content: attr(data-placeholder);
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  padding-left: 5px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.input100:focus + .focus-input100::after {
-  top: -15px;
-}
-
-.input100:focus + .focus-input100::before {
-  width: 100%;
-}
-
-.has-val.input100 + .focus-input100::after {
-  top: -15px;
-}
-
-.has-val.input100 + .focus-input100::before {
-  width: 100%;
-}
-
-/*---------------------------------------------*/
-.btn-show-pass {
-  font-size: 15px;
-  color: #999999;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  padding-right: 5px;
-  cursor: pointer;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.btn-show-pass:hover {
-  color: #6a7dfe;
-  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  color: -o-linear-gradient(left, #21d4fd, #b721ff);
-  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  color: linear-gradient(left, #21d4fd, #b721ff);
-}
-
-.btn-show-pass.active {
-  color: #6a7dfe;
-  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  color: -o-linear-gradient(left, #21d4fd, #b721ff);
-  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  color: linear-gradient(left, #21d4fd, #b721ff);
-}
-
-
-
-/*------------------------------------------------------------------
-[ Button ]*/
-.container-login100-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 13px;
-}
-
-.wrap-login100-form-btn {
-  width: 100%;
-  display: block;
-  position: relative;
-  z-index: 1;
-  border-radius: 25px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.login100-form-bgbtn {
-  position: absolute;
-  z-index: -1;
-  width: 300%;
-  height: 100%;
-  background: #a64bf4;
-  background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: -o-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: -moz-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  top: 0;
-  left: -100%;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.login100-form-btn {
-  font-family: Poppins-Medium;
-  font-size: 15px;
-  color: #fff;
-  line-height: 1.2;
-  text-transform: uppercase;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  width: 100%;
-  height: 50px;
-}
-
-.wrap-login100-form-btn:hover .login100-form-bgbtn {
-  left: 0;
-}
-
-
-/*------------------------------------------------------------------
-[ Responsive ]*/
-
-@media (max-width: 576px) {
-  .wrap-login100 {
-    padding: 77px 15px 33px 15px;
-  }
-}
-
-
-
-/*------------------------------------------------------------------
-[ Alert validate ]*/
-
-.validate-input {
-  position: relative;
-}
-
-.alert-validate::before {
-  content: attr(data-validate);
-  position: absolute;
-  max-width: 70%;
-  background-color: #fff;
-  border: 1px solid #c80000;
-  border-radius: 2px;
-  padding: 4px 25px 4px 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 0px;
-  pointer-events: none;
-
-  font-family: Poppins-Regular;
-  color: #c80000;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: left;
-
-  visibility: hidden;
-  opacity: 0;
-
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-.alert-validate::after {
-  content: "\f06a";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: #c80000;
-
-  display: block;
-  position: absolute;
-  background-color: #fff;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 5px;
-}
-
-.alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-
-
-
-              </style>
-			  <style>
-.container-login100 {
- background-image: url("/background-login.jpg");
-background-repeat: no-repeat ;
-background-size: cover;
-}
-.wrap-login100 {
-    width: 390px;
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 77px 55px 33px 55px;
-
-    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 5px 13px 13px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-</style>
-    <nav class='navbar navbar-inverse '>
-<div class='container-fluid'>
-    
-<div class="navbar-header" style="float: left;">
-<a class="navbar-brand" href="/"><img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 0px;margin-right: 10px;" alt=""> Đoàn trường THPT Chuyên Biên Hoà Online | <p style="display: inline;">Đăng nhập</p></a>
-
-</div>
-<center>
-<a href="/"><i class="fas fa-arrow-left"></i> Quay lại trang chủ</a>
-<center>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</button>
-</div>
-<div class='collapse navbar-collapse' id='myNavbar'>
-<ul class='nav navbar-nav'>
-<li class=''><a href='https://tunganh03.github.io/doantruong-cbh/'>Trang chủ</a></li>
-<li class=''><a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		  <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/loivipham">Các lỗi vi phạm</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/thoikhoabieu">Thời khoá biểu</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/hocsinh">Học sinh</a>
-        </div></li>
-
-<li class=''><a href='/xephang'>Xếp hạng</a></li>
-<li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
-<li class='active'><a href='/baocao'>Báo cáo</a></li>
-<li class=''><a href='/lienhe'>Liên hệ</a></li>
-</ul>
-<ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
-<li class="dropdown order-1">
-                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" style="
-    margin-top: 8px;
-"><i class="fas fa-sign-in-alt"></i> Đăng nhập <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right mt-2">
-                       <li class="px-3 py-2" style="
-    height: 196px;
-    width: 240px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-">
-   <form class="form" role="form" action="welcome.php" method="POST">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Mật khẩu" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Quên mật khẩu?</a></small>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-</ul>
-</div>
-</div>
-</nav>
-
-
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100" style="padding-top: 60px;">
-				<form class="login100-form validate-form" action="authenticate.php" method="POST">
-					<span class="login100-form-title p-b-26">
-						Login to  <br> continue
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Tên đăng nhập"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<span class="btn-show-pass" onclick="myFunction2()">
-							<i class="zmdi zmdi-eye"></i>
-						</span>
-						<input class="input100" type="password" name="password" id="myInput">
-						<span class="focus-input100" data-placeholder="Mật khẩu"></span>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-                            
-							<button class="login100-form-btn">
-								Đăng nhập
-							</button>
-						</div>
-					</div>
-					<div class="text-center p-t-20">
-                        hoặc đăng nhập bằng...
-                    </div>
-<div class="text-center p-t-10"><div class="row" style="text-align: center;margin-left: 0px;margin-right: 30px;"><div class="col-12"><a type="button" href="#" class="col-1" style="color: rgb(221, 75, 57);"><i class="fab fa-2x fa-google-plus"></i></a> <a type="button" href="#" class="col-1" style="color: rgb(59, 89, 152);"><i class="fab fa-2x fa-facebook"></i></a>  <?php echo $output2; ?></div></div></div>
-					<script>
-					function myFunction2() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-					</script>
-				</form>
-				<center style="padding-top:20px;"><a href="register.html">Không có tài khoản? Đăng ký tại đây...</a></center>
-			</div>
-		</div>
-	</div>
-
-
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-        
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
-
-
-
-</div>
-      <footer class="footer">
-		<hr>
-		<div class="main-content" style="
-    margin-right: 15px;
-    margin-left: 15px;
-">
-    <div class="column">
-        <p>&copy; Đoàn trường Chuyên Biên Hoà</p>
-    </div>
-
-    <div class="column">
-        <p id="demo"></p>
-    </div>
-
-     <div class="column">
-        <p> Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
-    </div>
-</div>
+<head>
+  <?php
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
+$baocao = 'active';
+?>
 <style>
-.column {    
-    display: inline-block;
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
 }
 </style>
+</head>
+	<body class="loggedin">
+	<style>
+	.navtop {
+	background-color: #2f3947;
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: #eaebed;
+}
+body.loggedin {
+	background-color: #f3f4f7;
+}
+.content2 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.content2 h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+.content2 > p {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+}
+
+.content2 > p table td, .content2 > div table td {
+	padding: 5px;
+}
+.content2 > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+.content2 > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+@media only screen and (max-width: 790px) {
+.content2 {
+	width: auto;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.navtop {
+	width: 500px;
+	margin: 0 auto;
+
+
+}
+}
+
+
+	</style>
+  <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+?>
+		<div class="content2">
+			<h2>Hệ thống báo cáo dành cho xung kích</h2>
+			<p>Chào mừng, <?=$nam?>!<br>
+				
+			<?php
+			
+function rebuild_date( $format, $time = 0 )
+{
+    if ( ! $time ) $time = time();
+
+	$lang = array();
+	$lang['sun'] = 'CN';
+	$lang['mon'] = 'T2';
+	$lang['tue'] = 'T3';
+	$lang['wed'] = 'T4';
+	$lang['thu'] = 'T5';
+	$lang['fri'] = 'T6';
+	$lang['sat'] = 'T7';
+	$lang['sunday'] = 'Chủ nhật';
+	$lang['monday'] = 'Thứ hai';
+	$lang['tuesday'] = 'Thứ ba';
+	$lang['wednesday'] = 'Thứ tư';
+	$lang['thursday'] = 'Thứ năm';
+	$lang['friday'] = 'Thứ sáu';
+	$lang['saturday'] = 'Thứ bảy';
+	$lang['january'] = 'Tháng Một';
+	$lang['february'] = 'Tháng Hai';
+	$lang['march'] = 'Tháng Ba';
+	$lang['april'] = 'Tháng Tư';
+	$lang['may'] = 'Tháng Năm';
+	$lang['june'] = 'Tháng Sáu';
+	$lang['july'] = 'Tháng Bảy';
+	$lang['august'] = 'Tháng Tám';
+	$lang['september'] = 'Tháng Chín';
+	$lang['october'] = 'Tháng Mười';
+	$lang['november'] = 'Tháng M. một';
+	$lang['december'] = 'Tháng M. hai';
+	$lang['jan'] = 'T01';
+	$lang['feb'] = 'T02';
+	$lang['mar'] = 'T03';
+	$lang['apr'] = 'T04';
+	$lang['may2'] = 'T05';
+	$lang['jun'] = 'T06';
+	$lang['jul'] = 'T07';
+	$lang['aug'] = 'T08';
+	$lang['sep'] = 'T09';
+	$lang['oct'] = 'T10';
+	$lang['nov'] = 'T11';
+	$lang['dec'] = 'T12';
+
+    $format = str_replace( "r", "D, d M Y H:i:s O", $format );
+    $format = str_replace( array( "D", "M" ), array( "[D]", "[M]" ), $format );
+    $return = date( $format, $time );
+
+    $replaces = array(
+        '/\[Sun\](\W|$)/' => $lang['sun'] . "$1",
+        '/\[Mon\](\W|$)/' => $lang['mon'] . "$1",
+        '/\[Tue\](\W|$)/' => $lang['tue'] . "$1",
+        '/\[Wed\](\W|$)/' => $lang['wed'] . "$1",
+        '/\[Thu\](\W|$)/' => $lang['thu'] . "$1",
+        '/\[Fri\](\W|$)/' => $lang['fri'] . "$1",
+        '/\[Sat\](\W|$)/' => $lang['sat'] . "$1",
+        '/\[Jan\](\W|$)/' => $lang['jan'] . "$1",
+        '/\[Feb\](\W|$)/' => $lang['feb'] . "$1",
+        '/\[Mar\](\W|$)/' => $lang['mar'] . "$1",
+        '/\[Apr\](\W|$)/' => $lang['apr'] . "$1",
+        '/\[May\](\W|$)/' => $lang['may2'] . "$1",
+        '/\[Jun\](\W|$)/' => $lang['jun'] . "$1",
+        '/\[Jul\](\W|$)/' => $lang['jul'] . "$1",
+        '/\[Aug\](\W|$)/' => $lang['aug'] . "$1",
+        '/\[Sep\](\W|$)/' => $lang['sep'] . "$1",
+        '/\[Oct\](\W|$)/' => $lang['oct'] . "$1",
+        '/\[Nov\](\W|$)/' => $lang['nov'] . "$1",
+        '/\[Dec\](\W|$)/' => $lang['dec'] . "$1",
+        '/Sunday(\W|$)/' => $lang['sunday'] . "$1",
+        '/Monday(\W|$)/' => $lang['monday'] . "$1",
+        '/Tuesday(\W|$)/' => $lang['tuesday'] . "$1",
+        '/Wednesday(\W|$)/' => $lang['wednesday'] . "$1",
+        '/Thursday(\W|$)/' => $lang['thursday'] . "$1",
+        '/Friday(\W|$)/' => $lang['friday'] . "$1",
+        '/Saturday(\W|$)/' => $lang['saturday'] . "$1",
+        '/January(\W|$)/' => $lang['january'] . "$1",
+        '/February(\W|$)/' => $lang['february'] . "$1",
+        '/March(\W|$)/' => $lang['march'] . "$1",
+        '/April(\W|$)/' => $lang['april'] . "$1",
+        '/May(\W|$)/' => $lang['may'] . "$1",
+        '/June(\W|$)/' => $lang['june'] . "$1",
+        '/July(\W|$)/' => $lang['july'] . "$1",
+        '/August(\W|$)/' => $lang['august'] . "$1",
+        '/September(\W|$)/' => $lang['september'] . "$1",
+        '/October(\W|$)/' => $lang['october'] . "$1",
+        '/November(\W|$)/' => $lang['november'] . "$1",
+        '/December(\W|$)/' => $lang['december'] . "$1" );
+
+    return preg_replace( array_keys( $replaces ), array_values( $replaces ), $return );
+}
+
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+$contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
+ echo $contents;
+?>
+
+<style>
+/* Center the loader */
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #6495ED;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4); 
+  } 100%, 0% {
+    transform: scale(1.0); 
+  } 
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+ .Center { 
+            width:80px; 
+            height:80px; 
+            position: fixed; 
+            top: 60%; 
+            left: 55%; 
+            margin-top: -100px; 
+            margin-left: -100px; 
+        } 
+		.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<center>
+<div id="loader2">
+<h1 class="ml12">Đang tải báo cáo</h1>
 </div>
+</center>
+<div id="loader" class="sk-chase center" style="display:none">
+
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+</div>
+
+<div class="card card-warning animate-bottom" id="main2" style="display:none">
+    <h3>Báo cáo hằng ngày</h3>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form role="form" action="confirm.php" method="GET">
+                  
+				  
+
+				  
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Tên lớp</label>
+                        <select class="selectpicker form-control" data-live-search="true" name="lop">
+
+				  <optgroup label="Khối 12">
+						<option>12 Toán</option>
+						<option>12 Lý</option>
+						<option>12 Hoá</option>
+						<option>12 Sinh</option>
+						<option>12 Tin</option>
+						<option>12 Văn</option>
+						<option>12 Sử - Địa</option>
+						<option>12 Anh</option>
+						<option>12 Nga</option>
+				  </optgroup>
+				  <optgroup label="Khối 11">
+						<option>11 Toán</option>
+						<option>11 Lý</option>
+						<option>11 Hoá</option>
+						<option>11 Sinh</option>
+						<option>11 Tin</option>
+						<option>11 Văn</option>
+						<option>11 Sử - Địa</option>
+						<option>11 Anh</option>
+						<option>11 Nga</option>
+				  </optgroup>
+				  <optgroup label="Khối 10">
+						<option>10 Toán</option>
+						<option>10 Lý</option>
+						<option>10 Hoá</option>
+						<option>10 Sinh</option>
+						<option>10 Tin</option>
+						<option>10 Văn</option>
+						<option>10 Sử - Địa</option>
+						<option>10 Anh</option>
+						<option>10 Nga</option>
+				  </optgroup>
+
+				  <optgroup label="THCS">
+						<option>9A1</option>
+						<option>9A2</option>
+						<option>8A1</option>
+						<option>8A2</option>
+						<option>7A1</option>
+						<option>7A2</option>
+						<option>6A1</option>
+						<option>6A2</option>
+				  </optgroup>
+				  </select>
+                      </div>
+
+
+                    
+                      <!-- datearea -->
+<div class="form-group">
+<label><i class="fas fa-clock"></i> Thời gian báo cáo</label>
+<input class="form-control" id="disabledInput" name="date" type="text" placeholder="<?=rebuild_date('H:i l, d/m/Y' )?>" disabled>
+   </div>
+            
+                      <div class="form-group">
+                        <label><i class="fas fa-users"></i> Vắng</label>
+                        <input type="text" name="vang" class="form-control" placeholder="Để trống nếu đủ" value="">
+                      </div>
+
+
+                  <!-- input states -->
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="fas fa-quidditch"></i> Vệ sinh</label>
+                    <select class="form-control" name="vesinh">
+                          <option>Sạch</option>
+                          <option>Bẩn</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="fas fa-tshirt"></i> Đồng phục</label>
+                    <select class="form-control" name="dongphuc">
+                          <option>Đủ</option>
+                          <option>Thiếu</option>
+                        </select>
+                  </div>
+				  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Số lỗi vi phạm</label>
+                    <select class="form-control" name="soloi" id="selectBox" onchange="changeFunc();">
+                          <option>1</option>
+                          <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+                        </select>
+                  </div>
+				<div id="error_fileds">
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 1</label>
+					<input type="text" name="loivipham1" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example2" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 2</label>
+					<input type="text" name="loivipham2" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example3" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 3</label>
+					<input type="text" name="loivipham3" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example4" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 4</label>
+					<input type="text" name="loivipham4" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <div class="form-group example5" style="display:none">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 5</label>
+					<input type="text" name="loivipham5" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+				  </div>
+				  <a  data-toggle="modal" data-target="#exampleModal">Xem danh sách đầy đủ các lỗi vi phạm...</a>
+				</div>
+
+				
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tra cứu lỗi vi phạm</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<p>1. Đi muộn (Trừ 1 điểm)<br />
+2. Đi muộn (bỏ chạy) (-10 điểm)<br />
+3. Đi muộn sau 7 giờ (-15 điểm)<br />
+4. Đi muộn trèo tường (-10 điểm)<br />
+5. Vắng mặt không lí do giờ truy bài (-2 điểm)<br />
+6. Ra ngoài giờ truy bài (bỏ chạy) (-10 điểm)<br />
+7. Không đúng trang phục: áo,phù hiệu,giày (-1 điểm)<br />
+8. Tập trung muộn (-5 điểm)<br />
+9. Nghỉ không phép, làm việc riêng trong giờ tập trung (-1 điểm)<br />
+10. Tập trung muộn, sau 10 phút xếp hàng chưa ngay ngắn (-10 điểm)<br />
+11. Mất trật tự trong buổi tập trung (-5 điểm)<br />
+12. Không cất ghế sau giờ tập trung (-1 điểm)<br />
+13. Nói bậy (-2 điểm)<br />
+14. Ăn quà không đúng nơi quy định (-2 điểm)<br />
+15. Hút thuốc lá trong trường (-5 điểm)<br />
+16. Không dừng xe ở cổng trường (-5 điểm)<br />
+17. Không dừng xe ở cổng trường khi đã nhắc nhở (-10 điểm)<br />
+18. Không đội mũ bảo hiểm (-10 điểm)<br />
+19. Vô lễ với cán bộ giáo viên (-50 điểm)<br />
+20. Xả, đổ rác không đúng nơi quy định (-2 điểm)<br />
+21. Trực nhật muộn, đổ rác muộn (-1 điểm)<br />
+22. Không lấy sổ đầu bài sáng thứ 2 (-5 điểm)<br />
+23. Trực nhật bẩn, không trực khu vực (-2 điểm)<br />
+24. Để xe không đúng nơi quy định (-2 điểm)<br />
+25. Khu vực để xe lộn xộn, không ngăn nắp (-5 điểm)<br />
+26. Không đóng cửa tắt điện sau giờ học (-2 điểm)<br />
+27. Sử dụng nhà vệ sinh không đúng cách (-2 điểm)<br />
+28. Làm vỡ cửa kính (-5 điểm)<br />
+29. Đá bóng không đúng nơi quy định (-2 điểm)<br />
+30. Sử dụng không đúng khu vực vệ sinh cho phép (-5 điểm)<br />
+31. Đánh nhau (-50 điểm)<br />
+32. Đánh nhau không khai báo thành khẩn (-80 điểm)<br />
+33. Vi phạm ATGT (có báo cáo về trường) (-20 điểm)<br />
+34. Vi phạm quy chế thi (-10 điểm)<br />
+35. Giờ tự quản ồn, học sinh ra ngoài, ảnh hưởng đến lớp khác (-10 điểm)<br />
+36. Cán bộ lớp, BCH chi đoàn đến họp muộn (-3 điểm)<br />
+37. Cán bộ lớp, BCH chi đoàn vắng mặt không lí do (-5 điểm)<br />
+38. Cán bộ lớp, BCH chi đoàn không hoàn thành nhiệm vụ (-10 điểm)<br />
+39. Xung kích không thực hiện nhiệm vụ (-1 điểm)<br />
+40. Đội văn nghệ không thực hiện nhiệm vụ (-2 điểm)<br />
+41. Lớp trực tuần bỏ buổi trực (-10 điểm)<br />
+42. Lớp trực tuần xuống trực cổng muộn (-5 điểm)<br />
+43. Lớp trực tuần chuẩn bị không tốt cho buổi tập trung (-10 điểm)<br />
+44. Đội mũ bảo hiểm không cài quai (-5 điểm)<br />
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var error = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  prefetch: 'js/cacloi.json'
+});
+error.initialize();
+
+$('.tagsinput').tagsinput({
+	maxTags: 1,
+itemValue: 'value',
+  itemText: 'text',
+  typeaheadjs: {
+    name: 'error',
+    displayKey: 'text',
+    source: error.ttAdapter()
+  }
+});
+function changeFunc() {
+    var selectBox = document.getElementById("selectBox");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    if (selectedValue == 1){
+		document.querySelector(".example2").style.display = "none";
+		document.querySelector(".example3").style.display = "none";
+		document.querySelector(".example4").style.display = "none";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 2){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "none";
+		document.querySelector(".example4").style.display = "none";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 3){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "block";
+		document.querySelector(".example4").style.display = "none";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 4){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "block";
+		document.querySelector(".example4").style.display = "block";
+		document.querySelector(".example5").style.display = "none";
+	}
+	if (selectedValue == 5){
+		document.querySelector(".example2").style.display = "block";
+		document.querySelector(".example3").style.display = "block";
+		document.querySelector(".example4").style.display = "block";
+		document.querySelector(".example5").style.display = "block";
+	}
+   }
+</script>
+                  <div class="row">
+                    <div class="col-sm-6" style="
+    left: 18px;
+">
+                    </div>
+                  </div>
+                  </div>
+				  <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2""><i class="fas fa-paper-plane"></i> Gửi báo cáo</button>
+				</form>
+                
+				<button style="float:right" type="button" class="btn btn-danger" onClick="window.location.reload();"><i class="fas fa-redo-alt"></i> Tải lại</button>
+			  </div>
 <script>
 
-function myFunction() {
-  var d = new Date();
-  var n = d.getFullYear();
-  document.getElementById("demo").innerHTML = n + ".";
-}
-myFunction()
+var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3300);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loader2").style.display = "none";
+  document.getElementById("main2").style.display = "block";
+}
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 500,
+    delay: (el, i) => 50 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 500,
+    delay: (el, i) => 50 + 30 * i
+  });
 </script>
-      </footer>
-      <!-- Bootstrap nhân JavaScript
-    ================================================== -->
-    <!-- Đặt ở cuối mã trang web để trang tải nhanh hơn -->
-    <!-- IE10 viewport hack cho Surface/bug máy tính bàn Windows 8 -->
-    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="//code.tidio.co/xk9nqvz3a3dzutblmspl6ct5spdbueji.js"> </script>
-  </body>
+<br>
+
+	</body>
 </html>

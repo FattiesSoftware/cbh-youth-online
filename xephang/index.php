@@ -1,11 +1,9 @@
 <?php
 
 	session_start();
-	// Include GitHub API config file
-require_once 'gitConfig.php';
-
-// Include and initialize user class
-require_once 'user.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 $user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
@@ -22,8 +20,9 @@ $PROP = 'block';
 	$IN = 'none';
 	$OUT = 'block';
 }
-require "include/header.php";
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 ?>
 <html>
 <head>
@@ -35,10 +34,7 @@ require "include/header.php";
 	<?php include("header.php"); 
 	$i=1;
 	$baocao=array();
-// tạo connection
-	
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	$con = new mysqli($servername, $username, $password, $dbname);
+
 
 	?>
 </body>

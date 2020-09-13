@@ -1,20 +1,11 @@
 <?php
 error_reporting(0);
 ini_set('display_errors', 0);
-	require('connect.php');
+
 session_start();
-
-
-
-	// Include GitHub API config file
-
-require_once 'gitConfig.php';
-
-
-
-// Include and initialize user class
-
-require_once 'user.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 
 $user = new User();
 
@@ -108,9 +99,9 @@ $OUT1 = 'none';
 
 }
 $loa = 'active';
-		require('include/header.php');
-		require('include/navbar.php');
-		require('include/style.php');
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 ?>
 
 <html>
@@ -118,11 +109,48 @@ $loa = 'active';
 	
 </head>
 <body>
+<style type="text/css">
+	
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+.content h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+.content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+}
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+@media only screen and (max-width: 790px) {
+.content {
+	width: auto;
+	margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
 
-	<div class="content" style="
-    margin-left: 183px;
-    margin-right: 183px;
-">
+}
+}
+</style>
+	<div class="content">
 
 	<?php
 		$conn=mysqli_connect('localhost','root','','members');
@@ -174,19 +202,8 @@ $loa = 'active';
 		
 
 	?>
-	
-	</div>
-</body>
-</html>
-
-<hr style="
-    margin-left: 183px;
-    margin-right: 183px;
-">
-<footer class="footer" style="
-    margin-left: 183px;
-
-">
+	<hr>
+<footer class="footer">
 
     <div class="column">
         <p>&copy; Đoàn trường Chuyên Biên Hoà</p>
@@ -216,3 +233,7 @@ myFunction()
 </script>
       
       </footer>
+	</div>
+</body>
+</html>
+

@@ -2,18 +2,11 @@
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // Include GitHub API config file
-require_once 'gitConfig.php';
-
-// Include and initialize user class
-require_once 'User.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 $user = new User();
-// Change this to your connection info.
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'members';
-// Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+
 if(isset($accessToken)){
 	   // Get the user profile info from Github
     $gitUser = $gitClient->apiRequest($accessToken);

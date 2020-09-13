@@ -1,11 +1,9 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
-// Include GitHub API config file
-require_once 'gitConfig.php';
-
-// Include and initialize user class
-require_once 'user.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 $user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
@@ -18,18 +16,7 @@ if (!isset($_SESSION['loggedin'])) {
 	$IN = 'none';
 	$OUT = 'block';
 
-// Create connection
 
-    //$servername = 'sql102.epizy.com';
-    //$username = 'epiz_25309528';
-    //$password = 'FwYnaoyKsmQeVo';
-    //$dbname = 'epiz_25309528_fattiesSoftware';
-	$servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'members';
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    mysqli_set_charset($conn, 'UTF8');
 // Check connection
 
     if ($conn->connect_error) {
@@ -86,7 +73,7 @@ if(isset($accessToken)){
 	$OUT = 'block';
 	$nam = $userData['name'];
 }
-require "include/header.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
 ?>
 
 
@@ -164,8 +151,8 @@ body.loggedin {
 
 <?php
 $loa = 'active';
-require "include/navbar.php";
-require "include/style.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 
 
 
@@ -285,9 +272,7 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 			<tr> 
 					<td width="40px;"><span>ID</span> </td>
 					<td width="400px;" style="text-align: left" > Tên ghi âm </td>
-					<td width="80px;" style="text-align: center" > Lượt xem </td>
-					<td width="80px;" style="text-align: center" > Người đăng </td>
-					<td width="80px;" style="text-align: center" > Ngày đăng </td>
+					
 			</tr>
 	</thead>
 
@@ -309,11 +294,7 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 
 <?php
 error_reporting(0);
-$servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'members';
-	$conn = new mysqli($servername, $username, $password, $dbname);
+require $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
     mysqli_set_charset($conn, 'UTF8');
 	if ($conn->connect_error) {
 			die("kết nối thất bại " . $conn->connect_error);
@@ -329,19 +310,26 @@ $servername = 'localhost';
 			$id=$row['audio_id'];
 			$name = $row['filename'];
 			echo "<tr>";
-			echo "<td>".$row['audio_id']."</td>";
-			echo "<td style='text-align:left;'><a href='play.php?name=$name'>".$row['audio_name']."</a></td>";
-			echo "<td style='text-align:center;'>".$row['view']."</td>";
 			$query_u = "SELECT id FROM accounts WHERE username='".$row['audio_creator']."'";
 			$results_u = mysqli_query($conn, $query_u);
 			$i=0;
 while($row_u = $results_u->fetch_assoc()) {
 			if($i==0) $user_id=1000;
 			$user_id = $row_u['id'];
-			echo "<td style='text-align:center;'><a href='/profile.php?id=$user_id'>".$row['audio_creator']."</a></td>";
-			$get_date=$row['date'];
-			echo "<td style='text-align:center;'><a href='index.php?date=$get_date'>".$row['date']."</a></td>";
+			$get_date = $row['date'];
+			echo "<td class='bang'>".$row['audio_id']."</td>";
+			echo "<td style='text-align:left;'><a style='font-size:16px' href='play.php?name=$name'>".$row['audio_name']."</a>
+<br><a style='color:gray;display:inline' id='bang2' href='/profile.php?id=$user_id'>".$row['audio_creator']." <i id='tunganh".$id."'  data-toggle='tooltip' title='Tài khoản đã xác minh' style='color:#07f;font-size:11px;display:none' class='fas fa-check-circle'></i>, </a><a href='index.php?date=$get_date' id='concu".$id."' style='display:inline;color:#d3c8cb;'>".$row['date']."</a>
+			</td>";
+			echo "<td  width='130px;' style='text-align:right;'><i class='fas fa-eye'></i> ".$row['view']."<br><p style='float:right;color: gray' id='concac".$id."'></p></td>";
+
+			
 			echo "</tr>";
+			$loop1 = "document.getElementById('concac".$id."').innerHTML =moment('".$get_date."', 'YYYY-MM-DD h:m:s').fromNow();";
+			echo "<script>moment.locale('vi');";
+			echo $loop1;
+			echo '</script>';
+
 }
     }
 }else {
@@ -421,7 +409,7 @@ sortTable()
 </p>
 </center>
 <?php
-	require "include/footer.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/footer.php';
 	?>
 </div>
 </body>

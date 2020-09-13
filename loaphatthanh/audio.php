@@ -1,10 +1,8 @@
 <?php
 	session_start();
-	require('connect.php');
-	require_once 'gitConfig.php';
-
-// Include and initialize user class
-require_once 'user.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 $user = new User();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
@@ -12,7 +10,7 @@ if (!isset($_SESSION['loggedin'])) {
 	$PROP = 'none';
 	$OUT = 'none';
 
-header('location: /baocao/index.php');
+header('location: /login');
 
 
 } else {
@@ -21,18 +19,7 @@ header('location: /baocao/index.php');
 	$IN = 'none';
 	$OUT = 'block';
 
-// Create connection
 
-    //$servername = 'sql102.epizy.com';
-    //$username = 'epiz_25309528';
-    //$password = 'FwYnaoyKsmQeVo';
-    //$dbname = 'epiz_25309528_fattiesSoftware';
-	$servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'members';
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    mysqli_set_charset($conn, 'UTF8');
 // Check connection
 
     if ($conn->connect_error) {
@@ -180,7 +167,8 @@ input[type=submit] {
 			$errors[]='Phần mở rộng của file không hợp lệ';
 		}
 		if(empty($errors)){
-			$date=date("Y-m-d");
+			date_default_timezone_set('Asia/Ho_Chi_Minh');
+				$date=date("Y-m-d H:i:s");
 			$dir='uploads/';
 			$audio_path=$dir.basename($_FILES['audioFile']['name']);
 		

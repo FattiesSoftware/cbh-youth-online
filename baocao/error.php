@@ -2,10 +2,9 @@
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // Include GitHub API config file
-require_once 'gitConfig.php';
-
-// Include and initialize user class
-require_once 'user.class.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 $user = new User();
 // If the user is not logged in redirect to the login page...
 
@@ -118,8 +117,8 @@ if ($error == 11) { // nếu id = 11
 <html>
 <head>
   <?php
-require "include/header.php";
-require "include/style.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 $baocao = 'active';
 ?>
 <style>
@@ -250,7 +249,7 @@ body.loggedin {
 
 	</style>
   <?php
-require "include/navbar.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
 ?>
 <div style="margin-left: 50px">		
   <h2>Đã có lỗi xảy ra!</h2>

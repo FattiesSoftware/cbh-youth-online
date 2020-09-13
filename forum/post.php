@@ -1,19 +1,18 @@
+<!-- Project name: CBH Youth Online (Đoàn trường THPT Chuyên Biên Hoà Online)
+   Project link: https://youth.fattiesoftware.com/
+   Created by Fatties Software 2020
+   Team members:
+   - Duong Tung Anh (CEO/Founder - C4K60 Bien Hoa Gifted High School) | https://fb.me/tunnaduong
+   - Hoang Phat (Co-Founder/Lead Developer - A1K60 Bien Hoa Gifted High School) | https://fb.me/hoangphathandsome
+   All rights reserved 
+-->
 <?php
 
 	session_start();
-
-	require('connect.php');
-
-	// Include GitHub API config file
-
-require_once 'gitConfig.php';
-
-
-
-// Include and initialize user class
-
-require_once 'user.class.php';
-
+/////////////////////////////////////////////
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/githubConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/require/github.user.class.php';
 $user = new User();
 
 
@@ -90,7 +89,7 @@ $OUT1 = 'none';
 
 } else {
 
-header('location: /baocao/index.php');
+header('location: /login');
 
 }
 
@@ -110,9 +109,9 @@ header('location: /baocao/index.php');
 
 }
 $diendan = 'active';
-require "include/header.php";
-require "include/navbar.php";
-require "include/style.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 
 ?>
 
@@ -254,9 +253,25 @@ input[type=submit] {
     <input type="text" id="text" name="topic_name" class="form-control form-control-lg" onkeyup="myFunction()">
 
   </div>
+<div class="form-group">
+                        <label>Chuyên mục</label>
+                        <div class="dropdown bootstrap-select form-control bs3"><select class="selectpicker form-control" data-live-search="true" name="chuyenmuc" tabindex="-98">
 
+          <optgroup label="Học tập">
+            <option value="hoctap">Học tập</option>
+          </optgroup>
+          <optgroup label="Giải trí">
+            <option value="giaitri">Giải trí</option>
+
+          </optgroup>
+          <optgroup label="Khác">
+            <option value="timdo">Tìm đồ thất lạc</option>
+
+          </optgroup>
+          </select>
+                      </div>
 			<div class="form-group">
-
+<br>
     <label for="exampleFormControlTextarea1">Nội dung bài viết</label>
 
 <textarea name="content" id="text2" onkeyup="myFunction()"></textarea>
@@ -274,10 +289,10 @@ document.getElementById("confirm").style.display = "block";
 			<button type="button" id="confirm" class="btn btn-warning" onclick="return validate_text();"><i class="fas fa-check-circle"></i> Xác nhận đăng</button>
 			<input type="submit" id="submitbutton" name="submit" style="display: none;" value="Đăng bài viết">
 
-
+<!--Thuật toán chặn các từ ngữ tục tĩu-->
 <script>
-	// Enter the words to be filtered in the line below:
-var swear_words_arr=new Array("địt","lồn","cặc","buồi","cứt","chó","vãi","địt mẹ","chim","bướm","dái","vcl","đcm","đkm","dm","đm","dkm","dcm","cl","clgt");
+	// Các từ sẽ bị chặn ở dòng dưới
+var swear_words_arr=new Array("địt","lồn","cặc","buồi","cứt","chó","vãi","địt mẹ","chim","bướm","dái","vcl","đcm","đkm","đm","dkm","dcm","clgt");
 
 var swear_alert_arr=new Array;
 var swear_alert_count=0;
@@ -352,10 +367,10 @@ $content_m = nl2br($str);
 	if(isset($_POST['submit'])){
 
 		$topic_name= mysqli_real_escape_string($db, $_POST['topic_name']);
-
+    $cat = $_POST['chuyenmuc'];
 		$content = mysqli_real_escape_string($db, $content_m);
-
-		$date=date("Y-m-d");
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+		$date=date("Y-m-d H:i:s");
 
 		if(isset($_POST['submit'])){
 			if($topic_name&&$content)
@@ -364,9 +379,9 @@ $content_m = nl2br($str);
 
 				if(strlen($topic_name)>=10){
 
-					$query = "INSERT INTO topics (topic_name, topic_content, topic_creator, date) 
+					$query = "INSERT INTO topics (topic_name, topic_content, topic_creator, date, category) 
 
-								VALUES('$topic_name', '$content', '".$usen."', '$date')";
+								VALUES('$topic_name', '$content', '".$usen."', '$date', '$cat')";
 
 					mysqli_query($db, $query);
 

@@ -1,5 +1,5 @@
 <?php
-	require('connect.php');
+
 	if(@$_SESSION['username']){
 		
 ?>
