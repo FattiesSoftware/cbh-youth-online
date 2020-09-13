@@ -150,13 +150,13 @@ require "include/header.php";
     padding-top: 0px;
     padding-right: 0px;
 ">
-<div style="float: left;margin-top: 4px;margin-left: 5px;">
+<div style="float: left;margin-top: 4px;margin-left: 4px;">
 	<b>
 <i class="fas fa-volume-up"></i> Thông báo |</b>
 
 </div>
 <div style="float: right;margin-top: 4px;">
-		<marquee class="marq" width="100%" direction="left" style="width: 694px;">
+		<marquee class="marq" width="100%" direction="left">
 KỲ THI TỐT NGHIỆP THPT QUỐC GIA 2020 CHÍNH THỨC DIỄN RA   •   Thông báo về việc tập trung học sinh trúng tuyển vào lớp 10 năm học 2020-2021
 </marquee>
 </div>
