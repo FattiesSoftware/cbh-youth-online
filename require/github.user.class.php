@@ -9,10 +9,10 @@
  * Handles database related works
  */
 class User {
-    private $dbHost     = "localhost";
-    private $dbUsername = "root";
-    private $dbPassword = "";
-    private $dbName     = "members";
+    private $dbHost     = "us-cdbr-east-06.cleardb.net";
+    private $dbUsername = "b3861ad067f78e";
+    private $dbPassword = "b5660ec4";
+    private $dbName     = "heroku_e6de54bb91c7b51";
     private $userTbl    = 'accounts';
     
     function __construct(){
