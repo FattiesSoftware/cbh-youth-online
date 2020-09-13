@@ -156,7 +156,7 @@ require "include/header.php";
 
 </div>
 <div style="float: right;margin-top: 4px;">
-		<marquee class="marq" width="100%" direction="left">
+		<marquee class="marq" width="100%" direction="left" style="width: 694px;">
 KỲ THI TỐT NGHIỆP THPT QUỐC GIA 2020 CHÍNH THỨC DIỄN RA   •   Thông báo về việc tập trung học sinh trúng tuyển vào lớp 10 năm học 2020-2021
 </marquee>
 </div>
