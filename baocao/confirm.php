@@ -1359,47 +1359,10 @@ input[type=submit] {
     user-select: none;
 }
 	</style>
-	<nav class='navbar navbar-inverse '>
-<div class='container-fluid'>
-<div class='navbar-header'>
-<img src="/cbh.png" style="width: 40px;height: 40px;margin-top: 5px;margin-right: 5px;" alt="">
-<button class='navbar-toggle' data-target='#myNavbar' data-toggle='collapse' type='button'>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-<span class='icon-bar'></span>
-</button>
-</div>
-<div class='collapse navbar-collapse' id='myNavbar'>
-<ul class='nav navbar-nav'>
-<li class=''><a href='/'>Trang chủ</a></li>
-<li class=''><a href='/forum'>Diễn đàn</a></li>
-<li class=''><a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href='/tracuu'>Tra cứu</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		  <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/loivipham">Các lỗi vi phạm</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/thoikhoabieu">Thời khoá biểu</a><br>
-          <a class="dropdown-item " style="
-    margin-left: 10px;
-" href="/hocsinh">Học sinh</a>
-        </div></li>
-<li class=''><a href='/xephang'>Xếp hạng</a></li>
-<li class=''><a href='/hoatdong'>Hoạt động/Sự kiện</a></li>
-<li class='active'><a href='/baocao'>Báo cáo</a></li>
-<li class=''><a href='/lienhe'>Liên hệ</a></li>
-</ul> 
-<ul class='nav navbar-nav navbar-right flex-row justify-content-between ml-auto'>
-<li id="profile" style="display:<?=$PROP?>">
-<a href="profile.php"><i class="fas fa-user-circle"></i> Trang cá nhân</a></li>
-<li class='' style="display:<?=$IN?>"><a href='/baocao'><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
-<li class='' style="display:<?=$OUT?>"><a href='/logout.php'><i class="fas fa-sign-in-alt"></i> Đăng xuất</a></li>
-
-</ul>
-
-</div>
-</div>
-</nav>
+<?php
+require $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
+?>
 <script>
 function myFunction2() {
 var str = document.getElementById("demo").innerHTML; 
@@ -1412,11 +1375,11 @@ myFunction2()
 </script>
 <?php
 
-$datee = rebuild_date('Y-m-d' );
+$datee = rebuild_date('Y-m-d H:i:s' );
 // Username doesnt exists, insert new account
-if ($stmt = $con->prepare('INSERT INTO baocao (class, xungkich, date, diem, absent, vesinh, dongphuc, maloi1, maloi2, maloi3, maloi4, maloi5) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')) {
+if ($stmt = $con->prepare('INSERT INTO baocao (class, xungkich, date, diem, absent, vesinh, dongphuc, tenloi1, tenloi2, tenloi3, tenloi4, tenloi5,maloi1,maloi2,maloi3,maloi4,maloi5) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,?)')) {
 	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
-	$stmt->bind_param('ssssssssssss', $lop, $usern, $datee, $tongdiem, $vang, $vesinh, $dongphuc, $tenloi1, $tenloi2, $tenloi3, $tenloi4, $tenloi5);
+	$stmt->bind_param('sssssssssssssssss', $lop, $usern, $datee, $tongdiem, $vang, $vesinh, $dongphuc, $tenloi1, $tenloi2, $tenloi3, $tenloi4, $tenloi5, $loivipham1, $loivipham2,$loivipham3,$loivipham4,$loivipham5);
 	$stmt->execute();
 	$message = 'Gửi báo cáo thành công!';
 } else {

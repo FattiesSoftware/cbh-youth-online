@@ -153,7 +153,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 	<div class="content">
 
 	<?php
-		require_once $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
+		$conn=mysqli_connect('localhost','root','','members');
 		if($_GET["name"]){
 			
 			$query = "SELECT * FROM audios WHERE filename='".$_GET['name']."'";

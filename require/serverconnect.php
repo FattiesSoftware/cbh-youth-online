@@ -11,10 +11,10 @@
 // Bổ sung dòng `require('require/serverconnect.php');` ở các file cần kết nối với máy chủ
 // Chỉnh sửa thông tin máy chủ một lần duy nhất ở 4 dòng này
 ////////////////////////////////////////////
-$maychu = "us-cdbr-east-06.cleardb.net";
-$tendangnhap = "b3861ad067f78e";
-$matkhau = "b5660ec4";
-$tendb = "heroku_e6de54bb91c7b51";
+$maychu = "localhost";
+$tendangnhap = "root";
+$matkhau = "";
+$tendb = "members";
 	$db = mysqli_connect($maychu, $tendangnhap, $matkhau, $tendb);
 	$servername = $maychu;
 	$username = $tendangnhap;
