@@ -86,30 +86,6 @@ $PROP = 'block';
 	$OUT = 'block';
 }
 
-if ($error2==1) {
-	if(isset($accessToken)){
-	$error2 = $userData['oauth_uid'];
-		$none = 'none';
-$PROP = 'block';
-	$IN = 'none';
-	$OUT = 'block';
-	}
-}
-if ($error == 11) { // nếu id = 11
-		header('Location: admin/index.php'); // chuyển đến trang admin
-		
-} elseif ($error == 15) { // nếu id = 15
-	 // chuyển đến xung kích
-	 $nam = $_SESSION['name'];
-	 $none = $_SESSION['id'];
-} elseif ($error2 == 17230355) {// nếu id = 1
-	// chuyển đến xung kích
-	$nam = $userData['name'];
-} else {
-}
-	
-
-
 
 ?>
 
@@ -119,7 +95,6 @@ if ($error == 11) { // nếu id = 11
   <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
-$baocao = 'active';
 ?>
 <style>
 * {
@@ -160,6 +135,7 @@ $baocao = 'active';
 </style>
 </head>
 	<body class="loggedin">
+		
 	<style>
 	.navtop {
 	background-color: #2f3947;
@@ -230,6 +206,13 @@ body.loggedin {
 	padding: 5px;
 	margin: 0 0 10px 0;
 }
+
+.content {
+
+
+width: 50%;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 790px) {
 .content2 {
 	width: auto;
@@ -244,19 +227,31 @@ body.loggedin {
 
 
 }
+.content{
+	width: 50%;
+  margin: 0 auto;
 }
-
-
+}
 	</style>
   <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
 ?>
-<div style="margin-left: 50px">		
-  <h2>Đã có lỗi xảy ra!</h2>
-    <p>Bạn không có quyền truy cập vào trang này</p>
+<div class="content"  style="
+    width: 355px;
+">
+<div>		
+	<center style="
+    
+">
+<br>
+  <h1>Ôi, hỏng rồi...</h1>
+    <p>Bạn không có quyền truy cập vào trang này!</p>
+    <img src="/images/error.svg" style="width: 130px"><br><br>
     <button type="button" class="btn btn-info" onclick="window.history.back()"><i class="fas fa-arrow-circle-left"></i> Quay lại</button>
     <button type="button" class="btn btn-danger" onclick="location.href='/lienhe'"><i class="fas fa-headset"></i> Liên hệ trợ giúp</button>
+    </center>
     </div>
 
+</div>
 	</body>
 </html>

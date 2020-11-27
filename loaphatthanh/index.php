@@ -272,7 +272,7 @@ $contents = 'Bây giờ là: ' . rebuild_date('H:i l, d/m/Y' ) . '<br />';
 			<tr> 
 					<td width="40px;"><span>ID</span> </td>
 					<td width="400px;" style="text-align: left" > Tên ghi âm </td>
-					
+					<td></td>
 			</tr>
 	</thead>
 

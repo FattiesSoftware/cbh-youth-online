@@ -1,3 +1,26 @@
+
+body {
+  /* Location of the image */
+  background-image: url(images/bienhoa11.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
 .logo{
     width: 500px;
 }
@@ -53,22 +76,45 @@ background-size: cover;
 box-shadow:inset 0 0 100px rgba(0,0,0,0.5);
 position:relative
 }
-.marq{
-    width: 696px;
+.container {
+  overflow: hidden;
+  position: relative;
+  width:680px;
 }
-.containerbg {
-width: 800px;
-padding: 27px;
-background-color: rgba(0,0,0,.6);
-border-radius: 10px;
-position: absolute;
-top: 70px;
-left: 48%;
-margin-left: -384px;
-color: #fff;
-padding-top: 24px;
-top: 292px;
+
+.container::before {
+  content: '\00a0';
 }
+
+.scrolling {
+  animation: marquee 15s linear infinite;
+  display: block;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+}
+
+.scrolling:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
+.concu{
+    width: 683px;
+}
+.containerbg {width: 800px;padding: 27px;background-color: rgba(0,0,0,.6);border-radius: 10px;position: absolute;top: 70px;left: 48%;margin-left: -384px;color: #fff;padding-top: 24px;top: 292px;}
 .containerbg2 {
 width: 800px;
 padding: 27px;
@@ -96,7 +142,7 @@ padding-top: 24px;
 margin-top: 0px;
 }
 .logo{
-	width: 550px;
+  width: 550px;
 }
 
 #wrappernbt{position:relative;width:100%;margin:auto}
@@ -119,14 +165,20 @@ padding-bottom: 20px;
 padding-left: 0px;
 }
 @media screen and (max-width: 768px){
-.marq{
-width: 246px;
+.container {
+  overflow: hidden;
+  position: relative;
+  width:225px;
 }
+#concu{
+    width:225px;
+}
+
 .containerbg {
 text-align:left;
 width: 350px;
 padding: 15px;
-left: 96%;
+left: 92%;
 margin-left: -334px;
 top: 140px;
 margin-top: 101px;
@@ -136,24 +188,24 @@ text-align:center;
 width: 350px;
 padding: 15px;
 top: 70px;
-left: 96%;
 margin-left: -334px;
 margin-top: 0px;
+left: 92%;
 }
 .containerbg3 {
 text-align:center;
 width: 350px;
 padding: 15px;
 top: 70px;
-left: 96%;
+left: 92%;
 margin-left: -334px;
 margin-top: 0px;
 }
 .logo{
-	width:315px;
+  width:315px;
 }
 .logo2{
-	margin-left: 10px;
+  margin-left: 10px;
 }
 .container {
 

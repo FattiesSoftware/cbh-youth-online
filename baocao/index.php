@@ -69,13 +69,12 @@ $PROP = 'none';
 	$OUT = 'none';
 }
 
-
 $error2 = 1;
 if (!isset($_SESSION['loggedin'])) {	
 $error = '';
 
+
 } else {
-$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
 	$none = 'none';
 $PROP = 'block';
 	$IN = 'none';
@@ -91,20 +90,27 @@ $PROP = 'block';
 	$OUT = 'block';
 	}
 }
-if ($error == 11) { // nếu id = 11
-		header('Location: admin/index.php'); // chuyển đến trang admin
-		
-} elseif ($error == 15) { // nếu id = 15
+if (isset($_SESSION['loggedin'])){
+ if ($_SESSION['permission'] == 'xungkich') { // nếu id = 15
 	 // chuyển đến xung kích
 	 $nam = $_SESSION['name'];
 	 $none = $_SESSION['id'];
-} elseif ($error2 == 17230355) {// nếu id = 1
+
+} elseif ($_SESSION['permission'] == 'admin') {
+// chuyển đến xung kích
+   $nam = $_SESSION['name'];
+   $none = $_SESSION['id'];
+
+}elseif ($_SESSION['oauth'] == 'github') {// nếu id = 1
 	// chuyển đến xung kích
 	$nam = $userData['name'];
 } else {
 	 header('Location: error.php');
 }
 	
+} else {
+  header('Location: /login/index.php');
+}
 
 
 
@@ -239,8 +245,9 @@ body.loggedin {
 .navtop {
 	width: 500px;
 	margin: 0 auto;
-
-
+}
+#loader2 {
+  zoom: 0.6;
 }
 }
 
@@ -454,7 +461,7 @@ input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
 </head>
 <body onload="myFunction()" style="margin:0;">
 <center>
-<div id="loader2">
+<div id="loader2" style=''>
 <h1 class="ml12">Đang tải báo cáo</h1>
 </div>
 </center>
@@ -467,21 +474,24 @@ input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
   <div class="sk-chase-dot"></div>
   <div class="sk-chase-dot"></div>
 </div>
-
+<style type="text/css">
+  .bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: #e42626;
+}
+</style>
 <div class="card card-warning animate-bottom" id="main2" style="display:none">
-    <h3>Báo cáo hằng ngày</h3>
+    <h3 style="
+    margin-left: 19px;
+    margin-top: 15px;
+">Báo cáo vi phạm tập thể lớp</h3>
               <!-- /.card-header -->
               <div class="card-body">
                 <form role="form" action="confirm.php" method="GET">
-                  
-				  
-
-				  
                       <!-- text input -->
                       <div class="form-group">
                         <label><i class="fas fa-map-marker-alt"></i> Tên lớp</label>
-                        <select class="selectpicker form-control" data-live-search="true" name="lop">
-
+                        <select class="form-control" id="my-select" data-live-search="true" name="lop">
 				  <optgroup label="Khối 12">
 						<option>12 Toán</option>
 						<option>12 Lý</option>
@@ -558,36 +568,10 @@ input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
                           <option>Thiếu</option>
                         </select>
                   </div>
-				  <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Số lỗi vi phạm</label>
-                    <select class="form-control" name="soloi" id="selectBox" onchange="changeFunc();">
-                          <option>1</option>
-                          <option>2</option>
-						  <option>3</option>
-						  <option>4</option>
-						  <option>5</option>
-                        </select>
-                  </div>
 				<div id="error_fileds">
                   <div class="form-group">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 1</label>
-					<input type="text" name="loivipham1" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
-				  </div>
-				  <div class="form-group example2" style="display:none">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 2</label>
-					<input type="text" name="loivipham2" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
-				  </div>
-				  <div class="form-group example3" style="display:none">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 3</label>
-					<input type="text" name="loivipham3" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
-				  </div>
-				  <div class="form-group example4" style="display:none">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 4</label>
-					<input type="text" name="loivipham4" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
-				  </div>
-				  <div class="form-group example5" style="display:none">
-                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm 5</label>
-					<input type="text" name="loivipham5" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput" placeholder="Nhập lỗi ..."/>
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Lỗi vi phạm</label>
+					<input type="text" name="loivipham" class="form-control is-invalid inputError tagsinput" id="inputError" value="" data-role="tagsinput"/>
 				  </div>
 				  <a  data-toggle="modal" data-target="#exampleModal">Xem danh sách đầy đủ các lỗi vi phạm...</a>
 				</div>
@@ -665,7 +649,6 @@ var error = new Bloodhound({
   prefetch: 'js/cacloi.json'
 });
 error.initialize();
-
 $('.tagsinput').tagsinput({
 	maxTags: 1,
 itemValue: 'value',
@@ -718,10 +701,13 @@ function changeFunc() {
                     </div>
                   </div>
                   </div>
-				  <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2""><i class="fas fa-paper-plane"></i> Gửi báo cáo</button>
+				  <button type="submit" class="btn btn-info" name="form_type" value="class" style="
+    margin-left: 21px;
+    margin-bottom: 17px;
+"><i class="fas fa-paper-plane"></i> Gửi báo cáo</button>
 				</form>
                 
-				<button style="float:right" type="button" class="btn btn-danger" onClick="window.location.reload();"><i class="fas fa-redo-alt"></i> Tải lại</button>
+				<button style="float:right;margin-right: 21px;" type="button" class="btn btn-danger" onClick="window.location.reload();"><i class="fas fa-redo-alt"></i> Tải lại</button>
 			  </div>
 <script>
 

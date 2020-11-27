@@ -33,6 +33,7 @@ if(isset($accessToken)){
 } 
 // File head của trang
 require "include/header.php";
+
 ?>
 <link rel="stylesheet" href="style.css">
 
@@ -139,54 +140,97 @@ require "include/header.php";
 				speed		: 2000,
 			});
 		});
+		
 	</script>
 
 <div>
 <center>
-	<div class='containerbg3' style="
+	<div class="containerbg3" style="
     margin-bottom: 27px;
     padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
     padding-right: 0px;
+    top: 64px;
+    height: 32px;
 ">
 <div style="float: left;margin-top: 4px;margin-left: 4px;">
 	<b>
 <i class="fas fa-volume-up"></i> Thông báo |</b>
 
 </div>
-<div style="float: right;margin-top: 4px;">
-		<marquee class="marq" width="100%" direction="left">
-KỲ THI TỐT NGHIỆP THPT QUỐC GIA 2020 CHÍNH THỨC DIỄN RA   •   Thông báo về việc tập trung học sinh trúng tuyển vào lớp 10 năm học 2020-2021
-</marquee>
+<div style="float: right;margin-top: 4px;" class="container" id="concu">
+		<div class="scrolling">
+<a href="https://tunnaduong.com" style="color:white">KỲ THI TỐT NGHIỆP THPT QUỐC GIA 2020 CHÍNH THỨC DIỄN RA</a>   •   <a href="https://tunnaduong.com" style="color:white">Thông báo về việc tập trung học sinh trúng tuyển vào lớp 10 năm học 2020-2021</a>
+</div>
 </div>
 	</div>
-	<div class='containerbg2' style="padding-top: 5px;padding-bottom: 15px;margin-top: 25px;top: 76px;">
-<img class="logo" src="/images/logo2.png"/>
+	<div class="containerbg2" style="padding-top: 5px;padding-bottom: 15px;margin-top: 25px;top: 76px;">
+<img class="logo" src="/images/logo3.png">
 </div>										  
 </center>
-<div class='containerbg sma'>
+<div class="containerbg sma">
 <big><b><i class="fas fa-question-circle"></i> Đây là gì?</b></big>
 <p>Chào mừng đến với cổng thông tin điện tử Đoàn trường Chuyên Biên Hoà!<br> Đây là nơi để tra cứu các thông tin, vấn đề liên quan đến Đoàn trường THPT Chuyên Biên Hoà.</p>
 <br>
+<p id="concc">
 <big><b><i class="fas fa-bolt"></i> Bạn có thể làm được gì với website này?</b></big>
 <br>- Tra cứu xếp hạng tháng
 <br>- Tra cứu thời khoá biểu
 <br>- Gửi tài liệu cần in ấn trực tuyến
-<br>- Biết được những sự kiện, hoạt động mới nhất của Đoàn trường THPT Chuyên Biên Hoà
-<br>- Có thể đóng góp ý kiến, phản hồi của mình trực tiếp với xung kích hoặc thầy cô giáo qua tính năng diễn đàn
 <br>Và còn nhiều hơn thế... Hãy tự mình khám phá nhé!
 </p>
-<br>
+<br id="concc">
+<style>
+#fatties{
+    color:white;
+}
+@media screen and (max-width: 768px){
+#concc{
+ display:none;   
+}
+}
+</style>
+<!-- Project name: CBH Youth Online (Đoàn trường THPT Chuyên Biên Hoà Online)
+   Project link: https://youth.fattiesoftware.com/
+   Created by Fatties Software 2020
+   Team members:
+   - Duong Tung Anh (CEO/Founder - C4K60 Bien Hoa Gifted High School) | https://fb.me/tunnaduong
+   - Hoang Phat (Co-Founder/Lead Developer - A1K60 Bien Hoa Gifted High School) | https://fb.me/hoangphathandsome
+   All rights reserved 
+-->
+<!--
+  Chân trang của dự án
+  Dạng bảng nhưng được hiển thị cùng dòng
+  -->
+<footer class="footer">
+    <div class="column">
+        <p>© Đoàn trường Chuyên Biên Hoà</p>
+    </div>
+    <div class="column">
+        <p id="demo">2020.</p>
+    </div>
+     <div class="column">
+        <p> Designed and developed with <i class="fas fa-heart"></i> by <a id="fatties" href="https://fattiesoftware.com/">Fatties Software</a></p>
+<style>
+.column {    
+    display: inline-block;
+}
+</style>
+</div>
+<!--Thuật toán lấy năm hiện tại kèm dấu chấm và hiển thị vào phần tử 'demo'-->
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = n + ".";
+}
+myFunction()
+</script>
+      </footer></div>
+</div>
+	
 <?php
-require "include/footer.php";
-?>
-</div>
-</div>
-	<?php
-$home = 'active';
 require "include/navbar.php";
 ?>
 
-</body>
-</html>

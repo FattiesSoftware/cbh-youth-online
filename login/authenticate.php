@@ -12,14 +12,14 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
 	die ('Please fill both the username and password field!');
 }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $con->prepare('SELECT id, password, email, name FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT id, password, email, name, permission, oauth_provider FROM accounts WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
 	// Store the result so we can check if the account exists in the database.
 	$stmt->store_result();
 	if ($stmt->num_rows > 0) {
-	$stmt->bind_result($id, $password, $email, $name);
+	$stmt->bind_result($id, $password, $email, $name, $permission, $oauth);
 	$stmt->fetch();
 	// Account exists, now we verify the password.
 	// Note: remember to use password_hash in your registration file to store the hashed passwords.
@@ -32,11 +32,13 @@ if ($stmt = $con->prepare('SELECT id, password, email, name FROM accounts WHERE 
 		$_SESSION['id'] = $id;
 		$_SESSION['email'] = $email;
 		$_SESSION['name'] = $name;
-		$error = $_SESSION['id']; // Biến mới tên là Error = id người dùng
-if ($error == 11) { // nếu id = 11
-		header('Location: /admin'); // chuyển đến trang admin
-		
-} elseif ($error == 15) { // nếu id = 15
+    $_SESSION['permission'] = $permission;
+    $_SESSION['oauth'] = $oauth;
+
+		if ($_SESSION['permission'] == 'admin') { // nếu id = 11
+    header('Location: /baocao/index.php'); // chuyển đến trang admin
+    
+} elseif ($_SESSION['permission'] == 'xungkich') { // nếu id = 15
 	header('Location: /baocao'); // chuyển đến xung kích
 } else {
 	header('Location: /forum'); // còn lại nếu không phải thì chuyển về forum
@@ -722,7 +724,7 @@ background-repeat: no-repeat ;
 <div class="text-center p-t-10"><div class="row" style="text-align: center;margin-left: 0px;margin-right: 30px;"><div class="col-12"><a type="button" href="#" class="col-1" style="color: rgb(221, 75, 57);"><i class="fab fa-2x fa-google-plus"></i></a> <a type="button" href="#" class="col-1" style="color: rgb(59, 89, 152);"><i class="fab fa-2x fa-facebook"></i></a>  <a type="button" href="#" class="col-1" style="color: rgb(51, 51, 51);"><i class="fab fa-2x fa-github"></i></a></div></div></div>
 					
 				</form>
-				<center style="padding-top:20px;"><a href="register.html">Không có tài khoản? Đăng ký tại đây...</a></center>
+				<center style="padding-top:20px;"><a href="/register/register.html">Không có tài khoản? Đăng ký tại đây...</a></center>
 			</div>
 		</div>
 	</div>

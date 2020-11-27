@@ -243,6 +243,23 @@ require "include/navbar.php";
   <div>
   <div class="wrapper" style='display:<?=$OUT1?>'><?php echo $output; ?></div></div>
 
+<style type="text/css">
+	#tunnna {
+			width: 150px;
+			height: 150px;
+		}
+		#daubuoi{
+			width: 30%;
+		}
+	@media screen and (max-width: 768px){
+		#tunnna {
+			width: 70px;
+			height: 70px;
+		}
+		#daubuoi{
+			width: 60%;
+		}
+</style>
 
 
 				<table>
@@ -262,7 +279,7 @@ $query = "SELECT * FROM accounts WHERE username='".$usern."'";
 						$login = 'none';	
 					}
 					echo "<div style='display:$login'>";
-					echo "<div><img src='".$row["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
+					echo "<div><img id='tunnna' src='".$row["profile_pic"]."'  style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
 					echo "<h1 style='margin-top: 0px;display:inline'>".$row["username"]." <i id='tunganh'  data-toggle='tooltip' title='Tài khoản đã xác minh' style='color:#07f;font-size:22px;display:none;display:inline' class='fas fa-check-circle'></i></h1>";
 					?>
 					<h4 id="xk" style="display: none;color: #989696">Xung kích</h4>
@@ -309,7 +326,7 @@ if(@$_GET['id']){
 					}
 					
 		if($tunna == 1){
-		echo "<div style='display:$login'><div><img src='".$userData["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
+		echo "<div style='display:$login'><div><img id='tunnna' src='".$userData["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
         echo "<h1 style='margin-top: 0px;'>".$userData["username"]."</h1>";
         echo "<table><tr><td style=''>Họ và tên :</td> <td>".$userData['name'].'</td>';
 		echo "<tr><td>ID : </td><td>".$userData['oauth_uid'].'</td>';
@@ -329,7 +346,7 @@ if(@$_GET['id']){
 			if (mysqli_num_rows($results) !=0) {
 				while($row = mysqli_fetch_assoc($results)){
 					
-					echo "<div><img src='".$row["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
+					echo "<div><img id='tunnna' src='".$row["profile_pic"]."' width ='150' height='150' style='margin-bottom: 15px;float: left;   border-radius: 50%; margin-right: 25px'></div>";
 					echo "<h1 style='
     margin-top: 0px;
 '>".$row["username"]." <i id='tunganh2'  data-toggle='tooltip' title='Tài khoản đã xác minh' style='color:#07f;font-size:22px;display:none;display:inline' class='fas fa-check-circle'></i></h1>";
@@ -384,7 +401,7 @@ $(document).ready(function(){
 	<?php
 		if(@$_GET['action']=="cp"){
 		echo "<form action='profile.php?action=cp' method='POST'><center>";
-		echo "<div style='width: 30%;'>
+		echo "<div id='daubuoi' style=''>
 		Mật khẩu cũ: <input type='password' class='form-control form-control-sm' name='pass' ><br/>
 		Mật khẩu mới: <input type='password' class='form-control form-control-sm' name='newpass'><br/>
 		Nhập lại mật khẩu: <input type='password' class='form-control form-control-sm' name='repass'><br/>

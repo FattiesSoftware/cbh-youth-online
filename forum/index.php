@@ -404,7 +404,7 @@ error_reporting(0);
 
 <script>
   yourString = '<?php echo $latest_name?>'
-  var result = yourString.substring(0, 33) + '...';
+  var result = yourString.substring(0, 30) + '...';
   document.getElementById("isValid12").innerHTML = result;
 	moment.locale('vi');
 	document.getElementById("isValid1").innerHTML = moment("<?php echo $latest_date?>", "YYYY-MM-DD h:m:s").fromNow();
@@ -423,7 +423,7 @@ error_reporting(0);
   <p style="margin-bottom: 0px; font-size: 12px;display: inline;">Mới nhất: <a id="isValid21" href="hoctap/topic.php?id=<?php echo $post_id2?>"></a><br><a href="/profile.php?id=<?php echo $author_id2?>"><?php echo $post_author2?> <i id='tunganh2'  data-toggle='tooltip' title='Tài khoản đã xác minh' style='color:#07f;font-size:11px;display:none;display:inline' class='fas fa-check-circle'></i></a></a>, <p id="isValid2" style="color: gray;display: inline; font-size: 12px">
 <script>
   yourString2 = '<?php echo $latest_name2?>'
-  var result2 = yourString2.substring(0, 33) + '...';
+  var result2 = yourString2.substring(0, 30) + '...';
   document.getElementById("isValid21").innerHTML = result2;
   moment.locale('vi');
   document.getElementById("isValid2").innerHTML = moment("<?php echo $latest_date2?>", "YYYY-MM-DD h:m:s").fromNow();
@@ -454,7 +454,7 @@ error_reporting(0);
 <?php echo $latest_name3 ?>
 <script>
 	yourString3 = '<?php echo $latest_name3 ?>'
-  var result3 = yourString3.substring(0, 33) + '...';
+  var result3 = yourString3.substring(0, 30) + '...';
   document.getElementById("isValid31").innerHTML = result3;
   moment.locale('vi');
   document.getElementById("isValid3").innerHTML = moment("<?php echo $latest_date3?>", "YYYY-MM-DD h:m:s").fromNow();

@@ -18,7 +18,7 @@
         <p id="demo"></p>
     </div>
      <div class="column">
-        <p> Designed and developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Fatties Software</a></p>
+        <p> Designed and developed with <i class="fas fa-heart"></i> by <a id='fatties' href="https://fattiesoftware.com/">Fatties Software</a></p>
 <style>
 .column {    
     display: inline-block;

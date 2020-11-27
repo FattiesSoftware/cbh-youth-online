@@ -8,13 +8,18 @@
 -->
 <?php 
 // File serverconnect.php chứa các thông tin quan trọng cần thiết để kết nối với máy chủ
-// Bổ sung dòng `require('require/serverconnect.php');` ở các file cần kết nối với máy chủ
+// Bổ sung dòng `require $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';` ở các file cần kết nối với máy chủ
 // Chỉnh sửa thông tin máy chủ một lần duy nhất ở 4 dòng này
 ////////////////////////////////////////////
+//$maychu = "42.112.30.39";
+//$tendangnhap = "fattiembt6od";
+//$matkhau = "5JPx5xb9c3fV";
+//$tendb = "fattiembt6od_members";
 $maychu = "localhost";
 $tendangnhap = "root";
 $matkhau = "";
 $tendb = "members";
+////////////////////////////////////////////
 	$db = mysqli_connect($maychu, $tendangnhap, $matkhau, $tendb);
 	$servername = $maychu;
 	$username = $tendangnhap;

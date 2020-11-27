@@ -5,7 +5,7 @@ if(!session_id()){
 }
 
 // Include Github client library 
-require_once 'Github_OAuth_Client.php';
+require_once 'github_OAuth_Client.php';
 
 
 /*

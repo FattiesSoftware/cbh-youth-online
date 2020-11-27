@@ -76,10 +76,10 @@ if(isset($accessToken)){
 	$OUT = 'block';
 	$nam = $userData['name'];
 }
-require "include/header.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/header.php';
 $loa = 'active';
-require "include/navbar.php";
-require "include/style.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/style.php';
 
 
 ?>
@@ -173,7 +173,7 @@ input[type=submit] {
 			$audio_path=$dir.basename($_FILES['audioFile']['name']);
 		
 			function saveAudio($fileName,$topic_name,$audio_creator,$date){
-				$conn=mysqli_connect('localhost','root','','members');
+		require $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
 				
 				if(!$conn){
 					die('Server chưa được kết nối');

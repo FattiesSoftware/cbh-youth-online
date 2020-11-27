@@ -9,16 +9,12 @@
  * Handles database related works
  */
 class User {
-    private $dbHost     = "localhost";
-    private $dbUsername = "root";
-    private $dbPassword = "";
-    private $dbName     = "members";
-    private $userTbl    = 'accounts';
+   
     
     function __construct(){
         if(!isset($this->db)){
             // Connect to the database
-            $conn = new mysqli($this->dbHost, $this->dbUsername, $this->dbPassword, $this->dbName);
+           require $_SERVER['DOCUMENT_ROOT'] . '/require/serverconnect.php';
             if($conn->connect_error){
                 die("Failed to connect with MySQL: " . $conn->connect_error);
             }else{
@@ -29,7 +25,7 @@ class User {
     
     function checkUser($userData = array()){
         if(!empty($userData)){
-            // Check whether user data already exists in database
+            // Check whether user data  already exists in database
             $prevQuery = "SELECT * FROM ".$this->userTbl." WHERE oauth_provider = '".$userData['oauth_provider']."' AND oauth_uid = '".$userData['oauth_uid']."'";
             $prevResult = $this->db->query($prevQuery);
             if($prevResult->num_rows > 0){

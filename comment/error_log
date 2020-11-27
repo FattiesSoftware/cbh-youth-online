@@ -1,0 +1,92 @@
+[14-Sep-2020 07:22:08 UTC] PHP Warning:  require(require/githubconfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[14-Sep-2020 07:22:08 UTC] PHP Fatal error:  require(): Failed opening required 'require/githubconfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:46:21 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubconfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:46:21 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubconfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:48:01 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubconfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:48:01 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubconfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:48:03 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubconfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:48:03 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubconfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:48:13 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubconfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:48:13 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubconfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:26 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubConfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:26 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubConfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:27 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubConfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:27 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubConfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:32 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubConfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:32 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubConfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:38 Asia/Ho_Chi_Minh] PHP Warning:  require(require/githubConfig.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:49:38 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required 'require/githubConfig.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 3
+[23-Oct-2020 09:51:43 Asia/Ho_Chi_Minh] PHP Warning:  require(/home/fattiembt6od/youth.fattiesoftware.comrequire/serverconnect.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 4
+[23-Oct-2020 09:51:43 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required '/home/fattiembt6od/youth.fattiesoftware.comrequire/serverconnect.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 4
+[23-Oct-2020 09:51:50 Asia/Ho_Chi_Minh] PHP Warning:  require(/home/fattiembt6od/youth.fattiesoftware.comrequire/serverconnect.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 4
+[23-Oct-2020 09:51:50 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required '/home/fattiembt6od/youth.fattiesoftware.comrequire/serverconnect.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 4
+[23-Oct-2020 09:52:28 Asia/Ho_Chi_Minh] PHP Warning:  require(/home/fattiembt6od/youth.fattiesoftware.com/require/logincheck.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 6
+[23-Oct-2020 09:52:28 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required '/home/fattiembt6od/youth.fattiesoftware.com/require/logincheck.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 6
+[23-Oct-2020 09:52:33 Asia/Ho_Chi_Minh] PHP Warning:  require(/home/fattiembt6od/youth.fattiesoftware.com/require/logincheck.php): failed to open stream: No such file or directory in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 6
+[23-Oct-2020 09:52:33 Asia/Ho_Chi_Minh] PHP Fatal error:  require(): Failed opening required '/home/fattiembt6od/youth.fattiesoftware.com/require/logincheck.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fattiembt6od/youth.fattiesoftware.com/comment/index.php on line 6
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: home in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 27
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: diendan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 28
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: loa in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 29
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: tracuu in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 30
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: xephang in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 37
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sukien in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 38
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: baocao in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 39
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: lienhe in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 40
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: svhd in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 41
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: inan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 42
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: trangcanhan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 45
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: PROP in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 45
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: IN in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 47
+[23-Oct-2020 09:53:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: OUT in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 48
+[23-Oct-2020 09:53:12 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'fattiembt6od_db'@'42.112.30.39' (using password: YES) in /home/fattiembt6od/youth.fattiesoftware.com/comment/db.php on line 2
+[23-Oct-2020 09:53:12 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 6
+[23-Oct-2020 09:53:12 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 8
+[23-Oct-2020 09:53:12 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, null given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 11
+[23-Oct-2020 09:53:12 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 13
+[23-Oct-2020 09:53:16 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'fattiembt6od_db'@'42.112.30.39' (using password: YES) in /home/fattiembt6od/youth.fattiesoftware.com/comment/db.php on line 2
+[23-Oct-2020 09:53:16 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-add.php on line 11
+[23-Oct-2020 09:53:16 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-add.php on line 14
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: home in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 27
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: diendan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 28
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: loa in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 29
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: tracuu in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 30
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: xephang in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 37
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sukien in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 38
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: baocao in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 39
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: lienhe in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 40
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: svhd in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 41
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: inan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 42
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: trangcanhan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 45
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: PROP in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 45
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: IN in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 47
+[23-Oct-2020 09:54:36 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: OUT in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 48
+[23-Oct-2020 09:54:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'fattiembt6od_db'@'42.112.30.39' (using password: YES) in /home/fattiembt6od/youth.fattiesoftware.com/comment/db.php on line 2
+[23-Oct-2020 09:54:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 6
+[23-Oct-2020 09:54:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 8
+[23-Oct-2020 09:54:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, null given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 11
+[23-Oct-2020 09:54:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 13
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: home in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 27
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: diendan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 28
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: loa in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 29
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: tracuu in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 30
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: xephang in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 37
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sukien in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 38
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: baocao in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 39
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: lienhe in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 40
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: svhd in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 41
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: inan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 42
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: trangcanhan in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 45
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: PROP in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 45
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: IN in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 47
+[09-Nov-2020 15:42:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: OUT in /home/fattiembt6od/youth.fattiesoftware.com/include/navbar.php on line 48
+[09-Nov-2020 15:42:04 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'fattiembt6od_db'@'42.112.30.39' (using password: YES) in /home/fattiembt6od/youth.fattiesoftware.com/comment/db.php on line 2
+[09-Nov-2020 15:42:04 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 6
+[09-Nov-2020 15:42:04 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 8
+[09-Nov-2020 15:42:04 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, null given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 11
+[09-Nov-2020 15:42:04 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-list.php on line 13
+[09-Nov-2020 15:42:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'fattiembt6od_db'@'42.112.30.39' (using password: YES) in /home/fattiembt6od/youth.fattiesoftware.com/comment/db.php on line 2
+[09-Nov-2020 15:42:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-add.php on line 11
+[09-Nov-2020 15:42:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-add.php on line 14
+[09-Nov-2020 15:42:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'fattiembt6od_db'@'42.112.30.39' (using password: YES) in /home/fattiembt6od/youth.fattiesoftware.com/comment/db.php on line 2
+[09-Nov-2020 15:42:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-add.php on line 11
+[09-Nov-2020 15:42:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/fattiembt6od/youth.fattiesoftware.com/comment/comment-add.php on line 14
